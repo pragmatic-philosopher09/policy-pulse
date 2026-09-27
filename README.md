@@ -26,6 +26,12 @@ publishes a brief — opened by a model-drafted **"This week in 60 seconds"** �
 **Follow** any topic and the next visit opens with *"Since your last visit: 2 new actions · now
 Heating up, was Steady"* — computed in your browser from a local snapshot; nothing is sent anywhere.
 
+Each topic also shows **what people are saying** — conversations from whitelisted newsroom feeds,
+Google News, Reddit, Bluesky and Mastodon (X with a key), grouped by story and labelled *Confirmed* /
+*One newsroom* / *Community* by who is in them. A single post is never shown; each conversation says
+whether it tracks a formal PRS action or is running ahead of the record. This layer sits beside the
+score, never inside it.
+
 Each topic also shows **what the states are legislating** — Bills from 37 state legislatures tagged
 to the same topics (a separate `/states.html` index lists them all). This is where "Centre quiet"
 topics like gig work often turn out to be very much alive.
@@ -42,6 +48,8 @@ The Telegram channel is the product; the site is where the receipts live.
 - **Two-source discipline** — each item is checked against Google News (which indexes PIB, News On AIR
   and the national press). Government or 2+ newspaper hits = "independently confirmed"; confidence
   is lifted only when most recent evidence is confirmed. PRS itself never counts as corroboration.
+- **Chatter with a bar** — social and news sources are allow-listed, rate-limited, spam-filtered,
+  clustered, and only shown when two or more documents (or three accounts) agree. It never touches the score.
 - **Honest about absence** — "Quiet" says *no formal action recorded*, and explains that courts,
   strikes and implementation are outside the source.
 - **Act-now first** — deadlines parsed, closed items demoted, response templates included.
@@ -68,8 +76,8 @@ per-consultation facts a human verified (`data/respond_overrides.json`).
 ## How it works
 
 ```
-PRS Monthly Policy Review + PRS Announcements (CC BY 4.0)
-        │  weekly GitHub Actions cron (daily for deadlines), 10s crawl-delay
+PRS Monthly Policy Review + PRS Announcements (CC BY 4.0)     public feeds & APIs (rate-limited, 6h cache)
+        │  weekly GitHub Actions cron (daily for deadlines), 10s crawl-delay      │
         ▼
   radar/parse.py         → structured items (month, ministry, title, body, links)
   radar/announcements.py → live drafts open for comment, exact deadlines, notice links
@@ -77,6 +85,8 @@ PRS Monthly Policy Review + PRS Announcements (CC BY 4.0)
   radar/notice.py        → reads the notice: submission email, addressee, deadline; "likely closed" inference
   radar/score.py       → action type · topic tags (+ overrides) · momentum · confidence
   radar/crosscheck.py  → independent coverage per item (Google News RSS → PIB / newspapers)
+  radar/chatter.py     → public chatter: newsroom/PIB feeds, Google News, GDELT, Reddit, Bluesky, Mastodon, X
+                          → quality gate → clustering → credibility label → match to PRS actions
   radar/summarize.py   → one-line summary          ┐
   radar/enrich.py      → hook + "For you" lines    ├ Claude, or seed files
   radar/translate.py   → Hindi titles/summaries    ┘
@@ -95,6 +105,11 @@ python -m http.server -d docs 8000       # open http://localhost:8000
 pytest
 ```
 
+Optional keys for the chatter layer (everything else is keyless): `REDDIT_CLIENT_ID` + `REDDIT_CLIENT_SECRET`
+(a free "script" app — Reddit blocks anonymous JSON from most cloud IPs), `X_BEARER_TOKEN` (X has no free
+read tier; skipped without it). Sources that fail or rate-limit are skipped for the run and the last stored
+conversations are kept. `POLICY_PULSE_SKIP_CHATTER=1` skips the layer; `CHATTER_MAX_REQUESTS` caps a run (default 160).
+
 Set `ANTHROPIC_API_KEY` to get model-written summaries, hooks, persona lines and Hindi for new items;
 without it the pipeline uses first sentences and the seed files in `data/`.
 
@@ -105,7 +120,8 @@ without it the pipeline uses first sentences and the seed files in `data/`.
 1. Push to `main`. The workflow in `.github/workflows/radar.yml` runs every Monday 09:00 IST,
    commits refreshed `data/` + `docs/`, and deploys to GitHub Pages.
 2. In repo **Settings → Pages**, set source to **GitHub Actions**.
-3. Secrets: `ANTHROPIC_API_KEY` (optional), `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` (for the channel).
+3. Secrets: `ANTHROPIC_API_KEY` (optional), `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` (for the channel),
+   `REDDIT_CLIENT_ID` + `REDDIT_CLIENT_SECRET` and `X_BEARER_TOKEN` (optional, for the chatter layer).
    Variables: `POLICY_PULSE_CHANNEL_URL` (shown as the site's CTA), `POLICY_PULSE_SITE_URL`.
 4. Telegram: create a public channel, create a bot via @BotFather, add the bot as channel admin,
    set `TELEGRAM_CHAT_ID` to `@yourchannel`. The Monday run posts the digest; a daily run posts
@@ -115,6 +131,17 @@ without it the pipeline uses first sentences and the seed files in `data/`.
 Cloud Storage bucket behind Cloud CDN (or serve via Cloud Run + nginx), and trigger
 `python -m radar run` from Cloud Scheduler → Cloud Run Job. The SQLite file moves to the bucket
 or Cloud SQL when the dataset outgrows git.
+
+## Data model, and where it goes next
+
+Nothing on the site is hand-maintained. The pipeline is the only writer: every source lands in
+`data/radar.sqlite` (`items`, `announcements`, `state_bills`, `corroborations`, `chatter_docs`,
+`chatter_clusters`, …), the HTML in `docs/` is a build artefact rendered from that database, and
+`docs/radar.json` is the public read API. Committing the SQLite file to git is deliberate at this
+scale — history compounds publicly and anyone can `git clone` the whole dataset. When it outgrows
+git (or the site needs live queries), the seam is `radar/db.py::connect()`: point it at Postgres /
+Cloud SQL / Turso, run `python -m radar run` from a scheduler, and serve `radar.json` from the
+database instead of a file. Nothing else has to change.
 
 ## Roadmap
 

@@ -4,6 +4,7 @@
   python -m radar summarise               # fill missing plain-English summaries
   python -m radar translate               # Hindi (etc.) titles/summaries via Claude, cached
   python -m radar crosscheck              # independent coverage per item (Google News: PIB, newspapers)
+  python -m radar chatter                 # public chatter: newsroom feeds, GDELT, Reddit, Bluesky, Mastodon (X with a token)
   python -m radar build                   # render static site into docs/
   python -m radar notify --digest|--pings # Telegram channel
   python -m radar run --months 18         # all three
@@ -13,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import logging
+import os
 from datetime import date
 
 from . import db
@@ -25,6 +27,7 @@ from .crosscheck import crosscheck
 from .enrich import enrich_missing
 from .announcements import refresh as refresh_announcements
 from .states import refresh as refresh_states
+from .chatter import refresh as refresh_chatter
 
 log = logging.getLogger("radar")
 
@@ -79,6 +82,7 @@ def main(argv: list[str] | None = None) -> None:
     sub.add_parser("states", help="state legislature Bills (prsindia.org/bills/states) for this and last year")
     sub.add_parser("enrich", help="hook headlines + persona 'so what' lines (seed file, Claude for new items)")
     sub.add_parser("crosscheck", help="look for independent coverage (govt releases, newspapers) of visible items")
+    sub.add_parser("chatter", help="public chatter: whitelisted news feeds, GDELT, Reddit, Bluesky, Mastodon; clustered + credibility-gated")
     sub.add_parser("build")
     n = sub.add_parser("notify", help="post to Telegram (dry run without TELEGRAM_BOT_TOKEN)")
     n.add_argument("--digest", action="store_true")
@@ -108,6 +112,11 @@ def main(argv: list[str] | None = None) -> None:
     if args.cmd in ("crosscheck", "run"):
         conn = db.connect()
         log.info("cross-checked %d items", crosscheck(conn, visible_uids(conn)))
+    if args.cmd == "chatter" or (args.cmd == "run" and not os.environ.get("POLICY_PULSE_SKIP_CHATTER")):
+        try:
+            log.info("chatter: %d conversations shown", refresh_chatter(db.connect()))
+        except Exception:   # a third-party API outage must never block the weekly issue
+            log.exception("chatter refresh failed; building with the last stored conversations")
     if args.cmd in ("build", "run"):
         from .build_site import build
         build()

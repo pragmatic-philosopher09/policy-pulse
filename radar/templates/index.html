@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_item.html" import sparkline, change, follow_btn, respond_card, why_moving, persona_block, states_line, photo, heatmap, impact_chips %}
+{% from "_item.html" import sparkline, change, follow_btn, respond_card, why_moving, persona_block, states_line, photo, heatmap, impact_chips, chatter_line, chatter_list %}
 {% block body %}
 <div class="wrap">
 <section class="hero">
@@ -95,6 +95,12 @@
               <a class="more" href="{{ root }}{{ '' if lang == 'en' else lang ~ '/' }}states.html#{{ ts.topic.slug }}">{{ t('all_states') }} →</a>
             </div></details>
           {% endif %}
+          {% set cd = chatter[ts.topic.slug] %}
+          {% if cd and cd.total %}
+          <div style="margin-top:.9rem">{{ chatter_line(ts, chatter, chatter_window) }}</div>
+          <details class="acc"><summary>{{ t('chatter_h2') }} <span class="count">· {{ cd.total }}</span></summary>
+            <div class="acc-body">{{ chatter_list(cd, chatter_window, limit=3) }}</div></details>
+          {% endif %}
           {% if ts.connections %}<p class="connections">{{ t('also_touches') }}: {% for c in ts.connections %}<a href="topic/{{ c.slug }}.html" class="tag topic">{{ c.topic.label(lang) }}</a>{% endfor %}</p>{% endif %}
           <a class="more" href="topic/{{ ts.topic.slug }}.html">{{ t('explore') }}</a>
         </div>
@@ -124,6 +130,7 @@
           <h3><a href="topic/{{ ts.topic.slug }}.html">{{ ts.topic.label(lang) }}</a></h3>
           <p class="q">{{ t('quiet_line', n=ts.recent_items, w=recent_window) }}</p>
           {{ states_line(ts, states) }}
+          {{ chatter_line(ts, chatter, chatter_window) }}
         </div>
         {{ follow_btn(ts) }}
       </article>

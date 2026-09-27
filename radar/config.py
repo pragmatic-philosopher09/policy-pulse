@@ -238,6 +238,20 @@ IMPACT_BY_SLUG = {i.slug: i for i in IMPACTS}
 
 TOPIC_BY_SLUG = {t.slug: t for t in TOPICS}
 
+# Public-chatter search phrases per domain (radar/chatter.py). Deliberately specific: these go to
+# Reddit / Bluesky / GDELT search boxes, so "GST" alone would drown a topic in noise while
+# "GST council" or "GST rate" finds the policy conversation. Keep 3-6 per domain.
+CHATTER_QUERIES: dict[str, tuple[str, ...]] = {
+    "digital-and-ai": ("DPDP rules", "IT Rules deepfake", "online gaming bill", "IndiaAI mission", "MeitY AI governance", "Aadhaar authentication rules"),
+    "work": ("labour codes", "gig workers social security", "EPFO rules", "employment linked incentive", "minimum wage india"),
+    "money": ("income tax bill", "GST council", "RBI draft directions", "SEBI consultation paper", "UPI rules NPCI", "unified pension scheme"),
+    "education": ("NEET NTA", "UGC draft regulations", "paper leak law", "CUET exam", "national education policy"),
+    "justice": ("Bharatiya Nyaya Sanhita", "BNSS bail", "PMLA supreme court", "UAPA bail", "prison reform india", "police custody law"),
+    "health": ("NMC regulations", "NEET PG counselling", "CDSCO drugs rules", "pharmacy council india", "mental health act india"),
+    "business": ("Jan Vishwas bill", "MSME payment rules", "startup india fund of funds", "companies act amendment", "ease of doing business india"),
+    "energy-environment": ("Electricity Amendment Bill", "SHANTI nuclear bill", "forest conservation rules", "EIA notification", "green hydrogen mission"),
+}
+
 # Weight of an item by what *kind* of government action it represents.
 # Enacted law counts more than a draft; a draft more than a committee note.
 ACTION_WEIGHTS: dict[str, float] = {

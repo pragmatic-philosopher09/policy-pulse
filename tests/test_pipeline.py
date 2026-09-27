@@ -151,3 +151,112 @@ def test_state_bills_parse():
     rows = parse_list(html)
     assert rows[0]["state"] == "Karnataka" and rows[0]["year"] == 2025
     assert rows[0]["url"].startswith("https://prsindia.org/files/") and rows[0]["title"].startswith("The Karnataka Platform")
+
+
+# ---------------------------------------------------------------------------
+# Public chatter layer (radar/chatter.py) — no network
+
+from radar import chatter as ch
+
+
+def _doc(kind, outlet, url, title, text="", author=None, source=None, links=(), engagement=0):
+    return ch.Doc(source=source or ("rss" if kind != "community" else "bluesky"), kind=kind, outlet=outlet,
+                  author=author or outlet, url=url, title=title, text=text or title, published="2026-09-20",
+                  engagement=engagement, links=list(links))
+
+
+def test_chatter_quality_gate_drops_spam_and_non_india():
+    spam = _doc("community", "Bluesky", "https://bsky.app/p/1", "", "GIVEAWAY!!! earn money click here #crypto #india #free #win #now", author="a")
+    assert ch.quality(spam) == 0.0 and "promo" in spam.flags
+    ohio = _doc("community", "Bluesky", "https://bsky.app/p/2", "", "Ohio taxpayers face a $1,670 deportation bill and a smaller workforce this year", author="b")
+    assert ch.quality(ohio) == 0.0 and "not-india" in ohio.flags
+    ok = _doc("community", "Bluesky", "https://bsky.app/p/3", "", "The DPDP rules draft is finally out and MeitY wants comments; consent managers look weak.",
+              author="c", links=["https://www.thehindu.com/news/x"], engagement=12)
+    assert ch.quality(ok) >= 0.8 and "cites-source" in ok.flags
+    news = _doc("news", "Mint", "https://livemint.com/a", "Centre notifies draft DPDP Rules, invites comments")
+    assert ch.quality(news) == 1.0
+
+
+def test_chatter_cluster_and_credibility():
+    a = _doc("news", "The Hindu", "https://thehindu.com/a", "Centre notifies draft DPDP Rules, seeks comments on data protection")
+    b = _doc("news", "Mint", "https://livemint.com/b", "Draft DPDP Rules notified: what the data protection rules mean for users")
+    c = _doc("community", "Bluesky", "https://bsky.app/p/9", "DPDP rules draft is out. Data protection for consent managers looks weak.",
+             author="x.bsky", links=["https://thehindu.com/a"])
+    d = _doc("news", "Indian Express", "https://indianexpress.com/d", "Cabinet raises EPFO wage ceiling to Rs 25,000 from Rs 15,000")
+    groups = ch.cluster([a, b, c, d])
+    assert sorted(len(g) for g in groups) == [1, 3]
+    big = max(groups, key=len)
+    assert big[0].kind == "news"                       # most credible doc leads the cluster
+    assert ch.credibility(big) == "confirmed"          # two newsrooms
+    assert ch.credibility([d]) == "thin"               # one article is not a conversation
+    assert ch.credibility([a, c]) == "reported"        # one newsroom + a post
+    # a lone account sharing links is thin; three accounts with engagement are 'community'
+    posts = [_doc("community", "Bluesky", f"https://bsky.app/p/{i}", "NEET PG counselling delayed again, MCC silent, students in Delhi protest",
+                  author=f"u{i}", engagement=5) for i in range(3)]
+    assert ch.credibility(posts[:2]) == "thin"
+    assert ch.credibility(posts) == "community"
+    assert ch.credibility([posts[0], _doc("community", "Bluesky", "https://bsky.app/p/x", posts[0].title, author="u0", links=["https://livemint.com/z"])]) == "thin"
+    # a forum post linking a newsroom counts that newsroom
+    assert ch.credibility([posts[0], _doc("community", "Bluesky", "https://bsky.app/p/y", posts[0].title, author="u9", links=["https://livemint.com/z"])]) == "reported"
+
+
+def test_chatter_collapses_coordinated_posts():
+    text = "Join the movement: the labour codes will destroy gig workers in India, share widely"
+    posts = [_doc("community", "Bluesky", f"https://bsky.app/p/{i}", text, author=f"bot{i}") for i in range(4)]
+    kept, dropped = ch._collapse_coordinated(posts)
+    assert len(kept) == 1 and dropped == 3
+    assert ch.credibility(kept, coordinated=dropped) == "thin"
+
+
+RSS = """<rss><channel><item><title>Cabinet raises EPFO wage ceiling</title><link>https://indianexpress.com/x?utm_source=rss</link>
+<description><![CDATA[<p>The ceiling goes to Rs 25,000.</p>]]></description><pubDate>Sat, 20 Sep 2026 10:00:00 +0530</pubDate></item></channel></rss>"""
+ATOM = """<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Draft DPDP Rules out</title><link href="https://scroll.in/y"/>
+<updated>2026-09-21T08:00:00Z</updated><summary>Comments open.</summary></entry></feed>"""
+GNEWS = """<rss><channel><item><title>GST Council to meet on Sept 12 - business-standard.com</title>
+<link>https://news.google.com/rss/articles/abc</link><pubDate>Mon, 22 Sep 2026 05:00:00 GMT</pubDate>
+<source url="https://www.business-standard.com">business-standard.com</source></item>
+<item><title>Something from a blog - Blog</title><link>https://news.google.com/rss/articles/def</link>
+<source url="https://randomblog.example">Blog</source></item></channel></rss>"""
+
+
+def test_chatter_feed_parsers():
+    rss = ch.parse_feed(RSS, "Indian Express")
+    assert rss[0].url == "https://indianexpress.com/x" and rss[0].published == "2026-09-20" and rss[0].kind == "news"
+    assert "Rs 25,000" in rss[0].text
+    atom = ch.parse_feed(ATOM, "Scroll")
+    assert atom[0].url == "https://scroll.in/y" and atom[0].published == "2026-09-21"
+    gn = ch.parse_gnews(GNEWS)
+    assert len(gn) == 1 and gn[0].outlet == "Business Standard" and gn[0].title == "GST Council to meet on Sept 12"
+    bsky = ch.parse_bluesky('{"posts":[{"uri":"at://did/app.bsky.feed.post/k1","author":{"handle":"h.bsky"},"likeCount":3,"repostCount":1,'
+                            '"record":{"text":"UGC draft regulations for Indian universities","createdAt":"2026-09-19T00:00:00Z","langs":["en"]}},'
+                            '{"uri":"at://did/app.bsky.feed.post/k2","author":{"handle":"r.bsky"},"record":{"text":"reply","reply":{}}}]}')
+    assert len(bsky) == 1 and bsky[0].url == "https://bsky.app/profile/h.bsky/post/k1" and bsky[0].engagement == 5
+    reddit = ch.parse_reddit('{"data":{"children":[{"data":{"title":"Labour codes finally notified","selftext":"thoughts?","author":"u1","subreddit":"india",'
+                             '"permalink":"/r/india/1","score":42,"upvote_ratio":0.9,"num_comments":10,"created_utc":1789000000,"is_self":true}},'
+                             '{"data":{"title":"x","author":"[deleted]","subreddit":"india","permalink":"/r/india/2"}}]}}')
+    assert len(reddit) == 1 and reddit[0].outlet == "r/india" and reddit[0].engagement == 62 and not reddit[0].flags
+
+
+def test_chatter_refresh_offline_and_by_topic(tmp_path):
+    from radar import db
+    conn = db.connect(tmp_path / "t.sqlite")
+    with conn:
+        conn.execute("INSERT INTO months (month, source_url, n_items) VALUES ('2026-08', 'u', 1)")
+        conn.execute("INSERT INTO items (uid, month, sector, title, body, links, source_url, action) VALUES "
+                     "('i1', '2026-08', 'Labour', 'Cabinet approves raising the EPFO wage ceiling to Rs 25,000', '', '[]', 'u', 'cabinet')")
+        conn.execute("INSERT INTO item_topics VALUES ('i1', 'work', 9)")
+    docs = [
+        _doc("news", "Indian Express", "https://indianexpress.com/d", "Cabinet raises EPFO wage ceiling to Rs 25,000 from Rs 15,000"),
+        _doc("news", "Economic Times", "https://economictimes.indiatimes.com/e", "EPFO wage ceiling raised to Rs 25,000: what changes for salaried workers"),
+        _doc("news", "Mint", "https://livemint.com/solo", "Employment data: PLFS shows urban jobs steady"),   # single article -> hidden
+        _doc("community", "Bluesky", "https://bsky.app/p/1", "", "Ohio minimum wage bill passes the state senate", author="us"),
+    ]
+    shown = ch.refresh(conn, today=date(2026, 9, 27), docs=docs)
+    assert shown == 1
+    bt = ch.by_topic(conn)
+    work = bt["work"]
+    assert work["total"] == 1 and work["counts"]["confirmed"] == 1 and work["hidden"] == 1
+    c = work["clusters"][0]
+    assert c["n_docs"] == 2 and c["item_uid"] == "i1" and c["item"]["title"].startswith("Cabinet approves")
+    assert work["ahead"] == 0
+    assert ch.last_run(conn)["n_fetched"] == 4

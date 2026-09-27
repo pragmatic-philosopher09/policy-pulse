@@ -21,6 +21,7 @@ from .crosscheck import lookup as corroborations_for
 from .enrich import PERSONAS, editor_note, load_chains, lookup as enrichment_for
 from . import notice
 from .states import by_topic as states_by_topic, totals as states_totals
+from .chatter import WINDOW_DAYS as CHATTER_WINDOW, by_topic as chatter_by_topic, last_run as chatter_last_run
 from .announcements import load as load_announcements
 from .score import tag_impacts, tag_topics
 from .parse import Item
@@ -332,6 +333,7 @@ def build() -> None:
         brief=brief(scores, consultations), channel_url=CHANNEL_URL, personas=PERSONAS,
         chains=load_chains(conn), states=states_by_topic(conn), states_totals=states_totals(conn),
         images=load_images(), impacts=IMPACTS,
+        chatter=chatter_by_topic(conn), chatter_run=chatter_last_run(conn), chatter_window=CHATTER_WINDOW,
     )
 
     if OUT.exists():
@@ -367,6 +369,11 @@ def build() -> None:
         "states": {slug: {"by_year": d["by_year"], "states": d["states"],
                           "bills": [{"title": b["title"], "state": b["state"], "year": b["year"], "pdf": b["pdf_url"], "brief": b["brief_url"]} for b in d["bills"]]}
                    for slug, d in ctx["states"].items()},
+        "chatter": {"window_days": CHATTER_WINDOW, "topics": {slug: {
+            "counts": d["counts"], "running_ahead_of_prs": d["ahead"], "hidden": d["hidden"],
+            "conversations": [{"label": c["label"], "url": c["label_url"], "credibility": c["credibility"], "posts": c["n_docs"],
+                               "outlets": c["outlets"], "platforms": c["platforms"], "first_seen": c["first_seen"], "last_seen": c["last_seen"],
+                               "prs_item": c["item_uid"]} for c in d["clusters"]]} for slug, d in ctx["chatter"].items()}},
         "chains": [{"slug": c["slug"], "name": c["name"], "topics": c.get("topics", []), "next": c.get("next"),
                     "steps": [{"uid": st["uid"], "month": st["month"], "action": st["action"], "title": st["title"]} for st in c["steps"]]}
                    for c in ctx["chains"]],

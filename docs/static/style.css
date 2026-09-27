@@ -398,3 +398,17 @@ body.lang-hi .imp { font-family: var(--sans); font-weight: 600; font-size: .74re
 body[data-lens] .rows .lens-out { display: none; }
 body[data-lens] .index tbody tr.lens-out { display: none; }
 body[data-lens] .causal li.lens-out, body[data-lens] .ev.lens-out { display: none; }
+
+/* ---- public chatter layer ---- */
+.chat-line span::before { content: none; }
+.chat-list { list-style: none; margin: 0; padding: 0; }
+.chat-list li.chat { padding: .9rem 0; border-top: 1px solid var(--rule); display: grid; gap: .4rem; }
+.chat-list li.chat:first-child { border-top: 0; }
+.chat-list .hook { font-family: var(--serif); font-size: 1.15rem; line-height: 1.3; color: var(--ink); text-decoration: none; }
+.chat-list .hook:hover { text-decoration: underline; }
+.tag.cred-confirmed { border-color: var(--act); color: var(--act); }
+.tag.cred-reported { border-color: var(--calm); color: var(--calm); }
+.tag.cred-community { border-color: #b86b12; color: #b86b12; }
+.tracks { margin: 0; font: 400 .74rem/1.5 var(--mono); color: var(--act); }
+.tracks.ahead { color: var(--hot); }
+.chat-list .corr em { font-style: normal; color: var(--mute); }

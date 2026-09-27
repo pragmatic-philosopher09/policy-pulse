@@ -194,3 +194,34 @@
 {% macro impact_chips(slugs, counts=None) %}
   {% if slugs %}<span class="impacts">{% for i in impacts if i.slug in slugs %}<span class="imp" data-impact="{{ i.slug }}" title="{{ i.name_hi if lang == 'hi' else i.name }}">{{ i.emoji }} {{ i.name_hi if lang == 'hi' else i.name }}{% if counts and counts.get(i.slug) %} <em>{{ counts[i.slug] }}</em>{% endif %}</span>{% endfor %}</span>{% endif %}
 {% endmacro %}
+
+{% macro cred_badge(c) %}
+  <span class="tag cred cred-{{ c.credibility }}" title="{{ t('cred_help_' ~ c.credibility) }}">{{ t('cred_' ~ c.credibility) }}</span>
+{% endmacro %}
+
+{% macro chatter_line(ts, chatter, window) %}
+  {% set cd = chatter[ts.topic.slug] %}
+  {% if cd and cd.total %}
+    <p class="states-line chat-line"><span>{% if ts.status == 'quiet' %}{{ t('centre_quiet_chatter', n=cd.total, d=window, first=cd.clusters[0].label | truncate(90)) }}{% else %}{{ t('chatter_line', n=cd.total, d=window, c=cd.counts.confirmed, a=cd.ahead) }}{% endif %}</span>
+    <a href="{{ root }}{{ '' if lang == 'en' else lang ~ '/' }}topic/{{ ts.topic.slug }}.html#chatter">→</a></p>
+  {% endif %}
+{% endmacro %}
+
+{% macro chatter_item(c) %}
+  <li class="chat cred-{{ c.credibility }}">
+    <div class="labels">{{ cred_badge(c) }}<span class="tag">{{ t('n_posts', n=c.n_docs) }}</span>{% for p in c.platforms %}<span class="tag src-{{ p }}">{{ t('src_' ~ p) }}</span>{% endfor %}{% if c.last_seen %}<span class="tag"><em>{{ c.last_seen | nice_date_iso }}</em></span>{% endif %}</div>
+    <a class="hook" href="{{ c.label_url }}" rel="noopener">{{ c.label }}</a>
+    {% if c.outlets %}<small class="corr">{{ t('chatter_sources_h') }}: {% for m in c.members if m.kind != 'community' %}<a href="{{ m.url }}" title="{{ m.title }}" rel="noopener">{{ m.outlet }}</a>{{ ', ' if not loop.last }}{% endfor %}</small>{% endif %}
+    {% set social = c.members | selectattr('kind', 'eq', 'community') | list %}
+    {% if social %}<small class="corr">{% for m in social[:4] %}<a href="{{ m.url }}" title="{{ m.title }}" rel="noopener">{{ m.author }}</a> <em>({{ m.outlet }})</em>{{ ', ' if not loop.last }}{% endfor %}</small>{% endif %}
+    {% if c.item %}<p class="tracks">✓ {{ t('chatter_tracks', title=c.item.title, m=(c.item.month | month)) }}</p>{% else %}<p class="tracks ahead">→ {{ t('chatter_ahead') }}</p>{% endif %}
+  </li>
+{% endmacro %}
+
+{% macro chatter_list(cd, window, limit=5) %}
+  {% if cd and cd.total %}
+    <ul class="chat-list">{% for c in cd.clusters[:limit] %}{{ chatter_item(c) }}{% endfor %}</ul>
+    {% if cd.clusters | length > limit %}<details class="acc"><summary>{{ t('chatter_show_more', n=cd.clusters | length) }}</summary><div class="acc-body"><ul class="chat-list">{% for c in cd.clusters[limit:] %}{{ chatter_item(c) }}{% endfor %}</ul></div></details>{% endif %}
+    {% if cd.hidden %}<p class="muted" style="font-size:.8rem">{{ t('chatter_hidden', n=cd.hidden) }}</p>{% endif %}
+  {% else %}<p class="empty">{{ t('chatter_none', d=window) }}</p>{% endif %}
+{% endmacro %}

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_item.html" import sparkline, change, follow_btn, headline, for_you, corroboration, why_moving, persona_block, states_line, stage_bar, photo, tilemap, impact_chips %}
+{% from "_item.html" import sparkline, change, follow_btn, headline, for_you, corroboration, why_moving, persona_block, states_line, stage_bar, photo, tilemap, impact_chips, chatter_list %}
 {% block title %}{{ ts.topic.label(lang) }} — {{ t('site_title') }}{% endblock %}
 {% block desc %}{{ ts.topic.tag(lang) }} {{ ts.status | status }}, {{ ts.confidence | confidence }} {{ t('confidence_word') }}.{% endblock %}
 {% block nav %}
@@ -8,6 +8,7 @@
   <a href="#evidence"><span>02</span>{{ t('ch_evidence') }}</a>
   <a href="#states"><span>03</span>{{ t('ch_states') }}</a>
   <a href="#journeys"><span>04</span>{{ t('ch_journeys') }}</a>
+  <a href="#chatter"><span>05</span>{{ t('ch_chatter') }}</a>
 </nav>
 {% endblock %}
 {% block body %}
@@ -131,6 +132,15 @@
       {% endfor %}
     </div>
     {% else %}<p class="empty reveal">{{ t('journeys_none') }}</p>{% endif %}
+    </div>
+  </section>
+  {# ---- 05 Chatter ---- #}
+  <section class="chapter" id="chatter">
+    <aside class="marg reveal"><span class="num">05</span><span class="k">{{ t('ch_chatter') }}</span><span class="hint">{{ t('marg_chatter') }}</span></aside>
+    <div class="body">
+      <div><h2>{{ t('chatter_h2') }}</h2><p class="lede">{{ t('chatter_note', d=chatter_window) }}</p></div>
+      <div class="card reveal">{{ chatter_list(chatter[ts.topic.slug], chatter_window, limit=6) }}</div>
+      {% if chatter_run %}<p class="muted" style="font-size:.8rem">{{ t('chatter_updated', d=(chatter_run.run_at[:10] | nice_date_iso), n=chatter_run.n_fetched, k=chatter_run.n_shown) }}</p>{% endif %}
     </div>
   </section>
 </div>
