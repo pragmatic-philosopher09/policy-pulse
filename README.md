@@ -27,7 +27,7 @@ publishes a brief — opened by a model-drafted **"This week in 60 seconds"** �
 Heating up, was Steady"* — computed in your browser from a local snapshot; nothing is sent anywhere.
 
 Each topic also shows **what people are saying** — conversations from whitelisted newsroom feeds,
-Google News, Reddit, Bluesky and Mastodon (X with a key), grouped by story and labelled *Confirmed* /
+Google News, Bluesky and Mastodon, grouped by story and labelled *Confirmed* /
 *One newsroom* / *Community* by who is in them. A single post is never shown; each conversation says
 whether it tracks a formal PRS action or is running ahead of the record. This layer sits beside the
 score, never inside it.
@@ -85,8 +85,10 @@ PRS Monthly Policy Review + PRS Announcements (CC BY 4.0)     public feeds & API
   radar/notice.py        → reads the notice: submission email, addressee, deadline; "likely closed" inference
   radar/score.py       → action type · topic tags (+ overrides) · momentum · confidence
   radar/crosscheck.py  → independent coverage per item (Google News RSS → PIB / newspapers)
-  radar/chatter.py     → public chatter: newsroom/PIB feeds, Google News, GDELT, Reddit, Bluesky, Mastodon, X
+  radar/chatter.py     → public chatter: newsroom/PIB feeds, Google News, GDELT, Bluesky, Mastodon
                           → quality gate → clustering → credibility label → match to PRS actions
+  radar/citizens.py    → approved X/Reddit APIs → deduplicated observations + collection gaps
+                          → recurring text cues → Citizen's Corner + citizens.json (daily)
   radar/summarize.py   → one-line summary          ┐
   radar/enrich.py      → hook + "For you" lines    ├ Claude, or seed files
   radar/translate.py   → Hindi titles/summaries    ┘
@@ -105,10 +107,56 @@ python -m http.server -d docs 8000       # open http://localhost:8000
 pytest
 ```
 
-Optional keys for the chatter layer (everything else is keyless): `REDDIT_CLIENT_ID` + `REDDIT_CLIENT_SECRET`
-(a free "script" app — Reddit blocks anonymous JSON from most cloud IPs), `X_BEARER_TOKEN` (X has no free
-read tier; skipped without it). Sources that fail or rate-limit are skipped for the run and the last stored
-conversations are kept. `POLICY_PULSE_SKIP_CHATTER=1` skips the layer; `CHATTER_MAX_REQUESTS` caps a run (default 160).
+The news/Bluesky/Mastodon chatter layer is keyless. `POLICY_PULSE_SKIP_CHATTER=1` skips it;
+`CHATTER_MAX_REQUESTS` caps its run (default 160). X/Reddit are collected only by Citizen's Corner,
+with approved credentials, not by the older raw-response-caching chatter collector.
+
+## Citizen's Corner
+
+`citizens.html` (also in Hindi) shows a 30-day window of sampled discussions, grouped by the
+policy/issue watch phrases in `CHATTER_QUERIES`. It is linked from the homepage, navigation and
+topic pages. `citizens.json` exports the same counts, source statuses and recurring cues.
+No opinion data is fabricated or backfilled from the existing news clusters.
+
+**Setup:** add `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET` and `X_BEARER_TOKEN` as repository
+Actions secrets, never in source or chat. Reddit requires approved Data API access and an app
+permitted to use client-credentials OAuth; X requires recent-search access and the applicable
+billing entitlement. Check current platform terms before enabling collection; access is not
+guaranteed to be free. Set repository variable `REDDIT_USER_AGENT` to an identifying app/version
+and contact (for example `python:policy-pulse:0.3 (by /u/YOUR_ACCOUNT)`).
+
+```bash
+python -m radar citizens  # at most 16 searches + one token request; credentials from environment
+python -m radar build     # render the latest stored snapshot without API calls
+```
+
+The daily 09:30 IST workflow collects discussions, sends deadline reminders, builds, commits
+the database/site, and deploys. Weekly `radar run` also collects; successful domain/platform
+samples are not queried again on the same UTC day. Each search returns at most 25 recent
+results without pagination (up to 200 per platform). X's recent window is normally seven days,
+Reddit's search window is a month. These different sampling frames cannot be compared as population
+shares. Stored cooldowns honor 429/Retry-After and remaining/reset headers; failures remain visible
+as gaps, never successful zeroes. Missing credentials cause no anonymous fallback requests.
+
+Daily counts mean **newly observed deduplicated posts**, dated when collected, not total mentions
+or posting-date volumes. First-day results are a baseline sample, not a sudden spike in opinion.
+Exact normalized copies are collapsed, each account contributes at most one new post per policy
+per day, and promotions, hashtag walls and low-signal Reddit posts are excluded. Exact phrase
+matching deliberately sacrifices recall; the English watchlist and rules miss synonyms, Hindi
+and code-switching. Results are views in the sample, not a poll of Indians.
+
+Viewpoint labels use conservative, policy-sentence-level text rules: explicit support/opposition,
+questions, privacy, costs, implementation and access. Only cues appearing in at least three distinct
+platform accounts are shown, with source links. They are not fact-checks, model-generated summaries,
+or a sentiment percentage. Sarcasm, paraphrased coordination and attribution remain limitations.
+Social shares no longer count as newsroom verification in the existing chatter credibility rule.
+
+SQLite tables `citizen_runs`, `citizen_posts` and `citizen_cooldowns` preserve collection outcomes,
+deduplication and rate-limit state. This collector does **not** persist raw API responses, full
+post text, usernames or profiles: only canonical post links, policy-scoped account hashes,
+observation dates and cue labels. Live rows are retained for 90 days; git history and published
+snapshots can persist longer, so this is not a platform deletion-compliance service. Review storage
+and deletion obligations before enabling an approved production integration.
 
 Set `ANTHROPIC_API_KEY` to get model-written summaries, hooks, persona lines and Hindi for new items;
 without it the pipeline uses first sentences and the seed files in `data/`.
@@ -121,7 +169,7 @@ without it the pipeline uses first sentences and the seed files in `data/`.
    commits refreshed `data/` + `docs/`, and deploys to GitHub Pages.
 2. In repo **Settings → Pages**, set source to **GitHub Actions**.
 3. Secrets: `ANTHROPIC_API_KEY` (optional), `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` (for the channel),
-   `REDDIT_CLIENT_ID` + `REDDIT_CLIENT_SECRET` and `X_BEARER_TOKEN` (optional, for the chatter layer).
+   `REDDIT_CLIENT_ID` + `REDDIT_CLIENT_SECRET` and `X_BEARER_TOKEN` (optional, for Citizen's Corner).
    Variables: `POLICY_PULSE_CHANNEL_URL` (shown as the site's CTA), `POLICY_PULSE_SITE_URL`.
 4. Telegram: create a public channel, create a bot via @BotFather, add the bot as channel admin,
    set `TELEGRAM_CHAT_ID` to `@yourchannel`. The Monday run posts the digest; a daily run posts
@@ -134,14 +182,14 @@ or Cloud SQL when the dataset outgrows git.
 
 ## Data model, and where it goes next
 
-Nothing on the site is hand-maintained. The pipeline is the only writer: every source lands in
+Fetched source data is stored by the pipeline (editorial seed files remain curated). Sources land in
 `data/radar.sqlite` (`items`, `announcements`, `state_bills`, `corroborations`, `chatter_docs`,
-`chatter_clusters`, …), the HTML in `docs/` is a build artefact rendered from that database, and
+`chatter_clusters`, `citizen_posts`, `citizen_runs`, …), the HTML in `docs/` is a build artefact rendered from that database, and
 `docs/radar.json` is the public read API. Committing the SQLite file to git is deliberate at this
 scale — history compounds publicly and anyone can `git clone` the whole dataset. When it outgrows
-git (or the site needs live queries), the seam is `radar/db.py::connect()`: point it at Postgres /
-Cloud SQL / Turso, run `python -m radar run` from a scheduler, and serve `radar.json` from the
-database instead of a file. Nothing else has to change.
+git (or the site needs live queries), a hosted database and API can replace this storage/build
+boundary. PostgreSQL is not a drop-in connection change: SQLite-specific SQL, migrations,
+transaction handling and deployment would also need adapting. No hosted backend is required today.
 
 ## Roadmap
 

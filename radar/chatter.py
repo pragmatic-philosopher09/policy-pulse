@@ -11,8 +11,7 @@ Sources (all public, all rate-limited, all cached on disk so re-runs cost nothin
     gdelt      GDELT DOC 2.0 article search, sourcecountry:IN, 1 request / 5.5 s
     bluesky    app.bsky.feed.searchPosts (public AppView, no key)
     mastodon   public hashtag timelines on large instances (no key)
-    reddit     allow-listed subreddits; anonymous JSON, or OAuth when REDDIT_CLIENT_ID/SECRET are set
-    x          v2 recent search, only when X_BEARER_TOKEN is set (X has no free read tier)
+    X/Reddit   collected separately by citizens.py using approved credentials only
 
 Credibility, in three steps:
 
@@ -21,7 +20,7 @@ Credibility, in three steps:
 2. **Clustering** — posts and articles about the same thing are grouped (shared links, then
    token-overlap on distinctive words). One conversation = one cluster, however many posts.
 3. **Cluster credibility** — a single post or article is never shown; the label a cluster earns
-   depends on *who* is in it (a forum post linking to a newsroom counts that newsroom):
+   depends on *who* is in it (a shared link alone never verifies an attached opinion):
        confirmed   >= 1 government source, or >= 2 distinct newsrooms
        reported    exactly 1 newsroom, plus at least one more document
        community   no newsroom, but >= 3 distinct authors, on >= 2 platforms or with real engagement
@@ -37,7 +36,6 @@ say whether the conversation tracks a formal action or is running ahead of one.
 
 from __future__ import annotations
 
-import base64
 import hashlib
 import html
 import json
@@ -103,9 +101,6 @@ GDELT = "https://api.gdeltproject.org/api/v2/doc/doc?query={q}&mode=artlist&form
 GNEWS = "https://news.google.com/rss/search?q={q}+when:30d&hl=en-IN&gl=IN&ceid=IN:en"
 BLUESKY = ("https://api.bsky.app/xrpc/app.bsky.feed.searchPosts?q={q}&limit=25&sort=latest",
            "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q={q}&limit=25&sort=latest")
-REDDIT_ANON = "https://www.reddit.com/r/{sub}/search.json?q={q}&restrict_sr=1&sort=new&t=month&limit=25&raw_json=1"
-REDDIT_OAUTH = "https://oauth.reddit.com/r/{sub}/search?q={q}&restrict_sr=1&sort=new&t=month&limit=25&raw_json=1"
-X_SEARCH = "https://api.twitter.com/2/tweets/search/recent?query={q}&max_results=25&tweet.fields=created_at,public_metrics,lang,entities&expansions=author_id&user.fields=username,public_metrics"
 
 # Minimum seconds between requests, per host. Published/observed limits, then some slack.
 HOST_DELAY = {
@@ -601,21 +596,6 @@ def _collapse_coordinated(docs: list[Doc]) -> tuple[list[Doc], int]:
 # ---------------------------------------------------------------------------
 # Step 3 — credibility
 
-def _cited_sources(docs: list[Doc]) -> tuple[int, set[str]]:
-    """Newsrooms / government pages that community posts link to. Sharing a Mint article is reporting by proxy."""
-    gov, outlets = 0, set()
-    for d in docs:
-        if d.kind != "community":
-            continue
-        for l in d.links:
-            kind, name = classify_domain(l)
-            if kind == "government":
-                gov += 1
-            elif kind == "news":
-                outlets.add(name)
-    return gov, outlets
-
-
 def credibility(docs: list[Doc], coordinated: int = 0) -> str:
     """A single post or article is never a conversation: every shown label needs >= 2 documents."""
     if len(docs) < 2:
@@ -626,9 +606,6 @@ def credibility(docs: list[Doc], coordinated: int = 0) -> str:
     authors = {d.author for d in community}
     if not gov and not outlets and len(authors) < 2:
         return "thin"                      # one account talking to itself, however many links it shares
-    cited_gov, cited = _cited_sources(docs)
-    gov += cited_gov
-    outlets |= cited
     platforms = {d.source for d in community}
     engagement = sum(d.engagement for d in community)
     if gov >= 1 or len(outlets) >= 2:
@@ -648,22 +625,6 @@ CRED_RANK = {"confirmed": 0, "reported": 1, "community": 2, "thin": 3}
 # ---------------------------------------------------------------------------
 # Fetching
 
-def _reddit_token(http: _Http) -> str | None:
-    cid, sec = os.environ.get("REDDIT_CLIENT_ID"), os.environ.get("REDDIT_CLIENT_SECRET")
-    if not (cid and sec):
-        return None
-    try:
-        resp = requests.post("https://www.reddit.com/api/v1/access_token", data={"grant_type": "client_credentials"},
-                             headers={"User-Agent": USER_AGENT, "Authorization": "Basic " + base64.b64encode(f"{cid}:{sec}".encode()).decode()},
-                             timeout=30)
-        http.n += 1
-        resp.raise_for_status()
-        return resp.json().get("access_token")
-    except Exception as exc:
-        log.warning("reddit oauth failed: %s", exc)
-        return None
-
-
 def fetch_all(http: _Http | None = None, topics: dict[str, tuple[str, ...]] | None = None) -> list[Doc]:
     http = http or _Http()
     topics = topics or CHATTER_QUERIES
@@ -680,7 +641,6 @@ def fetch_all(http: _Http | None = None, topics: dict[str, tuple[str, ...]] | No
             if body:
                 docs.extend(parse_mastodon(body, inst))
 
-    reddit_token = _reddit_token(http)
     for slug, queries in topics.items():
         # GDELT supports OR inside parentheses: one 5.5s request per topic instead of one per phrase
         gq = "(" + " OR ".join(f'"{q}"' for q in queries) + ") sourcecountry:IN"
@@ -696,23 +656,6 @@ def fetch_all(http: _Http | None = None, topics: dict[str, tuple[str, ...]] | No
                 if body is not None:
                     docs.extend(parse_bluesky(body))
                     break
-        # Reddit: one multi-subreddit search per topic keeps us inside the anonymous budget
-        subs = "+".join(SUBREDDITS)
-        q = " OR ".join(f'"{x}"' for x in queries[:4])
-        if reddit_token:
-            body = http.get(REDDIT_OAUTH.format(sub=subs, q=quote_plus(q)),
-                            headers={"Authorization": f"Bearer {reddit_token}"}, cache_key=f"reddit:{slug}:{q}")
-        else:
-            body = http.get(REDDIT_ANON.format(sub=subs, q=quote_plus(q)), cache_key=f"reddit:{slug}:{q}")
-        if body:
-            docs.extend(parse_reddit(body))
-        x_token = os.environ.get("X_BEARER_TOKEN")
-        if x_token:
-            xq = "(" + " OR ".join(f'"{x}"' for x in queries[:4]) + ") -is:retweet -is:reply lang:en"
-            body = http.get(X_SEARCH.format(q=quote_plus(xq)), headers={"Authorization": f"Bearer {x_token}"}, cache_key=f"x:{slug}:{xq}")
-            if body:
-                docs.extend(parse_x(body))
-
     log.info("chatter: %d raw posts/articles from %d requests", len(docs), http.n)
     return docs
 

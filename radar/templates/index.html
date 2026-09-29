@@ -52,10 +52,10 @@
     <h2 class="reveal">{{ t('respond_h2') }}</h2>
     <p class="lede reveal">{{ t('consult_lede') }}</p>
     <div class="rows">
-      {% for e in brief.respond %}{{ respond_card(e) }}{% endfor %}
+{% for e in brief.respond %}{{ respond_card(e) }}{% endfor %}
       {% if not brief.respond %}<p class="empty reveal">{{ t('respond_none') }}</p>{% endif %}
     </div>
-    {% if consultations.closed %}
+{% if consultations.closed %}
     <details class="acc reveal" style="max-width:none">
       <summary>{{ t('recently_closed', n=consultations.closed | length) }}</summary>
       <div class="acc-body"><div class="rows">{% for e in consultations.closed[:6] %}{{ respond_card(e, closed=True) }}{% endfor %}</div></div>
@@ -141,6 +141,14 @@
 {% endif %}
 
 {# ---------------- 04 Everything ---------------- #}
+<section class="chapter" id="citizens">
+  <aside class="marg"><span class="k">{{ t('citizen_title') }}</span></aside>
+  <div class="body">
+    <h2><a href="citizens.html">{{ t('citizen_title') }}</a></h2>
+    <p class="lede">{{ t('citizen_intro') }}</p>
+    <a class="more" href="citizens.html">{{ t('citizen_explore') }} →</a>
+  </div>
+</section>
 <section class="chapter" id="all">
   <aside class="marg reveal"><span class="num">04</span><span class="k">{{ t('ch_all') }}</span><span class="hint">{{ t('marg_all') }}</span></aside>
   <div class="body">

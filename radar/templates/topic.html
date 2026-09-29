@@ -139,6 +139,7 @@
     <aside class="marg reveal"><span class="num">05</span><span class="k">{{ t('ch_chatter') }}</span><span class="hint">{{ t('marg_chatter') }}</span></aside>
     <div class="body">
       <div><h2>{{ t('chatter_h2') }}</h2><p class="lede">{{ t('chatter_note', d=chatter_window) }}</p></div>
+      <a class="more" href="../citizens.html#{{ ts.topic.slug }}">{{ t('citizen_title') }} — {{ t('citizen_explore') }}</a>
       <div class="card reveal">{{ chatter_list(chatter[ts.topic.slug], chatter_window, limit=6) }}</div>
       {% if chatter_run %}<p class="muted" style="font-size:.8rem">{{ t('chatter_updated', d=(chatter_run.run_at[:10] | nice_date_iso), n=chatter_run.n_fetched, k=chatter_run.n_shown) }}</p>{% endif %}
     </div>

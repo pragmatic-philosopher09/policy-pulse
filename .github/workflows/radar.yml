@@ -3,7 +3,7 @@ name: Policy Pulse
 on:
   schedule:
     - cron: "30 3 * * 1"   # Mondays 09:00 IST — ingest, score, build, deploy, post digest
-    - cron: "0 4 * * *"    # daily 09:30 IST — deadline reminders only
+    - cron: "0 4 * * *"    # daily 09:30 IST — Citizen's Corner + deadline reminders
   workflow_dispatch:
   push:
     branches: [main]
@@ -27,11 +27,10 @@ env:
   REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
   REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
   X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+  REDDIT_USER_AGENT: ${{ vars.REDDIT_USER_AGENT }}
 
 jobs:
-  weekly:
-    # everything except the daily-only cron
-    if: github.event.schedule != '0 4 * * *'
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -41,8 +40,16 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - name: Ingest, enrich, cross-check, build
+        if: github.event.schedule != '0 4 * * *'
         run: python -m radar run --months 18
+      - name: Daily public discussion sample and deadlines
+        if: github.event.schedule == '0 4 * * *'
+        run: |
+          python -m radar citizens
+          python -m radar notify --pings
+          python -m radar build
       - name: Post weekly digest + any deadline pings
+        if: github.event.schedule != '0 4 * * *'
         run: python -m radar notify --digest --pings
       - name: Commit data + site
         run: |
@@ -56,8 +63,7 @@ jobs:
           path: docs
 
   deploy:
-    needs: weekly
-    if: github.event.schedule != '0 4 * * *'
+    needs: publish
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -65,23 +71,3 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-
-  pings:
-    if: github.event.schedule == '0 4 * * *'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-          cache: pip
-      - run: pip install -r requirements.txt
-      - name: Deadline reminders (7 days / 48 hours)
-        run: python -m radar notify --pings
-      - name: Record what was posted
-        run: |
-          git config user.name "policy-pulse-bot"
-          git config user.email "policy-pulse-bot@users.noreply.github.com"
-          git add data
-          git diff --cached --quiet || git commit -m "chore: deadline reminders $(date -u +%F)"
-          git push

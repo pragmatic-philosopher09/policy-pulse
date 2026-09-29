@@ -27,9 +27,10 @@
 <div class="progress" aria-hidden="true"></div>
 <header class="top">
   <div class="wrap top-inner">
-    <a class="brand" href="index.html">Policy Pulse <span class="issue">№ 39</span></a>
+    <a class="brand" href="index.html">Policy Pulse <span class="issue">№ 40</span></a>
     
     <div class="tools">
+      <a class="tool" href="citizens.html">Citizen's Corner</a>
       <a class="tool" href="states.html">States</a>
       <a class="tool" href="method.html">Method</a>
       <a class="tool lang-toggle" lang="hi" href="hi/method.html?lang=hi">हिन्दी</a>
@@ -110,8 +111,8 @@
   <p>PRS also lists every Bill introduced in state legislatures (<a href="https://prsindia.org/bills/states">bills/states</a>) and writes plain-English <a href="https://prsindia.org/bills/state-legislative-briefs">State Legislative Briefs</a> on selected ones. We ingest this and last year's Bills, tag them to our topics with the same keyword rules, and show them beside each topic — "Centre quiet, states moving" is often the real story. PRS records the <em>year</em> of a state Bill, not the month, so this layer is counted per year and never blended into the monthly momentum arithmetic. From now on we also record when each Bill first appeared in our weekly fetch, so the brief can flag what is new in the states.</p>
 
   <h2>10. Public chatter</h2>
-  <p>PRS records what government <em>did</em>; this layer records what people are <em>saying</em>, and it sits beside the score, never inside it. Every week we read whitelisted newsroom and government feeds (The Hindu, Indian Express, Mint, Hindustan Times, Economic Times, Business Standard, NDTV, Scroll, ThePrint, The Wire, Medianama, Inc42, Bar &amp; Bench, Taxscan, PIB, News On AIR), Google News search results for each domain's policy phrases (kept only when the outlet is on that same allow-list), GDELT, and public posts from Bluesky, Mastodon hashtag timelines and allow-listed Indian subreddits (X only when a key is configured — it has no free read tier). Every source is hit through a rate limiter that respects the published limits, with a six-hour cache, so re-runs cost nothing.</p>
-  <p>Credibility is enforced in three passes. <strong>Per post:</strong> replies, deleted/NSFW posts, very short text, hashtag walls, all-caps shouting, promotional vocabulary, link dumps, low-vote forum posts and posts with no Indian context are dropped. <strong>Clustering:</strong> posts and articles about the same story are grouped — first by shared links, then by overlap of distinctive words with the most credible document in the group. <strong>Per conversation:</strong> a single post is never shown. A group earns <em>Confirmed</em> with a government source or two distinct newsrooms (a forum post linking to a newsroom counts that newsroom), <em>One newsroom</em> with exactly one, and <em>Community</em> only with three or more distinct accounts on two platforms or with real engagement. Near-identical text from several accounts is collapsed and flagged as coordinated. Everything else is stored but hidden, and the page says how many threads didn't meet the bar.</p>
+  <p>PRS records what government <em>did</em>; public chatter sits beside the score, never inside it. Weekly sources include allow-listed newsroom and government feeds, Google News search results from known outlets, GDELT, Bluesky and Mastodon. Requests are spaced and cached for six hours. X and Reddit are collected separately by <a href="citizens.html">Citizen's Corner</a>, using approved API credentials without raw-response caching.</p>
+  <p>Credibility is enforced in three passes: per-post quality checks, grouping by shared links and distinctive words, then source-coverage labels. Single posts are hidden. <em>Confirmed</em> requires a directly collected government document or two newsroom sources; a social post linking to a newsroom does not count as an additional newsroom. <em>One newsroom</em> has exactly one, and <em>Community</em> needs three or more distinct accounts on two platforms or with engagement. Near-identical social text is collapsed. These are coverage labels, not proof that every claim in a cluster is true: news can be syndicated, and linked opinions are not verified.</p>
   <p>Each shown conversation is then matched against the topic's recent PRS actions, so you can see whether it tracks a formal action or is running ahead of the record. This is deliberately the noisiest layer on the site and is labelled as such; it is a lens on attention, not evidence of government action.</p>
 
   <h2>11. What the model writes, and what it doesn't</h2>
@@ -122,10 +123,18 @@
     <dt><span class="tag action-enacted">Law passed</span></dt><dd>Parliament passed it (or it got the President&#39;s assent). It is now law, though it may take effect later.</dd><dt><span class="tag action-introduced">Bill introduced</span></dt><dd>A Bill was tabled in Parliament. It can still change, be sent to a committee, or lapse.</dd><dt><span class="tag action-rules">Rules notified</span></dt><dd>The government issued binding rules, regulations or a notification under an existing law. No vote needed.</dd><dt><span class="tag action-cabinet">Cabinet approval</span></dt><dd>The Union Cabinet approved a proposal — usually the step before a Bill is introduced or a scheme launches.</dd><dt><span class="tag action-consultation">Open for comment</span></dt><dd>A draft was published for public comment. Anyone can respond before the deadline.</dd><dt><span class="tag action-committee">Committee report</span></dt><dd>A parliamentary committee of MPs from all parties examined an issue and made recommendations. Not binding.</dd><dt><span class="tag action-scheme">Scheme / programme</span></dt><dd>A government programme was launched, approved or expanded.</dd><dt><span class="tag action-court">Court ruling</span></dt><dd>A court ruling or stay that changes how a law works in practice.</dd><dt><span class="tag action-other">Update</span></dt><dd>A statement, report or development that doesn&#39;t fit the categories above.</dd>
   </dl>
 
+  <section class="prose" id="method">
+  <h2>Citizen's Corner: How scoring works</h2>
+  <p>Views in the collected sample, not what Indians think. Accounts are not verified citizens. Likes and votes are not credibility, and these discussions never change policy momentum or confidence.</p>
+  <p>Daily approved-API searches: at most 25 recent results per domain and platform, no pagination, 16 searches plus one Reddit token request. X requires India/Indian context and searches its recent window (normally seven days); Reddit searches an allow-listed set of Indian communities over a month. The English watch phrases are an incomplete policy/issue list, not discovery of every policy. Replies/reposts on X, removed/NSFW Reddit posts, promotions, hashtag walls and low-signal Reddit posts are excluded. Exact normalized copies are collapsed and each account contributes at most one new post per policy per day. Coordinated paraphrases and cross-platform duplicate accounts may still pass. Outcomes and cooldowns are stored in SQLite; gaps are never interpolated.</p>
+  <p>Daily counts are newly observed, deduplicated posts on the collection date, not total mentions or posting-date activity. A dash is a collection gap; zero means a successful search found no new qualifying posts. History starts when collection starts.</p>
+  <p>Conservative English text rules, not a sentiment score: explicit support/opposition cues, questions and discussion themes. Each shown cue needs at least three distinct platform accounts. Labels can overlap; sarcasm, mixed views, translation and attribution remain limitations. Unclassified posts still count. A news link does not verify an attached opinion.</p>
+  <p>No full social text, usernames or profile fields are stored by this collector. Source links and policy-scoped account hashes support audit and deduplication. Live observation rows expire after 90 days; published snapshots and repository history can persist. Follow source links for the current post; links may be removed. This is not factual verification or automated profiling.</p>
+</section>
   <h2>Known limits</h2>
   <ul>
     <li><strong>This measures formal government action, not public attention.</strong> PRS records bills, rules, committee reports and drafts. It does not record implementation, strikes, court petitions or news coverage. A topic can be "Quiet" here while dominating headlines.</li>
-    <li>Public chatter depends on what public APIs allow: Reddit needs a free app key to work from cloud runners, X needs a paid key, GDELT throttles shared IPs. Sources that fail are skipped for the run and the last stored conversations are kept; the page states when the layer was last refreshed.</li>
+    <li>API access and billing depend on current platform terms. Citizen's Corner uses approved X/Reddit credentials and displays per-source collection gaps. GDELT and other chatter feeds can be unavailable or throttled; a refresh is not evidence of complete coverage.</li>
     <li>Keyword tagging misses synonyms and can over-match generic words. Evidence is shown so you can spot this.</li>
     <li>Plain-English summaries are generated by an AI model or extracted from the first sentence; the linked primary document is always authoritative.</li>
   </ul>
@@ -135,6 +144,7 @@
 <footer>
   <div class="wrap">
     <nav class="sitemap" aria-label="Policy Pulse">
+      <a href="citizens.html">Citizen's Corner</a>
       <a href="index.html">This week</a>
       <a href="index.html#respond">01 Respond</a>
       <a href="index.html#moving">02 Moving</a>
@@ -146,7 +156,7 @@
       <a href="topic/business.html">Business &amp; startups</a><a href="topic/money.html">Money, markets &amp; tax</a><a href="topic/health.html">Health &amp; medicine</a><a href="topic/justice.html">Law, courts &amp; policing</a><a href="topic/energy-environment.html">Energy &amp; environment</a><a href="topic/education.html">Education &amp; exams</a><a href="topic/work.html">Work, wages &amp; skills</a><a href="topic/digital-and-ai.html">Digital &amp; AI</a>
     </nav>
     <p>Source data © PRS Legislative Research (prsindia.org), licensed under CC BY 4.0. Summaries and scores are our own.</p>
-    <p>Updated 2026-09-27 · Open source · No ads, no tracking, no login. · Hooks, “For you” lines and the weekly note are model-drafted and source-linked; scores and confidence are rule-based.</p>
+    <p>Updated 2026-09-30 · Open source · No ads, no tracking, no login. · Hooks, “For you” lines and the weekly note are model-drafted and source-linked; scores and confidence are rule-based.</p>
     <p>Photographs: <a href="https://commons.wikimedia.org/wiki/File:Sansad_Bhavan,_New_Delhi.jpg">Nikhilb239</a> (CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Vidhana_Soudha,_Bengaluru,_February_2017_06.jpg">Ibrahim Husain Meraj</a> (CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Building_of_The_Supreme_Court_of_India.jpg">Pinakpani</a> (CC BY-SA 4.0)</p>
   </div>
 </footer>

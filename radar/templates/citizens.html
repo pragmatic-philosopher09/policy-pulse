@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}{{ t('citizen_title') }} — {{ t('site_title') }}{% endblock %}
+{% block desc %}{{ t('citizen_intro') }}{% endblock %}
+{% block nav %}{% endblock %}
+{% block body %}
+<div class="wrap citizen-corner">
+  <section class="hero">
+    <aside class="side"><span class="k">X / Reddit</span><p>{{ citizens.generated | nice_date_iso }}</p></aside>
+    <div><h1>{{ t('citizen_title') }}</h1><p class="lede">{{ t('citizen_intro') }}</p>
+      <p class="counter">{{ t('citizen_limits') }}</p>
+      <p>{{ t('citizen_measure') }}</p>
+      <p><a class="u" href="#method">{{ t('nav_method') }}</a> · <a class="u" href="{{ root }}citizens.json">citizens.json</a></p>
+    </div>
+  </section>
+  <nav class="chips" aria-label="{{ t('citizen_topics') }}">
+    {% for domain in citizens.domains %}<a class="chip" href="#{{ domain.slug }}">{{ domain.name_hi if lang == 'hi' else domain.name }}</a>{% endfor %}
+  </nav>
+  {% for domain in citizens.domains %}
+  <section class="chapter" id="{{ domain.slug }}">
+    <aside class="marg"><span class="num">{{ '%02d' % loop.index }}</span>
+      <a href="topic/{{ domain.slug }}.html">{{ t('citizen_record') }}</a></aside>
+    <div class="body">
+      <h2>{{ domain.name_hi if lang == 'hi' else domain.name }}</h2>
+      <div class="card">
+        <h3>{{ t('citizen_coverage') }}</h3>
+        {% for platform, source in domain.sources.items() %}
+        <p><b>{{ 'Reddit' if platform == 'reddit' else 'X' }}</b>:
+          {{ t('citizen_status_' ~ source.status) }}
+          {% if source.checked_at %}<small> · {{ source.checked_at[:10] | nice_date_iso }} UTC</small>{% endif %}
+        </p>
+        {% endfor %}
+      </div>
+      {% for policy in citizens.policies if policy.domain == domain.slug %}
+      <details class="acc citizen-policy" {% if policy.total %}open{% endif %}>
+        <summary>{{ policy.name }} <span class="count">{{ policy.total }} {{ t('citizen_posts') }}</span></summary>
+        <div class="acc-body">
+          <p>Reddit: {{ policy.platforms.reddit }} · X: {{ policy.platforms.x }} · {{ t('citizen_window') }}</p>
+          <p>{{ t('citizen_history') }} · {{ policy.days[0].day }} — {{ policy.days[-1].day }}</p>
+          {% for platform in ('reddit', 'x') %}
+          <div class="citizen-chart" aria-hidden="true"><b>{{ platform | upper }}</b>
+            {% for day in policy.days %}
+            <span class="citizen-bar {{ 'gap' if day[platform].count is none }}" title="{{ day.day }}: {{ day[platform].count if day[platform].count is not none else t('citizen_status_' ~ day[platform].status) }}">
+              {% if day[platform].count is not none %}<i style="height: {{ [2, 100 * day[platform].count / policy.peak] | max }}%"></i>{% endif %}
+            </span>
+            {% endfor %}
+          </div>
+          {% endfor %}
+          <p class="hint">{{ t('citizen_measure') }}</p>
+          {% if not policy.total %}<p class="empty">{{ t('citizen_empty') }}</p>{% endif %}
+          <h3>{{ t('citizen_viewpoints') }}</h3>
+          <p>{{ t('citizen_cues') }}</p>
+          {% for theme in policy.themes %}
+          <article class="card">
+            <h4>{{ t('citizen_label_' ~ theme.label) }}</h4>
+            <p>{{ theme.posts }} {{ t('citizen_posts') }} · {{ theme.accounts }} {{ t('citizen_accounts') }}</p>
+            <p>{% for link in theme.links %}<a class="u" href="{{ link.url }}" rel="nofollow noopener">{{ link.platform | upper }} {{ loop.index }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
+          </article>
+          {% else %}<p class="empty">{{ t('citizen_small_sample') }}</p>{% endfor %}
+          <details class="acc">
+            <summary>{{ t('citizen_history') }}</summary>
+            <div class="citizen-table">
+              <table class="index">
+                <caption>{{ t('citizen_measure') }}</caption>
+                <thead><tr><th>{{ t('citizen_day') }} (UTC)</th><th>Reddit</th><th>X</th></tr></thead>
+                <tbody>{% for day in policy.days %}
+                  <tr><th>{{ day.day }}</th>
+                    {% for platform in ('reddit', 'x') %}
+                    <td>{% if day[platform].count is not none %}{{ day[platform].count }}{% else %}— <small>{{ t('citizen_status_' ~ day[platform].status) }}</small>{% endif %}</td>
+                    {% endfor %}
+                  </tr>
+                {% endfor %}</tbody>
+              </table>
+            </div>
+          </details>
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+  {% include "_citizen_method.html" %}
+</div>
+{% endblock %}

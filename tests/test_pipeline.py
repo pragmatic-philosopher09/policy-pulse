@@ -196,8 +196,8 @@ def test_chatter_cluster_and_credibility():
     assert ch.credibility(posts[:2]) == "thin"
     assert ch.credibility(posts) == "community"
     assert ch.credibility([posts[0], _doc("community", "Bluesky", "https://bsky.app/p/x", posts[0].title, author="u0", links=["https://livemint.com/z"])]) == "thin"
-    # a forum post linking a newsroom counts that newsroom
-    assert ch.credibility([posts[0], _doc("community", "Bluesky", "https://bsky.app/p/y", posts[0].title, author="u9", links=["https://livemint.com/z"])]) == "reported"
+    # Sharing a newsroom link does not verify the attached opinion.
+    assert ch.credibility([posts[0], _doc("community", "Bluesky", "https://bsky.app/p/y", posts[0].title, author="u9", links=["https://livemint.com/z"])]) == "thin"
 
 
 def test_chatter_collapses_coordinated_posts():

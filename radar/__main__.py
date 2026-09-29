@@ -4,7 +4,8 @@
   python -m radar summarise               # fill missing plain-English summaries
   python -m radar translate               # Hindi (etc.) titles/summaries via Claude, cached
   python -m radar crosscheck              # independent coverage per item (Google News: PIB, newspapers)
-  python -m radar chatter                 # public chatter: newsroom feeds, GDELT, Reddit, Bluesky, Mastodon (X with a token)
+  python -m radar chatter                 # newsroom feeds, Google News, GDELT, Bluesky, Mastodon
+  python -m radar citizens                # credential-only X/Reddit discussion sampling
   python -m radar build                   # render static site into docs/
   python -m radar notify --digest|--pings # Telegram channel
   python -m radar run --months 18         # all three
@@ -28,6 +29,7 @@ from .enrich import enrich_missing
 from .announcements import refresh as refresh_announcements
 from .states import refresh as refresh_states
 from .chatter import refresh as refresh_chatter
+from .citizens import refresh as refresh_citizens
 
 log = logging.getLogger("radar")
 
@@ -82,8 +84,9 @@ def main(argv: list[str] | None = None) -> None:
     sub.add_parser("states", help="state legislature Bills (prsindia.org/bills/states) for this and last year")
     sub.add_parser("enrich", help="hook headlines + persona 'so what' lines (seed file, Claude for new items)")
     sub.add_parser("crosscheck", help="look for independent coverage (govt releases, newspapers) of visible items")
-    sub.add_parser("chatter", help="public chatter: whitelisted news feeds, GDELT, Reddit, Bluesky, Mastodon; clustered + credibility-gated")
+    sub.add_parser("chatter", help="public chatter: whitelisted news feeds, GDELT, Bluesky, Mastodon; clustered + credibility-gated")
     sub.add_parser("build")
+    sub.add_parser("citizens", help="sample X and Reddit policy discussions using approved API credentials")
     n = sub.add_parser("notify", help="post to Telegram (dry run without TELEGRAM_BOT_TOKEN)")
     n.add_argument("--digest", action="store_true")
     n.add_argument("--pings", action="store_true")
@@ -117,6 +120,8 @@ def main(argv: list[str] | None = None) -> None:
             log.info("chatter: %d conversations shown", refresh_chatter(db.connect()))
         except Exception:   # a third-party API outage must never block the weekly issue
             log.exception("chatter refresh failed; building with the last stored conversations")
+    if args.cmd in ("citizens", "run"):
+        refresh_citizens(db.connect())
     if args.cmd in ("build", "run"):
         from .build_site import build
         build()

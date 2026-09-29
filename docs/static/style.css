@@ -412,3 +412,13 @@ body[data-lens] .causal li.lens-out, body[data-lens] .ev.lens-out { display: non
 .tracks { margin: 0; font: 400 .74rem/1.5 var(--mono); color: var(--act); }
 .tracks.ahead { color: var(--hot); }
 .chat-list .corr em { font-style: normal; color: var(--mute); }
+.citizen-policy { max-width: none; }
+.citizen-policy > summary { flex-wrap: wrap; line-height: 1.5; }
+.citizen-table { overflow-x: auto; }
+.citizen-table caption { text-align: left; padding: 1rem 0; }
+.citizen-corner .chips { flex-wrap: wrap; }
+.citizen-chart { display: flex; gap: 3px; height: 42px; margin: .8rem 0; align-items: end; }
+.citizen-chart b { flex: 0 0 4rem; font: .7rem var(--mono); }
+.citizen-bar { flex: 1; height: 100%; display: flex; align-items: end; background: var(--bg-3); }
+.citizen-bar i { display: block; width: 100%; background: var(--calm); }
+.citizen-bar.gap { background: repeating-linear-gradient(135deg, var(--rule) 0 1px, transparent 1px 5px); }

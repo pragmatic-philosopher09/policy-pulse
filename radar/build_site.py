@@ -22,6 +22,7 @@ from .enrich import PERSONAS, editor_note, load_chains, lookup as enrichment_for
 from . import notice
 from .states import by_topic as states_by_topic, totals as states_totals
 from .chatter import WINDOW_DAYS as CHATTER_WINDOW, by_topic as chatter_by_topic, last_run as chatter_last_run
+from .citizens import snapshot as citizen_snapshot
 from .announcements import load as load_announcements
 from .score import tag_impacts, tag_topics
 from .parse import Item
@@ -298,6 +299,8 @@ def _render_lang(lang: str, conn, scores, consultations, ctx: dict, n_items: int
         page="method.html", root=top, **ctx), encoding="utf-8")
     (out / "states.html").write_text(env.get_template("states.html").render(
         page="states.html", root=top, **ctx), encoding="utf-8")
+    (out / "citizens.html").write_text(env.get_template("citizens.html").render(
+        page="citizens.html", root=top, **ctx), encoding="utf-8")
 
 
 def brief(scores, consultations, k: int = 3) -> dict:
@@ -334,6 +337,7 @@ def build() -> None:
         chains=load_chains(conn), states=states_by_topic(conn), states_totals=states_totals(conn),
         images=load_images(), impacts=IMPACTS,
         chatter=chatter_by_topic(conn), chatter_run=chatter_last_run(conn), chatter_window=CHATTER_WINDOW,
+        citizens=citizen_snapshot(conn, today_d),
     )
 
     if OUT.exists():
@@ -341,6 +345,7 @@ def build() -> None:
     OUT.mkdir(parents=True)
     shutil.copytree(HERE / "static", OUT / "static")
     (OUT / ".nojekyll").write_text("")
+    (OUT / "citizens.json").write_text(json.dumps(ctx["citizens"], ensure_ascii=False, indent=1), encoding="utf-8")
 
     n_months = len(scores[0].months) if scores else 0
     n_items = conn.execute("SELECT COUNT(*) FROM items").fetchone()[0]
