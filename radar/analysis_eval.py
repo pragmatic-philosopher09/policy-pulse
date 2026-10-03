@@ -7,7 +7,7 @@ import re
 import time
 from datetime import datetime, timezone
 
-from .analysis import AnalysisError, Ollama, draft
+from .analysis import AnalysisError, Ollama, PROMPT_VERSION, draft
 
 
 def source(sid, text):
@@ -56,6 +56,29 @@ CASES = [
         "meaning": {"support": r"\b(withdraw\w*|revok\w*|revoc\w*)\b"},
         "excluded": [], "insufficient": False,
     },
+    {
+        "id": "negation-and-conditional",
+        "documents": [
+            source("s1", "I do not support DPDP rules as written because the complaints process is unclear."),
+            source("s2", "I would support DPDP rules only if consent withdrawal worked offline. Until then I have not decided whether to endorse them."),
+            source("s3", "How will DPDP rules handle complaints submitted without internet access?"),
+            source("s4", "I support the DPDP rules requirement to explain personal data collection clearly."),
+        ],
+        "required": {"concern": {"s1"}, "uncertainty": {"s2"}, "question": {"s3"}, "support": {"s4"}},
+        "forbidden": {"support": {"s1", "s2"}},
+        "excluded": [], "insufficient": False,
+    },
+    {
+        "id": "hindi-views",
+        "documents": [
+            source("s1", "मैं DPDP नियमों में सहमति वापस लेने की सुविधा का समर्थन करता हूँ।"),
+            source("s2", "DPDP नियमों के अनुपालन का खर्च छोटे व्यवसायों के लिए बहुत अधिक हो सकता है। मुझे इसकी चिंता है।"),
+            source("s3", "DPDP नियमों के तहत शिकायत दर्ज करने का तरीका क्या है?"),
+        ],
+        "required": {"support": {"s1"}, "concern": {"s2"}, "question": {"s3"}},
+        "meaning": {"support": r"\b(withdraw\w*|revok\w*|revoc\w*)\b"},
+        "excluded": [], "insufficient": False,
+    },
 ]
 
 
@@ -73,6 +96,10 @@ def check_case(case, result):
         summaries = " ".join(claim["summary"] for claim in result["claims"] if claim["kind"] == kind)
         if not re.search(pattern, summaries, re.IGNORECASE):
             errors.append(f"Missing required meaning in {kind} summary")
+    for kind, forbidden_ids in case.get("forbidden", {}).items():
+        cited = {c["source_id"] for claim in result["claims"] if claim["kind"] == kind for c in claim["citations"]}
+        if cited & forbidden_ids:
+            errors.append(f"Incorrectly attributed {kind}")
     all_cited = {c["source_id"] for claim in result["claims"] for c in claim["citations"]}
     if all_cited & set(case["excluded"]):
         errors.append("Excluded source used as evidence")
@@ -90,13 +117,15 @@ def evaluate(conn, model):
                 output = json.loads(row["result"])
                 errors = check_case(case, output)
                 results.append({"case": case["id"], "passed": not errors, "errors": errors,
-                                "draft_id": row["id"], "model_digest": row["model_digest"], "output": output})
+                                "draft_id": row["id"], "model_digest": row["model_digest"],
+                                "generation_options": json.loads(row["generation_options"]), "output": output})
             except AnalysisError as exc:
                 results.append({"case": case["id"], "passed": False, "errors": [str(exc)]})
             results[-1]["duration_seconds"] = round(time.monotonic() - started, 2)
     finally:
         client.close()
-    return {"synthetic_only": True, "model": model, "evaluated_at": datetime.now(timezone.utc).isoformat(),
+    return {"synthetic_only": True, "suite_version": "discussion-v2", "prompt_version": PROMPT_VERSION, "model": model,
+            "evaluated_at": datetime.now(timezone.utc).isoformat(),
             "acceptance": "All cases must pass shape, exact citation, attribution, exclusion and abstention checks",
             "limitation": "Small acceptance set, not a guarantee of semantic accuracy or multilingual quality",
             "passed": all(r["passed"] for r in results), "cases": results}

@@ -25,14 +25,18 @@ def conn(tmp_path):
 
 
 def output(sources, raw=False):
-    return {"insufficient": False, "claims": [
+    result = {"insufficient": False, "claims": [
         {"kind": "record", "summary": "The Ministry notified labour code rules.",
          "citations": [{"source_id": sources[0]["id"], "excerpt_id": "e1",
                         **({} if raw else {"quote": sources[0]["text"]})}]}], "excluded": []}
+    if raw:
+        del result["insufficient"]
+    return result
 
 
 class FakeModel:
     model = "test-local:8b"
+    generation_options = {}
     digest = "a" * 64
     calls = 0
     fail = False
@@ -277,6 +281,7 @@ def test_schema_constrains_categories_and_available_excerpt_ids(conn):
     assert citation["source_id"]["const"] == "prs-1"
     assert citation["excerpt_id"]["enum"] == ["e1"]
     assert "record" not in a.schema_for(sources, "synthetic")["properties"]["claims"]["items"]["properties"]["kind"]["enum"]
+    assert "insufficient" not in schema["properties"]
 
 
 def test_synthetic_cli_uses_isolated_database_and_rejects_public_report(tmp_path, monkeypatch):
@@ -293,3 +298,95 @@ def test_synthetic_cli_uses_isolated_database_and_rejects_public_report(tmp_path
     with pytest.raises(SystemExit) as error:
         __main__.main(["analyze", "--evaluate", "--output", "docs/review.json"])
     assert error.value.code == 1 and not (tmp_path / "docs").exists()
+
+
+@pytest.mark.parametrize("thinking,expected", [
+    (None, {}), ({"values": [False, True]}, {"think": False}),
+    ({"values": [False]}, {"think": False}),
+    ({"values": ["low", "high"]}, {}),
+])
+def test_thinking_controls_are_discovered_not_assumed(monkeypatch, thinking, expected):
+    client = a.Ollama()
+    payloads = []
+    def request(method, path, payload=None, **kwargs):
+        if path == "/api/tags":
+            return {"models": [{"name": client.model, "size": 10, "digest": "a" * 64}]}
+        if path == "/api/show":
+            return {} if thinking is None else {"thinking": thinking}
+        payloads.append(payload)
+        return {"done": True, "message": {"content": '{"insufficient":true,"claims":[],"excluded":[]}'}}
+    monkeypatch.setattr(client, "request", request)
+    assert client.identity() == "a" * 64
+    assert client.generation_options == expected
+    client.generate("topic", "synthetic", CASES[0]["documents"])
+    assert {k: v for k, v in payloads[0].items() if k == "think"} == expected
+    client.close()
+
+
+def test_generation_options_change_cache_key(conn):
+    client = FakeModel()
+    sources = a.record_sources(conn, "work")
+    first = a.draft(conn, "work", sources, client=client)
+    client.generation_options = {"think": False}
+    second = a.draft(conn, "work", sources, client=client)
+    assert first["id"] != second["id"] and client.calls == 2
+    assert json.loads(second["generation_options"]) == {"options": a.OPTIONS, "think": False}
+
+
+def test_legacy_drafts_migrate_without_inventing_generation_settings(conn):
+    legacy = a.SCHEMA.replace(",\n    generation_options TEXT NOT NULL DEFAULT '{}'", "")
+    conn.executescript(legacy)
+    assert "generation_options" not in {r["name"] for r in conn.execute("PRAGMA table_info(analysis_drafts)")}
+    conn.execute("INSERT INTO analysis_drafts VALUES ('old','work','policy_record','old','digest','v1','hash','now',NULL,'[]','{}')")
+    conn.commit()
+    a.initialize(conn)
+    a.initialize(conn)
+    assert conn.execute("SELECT generation_options FROM analysis_drafts WHERE id='old'").fetchone()[0] == "{}"
+
+
+def test_expanded_acceptance_catches_negated_support():
+    case = next(case for case in CASES if case["id"] == "negation-and-conditional")
+    result = {"insufficient": False, "excluded": [], "claims": [
+        {"kind": "support", "summary": "Support for these rules.", "citations": [{"source_id": "s1"}]}]}
+    assert "Incorrectly attributed support" in check_case(case, result)
+
+
+def test_invalid_thinking_metadata_fails_explicitly(monkeypatch):
+    client = a.Ollama()
+    def request(method, path, *args, **kwargs):
+        return ({"models": [{"name": client.model, "size": 10, "digest": "a" * 64}]}
+                if path == "/api/tags" else {"thinking": {"values": "false"}})
+    monkeypatch.setattr(client, "request", request)
+    with pytest.raises(a.AnalysisError, match="thinking controls"):
+        client.identity()
+    client.close()
+
+
+def test_older_ollama_qwen_thinking_capability(monkeypatch):
+    client = a.Ollama("qwen3:14b")
+    def request(method, path, *args, **kwargs):
+        return ({"models": [{"name": client.model, "size": 10, "digest": "a" * 64}]}
+                if path == "/api/tags" else {"details": {"family": "qwen3"}, "capabilities": ["completion", "thinking"]})
+    monkeypatch.setattr(client, "request", request)
+    client.identity()
+    assert client.generation_options == {"think": False}
+    client.close()
+
+
+def test_metadata_limit_is_separate_from_generation_limit(monkeypatch):
+    client = a.Ollama()
+    response = Response({"license": "x" * 58_000})
+    monkeypatch.setattr(client.session, "request", lambda *args, **kwargs: response)
+    assert client.request("POST", "/api/show", max_bytes=a.MAX_METADATA)["license"]
+    with pytest.raises(a.AnalysisError, match="size limit"):
+        client.request("POST", "/api/chat")
+    client.close()
+
+
+def test_abstention_is_derived_not_independently_generated(conn):
+    sources = a.record_sources(conn, "work")
+    assert a.resolve_citations({"claims": [], "excluded": []}, sources)["insufficient"] is True
+    assert a.resolve_citations(output(sources, raw=True), sources)["insufficient"] is False
+    inconsistent = {**output(sources, raw=True), "insufficient": True}
+    with pytest.raises(a.AnalysisError, match="output fields"):
+        a.resolve_citations(inconsistent, sources)

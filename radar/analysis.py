@@ -15,18 +15,20 @@ from .config import TOPIC_BY_SLUG
 
 log = logging.getLogger(__name__)
 OLLAMA = "http://127.0.0.1:11434"
-PROMPT_VERSION = "grounded-v3"
+PROMPT_VERSION = "grounded-v5"
 DEFAULT_MODEL = "deepseek-r1:8b"
 MAX_SOURCES = 6
 MAX_TEXT = 3000
 MAX_RESPONSE = 48_000
+MAX_METADATA = 256_000
 OPTIONS = {"temperature": 0, "seed": 42, "num_ctx": 8192, "num_predict": 1800}
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS analysis_drafts (
     id TEXT PRIMARY KEY, topic TEXT NOT NULL, kind TEXT NOT NULL,
     model TEXT NOT NULL, model_digest TEXT NOT NULL, prompt_version TEXT NOT NULL,
     input_hash TEXT NOT NULL, created_at TEXT NOT NULL, approved_at TEXT,
-    sources TEXT NOT NULL, result TEXT NOT NULL
+    sources TEXT NOT NULL, result TEXT NOT NULL,
+    generation_options TEXT NOT NULL DEFAULT '{}'
 );
 CREATE TABLE IF NOT EXISTS analysis_attempts (
     topic TEXT PRIMARY KEY, status TEXT NOT NULL, attempted_at TEXT NOT NULL,
@@ -36,9 +38,8 @@ CREATE TABLE IF NOT EXISTS analysis_attempts (
 KINDS = ["record", "support", "concern", "question", "uncertainty"]
 OUTPUT_SCHEMA = {
     "type": "object", "additionalProperties": False,
-    "required": ["insufficient", "claims", "excluded"],
+    "required": ["claims", "excluded"],
     "properties": {
-        "insufficient": {"type": "boolean"},
         "claims": {"type": "array", "maxItems": 5, "items": {
             "type": "object", "additionalProperties": False, "required": ["kind", "summary", "citations"],
             "properties": {
@@ -62,11 +63,15 @@ quotes or invent excerpt IDs. Use at most three excerpts per claim, including ad
 if needed. Cover ONLY what those selected excerpts support, not uncited details elsewhere.
 Keep different policy instruments distinct; exclude off-topic documents via their IDs.
 Do not infer public opinion from policy records. For policy_record inputs only use kind=record.
+Prioritize substantive changes or recommendations, not background definitions. Cover different
+relevant policy documents before adding another claim from the same document, up to five claims.
 For synthetic discussions distinguish support, concern, question and uncertainty. Attribute
 opinions to the supplied sample, never to Indians generally. Sarcasm and conditional support
 are uncertain unless explicit; do not flatten disagreement. Avoid unsupported percentages.
 If fewer than three relevant independent discussion sources, or no relevant policy documents,
-return insufficient=true and claims=[].
+return claims=[] and list excluded source IDs. Otherwise include one to five claims.
+Return exactly claims and excluded. The application derives the insufficient-evidence flag
+from an empty claims list; do not output a separate insufficient field.
 Preserve negation, exceptions, conditions and precise meanings when translating other languages.
 Summaries must be short, faithful paraphrases of cited excerpts. A source quote matching does
 not prove the paraphrase; a human must review the draft before publication.
@@ -75,6 +80,14 @@ not prove the paraphrase; a human must review the draft before publication.
 
 class AnalysisError(RuntimeError):
     pass
+
+
+def initialize(conn):
+    conn.executescript(SCHEMA)
+    columns = {row["name"] for row in conn.execute("PRAGMA table_info(analysis_drafts)")}
+    if "generation_options" not in columns:
+        with conn:
+            conn.execute("ALTER TABLE analysis_drafts ADD COLUMN generation_options TEXT NOT NULL DEFAULT '{}'")
 
 
 def canonical(value):
@@ -105,7 +118,8 @@ def excerpts(source):
 
 def resolve_citations(result, sources):
     """Attach quotes from our source bundle, never from model-generated text."""
-    if not isinstance(result, dict) or not isinstance(result.get("claims"), list):
+    if (not isinstance(result, dict) or set(result) != {"claims", "excluded"}
+            or not isinstance(result.get("claims"), list)):
         raise AnalysisError("Invalid output fields")
     evidence = {source["id"]: excerpts(source) for source in sources}
     for claim in result["claims"]:
@@ -118,6 +132,7 @@ def resolve_citations(result, sources):
             if not isinstance(sid, str) or not isinstance(eid, str) or eid not in evidence.get(sid, {}):
                 raise AnalysisError("Unknown source or excerpt ID")
             cite["quote"] = evidence[sid][eid]
+    result["insufficient"] = not result["claims"]
     return result
 
 
@@ -219,10 +234,11 @@ class Ollama:
         if not isinstance(model, str) or not re.fullmatch(r"[A-Za-z0-9._:/-]{1,100}", model):
             raise AnalysisError("Invalid model name")
         self.model = model
+        self.generation_options = {}
         self.session = requests.Session()
         self.session.trust_env = False  # Do not send private local requests through an HTTP proxy.
 
-    def request(self, method, path, payload=None, timeout=15):
+    def request(self, method, path, payload=None, timeout=15, max_bytes=MAX_RESPONSE):
         try:
             with self.session.request(method, OLLAMA + path, json=payload, stream=True,
                                       timeout=(5, timeout), allow_redirects=False) as response:
@@ -231,7 +247,7 @@ class Ollama:
                 body = bytearray()
                 for chunk in response.iter_content(4096):
                     body.extend(chunk)
-                    if len(body) > MAX_RESPONSE:
+                    if len(body) > max_bytes:
                         raise AnalysisError("Local model response exceeded size limit")
                 data = json.loads(body)
                 if not isinstance(data, dict) or data.get("error"):
@@ -253,6 +269,19 @@ class Ollama:
                     raise AnalysisError("Cloud-backed models are not allowed in local analysis")
                 if not isinstance(digest, str) or not re.fullmatch("[0-9a-f]{64}", digest):
                     raise AnalysisError("Missing valid installed model digest")
+                info = self.request("POST", "/api/show", {"model": self.model, "verbose": False}, max_bytes=MAX_METADATA)
+                thinking = info.get("thinking")
+                if thinking is not None and (
+                        not isinstance(thinking, dict) or not isinstance(thinking.get("values"), list)):
+                    raise AnalysisError("Invalid model thinking controls")
+                supports_false = thinking is not None and any(v is False for v in thinking["values"])
+                # Older Ollama exposes Qwen3's documented boolean control only as a capability.
+                details, capabilities = info.get("details", {}), info.get("capabilities", [])
+                if not isinstance(details, dict) or not isinstance(capabilities, list):
+                    raise AnalysisError("Invalid model capability metadata")
+                if thinking is None and details.get("family") == "qwen3":
+                    supports_false = "thinking" in capabilities
+                self.generation_options = {"think": False} if supports_false else {}
                 return digest
         raise AnalysisError(f"Model {self.model} is not installed locally; no automatic download or cloud fallback")
 
@@ -264,6 +293,7 @@ class Ollama:
             "messages": [{"role": "system", "content": SYSTEM},
                          {"role": "user", "content": canonical({"topic": topic, "kind": kind, "documents": documents})}],
             "options": OPTIONS,
+            **self.generation_options,
             "keep_alive": "2m",
         }, timeout=240)
         if data.get("done") is not True or data.get("done_reason") == "length":
@@ -288,7 +318,7 @@ def attempt(conn, topic, status, detail):
 
 
 def draft(conn, topic, sources, kind="policy_record", model=DEFAULT_MODEL, client=None):
-    conn.executescript(SCHEMA)
+    initialize(conn)
     if kind not in ("policy_record", "synthetic"):
         raise AnalysisError("Live social analysis is not enabled; use approved PRS records or synthetic evaluation")
     validate_sources(sources)
@@ -299,7 +329,9 @@ def draft(conn, topic, sources, kind="policy_record", model=DEFAULT_MODEL, clien
     source_hash = fingerprint(sources)
     try:
         digest = client.identity()
-        key = fingerprint([topic, kind, source_hash, client.model, digest, PROMPT_VERSION, OUTPUT_SCHEMA, SYSTEM, OPTIONS])
+        generation_options = {"options": OPTIONS, **client.generation_options}
+        key = fingerprint([topic, kind, source_hash, client.model, digest, PROMPT_VERSION,
+                           OUTPUT_SCHEMA, SYSTEM, generation_options])
         cached = conn.execute("SELECT * FROM analysis_drafts WHERE id=?", (key,)).fetchone()
         if cached:
             validate(json.loads(cached["result"]), sources, kind)
@@ -314,9 +346,9 @@ def draft(conn, topic, sources, kind="policy_record", model=DEFAULT_MODEL, clien
         validate(result, sources, kind)
         created = datetime.now(timezone.utc).isoformat()
         with conn:
-            conn.execute("INSERT INTO analysis_drafts VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+            conn.execute("INSERT INTO analysis_drafts VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
                          (key, topic, kind, client.model, digest, PROMPT_VERSION, source_hash, created, None,
-                          canonical(sources), canonical(result)))
+                          canonical(sources), canonical(result), canonical(generation_options)))
         attempt(conn, topic, "draft", "Citation references valid; semantic review and human approval required")
         return dict(conn.execute("SELECT * FROM analysis_drafts WHERE id=?", (key,)).fetchone())
     except AnalysisError as exc:
@@ -330,7 +362,7 @@ def draft(conn, topic, sources, kind="policy_record", model=DEFAULT_MODEL, clien
 
 def approve(conn, draft_id):
     """Explicit human action, bound to an exact immutable draft and unchanged source bundle."""
-    conn.executescript(SCHEMA)
+    initialize(conn)
     row = conn.execute("SELECT * FROM analysis_drafts WHERE id=?", (draft_id,)).fetchone()
     if not row or row["kind"] != "policy_record":
         raise AnalysisError("Only an existing PRS draft can be approved; synthetic results cannot be published")
@@ -347,7 +379,7 @@ def approve(conn, draft_id):
 
 def published(conn):
     """No inference during builds. Withhold stale, unreviewed, synthetic or invalid output."""
-    conn.executescript(SCHEMA)
+    initialize(conn)
     output = {}
     for row in conn.execute(
             "SELECT * FROM analysis_drafts WHERE approved_at IS NOT NULL AND kind='policy_record' ORDER BY approved_at DESC,id"):
@@ -370,5 +402,6 @@ def published(conn):
                                 date=by_id[citation["source_id"]]["date"])
         output[topic] = {"id": row["id"], "model": row["model"], "model_digest": row["model_digest"],
                          "prompt_version": row["prompt_version"], "created_at": row["created_at"],
+                         "generation_options": json.loads(row["generation_options"]),
                          "approved_at": row["approved_at"], "claims": result["claims"]}
     return output

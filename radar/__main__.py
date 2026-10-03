@@ -155,7 +155,8 @@ def main(argv: list[str] | None = None) -> None:
                 report = evaluate(conn, args.model)
             else:
                 row = analysis.draft(conn, args.topic, analysis.record_sources(conn, args.topic), model=args.model)
-                report = {**row, "sources": json.loads(row["sources"]), "result": json.loads(row["result"])}
+                report = {**row, "sources": json.loads(row["sources"]), "result": json.loads(row["result"]),
+                          "generation_options": json.loads(row["generation_options"])}
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
             log.info("Local analysis report: %s (not published)", out)

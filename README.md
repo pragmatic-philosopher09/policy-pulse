@@ -231,6 +231,9 @@ collection. Ollama must already be serving on `127.0.0.1:11434`. Requests disabl
 proxies and redirects; cloud-backed inventory entries are rejected. For defence in depth,
 also disable cloud features in your Ollama service configuration. Model weights have their
 own licenses; "open-weight" is not a blanket open-source or commercial-use guarantee.
+Qwen3 14B is another local candidate: its upstream model card lists an
+[Apache 2.0 license](https://huggingface.co/Qwen/Qwen3-14B), and the Ollama quantized download
+is approximately 9.3 GB. Downloading it is an explicit operator decision, not part of collection.
 
 ```bash
 # Synthetic-only acceptance checks; a local report, never the public website/dataset.
@@ -252,9 +255,19 @@ installed weight digest. Sources are bounded to 3,000 characters each; truncatio
 six-record selection limit mean this is **not** a comprehensive policy review. Each result
 contains at most five claims. The model selects source/excerpt IDs; the pipeline attaches the
 original text itself rather than asking the model to copy quotes (which can become paraphrases).
+The model returns claims and exclusions only; the application derives `insufficient` from
+an empty claims list. This removes contradictory generated flags without accepting invalid
+claims or suppressing a genuine abstention.
 Malformed/truncated JSON, missing/unknown citations, altered excerpts and insufficient
 discussion samples are rejected or explicitly abstained from, never replaced with fabricated
 success. Model errors are recorded and surfaced. There is no silent retry or remote fallback.
+The adapter reads Ollama's `/api/show` thinking controls and requests non-thinking output
+only when the model explicitly supports `false`; otherwise it preserves the model default.
+For older Ollama versions without that metadata, it also recognizes the Qwen3 family's
+documented boolean control when the server advertises its thinking capability.
+This keeps reasoning tokens from consuming the bounded structured-answer budget on compatible
+models. The chosen settings are saved in each draft and evaluation report and included in
+the cache key. Older drafts retain unknown settings (`{}`), not invented historical values.
 
 Only an explicitly approved PRS draft appears in the English/Hindi topic-page **Local AI
 policy notes** section and `analysis.json`. Generated prose and excerpts remain labelled
@@ -268,13 +281,23 @@ Exact excerpt matching checks provenance, **not semantic entailment**: a model c
 real quote to a misleading paraphrase. Human approval is mandatory. The small synthetic
 acceptance set covers mixed views, off-topic prompt injection, small-sample abstention and
 Hinglish attribution, including a regression check for confusing consent withdrawal with
-retrieval. Passing these bounded checks is not proof of semantic accuracy, population-level
+retrieval. Suite `discussion-v2` retains those four cases and adds negation/conditional support
+and Hindi-script statements. Its category and key-meaning checks are bounded regression
+assertions, not a general-purpose entailment judge. Compare candidates explicitly:
+
+```bash
+python -m radar analyze --evaluate --model deepseek-r1:8b --output .cache/analysis/deepseek-evaluation.json
+python -m radar analyze --evaluate --model qwen3:14b --output .cache/analysis/qwen-evaluation.json
+python -m radar analyze --topic work --model qwen3:14b --output .cache/analysis/qwen-work-draft.json
+```
+
+Passing these bounded checks is not proof of semantic accuracy, population-level
 accuracy or production readiness.
 Live X/Reddit model analysis remains disabled pending approved access, content-processing
 permissions and deletion compliance. PRS records are not used to invent public opinion.
 Hosted inference, automatic publication and new model downloads remain separate decisions.
 
-**Current model assessment (2026-10-03): not ready for unattended publication.** With prompt
+**Initial model assessment (2026-10-03): not ready for unattended publication.** With prompt
 `grounded-v3` and installed `deepseek-r1:8b` digest
 `28f8fd6cdc677661426adab9338ce3c013d7e69a5bea9e704b364171a5d61a10`,
 three of four synthetic cases passed; the Hinglish case missed the explicit support viewpoint.
@@ -284,6 +307,30 @@ but inspection found several summaries paired with excerpts that did not support
 It remains **unapproved**. This demonstrates why excerpt existence is not a truth or
 entailment check. Improve/evaluate the model before expanding to live discussion synthesis;
 do not remove the publication gate to make an evaluation appear successful.
+
+**Local comparison (2026-10-03): Qwen3 improves results, but neither model is publication-ready.**
+Using suite `discussion-v2`, prompt `grounded-v5`, an 8,192-token context, 1,800 output-token
+limit, temperature 0 and seed 42:
+
+| Model | Synthetic cases passed | Local inference per case | Remaining findings |
+|---|---:|---:|---|
+| `deepseek-r1:8b` | 2 / 6 | 27–41 seconds | Incorrect exclusions/sample handling, Hinglish rendering, missing question attribution |
+| `qwen3:14b` (`think: false`) | 5 / 6 | 17–25 seconds | Copied Hinglish rather than producing the required English summary |
+
+The small-sample case abstains without inference and is included in both totals, not in the
+timing ranges. Qwen3's installed digest is
+`bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8`.
+These are small, single-run acceptance results, not general benchmark scores. Earlier prompt
+variants produced different results; the model is sensitive to the output contract.
+
+The Qwen3 PRS draft covers all three selected `work` records, but review still found unfinished
+sentences and claims extending beyond their selected excerpts. It remains unapproved, and
+no default-model promotion, automatic publication or live social inference was enabled.
+Use `--model qwen3:14b` explicitly for further local experiments. Ignored reports under
+`.cache/analysis/` preserve the full outputs, including
+`qwen3-discussion-v2-grounded-v5.json`, `deepseek-discussion-v2-grounded-v5.json`, and
+`qwen3-work-grounded-v5.json`. Synthetic reports are not part of the website or committed
+dataset; PRS candidates are separately retained in SQLite as unapproved drafts.
 
 **Phase 3 (planned): source-grounded assistant.** Add read-only tools for policy evidence,
 discussion samples and coverage. MCP is optional tool transport, not an API-access workaround
