@@ -21,6 +21,7 @@ import logging
 import re
 import sqlite3
 import time
+import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -121,7 +122,7 @@ def _fetch(query: str, after: date, before: date) -> str:
     q = f"{query} after:{after.isoformat()} before:{before.isoformat()}"
     url = GN.format(q=quote_plus(q))
     path = CACHE_DIR / (hashlib.sha1(url.encode()).hexdigest() + ".xml")
-    if path.exists():
+    if path.exists() and time.time() - path.stat().st_mtime < 7 * 86400:
         return path.read_text(encoding="utf-8")
     wait = DELAY - (time.monotonic() - _last)
     if wait > 0:
@@ -193,11 +194,13 @@ CREATE TABLE IF NOT EXISTS crosscheck_runs (
 
 
 def crosscheck(conn: sqlite3.Connection, uids: list[str], recheck_days: int = 30) -> int:
+    from .health import IncompleteCollection
     conn.executescript(SCHEMA)
     done = {r["uid"]: r["checked_at"] for r in conn.execute("SELECT uid, checked_at FROM crosscheck_runs")}
     cutoff = (datetime.utcnow() - timedelta(days=recheck_days)).strftime("%Y-%m-%d %H:%M:%S")
     todo = [u for u in uids if u not in done or done[u] < cutoff]
     n = 0
+    failures = 0
     for uid in todo:
         row = conn.execute("SELECT title, month FROM items WHERE uid = ?", (uid,)).fetchone()
         if not row:
@@ -210,11 +213,16 @@ def crosscheck(conn: sqlite3.Connection, uids: list[str], recheck_days: int = 30
                            if w.lower() not in _STOP)[:120]
         kept: list[tuple] = []
         seen_outlets: set[str] = set()
+        failed = False
         for q, toks in ((query, tokens), (loose_q, tokens | loose_tokens)):
             try:
-                hits = _parse(_fetch(q, first - timedelta(days=45), first + timedelta(days=75)))
+                xml = _fetch(q, first - timedelta(days=45), first + timedelta(days=75))
+                if ET.fromstring(xml).tag != "rss":
+                    raise ValueError("Expected Google News RSS")
+                hits = _parse(xml)
             except Exception as exc:
                 log.warning("crosscheck failed for %s: %s", uid, exc)
+                failed = True
                 break
             for h in hits:
                 kind, outlet = classify(h["source_url"])
@@ -229,12 +237,17 @@ def crosscheck(conn: sqlite3.Connection, uids: list[str], recheck_days: int = 30
                     break
             if len(kept) >= 2 or q == loose_q:
                 break
+        if failed:
+            failures += 1
+            continue
         with conn:
             conn.execute("DELETE FROM corroborations WHERE uid = ?", (uid,))
             conn.executemany("INSERT OR IGNORE INTO corroborations VALUES (?,?,?,?,?,?)", kept)
             conn.execute("INSERT OR REPLACE INTO crosscheck_runs (uid, query, n_results) VALUES (?,?,?)",
                          (uid, query, len(kept)))
         n += 1
+    if failures:
+        raise IncompleteCollection(f"{failures} cross-checks failed; previous corroborations retained")
     return n
 
 

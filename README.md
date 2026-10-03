@@ -101,6 +101,8 @@ PRS Monthly Policy Review + PRS Announcements (CC BY 4.0)     public feeds & API
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+ANTHROPIC_API_KEY='' python -m radar collect --daily  # monitored feeds + consultation/citizen samples, build
+ANTHROPIC_API_KEY='' python -m radar collect --months 18  # also PRS, states, independent cross-checks
 python -m radar run --months 18          # ingest, retag, summarise, translate, enrich, crosscheck, build
 python -m radar notify --digest --pings  # prints the Telegram messages (dry run without a bot token)
 python -m http.server -d docs 8000       # open http://localhost:8000
@@ -130,8 +132,9 @@ python -m radar citizens  # at most 16 searches + one token request; credentials
 python -m radar build     # render the latest stored snapshot without API calls
 ```
 
-The daily 09:30 IST workflow collects discussions, sends deadline reminders, builds, commits
-the database/site, and deploys. Weekly `radar run` also collects; successful domain/platform
+The daily 09:30 IST workflow collects discussions and public feeds, builds, commits
+the database/site, and deploys before sending deadline reminders. Weekly collection also runs;
+successful domain/platform
 samples are not queried again on the same UTC day. Each search returns at most 25 recent
 results without pagination (up to 200 per platform). X's recent window is normally seven days,
 Reddit's search window is a month. These different sampling frames cannot be compared as population
@@ -165,8 +168,11 @@ without it the pipeline uses first sentences and the seed files in `data/`.
 
 **GitHub Pages (current, $0):**
 
-1. Push to `main`. The workflow in `.github/workflows/radar.yml` runs every Monday 09:00 IST,
-   commits refreshed `data/` + `docs/`, and deploys to GitHub Pages.
+1. Merge changes into the intended deployment repository's `main`. The workflow in
+   `.github/workflows/radar.yml` runs weekly at 09:00 IST Monday and daily at 09:30 IST
+   (GitHub can delay cron jobs). It commits refreshed `data/` + `docs/` and deploys to Pages.
+   GitHub-hosted runners must be permitted for that repository; a workflow cannot override
+   an organization/enterprise runner restriction.
 2. In repo **Settings → Pages**, set source to **GitHub Actions**.
 3. Secrets: `ANTHROPIC_API_KEY` (optional), `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` (for the channel),
    `REDDIT_CLIENT_ID` + `REDDIT_CLIENT_SECRET` and `X_BEARER_TOKEN` (optional, for Citizen's Corner).
@@ -190,6 +196,44 @@ scale — history compounds publicly and anyone can `git clone` the whole datase
 git (or the site needs live queries), a hosted database and API can replace this storage/build
 boundary. PostgreSQL is not a drop-in connection change: SQLite-specific SQL, migrations,
 transaction handling and deployment would also need adapting. No hosted backend is required today.
+
+## Phased open-source rollout
+
+**Phase 1: observable collection.** The scheduled path uses `radar collect`, with model access
+disabled in Actions. PRS reviews/state Bills/cross-checks run weekly; consultations, public
+news/social feeds and configured citizen APIs run daily. Each stage records its own outcome
+in `pipeline_health`; one source outage does not prevent other sources from collecting or
+the last available dataset and health report from being built.
+
+`health.html` (English/Hindi) and `health.json` distinguish collection attempts from page
+generation. Missing historical monitoring is shown as unknown, not backfilled as success.
+Daily sources become stale after two days without a complete monitored run; weekly sources
+after eight days. Completion can include valid cached responses and is not a guarantee of
+exhaustive coverage. Citizen's Corner retains finer per-domain/platform status; unconfigured
+X/Reddit is expected and does not trigger requests. Run `collect` for monitored collection;
+the legacy individual CLI commands and model-enabled `run` do not update this stage report.
+
+Failed cross-checks retain the previous corroborations and retry eligibility. Cross-check
+response caches expire after seven days. State listing refreshes refetch all visited pages,
+not only the first. Chatter validates feed/API envelopes, uses a hard request budget without
+429 retry loops, and stores Retry-After cooldowns in SQLite across invocations. A partial
+sample is explicitly marked partial, even when useful records were collected.
+
+The workflow publishes the health report and available data after collection failures, then
+reports failure in a separate job so it remains visible in Actions. Build/test/deployment
+errors still stop the affected jobs. Telegram notifications run after deployment and cannot
+prevent publishing the site. Source health is also copied to the workflow summary.
+
+**Phase 2 (planned): local open-weight analysis via Ollama.** Start locally, then optionally
+choose a hosted open-weight API with an explicit spending cap. No model download, external
+inference service, paid account or automatic model upgrade is enabled by Phase 1. Model
+licenses and platform permission to process source content must be checked before use.
+Inference should produce source-linked drafts, never change deterministic policy scores,
+and expose model/version and uncertainty.
+
+**Phase 3 (planned): source-grounded assistant.** Add read-only tools for policy evidence,
+discussion samples and coverage. MCP is optional tool transport, not an API-access workaround
+or a replacement for the scheduler/database. Hosted storage is a separate deployment decision.
 
 ## Roadmap
 

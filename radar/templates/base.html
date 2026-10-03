@@ -50,6 +50,7 @@
 </main>
 <footer>
   <div class="wrap">
+    <p><a href="{{ root }}{{ '' if lang == 'en' else lang ~ '/' }}health.html">{{ t('health_title') }}</a> — {{ t('health_intro') }}</p>
     <nav class="sitemap" aria-label="{{ t('site_title') }}">
       <a href="{{ root }}{{ '' if lang == 'en' else lang ~ '/' }}citizens.html">{{ t('citizen_title') }}</a>
       <a href="{{ root }}{{ '' if lang == 'en' else lang ~ '/' }}index.html">{{ t('this_week') }}</a>

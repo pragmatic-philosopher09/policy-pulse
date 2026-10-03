@@ -32,6 +32,7 @@ env:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -39,28 +40,47 @@ jobs:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Ingest, enrich, cross-check, build
-        if: github.event.schedule != '0 4 * * *'
-        run: python -m radar run --months 18
-      - name: Daily public discussion sample and deadlines
-        if: github.event.schedule == '0 4 * * *'
+      - name: Regression tests
+        run: python -m pytest -q
+      - name: Collect and publish source health (no model required)
+        id: collect
+        continue-on-error: true
+        env:
+          DAILY: ${{ github.event.schedule == '0 4 * * *' }}
+          ANTHROPIC_API_KEY: ""
         run: |
-          python -m radar citizens
-          python -m radar notify --pings
+          if [ "$DAILY" = "true" ]; then
+            python -m radar collect --daily
+          else
+            python -m radar collect --months 18
+          fi
+      - name: Verify generated health and save workflow summary
+        env:
+          ANTHROPIC_API_KEY: ""
+        run: |
           python -m radar build
-      - name: Post weekly digest + any deadline pings
-        if: github.event.schedule != '0 4 * * *'
-        run: python -m radar notify --digest --pings
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          report = json.loads(Path("docs/health.json").read_text())
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as out:
+              out.write("## Source collection health\n\n")
+              out.write("| Source | Last result | Stale | Last complete collection |\n|---|---|---|---|\n")
+              for row in report["sources"]:
+                  out.write(f"| {row['source']} | {row['status']} | {row['stale']} | {row['successful_at'] or 'Never'} |\n")
+          PY
       - name: Commit data + site
         run: |
           git config user.name "policy-pulse-bot"
           git config user.email "policy-pulse-bot@users.noreply.github.com"
           git add data docs
-          git diff --cached --quiet || git commit -m "chore: weekly Policy Pulse update $(date -u +%F)"
+          git diff --cached --quiet || git commit -m "chore: Policy Pulse collection $(date -u +%F)"
           git push
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
+    outputs:
+      collection: ${{ steps.collect.outcome }}
 
   deploy:
     needs: publish
@@ -71,3 +91,43 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  report-failures:
+    needs: [publish, deploy]
+    if: always() && needs.publish.outputs.collection == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "::error::Collection was incomplete. Inspect the source health report and collection logs; the last available data remains visible."
+          exit 1
+
+  notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Send digest or deadline reminders
+        env:
+          DAILY: ${{ github.event.schedule == '0 4 * * *' }}
+        run: |
+          if [ "$DAILY" = "true" ]; then
+            python -m radar notify --pings
+          else
+            python -m radar notify --digest --pings
+          fi
+      - name: Save notification receipts
+        if: always()
+        run: |
+          git config user.name "policy-pulse-bot"
+          git config user.email "policy-pulse-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "chore: notification receipts $(date -u +%F)"
+          git push

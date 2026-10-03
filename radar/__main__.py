@@ -30,6 +30,7 @@ from .announcements import refresh as refresh_announcements
 from .states import refresh as refresh_states
 from .chatter import refresh as refresh_chatter
 from .citizens import refresh as refresh_citizens
+from .health import IncompleteCollection, run_stage
 
 log = logging.getLogger("radar")
 
@@ -45,6 +46,7 @@ def ingest(months: int, refresh_latest: int = 2) -> None:
     """Fetch the last ``months`` reviews. Only the newest ``refresh_latest`` are re-fetched."""
     conn = db.connect()
     have = set(db.months_present(conn))
+    invalid = 0
     for i, d in enumerate(_month_iter(months)):
         ym = iso_month(d)
         force = i < refresh_latest
@@ -58,6 +60,7 @@ def ingest(months: int, refresh_latest: int = 2) -> None:
         items = parse_month(html, d, source_url=url)
         if not items:
             log.warning("%s parsed to zero items — layout change?", ym)
+            invalid += 1
             continue
         actions = {it.uid: classify_action(it.title) for it in items}
         topics = {it.uid: tag_topics(it) for it in items}
@@ -68,6 +71,35 @@ def ingest(months: int, refresh_latest: int = 2) -> None:
     # Re-apply current keyword/action rules to everything so config edits propagate
     n = db.retag_all(conn, classify_action, tag_topics, tag_impacts)
     log.info("retagged %d stored items", n)
+    if not db.months_present(conn):
+        raise IncompleteCollection("No PRS reviews available; collection cannot establish a policy baseline")
+    if invalid:
+        raise IncompleteCollection(f"{invalid} PRS review pages parsed to zero items; stored reviews retained")
+
+
+def collect(daily=False, months=18):
+    """Network stages are independent; publishing health must not depend on model availability."""
+    from .build_site import build
+    from .citizens import snapshot
+    conn = db.connect()
+
+    def citizens():
+        refresh_citizens(conn)
+        sources = [s for d in snapshot(conn)["domains"] for s in d["sources"].values()]
+        failures = [s for s in sources if s["status"] not in ("ok", "not_configured")]
+        if failures:
+            raise IncompleteCollection(f"{len(failures)} X/Reddit domain samples failed; see Citizen's Corner")
+        if all(s["status"] == "not_configured" for s in sources):
+            return "not_configured"
+
+    stages = [("announcements", lambda: refresh_announcements(conn))]
+    if not daily:
+        stages += [("prs", lambda: ingest(months)), ("states", lambda: refresh_states(conn)),
+                   ("crosscheck", lambda: crosscheck(conn, visible_uids(conn)))]
+    stages += [("chatter", lambda: refresh_chatter(conn)), ("citizens", citizens)]
+    results = [run_stage(conn, source, callback) for source, callback in stages]
+    build()
+    return all(results)
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -87,10 +119,17 @@ def main(argv: list[str] | None = None) -> None:
     sub.add_parser("chatter", help="public chatter: whitelisted news feeds, GDELT, Bluesky, Mastodon; clustered + credibility-gated")
     sub.add_parser("build")
     sub.add_parser("citizens", help="sample X and Reddit policy discussions using approved API credentials")
+    c = sub.add_parser("collect", help="monitored model-free collection; builds health even after source failures")
+    c.add_argument("--daily", action="store_true", help="refresh announcements, chatter and citizen samples only")
+    c.add_argument("--months", type=int, default=18)
     n = sub.add_parser("notify", help="post to Telegram (dry run without TELEGRAM_BOT_TOKEN)")
     n.add_argument("--digest", action="store_true")
     n.add_argument("--pings", action="store_true")
     args = p.parse_args(argv)
+    if args.cmd == "collect":
+        if not collect(daily=args.daily, months=args.months):
+            raise SystemExit(1)
+        return
 
     if args.cmd in ("ingest", "run"):
         ingest(args.months)

@@ -71,15 +71,19 @@ def parse_list(html: str) -> list[dict]:
 def _fetch_all(url_tpl: str, year: int, force_first: bool) -> list[dict]:
     rows: list[dict] = []
     for page in range(MAX_PAGES):
-        html = fetch(url_tpl.format(year=year, page=page), force=(force_first and page == 0))
+        html = fetch(url_tpl.format(year=year, page=page), force=force_first)
         if not html:
-            break
+            from .health import IncompleteCollection
+            raise IncompleteCollection(f"State listing unavailable for {year}, page {page}")
         batch = parse_list(html)
         if not batch:
             break
         rows.extend(batch)
         if len(batch) < 50:
             break
+    else:
+        from .health import IncompleteCollection
+        raise IncompleteCollection(f"State listing reached page cap for {year}")
     return rows
 
 

@@ -128,14 +128,15 @@ def link_to_items(conn: sqlite3.Connection) -> int:
 
 
 def refresh(conn: sqlite3.Connection, force: bool = True) -> int:
+    from .health import IncompleteCollection
     conn.executescript(SCHEMA)
     html = fetch(URL, force=force)
     if not html:
-        return 0
+        raise IncompleteCollection("Announcements unavailable; previous records retained")
     rows = parse(html)
     if not rows:
         log.warning("announcements page parsed to zero rows — layout change?")
-        return 0
+        raise IncompleteCollection("Announcements parsed to zero rows; previous records retained")
     today = date.today().isoformat()
     with conn:
         for r in rows:

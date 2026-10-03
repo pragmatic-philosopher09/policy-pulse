@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}{{ t('health_title') }} — {{ t('site_title') }}{% endblock %}
+{% block nav %}{% endblock %}
+{% block body %}
+<article class="prose">
+  <h1>{{ t('health_title') }}</h1>
+  <p class="lede">{{ t('health_intro') }}</p>
+  <p>{{ t('health_limits') }}</p>
+  <p>{{ t('health_generated') }}: {{ health.generated_at }} · <a href="{{ root }}health.json">health.json</a></p>
+  {% for source in health.sources %}
+  <section class="card">
+    <h2>{{ t('health_source_' ~ source.source) }}</h2>
+    <p><b>{{ t('health_status_' ~ source.status) }}</b>
+      {% if source.stale %} · {{ t('health_stale') }}{% endif %}</p>
+    <dl>
+      <dt>{{ t('health_attempt') }}</dt><dd>{{ source.checked_at or t('health_never') }}</dd>
+      <dt>{{ t('health_success') }}</dt><dd>{{ source.successful_at or t('health_never') }}</dd>
+      <dt>{{ t('health_threshold') }}</dt><dd>{{ source.stale_after_days }} {{ t('health_days') }}</dd>
+    </dl>
+    <p lang="en">{{ source.detail }}</p>
+  </section>
+  {% endfor %}
+  <p><a href="citizens.html">{{ t('citizen_title') }}</a> · <a href="index.html">{{ t('back') }}</a></p>
+</article>
+{% endblock %}

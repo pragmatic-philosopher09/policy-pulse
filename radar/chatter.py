@@ -44,6 +44,7 @@ import os
 import re
 import sqlite3
 import time
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -154,57 +155,72 @@ _GENERIC = {"india", "indian", "government", "govt", "centre", "modi", "bjp", "c
 # Polite HTTP: per-host spacing, disk cache with TTL, 429/Retry-After handling, global budget.
 
 class _Http:
-    def __init__(self) -> None:
+    def __init__(self, conn=None) -> None:
         self.last: dict[str, float] = {}
         self.n = 0
         self.disabled: set[str] = set()
-        self.throttled: set[str] = set()
+        self.failures: set[str] = set()
+        self.cached = 0
+        self.conn = conn
+        if conn is not None:
+            conn.execute("CREATE TABLE IF NOT EXISTS chatter_cooldowns (host TEXT PRIMARY KEY, until_at REAL NOT NULL)")
 
     def get(self, url: str, *, headers: dict | None = None, ttl_hours: float = CACHE_TTL_HOURS,
             cache_key: str | None = None) -> str | None:
         key = hashlib.sha1((cache_key or url).encode()).hexdigest()
         path = CACHE_DIR / (key + ".txt")
         if path.exists() and (time.time() - path.stat().st_mtime) < ttl_hours * 3600:
+            self.cached += 1
             return path.read_text(encoding="utf-8")
         host = urlparse(url).netloc.lower()
+        cooldown = self.conn.execute("SELECT until_at FROM chatter_cooldowns WHERE host=?", (host,)).fetchone() if self.conn is not None else None
+        if cooldown and cooldown[0] > time.time():
+            self.disabled.add(host)
         if host in self.disabled or self.n >= MAX_REQUESTS:
+            self.failures.add(host)
             return None
         wait = HOST_DELAY.get(host, HOST_DELAY["default"]) - (time.monotonic() - self.last.get(host, 0.0))
         if wait > 0:
             time.sleep(wait)
         h = {"User-Agent": USER_AGENT, "Accept": "application/json, application/rss+xml, application/atom+xml, text/xml, */*"}
         h.update(headers or {})
-        for attempt in range(2):
-            try:
-                resp = requests.get(url, headers=h, timeout=15)
-            except requests.RequestException as exc:
-                log.warning("GET %s failed: %s", host, exc)
-                self.last[host] = time.monotonic()
-                self.n += 1
-                return None
+        try:
+            resp = requests.get(url, headers=h, timeout=15)
+        except requests.RequestException as exc:
+            log.warning("GET %s failed: %s", host, exc)
+            self.failures.add(host)
+            return None
+        finally:
             self.last[host] = time.monotonic()
             self.n += 1
-            if resp.status_code == 429:
-                if attempt == 0 and host not in self.throttled:
-                    retry = min(float(resp.headers.get("Retry-After") or 20), 30.0)
-                    log.info("%s rate-limited; sleeping %.0fs", host, retry)
-                    self.throttled.add(host)
-                    time.sleep(retry)
-                    continue
-                log.info("%s keeps rate-limiting — source skipped for this run", host)
-                self.disabled.add(host)
-                return None
-            if resp.status_code in (401, 403):
-                log.info("%s answered %s — source skipped for this run", host, resp.status_code)
-                self.disabled.add(host)
-                return None
-            if resp.status_code >= 400:
-                log.warning("GET %s -> %s", url[:90], resp.status_code)
-                return None
-            CACHE_DIR.mkdir(parents=True, exist_ok=True)
-            path.write_text(resp.text, encoding="utf-8")
-            return resp.text
-        return None
+        if resp.status_code == 429:
+            until = time.time() + 900
+            retry = resp.headers.get("Retry-After")
+            if retry:
+                try:
+                    until = max(until, time.time() + float(retry) if retry.isdigit()
+                                else parsedate_to_datetime(retry).timestamp())
+                except (TypeError, ValueError, OverflowError):
+                    log.warning("Invalid Retry-After from %s; pausing for 15 minutes", host)
+            if self.conn is not None:
+                with self.conn:
+                    self.conn.execute("INSERT OR REPLACE INTO chatter_cooldowns VALUES (?,?)", (host, until))
+            log.warning("%s rate-limited; skipping until reset", host)
+            self.failures.add(host)
+            self.disabled.add(host)
+            return None
+        if resp.status_code in (401, 403):
+            log.info("%s answered %s — source skipped for this run", host, resp.status_code)
+            self.disabled.add(host)
+            self.failures.add(host)
+            return None
+        if not 200 <= resp.status_code < 300:
+            self.failures.add(host)
+            log.warning("GET %s -> %s", url[:90], resp.status_code)
+            return None
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        path.write_text(resp.text, encoding="utf-8")
+        return resp.text
 
 
 # ---------------------------------------------------------------------------
@@ -630,31 +646,46 @@ def fetch_all(http: _Http | None = None, topics: dict[str, tuple[str, ...]] | No
     topics = topics or CHATTER_QUERIES
     docs: list[Doc] = []
 
-    for outlet, url in RSS_FEEDS:
+    def collect(url, parser, *args):
         body = http.get(url)
-        if body:
-            docs.extend(parse_feed(body, outlet))
+        if body is None:
+            return False
+        try:
+            if parser in (parse_feed, parse_gnews):
+                root = ET.fromstring(body)
+                if root.tag.rsplit("}", 1)[-1] not in ("rss", "feed", "RDF"):
+                    raise ValueError("Not a feed")
+            else:
+                payload = json.loads(body)
+                if parser == parse_mastodon:
+                    valid = isinstance(payload, list)
+                else:
+                    key = "articles" if parser == parse_gdelt else "posts"
+                    valid = isinstance(payload, dict) and isinstance(payload.get(key), list)
+                if not valid:
+                    raise ValueError("Unexpected API response")
+            docs.extend(parser(body, *args))
+        except (ValueError, TypeError, KeyError, AttributeError, ET.ParseError) as exc:
+            log.warning("Invalid chatter payload from %s: %s", urlparse(url).hostname, type(exc).__name__)
+            http.failures.add(urlparse(url).netloc)
+            return False
+        return True
+
+    for outlet, url in RSS_FEEDS:
+        collect(url, parse_feed, outlet)
 
     for tag in MASTODON_TAGS:
         for inst in MASTODON_INSTANCES:
-            body = http.get(f"https://{inst}/api/v1/timelines/tag/{tag}?limit=40&local=false")
-            if body:
-                docs.extend(parse_mastodon(body, inst))
+            collect(f"https://{inst}/api/v1/timelines/tag/{tag}?limit=40&local=false", parse_mastodon, inst)
 
     for slug, queries in topics.items():
         # GDELT supports OR inside parentheses: one 5.5s request per topic instead of one per phrase
         gq = "(" + " OR ".join(f'"{q}"' for q in queries) + ") sourcecountry:IN"
-        body = http.get(GDELT.format(q=quote_plus(gq)))
-        if body:
-            docs.extend(parse_gdelt(body))
+        collect(GDELT.format(q=quote_plus(gq)), parse_gdelt)
         for q in queries:
-            body = http.get(GNEWS.format(q=quote_plus(f'"{q}"')))
-            if body:
-                docs.extend(parse_gnews(body))
+            collect(GNEWS.format(q=quote_plus(f'"{q}"')), parse_gnews)
             for tpl in BLUESKY:
-                body = http.get(tpl.format(q=quote_plus(f"{q}")))
-                if body is not None:
-                    docs.extend(parse_bluesky(body))
+                if collect(tpl.format(q=quote_plus(f"{q}")), parse_bluesky):
                     break
     log.info("chatter: %d raw posts/articles from %d requests", len(docs), http.n)
     return docs
@@ -744,7 +775,8 @@ def _load_window(conn: sqlite3.Connection, since: date) -> dict[str, list[Doc]]:
     by_topic: dict[str, list[Doc]] = {}
     rows = conn.execute(
         """SELECT d.*, t.topic, t.hits FROM chatter_docs d JOIN chatter_doc_topics t ON t.doc_id = d.id
-           WHERE d.quality >= 0.35 AND COALESCE(d.published, d.first_seen) >= ?""", (since.isoformat(),)).fetchall()
+           WHERE d.quality >= 0.35 AND COALESCE(d.published, d.first_seen) BETWEEN ? AND ?""",
+        (since.isoformat(), (since + timedelta(days=WINDOW_DAYS)).isoformat())).fetchall()
     for r in rows:
         d = Doc(source=r["source"], kind=r["kind"], outlet=r["outlet"], author=r["author"], url=r["url"], title=r["title"],
                 text=r["text"], published=r["published"] or r["first_seen"], engagement=r["engagement"], links=json.loads(r["links"]),
@@ -771,7 +803,7 @@ def refresh(conn: sqlite3.Connection, today: date | None = None, docs: list[Doc]
     """Fetch (unless docs given), gate, tag, store, cluster per topic, store clusters. Returns #clusters shown."""
     conn.executescript(SCHEMA)
     today = today or date.today()
-    http = _Http()
+    http = _Http(conn)
     fetched = fetch_all(http) if docs is None else docs
     kept: list[Doc] = []
     seen_urls: set[str] = set()
@@ -820,6 +852,11 @@ def refresh(conn: sqlite3.Connection, today: date | None = None, docs: list[Doc]
         # keep the table from growing forever; the clusters are recomputed from the window anyway
         conn.execute("DELETE FROM chatter_docs WHERE COALESCE(published, first_seen) < ?", ((today - timedelta(days=180)).isoformat(),))
     log.info("chatter: kept %d/%d, %d conversations (%d shown)", len(kept), len(fetched), n_clusters, n_shown)
+    if http.failures:
+        from .health import IncompleteCollection
+        raise IncompleteCollection(
+            f"Partial chatter sample: {len(fetched)} documents; {http.n} requests; "
+            f"{http.cached} cached responses; unavailable hosts: {', '.join(sorted(http.failures))}")
     return n_shown
 
 
@@ -833,9 +870,10 @@ def by_topic(conn: sqlite3.Connection, limit: int = 8) -> dict[str, dict]:
                                           platforms=set(), n_posts=0) for t in TOPICS}
     items = {r["uid"]: dict(r) for r in conn.execute("SELECT uid, title, month, action FROM items")}
     rows = conn.execute(
-        """SELECT * FROM chatter_clusters ORDER BY topic,
+        """SELECT * FROM chatter_clusters WHERE last_seen BETWEEN ? AND ? ORDER BY topic,
            CASE credibility WHEN 'confirmed' THEN 0 WHEN 'reported' THEN 1 WHEN 'community' THEN 2 ELSE 3 END,
-           n_docs DESC, engagement DESC, last_seen DESC""").fetchall()
+           n_docs DESC, engagement DESC, last_seen DESC""",
+        ((date.today() - timedelta(days=WINDOW_DAYS)).isoformat(), date.today().isoformat())).fetchall()
     for r in rows:
         d = out.get(r["topic"])
         if d is None:
