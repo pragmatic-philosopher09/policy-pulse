@@ -64,6 +64,30 @@
         <div class="acc-body"><ul class="caveats">{% for r in ts.confidence_reasons %}<li>{{ r | msg }}</li>{% endfor %}</ul></div></details>
       {% if ts.connections %}<p class="connections">{{ t('connections_h') }}: {% for c in ts.connections %}<a href="{{ c.slug }}.html" class="tag topic" title="{{ t('shared_items', items=(c.shared | join('; '))) }}">{{ c.topic.label(lang) }}</a>{% endfor %}</p>{% endif %}
     </div>
+    <section class="card" aria-label="{{ t('analysis_h') }}">
+      <h3>{{ t('analysis_h') }}</h3>
+      {% set note = analysis.get(ts.topic.slug) %}
+      {% if note %}
+      <p class="mute">{{ t('analysis_method') }}</p>
+      {% for claim in note.claims %}
+      <p lang="en">{{ claim.summary }}</p>
+      <details class="acc"><summary>{{ t('analysis_evidence') }}</summary><div class="acc-body">
+        {% for cite in claim.citations %}
+        <blockquote lang="en">{{ cite.quote }}</blockquote>
+        <p><a href="{{ cite.url }}" target="_blank" rel="noopener">{{ cite.title }}</a> · {{ cite.date }} · PRS Legislative Research</p>
+        {% endfor %}
+      </div></details>
+      {% endfor %}
+      <p class="mute">{{ t('analysis_metadata') }}: {{ note.model }} · {{ note.created_at[:10] }} /
+        {{ note.approved_at[:10] }}</p>
+      <details class="acc"><summary>{{ t('analysis_provenance') }}</summary><div class="acc-body">
+        <p>{{ note.prompt_version }} · <code style="overflow-wrap:anywhere">{{ note.model_digest }}</code></p>
+        <p><code style="overflow-wrap:anywhere">{{ note.id }}</code></p>
+      </div></details>
+      {% else %}
+      <p class="mute">{{ t('analysis_pending') }}</p>
+      {% endif %}
+    </section>
     </div>
   </section>
 

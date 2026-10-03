@@ -224,12 +224,66 @@ reports failure in a separate job so it remains visible in Actions. Build/test/d
 errors still stop the affected jobs. Telegram notifications run after deployment and cannot
 prevent publishing the site. Source health is also copied to the workflow summary.
 
-**Phase 2 (planned): local open-weight analysis via Ollama.** Start locally, then optionally
-choose a hosted open-weight API with an explicit spending cap. No model download, external
-inference service, paid account or automatic model upgrade is enabled by Phase 1. Model
-licenses and platform permission to process source content must be checked before use.
-Inference should produce source-linked drafts, never change deterministic policy scores,
-and expose model/version and uncertainty.
+**Phase 2: opt-in local Ollama drafts with a publication gate.** The optional local path uses
+an already-installed `deepseek-r1:8b` (or `--model` selecting another installed local model).
+It does not download models, call a paid API, fall back to the cloud, or run in scheduled
+collection. Ollama must already be serving on `127.0.0.1:11434`. Requests disable environment
+proxies and redirects; cloud-backed inventory entries are rejected. For defence in depth,
+also disable cloud features in your Ollama service configuration. Model weights have their
+own licenses; "open-weight" is not a blanket open-source or commercial-use guarantee.
+
+```bash
+# Synthetic-only acceptance checks; a local report, never the public website/dataset.
+python -m radar analyze --evaluate --output .cache/analysis/evaluation.json
+# Up to six PRS records in one domain, from the last six months (not a citizen-opinion summary).
+python -m radar analyze --topic work --output .cache/analysis/work-draft.json
+# Read the entire report, check every summary against its excerpt AND the linked PRS record.
+# Only then approve its exact 64-character id from the report:
+python -m radar approve-analysis <draft-id>
+ANTHROPIC_API_KEY='' python -m radar build
+```
+
+Drafts and generation outcomes live in SQLite `analysis_drafts` / `analysis_attempts`.
+The evaluation command uses an isolated in-memory database; its synthetic outputs stay only
+in the requested local JSON report. Do not commit review/evaluation reports or write them into
+`docs/` (the CLI rejects that public output directory).
+Successful drafts are cached by source fingerprint, prompt/schema/options, model name and
+installed weight digest. Sources are bounded to 3,000 characters each; truncation and the
+six-record selection limit mean this is **not** a comprehensive policy review. Each result
+contains at most five claims. The model selects source/excerpt IDs; the pipeline attaches the
+original text itself rather than asking the model to copy quotes (which can become paraphrases).
+Malformed/truncated JSON, missing/unknown citations, altered excerpts and insufficient
+discussion samples are rejected or explicitly abstained from, never replaced with fabricated
+success. Model errors are recorded and surfaced. There is no silent retry or remote fallback.
+
+Only an explicitly approved PRS draft appears in the English/Hindi topic-page **Local AI
+policy notes** section and `analysis.json`. Generated prose and excerpts remain labelled
+English; the interface is translated. The section exposes model digest, prompt version,
+draft ID and generation/approval dates. New unreviewed drafts or model failures do not replace
+an approved note; changed/aged-out source bundles withhold old notes until a new draft is
+reviewed. Builds read saved results without contacting Ollama. Formal policy scores never
+use these notes.
+
+Exact excerpt matching checks provenance, **not semantic entailment**: a model can attach a
+real quote to a misleading paraphrase. Human approval is mandatory. The small synthetic
+acceptance set covers mixed views, off-topic prompt injection, small-sample abstention and
+Hinglish attribution, including a regression check for confusing consent withdrawal with
+retrieval. Passing these bounded checks is not proof of semantic accuracy, population-level
+accuracy or production readiness.
+Live X/Reddit model analysis remains disabled pending approved access, content-processing
+permissions and deletion compliance. PRS records are not used to invent public opinion.
+Hosted inference, automatic publication and new model downloads remain separate decisions.
+
+**Current model assessment (2026-10-03): not ready for unattended publication.** With prompt
+`grounded-v3` and installed `deepseek-r1:8b` digest
+`28f8fd6cdc677661426adab9338ce3c013d7e69a5bea9e704b364171a5d61a10`,
+three of four synthetic cases passed; the Hinglish case missed the explicit support viewpoint.
+The three inference cases took roughly 27–31 seconds each locally; the small-sample case
+abstained without inference. The real `work` PRS draft passed structural citation checks,
+but inspection found several summaries paired with excerpts that did not support the claims.
+It remains **unapproved**. This demonstrates why excerpt existence is not a truth or
+entailment check. Improve/evaluate the model before expanding to live discussion synthesis;
+do not remove the publication gate to make an evaluation appear successful.
 
 **Phase 3 (planned): source-grounded assistant.** Add read-only tools for policy evidence,
 discussion samples and coverage. MCP is optional tool transport, not an API-access workaround

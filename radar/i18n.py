@@ -627,6 +627,23 @@ STRINGS["hi"].update({
     "health_source_citizens": "नागरिक चौपाल (X / Reddit)",
 })
 
+STRINGS["en"].update({
+    "analysis_h": "Local AI policy notes",
+    "analysis_method": "AI-drafted in English, manually approved, based on up to six recent PRS records. Not citizen opinions or a complete policy review; does not affect scores. Excerpt checks do not prove that a paraphrase is correct. Read the source.",
+    "analysis_pending": "No current, approved local-model note. Drafts require source review before publication. This is separate from Citizen's Corner; no public opinions are inferred from policy records.",
+    "analysis_evidence": "Inspect supporting source excerpts",
+    "analysis_metadata": "Model · drafted / approved (UTC)",
+    "analysis_provenance": "Prompt version, model digest and draft ID",
+})
+STRINGS["hi"].update({
+    "analysis_h": "स्थानीय AI नीति नोट",
+    "analysis_method": "अधिकतम छह हाल के PRS रिकॉर्ड पर अंग्रेज़ी में AI मसौदा, मैन्युअल अनुमोदन के बाद। यह नागरिक राय या संपूर्ण नीति समीक्षा नहीं है और स्कोर नहीं बदलता। उद्धरण मिलने से सारांश का अर्थ सही होना सिद्ध नहीं होता। मूल स्रोत पढ़ें।",
+    "analysis_pending": "अभी कोई वर्तमान, अनुमोदित स्थानीय मॉडल नोट नहीं है। प्रकाशन से पहले मसौदे के स्रोतों की समीक्षा ज़रूरी है। यह नागरिक चौपाल से अलग है; नीति रिकॉर्ड से जनता की राय का अनुमान नहीं लगाया जाता।",
+    "analysis_evidence": "सहायक स्रोत अंश देखें",
+    "analysis_metadata": "मॉडल · मसौदा / अनुमोदन (UTC)",
+    "analysis_provenance": "प्रॉम्प्ट संस्करण, मॉडल डाइजेस्ट और मसौदा ID",
+})
+
 SECTORS_HI = {
     "Finance": "वित्त", "Commerce and Industry": "वाणिज्य और उद्योग", "Macroeconomic Development": "समष्टि अर्थव्यवस्था",
     "Transport": "परिवहन", "Agriculture": "कृषि", "External Affairs": "विदेश मामले", "Environment": "पर्यावरण",

@@ -31,6 +31,7 @@ from .states import refresh as refresh_states
 from .chatter import refresh as refresh_chatter
 from .citizens import refresh as refresh_citizens
 from .health import IncompleteCollection, run_stage
+from .config import TOPIC_BY_SLUG
 
 log = logging.getLogger("radar")
 
@@ -122,10 +123,50 @@ def main(argv: list[str] | None = None) -> None:
     c = sub.add_parser("collect", help="monitored model-free collection; builds health even after source failures")
     c.add_argument("--daily", action="store_true", help="refresh announcements, chatter and citizen samples only")
     c.add_argument("--months", type=int, default=18)
+    a = sub.add_parser("analyze", help="local Ollama drafts; never auto-publish or download a model")
+    mode = a.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--topic", choices=sorted(TOPIC_BY_SLUG))
+    mode.add_argument("--evaluate", action="store_true", help="synthetic-only acceptance set")
+    a.add_argument("--model", default="deepseek-r1:8b")
+    a.add_argument("--output", required=True, help="local JSON review report path, outside docs/")
+    approve = sub.add_parser("approve-analysis", help="explicitly approve an exact reviewed PRS draft")
+    approve.add_argument("draft_id")
     n = sub.add_parser("notify", help="post to Telegram (dry run without TELEGRAM_BOT_TOKEN)")
     n.add_argument("--digest", action="store_true")
     n.add_argument("--pings", action="store_true")
     args = p.parse_args(argv)
+    if args.cmd in ("analyze", "approve-analysis"):
+        from . import analysis
+        import json
+        import sqlite3
+        from pathlib import Path
+        conn = sqlite3.connect(":memory:") if args.cmd == "analyze" and args.evaluate else db.connect()
+        conn.row_factory = sqlite3.Row
+        try:
+            if args.cmd == "approve-analysis":
+                analysis.approve(conn, args.draft_id)
+                log.info("Approved %s; run radar build to publish", args.draft_id)
+                return
+            out = Path(args.output).resolve()
+            if out == Path("docs").resolve() or Path("docs").resolve() in out.parents:
+                raise analysis.AnalysisError("Review/evaluation reports must not be written into the public docs directory")
+            if args.evaluate:
+                from .analysis_eval import evaluate
+                report = evaluate(conn, args.model)
+            else:
+                row = analysis.draft(conn, args.topic, analysis.record_sources(conn, args.topic), model=args.model)
+                report = {**row, "sources": json.loads(row["sources"]), "result": json.loads(row["result"])}
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+            log.info("Local analysis report: %s (not published)", out)
+            if args.evaluate and not report["passed"]:
+                raise SystemExit(1)
+        except analysis.AnalysisError as exc:
+            log.error("%s", exc)
+            raise SystemExit(1) from None
+        finally:
+            conn.close()
+        return
     if args.cmd == "collect":
         if not collect(daily=args.daily, months=args.months):
             raise SystemExit(1)
