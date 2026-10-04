@@ -3904,11 +3904,11 @@
    "digital-and-ai": {
     "counts": {
      "confirmed": 4,
-     "reported": 3,
+     "reported": 4,
      "community": 0
     },
-    "running_ahead_of_prs": 7,
-    "hidden": 119,
+    "running_ahead_of_prs": 8,
+    "hidden": 124,
     "conversations": [
      {
       "label": "IndiaAI Mission and Sweden Discuss Strategic Cooperation in Artificial Intelligence and Digitalisation under SITAC",
@@ -4007,6 +4007,21 @@
       "prs_item": null
      },
      {
+      "label": "HC query on LPG Aadhaar rider, Centre asked to respond to biometric mandate",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeF9OX3hGVlNGcmUwbzFlbnh3UWhpX0hSbVY5ZE1fejhsSWhDVjlURW5sSHNqaW03OHdBN29mVVVYQ0pZU1FGUWhlZUdUYXZSVWhfanJOeXFGNlZObE9zcnR4UzhEbmxpZi1RZExiNmdUMWdTS25kcDlBWEhRVmVUUlF2QzE3bjktT3RqZ3d4ZlJ4RHoySVQ1eE4xMldvN0t3UElIbl9HN2F6S2F6Smt6MkkyMkQyallDNC1hRFFZbXdpMjVEOXlHekVKSENRcVlVaVHSAdIBQVVfeXFMTnhfTl94RlZTRnJlMG8xZW54d1FoaV9IUm1WOWRNX3o4bEloQ1Y5VEVubEhzamltNzh3QTdvZlVVWENKWVNRRlFoZWVHVGF2UlVoX2pyTnlxRjZWTmxPc3J0eFM4RG5saWYtUWRMYjZnVDFnU0tuZHA5QVhIUVZlVFJRdkMxN245LU90amd3eGZSeER6MklUNXhOMTJXbzdLd1BJSG5fRzdhekthekprejJJMjJEMmpZQzQtYURRWW13aTI1RDl5R3pFSkhDUXFZVWlR?oc=5",
+      "credibility": "reported",
+      "posts": 2,
+      "outlets": [
+       "The Telegraph"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "prs_item": null
+     },
+     {
       "label": "NDTV Defence Summit 2026 Highlights: Chief Of Defence Staff NS Raja Subramani On AI Transforming Battlefield",
       "url": "https://ndtv.com/india-news/ndtv-defence-summit-2026-live-updates-key-announcements-defence-strategy-and-military-technology-rajnath-singh-keynote-address-12103640",
       "credibility": "reported",
@@ -4030,7 +4045,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 3,
-    "hidden": 52,
+    "hidden": 53,
     "conversations": [
      {
       "label": "Govt to implement labour codes, protect workers’ rights: CM",
@@ -4164,18 +4179,18 @@
    },
    "money": {
     "counts": {
-     "confirmed": 16,
+     "confirmed": 17,
      "reported": 5,
      "community": 0
     },
-    "running_ahead_of_prs": 20,
-    "hidden": 154,
+    "running_ahead_of_prs": 21,
+    "hidden": 161,
     "conversations": [
      {
       "label": "GST Council Meeting on September 12: Automatic GST registration, cancellation for small businesses likely",
       "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNSW5EXzJTRFVPMndjam0zeF9MYTNyT2R0RWRVdTVwTW9RWGU2eHh4QWc1T3E2YmF3TExTSjFpQ2ItNWV3TU1HNHItcVV0UDNCSlA2dUZFdy1BOW84T1daNzFCaVAxcm9pVGZRaWMtYXBVcENnc09zTGlQNGszUzlLQkZwdXdGdE5QMzBDVnRpSmNUbFFJM2ZPbGx1NnBDZHFXU2JYaHJQX0xTdUFKWDRxR0hFVmRmcjE5Q1VvdnJCbGkxWFF1eTNNbXlDSUZ4aHcxT3MtVk05WHBKVG5QQXpXQU5welFQQlAtYy1OVzNjM2g?oc=5",
       "credibility": "confirmed",
-      "posts": 9,
+      "posts": 10,
       "outlets": [
        "BusinessLine",
        "CNBC-TV18",
@@ -4326,12 +4341,12 @@
    },
    "education": {
     "counts": {
-     "confirmed": 7,
+     "confirmed": 8,
      "reported": 2,
      "community": 0
     },
-    "running_ahead_of_prs": 9,
-    "hidden": 64,
+    "running_ahead_of_prs": 10,
+    "hidden": 76,
     "conversations": [
      {
       "label": "NEET PG Result 2026 Released; MCC to Conduct Counselling for 50% AIQ Seats; Check Schedule",
@@ -4349,6 +4364,24 @@
       ],
       "first_seen": "2026-09-16",
       "last_seen": "2026-09-30",
+      "prs_item": null
+     },
+     {
+      "label": "Paper leak: NTA debars Latur coaching centre owner's son from NEET-UG exam for two years",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZ2VPN2F6RVdQN3pzSFY2enphWEJNUldLS04xYUFITlNScU9YX0J6RFp6T0M4cUMtN1dvckxRLXJkLVV4QUo5RHR2NHJ1bnJPTkpjVm1BeWxxdklVYTJEaVRjZ29pZ1JaaHQxMFc1QldfLUQ5eWhzMFg5b0VSUG54Sl9FZ2kyU2JYQlZQcHhkaUViczh5OVI2Q2VRU1o2VnhkYWhwX3BZaEZuSGFkYzdEaFVLZDUtUlByRmtxZW1XWTJaalNWeGVGTy1BSWpEUlZUdTFlc095d1M?oc=5",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "Deccan Herald",
+       "Hindustan Times"
+      ],
+      "platforms": [
+       "bluesky",
+       "gnews",
+       "rss"
+      ],
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-10-04",
       "prs_item": null
      },
      {
@@ -4445,58 +4478,45 @@
       "first_seen": "2026-09-12",
       "last_seen": "2026-09-13",
       "prs_item": null
-     },
-     {
-      "label": "NTA office to get CISF security in Delhi after NEET paper leak controversy",
-      "url": "https://hindustantimes.com/india-news/nta-office-to-get-cisf-security-after-neet-paper-leak-controversy-new-minto-road-premises-101790498882356.html",
-      "credibility": "reported",
-      "posts": 2,
-      "outlets": [
-       "Hindustan Times"
-      ],
-      "platforms": [
-       "bluesky",
-       "rss"
-      ],
-      "first_seen": "2026-09-27",
-      "last_seen": "2026-09-27",
-      "prs_item": null
      }
     ]
    },
    "justice": {
     "counts": {
-     "confirmed": 8,
+     "confirmed": 9,
      "reported": 3,
      "community": 0
     },
-    "running_ahead_of_prs": 8,
-    "hidden": 70,
+    "running_ahead_of_prs": 9,
+    "hidden": 81,
     "conversations": [
      {
       "label": "Justice within 3 years: Amit Shah on new criminal laws, FIR to Supreme Court",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWUZvUEJ3UUYyLW4zMElYaWwxODROcngxMnduTkZNVTNxM2w2ZmN0YUxFbEdJN05WN2ptS2VoTDdFSGVnQjBGNUt4aHBidmtGUjdsakFmRC1rUDlkM29pVDdkSDNMZHVuTXFTUjE3LU53OWhnU1hzLVdUeFdYSG5lV3dtTGROQmZLenY4U19BWHV3a1hkcEpLMVBXNzdtT3RCNGVmcTlpR2lfVmZEWnJhcGo5Ul9peTRBeVd1ZlJnTk1BYzJYdF9OSGhxNG5XMXFFS2Nv0gHYAUFVX3lxTE02Y3QyeklZMjQzSGRtRTZOVHpCcTNuY05ZSnVCdlV0cUhMOHZkVUVGN0xwLU00UjRJTTBuQ21YcjVjYXJDbDZld1NQdmRoaWhJTUt0eXJOUFg1ODBGRlpnQWo3NDVfNl92M2NxdENzMVRzdHloM0VoQTZXRzBuY2tnUW41YzY3dlZ1TlAxYzlZLXlMNjFGbWs4MXVYZ3JPX3Q3LWNaWGZEOVNBMGZwb0dlWlpTa1cxRkNFOElJdXdnbG5rSEVGMUJXS3JOLUFEd0FMQWU2QVQ0RA?oc=5",
       "credibility": "confirmed",
-      "posts": 5,
+      "posts": 9,
       "outlets": [
        "Deccan Herald",
+       "Free Press Journal",
+       "Hindustan Times",
        "India Today",
        "Moneycontrol",
        "The Hindu",
        "Times of India"
       ],
       "platforms": [
-       "gnews"
+       "gnews",
+       "rss"
       ],
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-03",
+      "last_seen": "2026-10-04",
       "prs_item": "2026-07:4"
      },
      {
       "label": "Khalid, Imam bail pleas adjourned in HC to Sept 30",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdmRteWlWZG9vWDF0SEs1NURlYWUybGIxMk1veWdoN2RLNXcybjJnV01zWkxkdlo1dENQSnU2RzlBbUJBMTBTb1N5MVJpTXFOdGNYd1EtemkxVV9IQ2txa3dBZ2tBbWRYVm54am55ckVhamlpNjJVeTgxUDJoVXhqbF9uSk1IaUFrYUJ2NVNzWXJOVHpmNVJlb2w0RjZ5UlNWdU9adEZBNkFpNTF0b3VRQjM2Nl9OV1pSanluR3hXWdIBxAFBVV95cUxNU25vSUNiMHp5N2VTQ25sU0NMLWhJaWp0VmR0NHFYVENkSUxMLXlXdmNoX3Flb3JHUzdXMFNoNV9naHdvZmEzNHRFbEhJdkI4aXV5RFVYTldCaTlXTVdZeDBQWHdMNlVvU3NpcFM5Mml0cE5FNHV1QUtnU3g2WW9KZ3pWNTdMY1B5MHFkMGdUT2dlTDhHNUY0ZG8wMjMtTzVFMFNDdUh5WXFPWkFCcmQ3aVhZZEFaRk1YbjNuWG16TGRrTklh?oc=5",
       "credibility": "confirmed",
-      "posts": 3,
+      "posts": 4,
       "outlets": [
        "Republic",
        "ThePrint",
@@ -4507,6 +4527,22 @@
       ],
       "first_seen": "2026-09-21",
       "last_seen": "2026-09-30",
+      "prs_item": null
+     },
+     {
+      "label": "In ‘dry’ Nagaland, 19 die of hooch poisoning; police probe underway",
+      "url": "https://indianexpress.com/article/india/nagaland-hooch-tragedy-several-dead-in-mokokchung-tuensang-police-probe-underway-10894790",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Indian Express",
+       "The Quint"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-10-04",
       "prs_item": null
      },
      {
@@ -4574,13 +4610,13 @@
       "prs_item": null
      },
      {
-      "label": "After full implementation of BNS, cases from FIR to Supreme Court will be disposed of in 3 yrs: Shah",
-      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNQnZOUFhjTjZjbHNDZDBTQmU2dDRJWmYzaWN0ZTMzSFlDeU1sSmNxZ3NzSTFRa1JLdFdaMkRmOHNjZkZPREhXMHdmYzVTRTZ0dGtLNVc0TjU4TWd6eXRQNUFEeXJ6RngxTEZtTWZyUnJHMVZqSkNYMjJ1MFBFS3kxaVE0a2toMzZ2RHNTRmRUckh1Y3FabVktUWNvMXlwRHFKWERwd3pwcjhUN1J4ZDJlNTVxc001UFpZQkZ4Mi1mR1ZycmdaOFo0aHhTVjdJRzFvUlNaZE1fSlNyd3hseXJzZGpnbzBfNThja1RpX1lCOHdRbUN0OFAycDc4RzFhQ0JDTDVoMzNwSjJlZ2oxZHfSAY4CQVVfeXFMTUJ2TlBYY042Y2xzQ2QwU0JlNnQ0SVpmM2ljdGUzM0hZQ3lNbEpjcWdzc0kxUWtSS3RXWjJEZjhzY2ZGT0RIVzB3ZmM1U0U2dHRrSzVXNE41OE1nenl0UDVBRHlyekZ4MUxGbU1mclJyRzFWakpDWDIydTBQRUt5MWlRNGtraDM2dkRzU0ZkVHJIdWNxWm1ZLVFjbzF5cERxSlhEcHd6cHI4VDdSeGQyZTU1cXNNNVBaWUJGeDItZkdWcnJnWjhaNGh4U1Y3SUcxb1JTWmRNX0pTcnd4bHlyc2RqZ28wXzU4Y2tUaV9ZQjh3UW1DdDhQMnA3OEcxYUNCQ0w1aDMzcEoyZWdqMWR3?oc=5",
+      "label": "Shah says cases from FIR to SC to be disposed of in 3 years after BNS rollout; targets Cong over cooperatives",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOczE3dFRiT1V4V0xtVEV5a2VsaHd4bnBZcXl1bm0zMlZfei1HQm12U2hXa3JLM1FRQUdXeHZEYWxtLXFiU1Vvank3ZlJzOThsT1RxdmNSdXE4a0xqRGJNRXN4Vi03OF9JTEdTN2o0UTIzRUtRZ1BvZkloMlo1cTV3SXZFMnRfQkFvb0ZoUm14eGdkUkl2WG5Ea203NENhM09VcHhDZVc3bzVGZHRneVlqTWd2cnROOHJfZGJ0UFZiaDlRaWY1OXd0bTFHdzN0SWgxbkItS2t5TmZ5NENPT3RXUEF5ZHJiNUlXS1dtd2k2aUjSAf4BQVVfeXFMT2N4ekx0SGRKaElwOENLWmRleEpvcldsNXF4bWNrWF8zT0ZHeWZRRExrRkZHTTRtVElEbDlOWEl1OXBXVnVPejFNNFBuOU5WVTJxMUN5YWZXSXFIbzhCeTVSY3djWGtpZnBVT2k3TzBVUks3b0kxaVRabnhyb2hmTUJkU0U3RGZ4SXNSangtc3FmZTU3TkZueWgtUkZrcjNFZG5Wajc0eEdqQWxCX1JId3JuT0YzQnJOcmJDX1VSblFsNHItX0g1c1Bpa2JoTkFvNFlfcS14T1ZVN1VCNE5UUk1Yb3JKTVF0UXdNV0t3WGVFWWp1WjFLX0NhTFdreWc?oc=5",
       "credibility": "confirmed",
       "posts": 2,
       "outlets": [
        "Economic Times",
-       "Free Press Journal"
+       "New Indian Express"
       ],
       "platforms": [
        "gnews"
@@ -4588,48 +4624,31 @@
       "first_seen": "2026-10-03",
       "last_seen": "2026-10-03",
       "prs_item": "2026-07:4"
-     },
-     {
-      "label": "UAPA and the Six-Year Delay in Umar Khalid’s Trial",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSVBPb2s5S3Jvc254TFhta1VVQm5tZDNMck1MZ1h5TGUxd000SEwtYjNFM2xGcXZtX0NOTTg4U3lHZ3lIdTByY0tqa01PX05tOENUazdkcUM5aXpNYU5odWg2RlR1LTQ2R1F0QThHRm5pRnpGSWlKVWx0bGRzY20tSEdBTnRwWWxyeG9yMjcyMFdfQ0RyLVppbnNpLXFhV05pVThMTlJmajl2anPSAbIBQVVfeXFMTnIwT3N5ekN0YlRCUHV6ZnpxRU12R0JMVVVrTHVla1kxSnBST2NRRFhBQjNJVkRDcW5JREZyczlOU3dhMFpZcWdWVUZmTkswUXpvc1RERkRDVUtaMzUxcXpBeHhJMkMyOTE0bFVYcTF4TDRNeHM1YkxzR3NnLXVKRmp0X1c0WGR1VE90OFVtc1NQT1prTFBPZ3pCTWdIaGtuT2hCeVk3bTctdnJ4U2h3Sjd3dw?oc=5",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "The Hindu",
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-17",
-      "last_seen": "2026-09-21",
-      "prs_item": null
      }
     ]
    },
    "health": {
     "counts": {
      "confirmed": 1,
-     "reported": 1,
+     "reported": 2,
      "community": 0
     },
-    "running_ahead_of_prs": 2,
-    "hidden": 33,
+    "running_ahead_of_prs": 3,
+    "hidden": 34,
     "conversations": [
      {
       "label": "NEET PG Counselling 2026: NMC issues seat matrix for postgraduate courses, over 50,000 seats listed",
       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNU3JOTk52VnZRUy1OM0lYV05LdkRPR01FdGY1a2lvMjZoakxhaUhCLU56UHJ1LUh0czdlcld0WlVPTm9Eem5tZV9Xc2FKZzJONnNXb2VqMGpELXBZUlhkUTF2MzVNWnJvVE0td09INmQxbUNyWWoxWTFLcmEybGFFVnBBTDNxRWt4dEtMTHp2cFpNZ2lfSndHbXdEZjZwZ2o3UlA0cUJiRXRXUmIxbW9LNXBTaVNGd1RyZmM3NUdaZ0Y1cmR6YXlMUjQ2M05ISENLeS1LQ25oY0V2cnEzTDNjN2lIRQ?oc=5",
       "credibility": "confirmed",
-      "posts": 4,
+      "posts": 3,
       "outlets": [
        "India Today",
        "Indian Express"
       ],
       "platforms": [
-       "bluesky",
        "gnews"
       ],
-      "first_seen": "2026-09-03",
+      "first_seen": "2026-09-30",
       "last_seen": "2026-09-30",
       "prs_item": null
      },
@@ -4647,6 +4666,21 @@
       "first_seen": "2026-09-27",
       "last_seen": "2026-10-03",
       "prs_item": null
+     },
+     {
+      "label": "Hosp manager performs surgery in doctor’s absence, arrested after patient dies",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQQXpBdlRLZDd6N3cxQ3NKblQtMlRnaFJTa2hRaGxOb3JzRTNQWXNLcG1oMi1iblFXX0h4dERRcWEwNnNyNDhaOHlVVUZGZGhhelFROG5JTmREY05aY0xsZk93MGRGRzFVQTlMTjZKVFVRRDhUcVdKbGJGeHlGR2R0YVdWc3RQWjhsQ2QxeVNNd05ITjVlUHA0eU53aGNtWGhjVXMzY0t2NHdEQ1kwTzBVNzhmSGpacG00VnZrLVBRXzRjSGIxSW9OTllJZlg3ajdMSmNqQTktU0tnY1EzOWpocmZyYW1tSWfSAewBQVVfeXFMT0FBMTFxSDR5bkJZV2xmTUdQR2JPR1FGb0ZfYTRHWmRlRkxRR0JITHF5dVJLX1pOZWMwc1NkMUNTUXVoQ1hHeldpRHhjZFN3bDBJZ0RLX1o5d205blFUb0Q0S1YyeHYzM0ZUX3k2OFBCVUZZYzB0ZW5QOWVmVUVGTC10bFZQRTV2S085Mm9JWTlvX0NLeUNLQkR4UU5KaEhVRi1CdzdWUUxoVlpVdWw0UGIwWHJNMGxicVVrUHZOTlNtNWc1SVlrYVpHYzVra25VQnFUS3ZoZU9KMHdGdmh1ZWdCRUJoZlNfUGhOVXM?oc=5",
+      "credibility": "reported",
+      "posts": 2,
+      "outlets": [
+       "Times of India"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03",
+      "prs_item": null
      }
     ]
    },
@@ -4657,7 +4691,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 5,
-    "hidden": 60,
+    "hidden": 62,
     "conversations": [
      {
       "label": "Trade deal with India not imminent, sticking points identified: USTR",
@@ -4761,11 +4795,11 @@
    "energy-environment": {
     "counts": {
      "confirmed": 7,
-     "reported": 1,
+     "reported": 3,
      "community": 0
     },
-    "running_ahead_of_prs": 8,
-    "hidden": 72,
+    "running_ahead_of_prs": 10,
+    "hidden": 73,
     "conversations": [
      {
       "label": "Maruti Suzuki commissions first green hydrogen plant at Haryana facility",
@@ -4883,19 +4917,18 @@
       "prs_item": null
      },
      {
-      "label": "Centre doubles validity of environmental clearances for ports to minimum 20 years",
-      "url": "https://indianexpress.com/article/india/port-environmental-clearance-validity-doubled-to-20-years-eia-rules-10889343",
+      "label": "HC query on LPG Aadhaar rider, Centre asked to respond to biometric mandate",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeF9OX3hGVlNGcmUwbzFlbnh3UWhpX0hSbVY5ZE1fejhsSWhDVjlURW5sSHNqaW03OHdBN29mVVVYQ0pZU1FGUWhlZUdUYXZSVWhfanJOeXFGNlZObE9zcnR4UzhEbmxpZi1RZExiNmdUMWdTS25kcDlBWEhRVmVUUlF2QzE3bjktT3RqZ3d4ZlJ4RHoySVQ1eE4xMldvN0t3UElIbl9HN2F6S2F6Smt6MkkyMkQyallDNC1hRFFZbXdpMjVEOXlHekVKSENRcVlVaVHSAdIBQVVfeXFMTnhfTl94RlZTRnJlMG8xZW54d1FoaV9IUm1WOWRNX3o4bEloQ1Y5VEVubEhzamltNzh3QTdvZlVVWENKWVNRRlFoZWVHVGF2UlVoX2pyTnlxRjZWTmxPc3J0eFM4RG5saWYtUWRMYjZnVDFnU0tuZHA5QVhIUVZlVFJRdkMxN245LU90amd3eGZSeER6MklUNXhOMTJXbzdLd1BJSG5fRzdhekthekprejJJMjJEMmpZQzQtYURRWW13aTI1RDl5R3pFSkhDUXFZVWlR?oc=5",
       "credibility": "reported",
       "posts": 2,
       "outlets": [
-       "Indian Express"
+       "The Telegraph"
       ],
       "platforms": [
-       "gnews",
-       "rss"
+       "gnews"
       ],
-      "first_seen": "2026-09-22",
-      "last_seen": "2026-09-22",
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
       "prs_item": null
      }
     ]

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-04T10:03:44.182239+00:00",
+ "generated_at": "2026-10-04T10:29:05.707179+00:00",
  "sources": [
   {
    "source": "prs",
@@ -31,8 +31,8 @@
   {
    "source": "announcements",
    "status": "ok",
-   "checked_at": "2026-10-03T17:02:19.522387+00:00",
-   "successful_at": "2026-10-03T17:02:19.522387+00:00",
+   "checked_at": "2026-10-04T10:26:36.855158+00:00",
+   "successful_at": "2026-10-04T10:26:36.855158+00:00",
    "detail": "Collection finished; see source coverage for sample limits",
    "stale": false,
    "stale_after_days": 2
@@ -40,16 +40,16 @@
   {
    "source": "chatter",
    "status": "partial",
-   "checked_at": "2026-10-03T17:05:29.344392+00:00",
+   "checked_at": "2026-10-04T10:29:04.610289+00:00",
    "successful_at": null,
-   "detail": "Partial chatter sample: 2318 documents; 120 requests; 0 cached responses; unavailable hosts: api.gdeltproject.org, pib.gov.in, scroll.in, theprint.in, thewire.in, www.business-standard.com, www.newsonair.gov.in",
+   "detail": "Partial chatter sample: 1900 documents; 118 requests; 0 cached responses; unavailable hosts: api.gdeltproject.org, indianexpress.com, pib.gov.in, scroll.in, theprint.in, thewire.in, www.business-standard.com, www.medianama.com, www.moneycontrol.com, www.newsonair.gov.in",
    "stale": true,
    "stale_after_days": 2
   },
   {
    "source": "citizens",
    "status": "not_configured",
-   "checked_at": "2026-10-03T17:05:29.354093+00:00",
+   "checked_at": "2026-10-04T10:29:04.632538+00:00",
    "successful_at": null,
    "detail": "X/Reddit not configured; no requests made",
    "stale": true,
