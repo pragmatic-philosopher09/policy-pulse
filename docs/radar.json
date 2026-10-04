@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03",
+ "generated": "2026-10-04",
  "topics": [
   {
    "slug": "business",
@@ -15,14 +15,13 @@
    "breadth": 4,
    "recent_corroborated": 2,
    "recent_outlets": [
-    "News On AIR",
     "Times of India",
-    "Economic Times",
-    "The Times of India",
     "Business Standard",
-    "cnbctv18.com",
+    "CNBC-TV18",
     "Business Today",
-    "ETLegalWorld.com"
+    "Economic Times",
+    "SCC Online",
+    "LiveLaw"
    ],
    "impacts": {
     "business": 10,
@@ -102,23 +101,21 @@
    "total_actions": 46,
    "recent_actions": 10,
    "breadth": 3,
-   "recent_corroborated": 6,
+   "recent_corroborated": 5,
    "recent_outlets": [
-    "News On AIR",
-    "The Hindu",
-    "NDTV",
-    "Business Standard",
-    "SCC Online",
-    "ANI",
-    "New Indian Express",
-    "LiveLaw",
     "Reuters",
     "Mint",
     "Moneycontrol",
     "Indian Express",
     "Economic Times",
     "India Today",
+    "ANI",
     "Times Now",
+    "News On AIR",
+    "The Hindu",
+    "NDTV",
+    "New Indian Express",
+    "SCC Online",
     "BusinessLine",
     "CNBC-TV18"
    ],
@@ -200,11 +197,17 @@
    "total_actions": 18,
    "recent_actions": 9,
    "breadth": 2,
-   "recent_corroborated": 1,
+   "recent_corroborated": 4,
    "recent_outlets": [
     "Express Pharma",
     "Mint",
-    "ThePrint"
+    "ThePrint",
+    "News On AIR",
+    "DD News",
+    "ANI",
+    "The Hindu",
+    "New Indian Express",
+    "Hindustan Times"
    ],
    "impacts": {
     "health": 9,
@@ -369,8 +372,19 @@
    "total_actions": 75,
    "recent_actions": 12,
    "breadth": 6,
-   "recent_corroborated": 0,
-   "recent_outlets": [],
+   "recent_corroborated": 5,
+   "recent_outlets": [
+    "Business Standard",
+    "The Hindu",
+    "CNBC-TV18",
+    "New Indian Express",
+    "pmindia.gov.in",
+    "News On AIR",
+    "NDTV",
+    "PIB",
+    "ANI",
+    "India Today"
+   ],
    "impacts": {
     "business": 11,
     "education": 8,
@@ -685,7 +699,7 @@
    "sector": "Parliament",
    "deadline": "2026-10-05",
    "status": "open",
-   "days_left": 2,
+   "days_left": 1,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-10-05/FCRA Press Release.pdf",
@@ -698,7 +712,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-28",
    "status": "closed",
-   "days_left": -5,
+   "days_left": -6,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-28/Press release for ISI Bill, 2026.pdf",
@@ -711,7 +725,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-25",
    "status": "closed",
-   "days_left": -8,
+   "days_left": -9,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-25/FCRA_press release.pdf",
@@ -724,7 +738,7 @@
    "sector": "Energy",
    "deadline": "2026-09-04",
    "status": "closed",
-   "days_left": -29,
+   "days_left": -30,
    "source": "https://prsindia.org/policy/monthly-policy-review/august-2026",
    "links": [
     "https://dae.gov.in/public-consultation-on-draft-shanti-rules-and-draft-shanti-regulations/",
@@ -737,7 +751,7 @@
    "sector": "Health and Family Welfare",
    "deadline": "2026-08-07",
    "status": "closed",
-   "days_left": -57,
+   "days_left": -58,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [],
    "respond_via": null
@@ -747,7 +761,7 @@
    "sector": "Law and Justice",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -64,
+   "days_left": -65,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_Advocate_(A)_Bill_2026.pdf",
@@ -760,7 +774,7 @@
    "sector": "Health and Family Welfare",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -64,
+   "days_left": -65,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_National_Pharmacy_Commission_(NPC)_Bill_2026.pdf",
@@ -773,7 +787,7 @@
    "sector": "Parliament",
    "deadline": "2026-07-13",
    "status": "closed",
-   "days_left": -82,
+   "days_left": -83,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-13/National_Food_Security_(Amendment)_Bill_2026.pdf",
@@ -3889,12 +3903,12 @@
   "topics": {
    "digital-and-ai": {
     "counts": {
-     "confirmed": 5,
+     "confirmed": 4,
      "reported": 3,
      "community": 0
     },
-    "running_ahead_of_prs": 8,
-    "hidden": 121,
+    "running_ahead_of_prs": 7,
+    "hidden": 119,
     "conversations": [
      {
       "label": "IndiaAI Mission and Sweden Discuss Strategic Cooperation in Artificial Intelligence and Digitalisation under SITAC",
@@ -3963,22 +3977,6 @@
       "prs_item": null
      },
      {
-      "label": "NIELIT Rallies Ministries, Industry and Sovereign AI Builders Behind PMs 1-Crore AI Skilling Call; Common Agentic AI Programme Launched",
-      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQTkU4SkhuS1RGZ2lFeWRQSDFWOUxqZWcxSmdjMzZtQkxHTS1lc3ZiSXlkLXJHZjYzMERRanB1LUpiUC12V1cyQ3lmSjI1NFZGdE5ZZ2xRMkRWTG9nbnJhSTl0cFhjdnJjc1REdXRFZE13VmZlcW03MnRHaXFBeWJuRzNmelEyYWdYNms1eGdFVGdsUW9pb0stYkYzTmRNY3M2RUlZZE5MRmVHMFVOVnN0RTJ3enpaRmJDdXJNQ0YzQS1Pb28wTENvVXV5YWtpR09JaVVSMDVWOTg3Q1ExMVNYV1ZDZ29GNzI3a0FkSXh6dkZibV9uVVZxRjN4d0NXR0l5Q1c3WGVqZ9IBhwJBVV95cUxQTkU4SkhuS1RGZ2lFeWRQSDFWOUxqZWcxSmdjMzZtQkxHTS1lc3ZiSXlkLXJHZjYzMERRanB1LUpiUC12V1cyQ3lmSjI1NFZGdE5ZZ2xRMkRWTG9nbnJhSTl0cFhjdnJjc1REdXRFZE13VmZlcW03MnRHaXFBeWJuRzNmelEyYWdYNms1eGdFVGdsUW9pb0stYkYzTmRNY3M2RUlZZE5MRmVHMFVOVnN0RTJ3enpaRmJDdXJNQ0YzQS1Pb28wTENvVXV5YWtpR09JaVVSMDVWOTg3Q1ExMVNYV1ZDZ29GNzI3a0FkSXh6dkZibV9uVVZxRjN4d0NXR0l5Q1c3WGVqZw?oc=5",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "PTI",
-       "The Wire"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03",
-      "prs_item": null
-     },
-     {
       "label": "OpenAI, Anthropic CEOs called to appear at Australian AI probe over health database breach",
       "url": "https://thehindu.com/sci-tech/health/openai-anthropic-ceos-called-to-appear-at-australian-ai-probe-over-health-database-breach/article71515354.ece",
       "credibility": "reported",
@@ -4027,12 +4025,12 @@
    },
    "work": {
     "counts": {
-     "confirmed": 9,
+     "confirmed": 8,
      "reported": 1,
      "community": 0
     },
-    "running_ahead_of_prs": 4,
-    "hidden": 54,
+    "running_ahead_of_prs": 3,
+    "hidden": 52,
     "conversations": [
      {
       "label": "Govt to implement labour codes, protect workers’ rights: CM",
@@ -4171,7 +4169,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 20,
-    "hidden": 155,
+    "hidden": 154,
     "conversations": [
      {
       "label": "GST Council Meeting on September 12: Automatic GST registration, cancellation for small businesses likely",
@@ -4333,7 +4331,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 9,
-    "hidden": 67,
+    "hidden": 64,
     "conversations": [
      {
       "label": "NEET PG Result 2026 Released; MCC to Conduct Counselling for 50% AIQ Seats; Check Schedule",
@@ -4473,7 +4471,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 8,
-    "hidden": 71,
+    "hidden": 70,
     "conversations": [
      {
       "label": "Justice within 3 years: Amit Shah on new criminal laws, FIR to Supreme Court",
@@ -4767,7 +4765,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 8,
-    "hidden": 73,
+    "hidden": 72,
     "conversations": [
      {
       "label": "Maruti Suzuki commissions first green hydrogen plant at Haryana facility",
