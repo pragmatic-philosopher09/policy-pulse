@@ -5,9 +5,14 @@ on:
     - cron: "30 3 * * 1"   # Mondays 09:00 IST — ingest, score, build, deploy, post digest
     - cron: "0 4 * * *"    # daily 09:30 IST — Citizen's Corner + deadline reminders
   workflow_dispatch:
+    inputs:
+      refresh_sources:
+        description: Refresh external sources before deployment (otherwise build the saved snapshot)
+        type: boolean
+        default: false
   push:
     branches: [main]
-    paths: ["radar/**", "data/*.json", "requirements.txt", ".github/workflows/radar.yml"]
+    paths: ["radar/**", "tests/**", "data/*.json", "data/radar.sqlite", "docs/**", "requirements.txt", ".github/workflows/radar.yml"]
 
 permissions:
   contents: write
@@ -44,6 +49,7 @@ jobs:
         run: python -m pytest -q
       - name: Collect and publish source health (no model required)
         id: collect
+        if: github.event_name == 'schedule' || inputs.refresh_sources == true
         continue-on-error: true
         env:
           DAILY: ${{ github.event.schedule == '0 4 * * *' }}
@@ -103,6 +109,7 @@ jobs:
 
   notify:
     needs: deploy
+    if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

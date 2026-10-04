@@ -191,7 +191,7 @@ def test_generation_rejects_incomplete_or_unstructured(monkeypatch, data):
     client = a.Ollama()
     monkeypatch.setattr(client, "request", lambda *args, **kwargs: data)
     with pytest.raises(a.AnalysisError):
-        client.generate("work", "policy_record", [])
+        client.chat("Draft a policy note", {}, {})
     client.close()
 
 
@@ -390,3 +390,78 @@ def test_abstention_is_derived_not_independently_generated(conn):
     inconsistent = {**output(sources, raw=True), "insufficient": True}
     with pytest.raises(a.AnalysisError, match="output fields"):
         a.resolve_citations(inconsistent, sources)
+
+
+def test_policy_writer_sees_only_selected_evidence(monkeypatch):
+    client = a.Ollama("qwen3:14b")
+    sources = [
+        {**CASES[0]["documents"][0], "text": "The rules cap working time at 48 hours weekly. Unselected information is private to the selection step."},
+        {**CASES[0]["documents"][1], "text": "The committee recommended more rural training centres."},
+    ]
+    calls = []
+    def chat(system, content, schema):
+        calls.append((system, content))
+        if system == a.SELECT_POLICY:
+            return {"excerpt_ids": ["e1"]}
+        return {"summary": content["evidence"][0]}
+    monkeypatch.setattr(client, "chat", chat)
+    result = client.generate("work", "policy_record", sources)
+    assert len(result["claims"]) == 2 and len(calls) == 4
+    assert result["claims"][0]["citations"] == [{"source_id": "s1", "excerpt_id": "e1"}]
+    assert calls[1][1] == {"evidence": ["The rules cap working time at 48 hours weekly."]}
+    assert "Unselected" not in json.dumps(calls[1])
+    assert a.validate(a.resolve_citations(result, sources), sources, "policy_record")
+    client.close()
+
+
+@pytest.mark.parametrize("selection", [
+    {"excerpt_ids": ["unknown"]}, {"excerpt_ids": ["e1", "e1"]},
+    {"excerpt_ids": "e1"}, {"excerpt_ids": ["e1"], "extra": True},
+])
+def test_policy_selection_rejects_invalid_ids(monkeypatch, selection):
+    client = a.Ollama()
+    monkeypatch.setattr(client, "chat", lambda *args: selection)
+    with pytest.raises(a.AnalysisError):
+        client.generate("work", "policy_record", CASES[0]["documents"])
+    client.close()
+
+
+@pytest.mark.parametrize("summary", [
+    "The rules require 60 hours weekly.", "An unfinished sentence",
+    "A sentence with padding. ", "x" * 241 + ".",
+])
+def test_policy_sentence_rejects_new_figures_and_fragments(summary):
+    with pytest.raises(a.AnalysisError):
+        a.validate_policy_sentence(summary, "The rules cap working time at 48 hours weekly.")
+
+
+def test_policy_selection_can_abstain_without_writing(monkeypatch):
+    client = a.Ollama()
+    def chat(system, *args):
+        assert system == a.SELECT_POLICY
+        return {"excerpt_ids": []}
+    monkeypatch.setattr(client, "chat", chat)
+    result = client.generate("work", "policy_record", CASES[0]["documents"])
+    assert result == {"claims": [], "excluded": ["s1", "s2", "s3", "s4"]}
+    client.close()
+
+
+def test_release_workflow_separates_deploy_from_collection_and_notifications():
+    from pathlib import Path
+    workflow = Path(".github/workflows/radar.yml").read_text()
+    assert "if: github.event_name == 'schedule' || inputs.refresh_sources == true" in workflow
+    assert "notify:\n    needs: deploy\n    if: github.event_name == 'schedule'" in workflow
+    assert 'ANTHROPIC_API_KEY: ""' in workflow
+
+
+def test_hindi_homepage_macro_links_use_page_root():
+    from pathlib import Path
+    from radar.build_site import _env
+    import_line = Path("radar/templates/index.html").read_text().splitlines()[1]
+    template = _env("hi").from_string(import_line + "{{ states_line(ts, states) }}{{ chatter_line(ts, chatter, 30) }}")
+    html = template.render(root="../", ts={"topic": {"slug": "work"}, "status": "quiet"},
+                           states={"work": {"bills": [1], "by_year": {2026: 1},
+                                            "by_year_states": {2026: {"Delhi": 1}}}},
+                           chatter={"work": {"total": 1, "clusters": [{"label": "Discussion"}]}})
+    assert 'href="../hi/states.html#work"' in html
+    assert 'href="../hi/topic/work.html#chatter"' in html

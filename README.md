@@ -181,6 +181,12 @@ without it the pipeline uses first sentences and the seed files in `data/`.
    set `TELEGRAM_CHAT_ID` to `@yourchannel`. The Monday run posts the digest; a daily run posts
    deadline reminders. Re-runs never double-post (see the `posts` table).
 
+Pushes to `main` and ordinary manual runs test and deploy the saved dataset without waiting
+for external collectors or sending Telegram messages. To collect before a manual deployment,
+enable the workflow's `refresh_sources` input. Scheduled runs retain daily/weekly collection
+and notifications; source outages remain visible in the health report. Deploying the site
+does not approve local AI drafts or enable X/Reddit access.
+
 **GCP (planned):** the output is a plain static folder, so moving is trivial — sync `docs/` to a
 Cloud Storage bucket behind Cloud CDN (or serve via Cloud Run + nginx), and trigger
 `python -m radar run` from Cloud Scheduler → Cloud Run Job. The SQLite file moves to the bucket
@@ -258,6 +264,14 @@ original text itself rather than asking the model to copy quotes (which can beco
 The model returns claims and exclusions only; the application derives `insufficient` from
 an empty claims list. This removes contradictory generated flags without accepting invalid
 claims or suppressing a genuine abstention.
+For PRS records, `grounded-v6` uses an evidence-first path: select up to three excerpts from
+one record, then write one short complete sentence in a separate call that sees **only those
+excerpts**. It moves through records rather than filling the note with the first document.
+At most five claims and eleven inference calls are permitted per draft. Unknown/duplicate
+selections, incomplete or overlong sentences, and numeric figures absent from the selected
+evidence are rejected. This narrows the opportunity for unsupported claims but is not a
+semantic correctness guarantee; human approval remains mandatory. Synthetic discussion
+evaluation uses the separate existing discussion path, not this PRS-specific writer.
 Malformed/truncated JSON, missing/unknown citations, altered excerpts and insufficient
 discussion samples are rejected or explicitly abstained from, never replaced with fabricated
 success. Model errors are recorded and surfaced. There is no silent retry or remote fallback.
@@ -331,6 +345,12 @@ Use `--model qwen3:14b` explicitly for further local experiments. Ignored report
 `qwen3-discussion-v2-grounded-v5.json`, `deepseek-discussion-v2-grounded-v5.json`, and
 `qwen3-work-grounded-v5.json`. Synthetic reports are not part of the website or committed
 dataset; PRS candidates are separately retained in SQLite as unapproved drafts.
+
+**Evidence-first follow-up (2026-10-04):** `grounded-v6` produced three complete, cited
+sentences for the three selected `work` records after rejecting an earlier unfinished
+response. Review still caught a meaning error: a cutoff for which MGNREGA liabilities
+existed was paraphrased as a settlement deadline. The draft remains unapproved. The release
+therefore includes the guarded drafting tools, not automatically published AI policy advice.
 
 **Phase 3 (planned): source-grounded assistant.** Add read-only tools for policy evidence,
 discussion samples and coverage. MCP is optional tool transport, not an API-access workaround

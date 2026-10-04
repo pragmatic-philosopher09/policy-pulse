@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_item.html" import sparkline, change, follow_btn, headline, for_you, corroboration, why_moving, persona_block, states_line, stage_bar, photo, tilemap, impact_chips, chatter_list %}
+{% from "_item.html" import sparkline, change, follow_btn, headline, for_you, corroboration, why_moving, persona_block, states_line, stage_bar, photo, tilemap, impact_chips, chatter_list with context %}
 {% block title %}{{ ts.topic.label(lang) }} — {{ t('site_title') }}{% endblock %}
 {% block desc %}{{ ts.topic.tag(lang) }} {{ ts.status | status }}, {{ ts.confidence | confidence }} {{ t('confidence_word') }}.{% endblock %}
 {% block nav %}
