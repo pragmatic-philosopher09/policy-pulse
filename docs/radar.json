@@ -4174,7 +4174,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 8,
-    "hidden": 56,
+    "hidden": 57,
     "conversations": [
      {
       "label": "Govt to implement labour codes, protect workers’ rights: CM",
@@ -4308,12 +4308,12 @@
    },
    "money": {
     "counts": {
-     "confirmed": 23,
+     "confirmed": 25,
      "reported": 4,
      "community": 0
     },
-    "running_ahead_of_prs": 23,
-    "hidden": 172,
+    "running_ahead_of_prs": 25,
+    "hidden": 173,
     "conversations": [
      {
       "label": "GST arrest powers on way out amid concerns over taxmen’s overreach",
@@ -4404,30 +4404,12 @@
       "prs_item": null
      },
      {
-      "label": "UPI MDR above Rs 2,000 to attract 18% GST, merchants can claim input tax credit",
-      "url": "https://economictimes.indiatimes.com/news/economy/finance/upi-mdr-above-rs-2000-to-attract-18-gst-merchants-can-claim-input-tax-credit/articleshow/134285437.cms",
-      "credibility": "confirmed",
-      "posts": 7,
-      "outlets": [
-       "Economic Times",
-       "Indian Express",
-       "Mid-day",
-       "Reuters"
-      ],
-      "platforms": [
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-09-16",
-      "last_seen": "2026-10-05",
-      "prs_item": "2026-09:1"
-     },
-     {
       "label": "GST Council to focus only on process reforms in Oct: Sitharaman",
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPd3JuTUZaMDBHNk1qR1F5WXZMd1pQODQybTZSYWZSZGJQR2NfbDFJcUpoZVhiVmhYTUxRNEl6S0gzbVFYbG94ekFZZmtwalJiYWpIa1B0Z1NNeERleDZuTVVJNlBVUEdXZi1CcnJlb0xVeEVYRnNNRERLdW0xbGlzY0hBc0xiaExvUmdpM1JSa191ejJqV3RidDYxM3FzUTkxcGd3OHhVQVhMMVZQdU5CQ3E0ZXJHYmtWV1ZZRXROdEZ6cVB3eHpsTllsYkU4U1lEU2NVcnVXSjdyT1FKV1NMcjNB0gHnAUFVX3lxTE1OQ1A1QS01TmlIRE9UaW5vZjkwczJpaHZVNEhRNGh4WkNmMzZSME9mNTR2XzBDLWFGRGdiU2ktMXdJcV81M3FIYXFNaU9PS3lTaUJGYnNDNHFCanhkRWlMRG1QdHVmdTgtX29ka1U2TENJbmlmNGQwRVRWSWRJOWtOWnphbGFZb0F6eWhRVlNWQ1VKNGh6NkFCUktsQ19Bcnd5dzJtR1NoR25kZGItQjN2RXEyMDlUWWtvLVVYejBwQkFBblp0V09OWHFOSnZYbm5yRVVuOHEtQmp6MkVEbUdrOUx5OVduNA?oc=5",
       "credibility": "confirmed",
-      "posts": 6,
+      "posts": 7,
       "outlets": [
+       "ANI",
        "Business Today",
        "BusinessLine",
        "CNBC-TV18",
@@ -4443,16 +4425,33 @@
       "prs_item": null
      },
      {
-      "label": "GST Council may ease compliance for e-commerce sellers, protect input tax credit for buyers",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNeHJUVjNyX0xpMWZLd1VnNkg5UFNXMUxPN1ltY1k1TEJxaEtORnZUcWNSaG1qaHRKb1FCM2twcl93RTRxTmlPeXdvZUtiNTJneXZnbTRURGpuT0d3VUs5bWhwTTc5VEhTM0RnVGUxWGExR1FlN1c1dWVnNnA4WjhlT3NfbVZPNDlqT29lc1MyR0kyT2RRZlpsakVXSFFROFBuUk9vRlpiZHRkQmVxRmhLY3E4bXBDcTY0RHZuUDljblhUUmM0MXc3bXVYbmtPeTdCTnBzdnViRXVfQdIB3wFBVV95cUxQMEJsdENoMzJHSkt5QldsRnkxSllUWXp0bW5oUnAtcDBLaEZYeHdrWWhQcGZJSzdTLXVNLUsycHBrcG11VG1xMjJEUnZzUzd6NWJCM0dLMk9lZTVKWTQ1dWx3eU5ORGJ1S05fbE5GYXFxV0paSXFhdjNIUmhxeUt6YXpTN0NmUWlzd2VEdEx4V0JWUTUzTE5LblFleEpyRUxwTzViNTVvT2U4S1FCSHFIaVBBdWMwMXo1REYtWlhtRXIwVjNvR2I0V2pQYmgzTTI2UGFYMWc1cUlwbC1fbkxZ?oc=5",
+      "label": "UPI MDR above Rs 2,000 to attract 18% GST, merchants can claim input tax credit",
+      "url": "https://economictimes.indiatimes.com/news/economy/finance/upi-mdr-above-rs-2000-to-attract-18-gst-merchants-can-claim-input-tax-credit/articleshow/134285437.cms",
       "credibility": "confirmed",
       "posts": 6,
       "outlets": [
-       "BusinessLine",
+       "Economic Times",
+       "Indian Express",
+       "Reuters"
+      ],
+      "platforms": [
+       "gnews",
+       "rss"
+      ],
+      "first_seen": "2026-09-16",
+      "last_seen": "2026-09-24",
+      "prs_item": "2026-09:1"
+     },
+     {
+      "label": "GST Council may clear sweeping compliance reforms; e-commerce sellers, genuine biz to get relief",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPYklkaUNzN2tfS2pfazVzcHBrbmlPa3JiWHFhS1B3RlF3MFdXeEJjNkRCUGI4bHZhYVJlVldHdG9UbzVaS2pCWGdRYzl3aHFuU3FQdWtXaVpNekJQdkhjS1lobmhVci1WcUlUeldkRUx2Ujg3Mmg1b3dzQmM3ZUFWeGVXNFNzQXM0b0NwbnFab3FqeE4tdWlQN0NEcHNUV2hqQ1EzWXVYSGhXLS1qUlNGb040UVlDbG5lVk1GUDdkYUFqUERFb3RsdWlkYkEzVmty0gHQAUFVX3lxTE9iSWRpQ3M3a19Lal9rNXNwcGtuaU9rcmJYcWFLUHdGUXcwV1d4QmM2REJQYjhsdmFhUmVWV0d0b1RvNVpLakJYZ1FjOXdocW5TcVB1a1dpWk16QlB2SGNLWWhuaFVyLVZxSVR6V2RFTHZSODcyaDVvd3NCYzdlQVZ4ZVc0U3NBczRvQ3BucVpvcWp4Ti11aVA3Q0Rwc1RXaGpDUTNZdVhIaFctLWpSU0ZvTjRRWUNsbmVWTUZQN2RhQWpQREVvdGx1aWRiQTNWa3I?oc=5",
+      "credibility": "confirmed",
+      "posts": 5,
+      "outlets": [
        "Economic Times",
        "Hindustan Times",
-       "Mint",
-       "The Telegraph"
+       "The Telegraph",
+       "ThePrint"
       ],
       "platforms": [
        "gnews"
@@ -4489,7 +4488,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 10,
-    "hidden": 90,
+    "hidden": 92,
     "conversations": [
      {
       "label": "NEET PG Result 2026 Released; MCC to Conduct Counselling for 50% AIQ Seats; Check Schedule",
@@ -4631,7 +4630,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 11,
-    "hidden": 105,
+    "hidden": 106,
     "conversations": [
      {
       "label": "Justice within 3 years: Amit Shah on new criminal laws, FIR to Supreme Court",
@@ -4841,14 +4840,15 @@
     "hidden": 71,
     "conversations": [
      {
-      "label": "GST Council may ease compliance for e-commerce sellers, protect input tax credit for buyers",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNeHJUVjNyX0xpMWZLd1VnNkg5UFNXMUxPN1ltY1k1TEJxaEtORnZUcWNSaG1qaHRKb1FCM2twcl93RTRxTmlPeXdvZUtiNTJneXZnbTRURGpuT0d3VUs5bWhwTTc5VEhTM0RnVGUxWGExR1FlN1c1dWVnNnA4WjhlT3NfbVZPNDlqT29lc1MyR0kyT2RRZlpsakVXSFFROFBuUk9vRlpiZHRkQmVxRmhLY3E4bXBDcTY0RHZuUDljblhUUmM0MXc3bXVYbmtPeTdCTnBzdnViRXVfQdIB3wFBVV95cUxQMEJsdENoMzJHSkt5QldsRnkxSllUWXp0bW5oUnAtcDBLaEZYeHdrWWhQcGZJSzdTLXVNLUsycHBrcG11VG1xMjJEUnZzUzd6NWJCM0dLMk9lZTVKWTQ1dWx3eU5ORGJ1S05fbE5GYXFxV0paSXFhdjNIUmhxeUt6YXpTN0NmUWlzd2VEdEx4V0JWUTUzTE5LblFleEpyRUxwTzViNTVvT2U4S1FCSHFIaVBBdWMwMXo1REYtWlhtRXIwVjNvR2I0V2pQYmgzTTI2UGFYMWc1cUlwbC1fbkxZ?oc=5",
+      "label": "GST Council may clear sweeping compliance reforms; e-commerce sellers, genuine biz to get relief",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPYklkaUNzN2tfS2pfazVzcHBrbmlPa3JiWHFhS1B3RlF3MFdXeEJjNkRCUGI4bHZhYVJlVldHdG9UbzVaS2pCWGdRYzl3aHFuU3FQdWtXaVpNekJQdkhjS1lobmhVci1WcUlUeldkRUx2Ujg3Mmg1b3dzQmM3ZUFWeGVXNFNzQXM0b0NwbnFab3FqeE4tdWlQN0NEcHNUV2hqQ1EzWXVYSGhXLS1qUlNGb040UVlDbG5lVk1GUDdkYUFqUERFb3RsdWlkYkEzVmty0gHQAUFVX3lxTE9iSWRpQ3M3a19Lal9rNXNwcGtuaU9rcmJYcWFLUHdGUXcwV1d4QmM2REJQYjhsdmFhUmVWV0d0b1RvNVpLakJYZ1FjOXdocW5TcVB1a1dpWk16QlB2SGNLWWhuaFVyLVZxSVR6V2RFTHZSODcyaDVvd3NCYzdlQVZ4ZVc0U3NBczRvQ3BucVpvcWp4Ti11aVA3Q0Rwc1RXaGpDUTNZdVhIaFctLWpSU0ZvTjRRWUNsbmVWTUZQN2RhQWpQREVvdGx1aWRiQTNWa3I?oc=5",
       "credibility": "confirmed",
-      "posts": 3,
+      "posts": 4,
       "outlets": [
        "Economic Times",
        "Hindustan Times",
-       "The Telegraph"
+       "The Telegraph",
+       "ThePrint"
       ],
       "platforms": [
        "gnews"
@@ -4963,7 +4963,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 9,
-    "hidden": 85,
+    "hidden": 86,
     "conversations": [
      {
       "label": "Maruti Suzuki commissions first green hydrogen plant at Haryana facility",
