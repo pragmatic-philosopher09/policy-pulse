@@ -861,17 +861,22 @@ def refresh(conn: sqlite3.Connection, today: date | None = None, docs: list[Doc]
     if http.failures:
         log.info("chatter: %d/%d hosts unreachable this run (%s)", len(http.failures), len(http.attempted),
                  ", ".join(sorted(http.failures)))
+    gov_hosts = sorted(h for h in http.attempted if h.endswith(".gov.in"))
+    gov_ok = [h for h in gov_hosts if h not in http.failures]
     refresh.last_detail = (f"{len(fetched)} documents from {len(http.attempted) - len(http.failures)}/{len(http.attempted)} hosts; "
-                           f"{n_shown} conversations shown"
+                           f"{n_shown} conversations shown; government feeds direct: {len(gov_ok)}/{len(gov_hosts)} "
+                           f"(PIB also arrives via crosscheck)"
                            + (f"; skipped this run: {', '.join(sorted(http.failures))}" if http.failures else ""))
     return n_shown
 
 
 # Public chatter is a best-effort sample over ~20 third-party feeds. Individual hosts rate-limit
-# (GDELT answers 429) or block cloud runners; that is normal, not an outage. Only declare the
-# collection incomplete when the *sample* is genuinely degraded.
+# (GDELT answers 429), geo/IP-block cloud runners (pib.gov.in -> 403) or simply time out
+# (newsonair.gov.in); that is normal, not an outage. Government releases still reach the site
+# through the crosscheck stage (Google News indexes PIB), so their direct feeds are informational.
+# Only declare the collection incomplete when the *sample* is genuinely degraded.
 MIN_DOCS_HEALTHY = 300
-MAX_HOST_FAILURE_RATIO = 0.4
+MAX_HOST_FAILURE_RATIO = 0.5
 
 
 def assess_coverage(fetched: list, http: "_Http") -> str | None:
@@ -879,17 +884,13 @@ def assess_coverage(fetched: list, http: "_Http") -> str | None:
     attempted = len(http.attempted) or 1
     failed = sorted(http.failures)
     ratio = len(failed) / attempted
-    gov_hosts = {h for h in http.attempted if h.endswith(".gov.in")}
-    gov_down = gov_hosts and gov_hosts <= http.failures
     reasons = []
     if len(fetched) < MIN_DOCS_HEALTHY:
         reasons.append(f"only {len(fetched)} documents (healthy ≥ {MIN_DOCS_HEALTHY})")
     if ratio > MAX_HOST_FAILURE_RATIO:
         reasons.append(f"{len(failed)}/{attempted} hosts unreachable")
-    if gov_down:
-        reasons.append("all government feeds unreachable")
-    if http.n >= MAX_REQUESTS:
-        reasons.append(f"request budget of {MAX_REQUESTS} exhausted")
+    if http.n >= MAX_REQUESTS and len(fetched) < MIN_DOCS_HEALTHY:
+        reasons.append(f"request budget of {MAX_REQUESTS} exhausted before a healthy sample")
     if not reasons:
         return None
     return (f"Partial chatter sample: {'; '.join(reasons)}; {http.n} requests; {http.cached} cached responses; "

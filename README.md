@@ -115,9 +115,11 @@ with approved credentials, not by the older raw-response-caching chatter collect
 
 Chatter is a best-effort sample over ~20 third-party hosts, several of which rate-limit (GDELT) or
 block cloud runners on any given day. Its health is judged on the *sample*, not on every host:
-it is `ok` when ≥300 documents arrive, fewer than 40% of hosts fail and at least one government
-feed answers; otherwise `partial`. Skipped hosts are always listed in the health detail. The
-`report-failures` workflow job turns red only for `partial`/`failed` sources.
+it is `ok` when ≥300 documents arrive and at most half the hosts fail; otherwise `partial`.
+PIB blocks cloud runners (403) and News On AIR times out even from India, so the direct
+government feeds are reported as information — PIB releases still reach the site through the
+crosscheck stage. Skipped hosts are always listed in the health detail. The `report-failures`
+workflow job turns red only for `partial`/`failed` sources.
 
 ## Citizen's Corner
 
