@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-07T14:54:19.616671+00:00",
+ "generated_at": "2026-10-07T15:04:20.273554+00:00",
  "sources": [
   {
    "source": "prs",
    "status": "ok",
-   "checked_at": "2026-10-07T14:41:46.776420+00:00",
-   "successful_at": "2026-10-07T14:41:46.776420+00:00",
+   "checked_at": "2026-10-07T14:55:34.533102+00:00",
+   "successful_at": "2026-10-07T14:55:34.533102+00:00",
    "detail": "Collection finished; see source coverage for sample limits",
    "stale": false,
    "stale_after_days": 8
@@ -13,8 +13,8 @@
   {
    "source": "states",
    "status": "ok",
-   "checked_at": "2026-10-07T14:47:30.687323+00:00",
-   "successful_at": "2026-10-07T14:47:30.687323+00:00",
+   "checked_at": "2026-10-07T15:01:16.792020+00:00",
+   "successful_at": "2026-10-07T15:01:16.792020+00:00",
    "detail": "Collection finished; see source coverage for sample limits",
    "stale": false,
    "stale_after_days": 8
@@ -22,8 +22,8 @@
   {
    "source": "crosscheck",
    "status": "ok",
-   "checked_at": "2026-10-07T14:48:00.174354+00:00",
-   "successful_at": "2026-10-07T14:48:00.174354+00:00",
+   "checked_at": "2026-10-07T15:01:46.287377+00:00",
+   "successful_at": "2026-10-07T15:01:46.287377+00:00",
    "detail": "Collection finished; see source coverage for sample limits",
    "stale": false,
    "stale_after_days": 8
@@ -31,25 +31,25 @@
   {
    "source": "announcements",
    "status": "ok",
-   "checked_at": "2026-10-07T14:41:22.234907+00:00",
-   "successful_at": "2026-10-07T14:41:22.234907+00:00",
+   "checked_at": "2026-10-07T14:55:09.826574+00:00",
+   "successful_at": "2026-10-07T14:55:09.826574+00:00",
    "detail": "Collection finished; see source coverage for sample limits",
    "stale": false,
    "stale_after_days": 2
   },
   {
    "source": "chatter",
-   "status": "partial",
-   "checked_at": "2026-10-07T14:51:03.597985+00:00",
-   "successful_at": null,
-   "detail": "Partial chatter sample: all government feeds unreachable; 120 requests; 0 cached responses; unavailable hosts: api.gdeltproject.org, indianexpress.com, pib.gov.in, scroll.in, theprint.in, thewire.in, www.business-standard.com, www.medianama.com, www.newsonair.gov.in",
-   "stale": true,
+   "status": "ok",
+   "checked_at": "2026-10-07T15:04:19.188928+00:00",
+   "successful_at": "2026-10-07T15:04:19.188928+00:00",
+   "detail": "1962 documents from 14/23 hosts; 137 conversations shown; government feeds direct: 0/2 (PIB also arrives via crosscheck); skipped this run: api.gdeltproject.org, indianexpress.com, pib.gov.in, scroll.in, theprint.in, thewire.in, www.business-standard.com, www.medianama.com, www.newsonair.gov.in",
+   "stale": false,
    "stale_after_days": 2
   },
   {
    "source": "citizens",
    "status": "not_configured",
-   "checked_at": "2026-10-07T14:51:03.618246+00:00",
+   "checked_at": "2026-10-07T15:04:19.208393+00:00",
    "successful_at": null,
    "detail": "X/Reddit not configured; no requests made",
    "stale": true,

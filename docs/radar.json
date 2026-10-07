@@ -4342,11 +4342,11 @@
    "money": {
     "counts": {
      "confirmed": 39,
-     "reported": 15,
+     "reported": 16,
      "community": 0
     },
-    "running_ahead_of_prs": 47,
-    "hidden": 222,
+    "running_ahead_of_prs": 48,
+    "hidden": 221,
     "conversations": [
      {
       "label": "GST Council meeting rescheduled to October 7 amid BRICS Leader's Summit clash",
@@ -4549,9 +4549,10 @@
       "label": "NEET PG counselling 2026 date: Check step-by-step process, documents required for registration and other",
       "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQdFVJNjBEXzJDbk50RkFGSkV2MVNRaVNlUl80dUExM3JJZ0EyU1Vsc0diNGNXT2Rta1h1dkM1b0NtTzFQWjFFUkdKRTRUUHViOWo1NFRyaTVzT183WlJzQmQ0cVBTRjN4cnVKaGZyTVJROFRsRXgySVpfakdmbER1NEljNlZ4OHZaNmJ6dk5qalE1cXJESk1LQmxjVFAyXzRSemlQQ0I0dmEyOTZqaFgxc2FTMW8xaDgzOWs2b2JxLWxvbTNacTZ5NjR3clFHZlYxeWxHSGhtdVd6ZmhkZWtHU3A0Q0V4RVdHOWYtY1NwbG00TnR3dUNlYVMzN09CbEN0V0JsRmlES2EzaHhodXQxMVlBZVUyd9IBmwJBVV95cUxQREI2Njh4Q0hCV2RYaHQ1UW0wUUdxQUJicnI1QjNMaFJ6V0hZRFpza0trVTBnQ2NmVUs3YlF4Ukk1RTNnVjBnZ1dzZ1djcFBPUnF6TjFSNW9BVzJDVGVHa0YyQWt5RzlIdEVkc0pLNW9XeXl0bHJ6OWJ1cHlwRHpkUnNqVGNnSzdybTNycV81WkE1NVlYS25MaEpKTjEyaWtwd29jcnctYWVrNGxVMVpyc0w1ZERtNkVKSUlwNERKa0hZNHJ0TEo3cEdCMmtqOS1BblpXZ3FoX3dSYWdvRWxCdHZPZHpJb2huRG9WU3dWSVFldzEycWVpY29DdXV3Tnk1amtVWlJxM1I2a0l3N2pWbEg5QjlyTHRwdEtZ?oc=5",
       "credibility": "confirmed",
-      "posts": 4,
+      "posts": 5,
       "outlets": [
        "India Today",
+       "NDTV",
        "The Telegraph",
        "Times of India"
       ],
@@ -4559,7 +4560,7 @@
        "gnews"
       ],
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-06",
+      "last_seen": "2026-10-07",
       "prs_item": null
      },
      {
@@ -4664,12 +4665,12 @@
    },
    "justice": {
     "counts": {
-     "confirmed": 18,
+     "confirmed": 19,
      "reported": 3,
      "community": 0
     },
     "running_ahead_of_prs": 15,
-    "hidden": 150,
+    "hidden": 149,
     "conversations": [
      {
       "label": "Justice within 3 years: Amit Shah on new criminal laws, FIR to Supreme Court",
@@ -5032,10 +5033,10 @@
    "energy-environment": {
     "counts": {
      "confirmed": 7,
-     "reported": 4,
+     "reported": 5,
      "community": 0
     },
-    "running_ahead_of_prs": 10,
+    "running_ahead_of_prs": 11,
     "hidden": 113,
     "conversations": [
      {
@@ -5155,19 +5156,18 @@
       "prs_item": null
      },
      {
-      "label": "‘Removal of arrest power of GST officers may face opposition’",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcFZxQWFYUnMxNmVTa0JaUDFoZm5acW1iZDl0NlVtUGdpaVhlb2w0NnlsX2ZVanVLaWxtLXhnd1JKT3hqS3JUUXVtRkdJN1dpaGhlNDYtN1pObXVTdnZ3RWVTYmRLTWx3RDQ2STM5MWdTQXhrejdkZXd1d205am82QXRaMTkzeEtHcUtCWWRYb1FDRXkxSnYyYTlxSGJpOExuNnZYMXpvNVVZVkZ2Wmo5blVCb9IBwAFBVV95cUxPSjI1SklpLTlmSEQ1X2xXcGlFaDFfc2tUVjVBdGdiV0VrTmt2WjNNR3NVTFkwc2lZbUdfbXhwbzhXSFhkVVVsNnU0UXNaWkVCYW9VeXJQUllVSW5RQTFCcmxHUHdpVm5RWnJwOGV3d2gtaGFoRHA1T29YNS1nenRXbThsbDBTM01JSW9CZFdLVEx0Z0JOZ25zUDhNRW40MnFOcVRfSFNVVnpMS2hGc00yRXZkYi0yajFBaWRNNUtRVi0?oc=5",
+      "label": "CPM opposes TN govt’s smart meter tender, says it could pave way for power sector privatisation",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNXhiSEhVU09SdHU2cnVJQk9PMTBZZWN5RUF4UWpvalplTFZ3cnNfck0yLXhCU01PNloxSHNYd3BFYlV6SVNkdWROYzFha05LRW9iZHRpZ0lDdVVfWUlwaVVQR0JhT1ktN0VlR1VsRzV4eHZFcXNLRUc5cEVIU25kWE43TVhJTUFTN0RYM2dCcm5Ga0x3eVhydnBISjJPa2l3R3A3ZlFQMjRNS2F1anNXMm9LdmJoWFlabW1zdDZkeU1QMVV4Y2xOSG41TUFWSGFqRGFLRHRtX1ROeUJqRy0zTHVMSkUzRGhfd1FySVp4UGt1TFRxNWVORlZid0M?oc=5",
       "credibility": "reported",
       "posts": 2,
       "outlets": [
-       "New Indian Express"
+       "Times of India"
       ],
       "platforms": [
-       "bluesky",
        "gnews"
       ],
-      "first_seen": "2026-10-05",
-      "last_seen": "2026-10-06",
+      "first_seen": "2026-10-07",
+      "last_seen": "2026-10-07",
       "prs_item": null
      }
     ]
