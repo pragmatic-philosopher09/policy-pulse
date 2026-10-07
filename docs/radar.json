@@ -114,16 +114,16 @@
     "News On AIR",
     "The Hindu",
     "India Today",
-    "Indian Express",
-    "The Telegraph",
     "Medianama",
     "SCC Online",
     "Reuters",
-    "BusinessLine",
+    "Mint",
     "Moneycontrol",
+    "BusinessLine",
     "Business Standard",
     "Economic Times",
-    "Mint",
+    "CNBC-TV18",
+    "Indian Express",
     "ANI",
     "Times Now"
    ],
@@ -1115,7 +1115,7 @@
   },
   "money": {
    "by_year": {
-    "2026": 38,
+    "2026": 40,
     "2025": 60
    },
    "states": {
@@ -1140,6 +1140,7 @@
     "Mizoram": 3,
     "Rajasthan": 3,
     "Tripura": 3,
+    "Jammu and Kashmir": 2,
     "Jharkhand": 2,
     "Kerala": 2,
     "Punjab": 2,
@@ -1151,6 +1152,20 @@
     "Delhi": 1
    },
    "bills": [
+    {
+     "title": "The Jammu and Kashmir State Legislature Members' Pension (Amendment) Bill, 2026",
+     "state": "Jammu and Kashmir",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/jammu-and-kashmir/2026/Bill15of2026JK.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Jammu and Kashmir Goods and Services Tax (Amendment) Bill, 2026",
+     "state": "Jammu and Kashmir",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/jammu-and-kashmir/2026/Bill12of2026JK.pdf",
+     "brief": null
+    },
     {
      "title": "The Gujarat Goods and Services Tax (Amendment) Bill, 2026",
      "state": "Gujarat",
@@ -3587,15 +3602,15 @@
   },
   "business": {
    "by_year": {
-    "2026": 25,
+    "2026": 27,
     "2025": 22
    },
    "states": {
+    "Jammu and Kashmir": 5,
     "Goa": 4,
     "Tripura": 4,
     "Assam": 3,
     "Chhattisgarh": 3,
-    "Jammu and Kashmir": 3,
     "Maharashtra": 3,
     "Puducherry": 3,
     "Gujarat": 2,
@@ -3616,6 +3631,20 @@
     "Uttarakhand": 1
    },
    "bills": [
+    {
+     "title": "The Jammu and Kashmir Jan Vishwas Third (Amendment of Provisions) Bill, 2026",
+     "state": "Jammu and Kashmir",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/jammu-and-kashmir/2026/Bill16of2026JK.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Jammu and Kashmir Ease of Doing Business Bill, 2026",
+     "state": "Jammu and Kashmir",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/jammu-and-kashmir/2026/Bill11of2026JK.pdf",
+     "brief": null
+    },
     {
      "title": "The Gujarat Ease of Doing Business Bill, 2026",
      "state": "Gujarat",
@@ -4037,7 +4066,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 11,
-    "hidden": 171,
+    "hidden": 176,
     "conversations": [
      {
       "label": "IndiaAI Mission and Sweden Discuss Strategic Cooperation in Artificial Intelligence and Digitalisation under SITAC",
@@ -4173,11 +4202,11 @@
    "work": {
     "counts": {
      "confirmed": 9,
-     "reported": 2,
+     "reported": 3,
      "community": 0
     },
-    "running_ahead_of_prs": 9,
-    "hidden": 65,
+    "running_ahead_of_prs": 10,
+    "hidden": 66,
     "conversations": [
      {
       "label": "Ministry of Labour & Employment expands “Shram Samvad” outreach across industrial clusters",
@@ -4312,18 +4341,18 @@
    },
    "money": {
     "counts": {
-     "confirmed": 36,
-     "reported": 13,
+     "confirmed": 39,
+     "reported": 15,
      "community": 0
     },
-    "running_ahead_of_prs": 42,
-    "hidden": 220,
+    "running_ahead_of_prs": 47,
+    "hidden": 222,
     "conversations": [
      {
       "label": "GST Council meeting rescheduled to October 7 amid BRICS Leader's Summit clash",
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPaFlUU3BRX0dmWFdtOWVtSUpNMFFpY1l5WC1XTDJhNzhETXluZ3VQOXZUZkU3RWdIZzgwVlh2elhtdlYwQVdRSXViZ2x6X1V5M2VFZUpUTm43VThvbVduZXV0Q2c4N0IydFByazFtSTRsdXNQUGpVU1ZfcE16eGNhcF9TdjJHWVVnVXBmUGJaZXJObVR1aTctb3J2UzlvdmExTjB4WGU3bmZ3SzByZVJ6Tk83QkVqWUVZS2JTcG9sVUp2dExfbG5wdXpxQkdBTDM5bXVMUFhmZ9IB3AFBVV95cUxQVnRQaUhJWmt1aXpoaXpRNzFnOFNFUVducUZ1T19xT01EUTNJVzUtMEZsN0ZkSEs2THBEZUk5d1NBNVpZeXAzdl9HaGlpdk5SRDl2REh1QWdvYUpRaERsRHcwUkw4SzRoeTVLZ196dVg4aFYyRE05MEhYSUxzaGw5SmZ4dldPRWNzUkRXaWxpN1VZVFRKVG1PbUttaHVldWNERnU4TXcxRW40d0FQSFpOa3BidkFLY3p1anZRem9ZbUFCZnBCSnFMV2ZuaElkQTJBMWlyeVdvOUs4ZmVE?oc=5",
       "credibility": "confirmed",
-      "posts": 20,
+      "posts": 21,
       "outlets": [
        "Business Today",
        "BusinessLine",
@@ -4490,29 +4519,30 @@
    },
    "education": {
     "counts": {
-     "confirmed": 9,
+     "confirmed": 10,
      "reported": 2,
      "community": 0
     },
-    "running_ahead_of_prs": 11,
-    "hidden": 119,
+    "running_ahead_of_prs": 12,
+    "hidden": 126,
     "conversations": [
      {
       "label": "NEET PG Result 2026 Released; MCC to Conduct Counselling for 50% AIQ Seats; Check Schedule",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUjRMbzd3NGxhNjlmeWVQUUFBVEtuNlpTUUZmUTRmcUZCUHBOaHNUa01OcGdUcWxWQWotRUl2T2d1TVN3WkZHUkNNVmwxanVRNVNTclluNGVjZG9WUEdtc05RZTl5dUQ4S2V2ckU2Z3FFV3BNRXVoQUh5dVJ2UEV0N25TWHRjcm9FTU5ILUlHNGxvNHdza2U1cWFCc3VqR0tzWnNlMjlrbzNORkJqLXZYYkNJU3hWclFBeWlQYWlqYzNNSkV3Z25ETzZZWWFnNmxHS2RrcG1GMnVkaTFY0gHiAUFVX3lxTE85Wnh5WDA2aUVfR01MYUJwVkpxTm1zRWJZS3NKN2xROEZBMHFLcjFWZmJtS3VmNGxYaDBRbHpSTGVDYWZlR3ZORTdrNE02LWg3QllUQ3Z5ajBuaklaVmszWXVadFhiX0NHSlp3MTFYR0t4TGIzdGNkS0cwRk1UU1QtYmI1TUZ4ZEZYZ2pSaW9Uc21vZmtQbjNidmZmZ3Ixc0thMmJkZmtsRnNwRHk0TUVSb3F2MnAyQWJBbW1YblIwX1E2V0U0OEpXNVdGX2xPNFdmbVVNa0hZYVVVY3ZkS2NMTWc?oc=5",
       "credibility": "confirmed",
-      "posts": 5,
+      "posts": 7,
       "outlets": [
        "Moneycontrol",
        "NDTV",
-       "The Telegraph"
+       "The Telegraph",
+       "Times of India"
       ],
       "platforms": [
        "bluesky",
        "gnews"
       ],
       "first_seen": "2026-09-16",
-      "last_seen": "2026-09-30",
+      "last_seen": "2026-10-07",
       "prs_item": null
      },
      {
@@ -4584,6 +4614,22 @@
       "prs_item": null
      },
      {
+      "label": "Supreme Court dismisses plea for recitation of Preamble during morning assembly in schools",
+      "url": "https://barandbench.com/news/litigation/supreme-court-dismisses-plea-for-recitation-of-preamble-during-morning-assembly-in-schools",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Bar & Bench",
+       "The Hindu"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "prs_item": null
+     },
+     {
       "label": "SC asks Centre to consider exempting Class 6 students from CBSE’s three-language policy",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUWFEblZlZXAtWlFINkNybktyWlQ0ZXVHUUtYaEJuY0JockV5d1ZnZHNFdDFmcVNYb2hDMTdEOGlnWlk2elFEWXZOcGpvM2JKVnVPbjZZZUxhYTFXMHdjbzdQNHFDNGdCdjBXaVlJbXI3ZVE0ZFIwdzNrbmYwcTRXNmlaT0xYY19tZTVUWDd2d0drSGsyTUpueDJYaEZ0U2pCSjhzSVhhNGxyM2lHdHNjMXZB?oc=5",
       "credibility": "confirmed",
@@ -4613,32 +4659,17 @@
       "first_seen": "2026-09-18",
       "last_seen": "2026-09-19",
       "prs_item": null
-     },
-     {
-      "label": "National Webinar on Solid and e-Waste Management organised by the Department of School Education & Literacy",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hNWtzNGNnSDN5eGY4VGtPeklzNE4zQ1hMTW9UbkVnMkNGV0tmczVIX0Z3TWNQNnVBTkVqdDlUOTRBaTRUMjl2RzR2cHVGVTBmVzR3N2p6R0l5SFh0bXI2WUctZDdOUU0x?oc=5",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "PIB"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-16",
-      "last_seen": "2026-09-16",
-      "prs_item": null
      }
     ]
    },
    "justice": {
     "counts": {
-     "confirmed": 15,
+     "confirmed": 18,
      "reported": 3,
      "community": 0
     },
-    "running_ahead_of_prs": 13,
-    "hidden": 143,
+    "running_ahead_of_prs": 15,
+    "hidden": 150,
     "conversations": [
      {
       "label": "Justice within 3 years: Amit Shah on new criminal laws, FIR to Supreme Court",
@@ -4680,6 +4711,22 @@
       "prs_item": null
      },
      {
+      "label": "Punjab & Haryana High Court orders CBI probe into ED allegations against CM Bhagwant Mann's close aide",
+      "url": "https://barandbench.com/news/punjab-haryana-high-court-orders-cbi-probe-into-ed-allegations-against-cm-bhagwant-manns-close-aides",
+      "credibility": "confirmed",
+      "posts": 4,
+      "outlets": [
+       "Bar & Bench",
+       "The Hindu"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-10-05",
+      "last_seen": "2026-10-06",
+      "prs_item": "2026-07:4"
+     },
+     {
       "label": "Khalid, Imam bail pleas adjourned in HC to Sept 30",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdmRteWlWZG9vWDF0SEs1NURlYWUybGIxMk1veWdoN2RLNXcybjJnV01zWkxkdlo1dENQSnU2RzlBbUJBMTBTb1N5MVJpTXFOdGNYd1EtemkxVV9IQ2txa3dBZ2tBbWRYVm54am55ckVhamlpNjJVeTgxUDJoVXhqbF9uSk1IaUFrYUJ2NVNzWXJOVHpmNVJlb2w0RjZ5UlNWdU9adEZBNkFpNTF0b3VRQjM2Nl9OV1pSanluR3hXWdIBxAFBVV95cUxNU25vSUNiMHp5N2VTQ25sU0NMLWhJaWp0VmR0NHFYVENkSUxMLXlXdmNoX3Flb3JHUzdXMFNoNV9naHdvZmEzNHRFbEhJdkI4aXV5RFVYTldCaTlXTVdZeDBQWHdMNlVvU3NpcFM5Mml0cE5FNHV1QUtnU3g2WW9KZ3pWNTdMY1B5MHFkMGdUT2dlTDhHNUY0ZG8wMjMtTzVFMFNDdUh5WXFPWkFCcmQ3aVhZZEFaRk1YbjNuWG16TGRrTklh?oc=5",
       "credibility": "confirmed",
@@ -4697,20 +4744,21 @@
       "prs_item": null
      },
      {
-      "label": "Punjab & Haryana High Court orders CBI probe into ED allegations against CM Bhagwant Mann's close aide",
-      "url": "https://barandbench.com/news/punjab-haryana-high-court-orders-cbi-probe-into-ed-allegations-against-cm-bhagwant-manns-close-aides",
+      "label": "Delhi court grants regular bail to Swatantra Bhardwaj in CJP protest assault case",
+      "url": "https://barandbench.com/news/litigation/delhi-court-grants-regular-bail-to-swatantra-bhardwaj-in-cjp-protest-assault-case",
       "credibility": "confirmed",
       "posts": 3,
       "outlets": [
        "Bar & Bench",
+       "Hindustan Times",
        "The Hindu"
       ],
       "platforms": [
        "rss"
       ],
-      "first_seen": "2026-10-05",
+      "first_seen": "2026-10-06",
       "last_seen": "2026-10-06",
-      "prs_item": "2026-07:4"
+      "prs_item": null
      },
      {
       "label": "Jantar Mantar row explained: Journalist alleges sexual assault by Delhi cop, protesters demand FIR",
@@ -4762,22 +4810,6 @@
       "first_seen": "2026-10-03",
       "last_seen": "2026-10-03",
       "prs_item": "2026-07:4"
-     },
-     {
-      "label": "Delhi High Court refuses to direct Delhi Police, RAF to wear body cameras during protests",
-      "url": "https://barandbench.com/news/litigation/delhi-high-court-refuses-to-direct-delhi-police-raf-to-wear-body-cameras-during-protests",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Bar & Bench",
-       "NDTV"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-10-07",
-      "last_seen": "2026-10-07",
-      "prs_item": null
      }
     ]
    },
@@ -4788,7 +4820,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 4,
-    "hidden": 45,
+    "hidden": 46,
     "conversations": [
      {
       "label": "NEET PG Counselling 2026: NMC issues seat matrix for postgraduate courses, over 50,000 seats listed",
@@ -4860,7 +4892,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 6,
-    "hidden": 90,
+    "hidden": 98,
     "conversations": [
      {
       "label": "GST Council may clear sweeping compliance reforms; e-commerce sellers, genuine biz to get relief",
@@ -5004,7 +5036,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 10,
-    "hidden": 109,
+    "hidden": 113,
     "conversations": [
      {
       "label": "Oil again at $100, fuel retailers losing over Rs 20 on diesel, Rs 5 on petrol",
