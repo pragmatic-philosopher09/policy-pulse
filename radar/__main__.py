@@ -97,7 +97,11 @@ def collect(daily=False, months=18):
     if not daily:
         stages += [("prs", lambda: ingest(months)), ("states", lambda: refresh_states(conn)),
                    ("crosscheck", lambda: crosscheck(conn, visible_uids(conn)))]
-    stages += [("chatter", lambda: refresh_chatter(conn)), ("citizens", citizens)]
+    def chatter():
+        refresh_chatter(conn)
+        return ("ok", getattr(refresh_chatter, "last_detail", "Collection finished"))
+
+    stages += [("chatter", chatter), ("citizens", citizens)]
     results = [run_stage(conn, source, callback) for source, callback in stages]
     build()
     return all(results)

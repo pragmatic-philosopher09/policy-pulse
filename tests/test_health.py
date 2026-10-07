@@ -135,3 +135,27 @@ def test_health_page_localization(conn, lang):
     assert "health_status_" not in rendered
     assert "health_source_" not in rendered
     assert "health.json" in rendered
+
+
+def test_chatter_coverage_tolerates_a_few_dead_hosts():
+    from radar.chatter import assess_coverage, _Http
+    http = _Http()
+    http.attempted = {f"h{i}.example" for i in range(20)} | {"pib.gov.in", "www.newsonair.gov.in"}
+    http.failures = {"h1.example", "h2.example", "h3.example", "api.gdeltproject.org"}
+    http.attempted |= http.failures
+    http.n = 118
+    assert assess_coverage([object()] * 1952, http) is None
+
+
+def test_chatter_coverage_flags_real_degradation():
+    from radar.chatter import assess_coverage, _Http
+    http = _Http()
+    http.attempted = {f"h{i}.example" for i in range(10)} | {"pib.gov.in"}
+    # too few documents
+    assert "documents" in assess_coverage([object()] * 12, http)
+    # most hosts down
+    http.failures = {f"h{i}.example" for i in range(6)}
+    assert "hosts unreachable" in assess_coverage([object()] * 1000, http)
+    # all government feeds down
+    http.failures = {"pib.gov.in"}
+    assert "government feeds" in assess_coverage([object()] * 1000, http)

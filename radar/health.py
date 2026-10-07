@@ -49,6 +49,8 @@ def run_stage(conn, source, callback):
         return False
     if result == "not_configured":
         record(conn, source, "not_configured", "X/Reddit not configured; no requests made")
+    elif isinstance(result, tuple) and len(result) == 2 and result[0] == "ok":
+        record(conn, source, "ok", str(result[1]))
     else:
         record(conn, source, "ok", "Collection finished; see source coverage for sample limits")
     return True

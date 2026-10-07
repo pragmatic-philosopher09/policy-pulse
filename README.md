@@ -113,6 +113,12 @@ The news/Bluesky/Mastodon chatter layer is keyless. `POLICY_PULSE_SKIP_CHATTER=1
 `CHATTER_MAX_REQUESTS` caps its run (default 160). X/Reddit are collected only by Citizen's Corner,
 with approved credentials, not by the older raw-response-caching chatter collector.
 
+Chatter is a best-effort sample over ~20 third-party hosts, several of which rate-limit (GDELT) or
+block cloud runners on any given day. Its health is judged on the *sample*, not on every host:
+it is `ok` when ≥300 documents arrive, fewer than 40% of hosts fail and at least one government
+feed answers; otherwise `partial`. Skipped hosts are always listed in the health detail. The
+`report-failures` workflow job turns red only for `partial`/`failed` sources.
+
 ## Citizen's Corner
 
 `citizens.html` (also in Hindi) shows a 30-day window of sampled discussions, grouped by the

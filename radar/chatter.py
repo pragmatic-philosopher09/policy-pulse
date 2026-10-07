@@ -160,6 +160,7 @@ class _Http:
         self.n = 0
         self.disabled: set[str] = set()
         self.failures: set[str] = set()
+        self.attempted: set[str] = set()
         self.cached = 0
         self.conn = conn
         if conn is not None:
@@ -173,6 +174,7 @@ class _Http:
             self.cached += 1
             return path.read_text(encoding="utf-8")
         host = urlparse(url).netloc.lower()
+        self.attempted.add(host)
         cooldown = self.conn.execute("SELECT until_at FROM chatter_cooldowns WHERE host=?", (host,)).fetchone() if self.conn is not None else None
         if cooldown and cooldown[0] > time.time():
             self.disabled.add(host)
@@ -852,12 +854,46 @@ def refresh(conn: sqlite3.Connection, today: date | None = None, docs: list[Doc]
         # keep the table from growing forever; the clusters are recomputed from the window anyway
         conn.execute("DELETE FROM chatter_docs WHERE COALESCE(published, first_seen) < ?", ((today - timedelta(days=180)).isoformat(),))
     log.info("chatter: kept %d/%d, %d conversations (%d shown)", len(kept), len(fetched), n_clusters, n_shown)
-    if http.failures:
+    verdict = assess_coverage(fetched, http) if docs is None else None   # injected docs: nothing to judge
+    if verdict:
         from .health import IncompleteCollection
-        raise IncompleteCollection(
-            f"Partial chatter sample: {len(fetched)} documents; {http.n} requests; "
-            f"{http.cached} cached responses; unavailable hosts: {', '.join(sorted(http.failures))}")
+        raise IncompleteCollection(verdict)
+    if http.failures:
+        log.info("chatter: %d/%d hosts unreachable this run (%s)", len(http.failures), len(http.attempted),
+                 ", ".join(sorted(http.failures)))
+    refresh.last_detail = (f"{len(fetched)} documents from {len(http.attempted) - len(http.failures)}/{len(http.attempted)} hosts; "
+                           f"{n_shown} conversations shown"
+                           + (f"; skipped this run: {', '.join(sorted(http.failures))}" if http.failures else ""))
     return n_shown
+
+
+# Public chatter is a best-effort sample over ~20 third-party feeds. Individual hosts rate-limit
+# (GDELT answers 429) or block cloud runners; that is normal, not an outage. Only declare the
+# collection incomplete when the *sample* is genuinely degraded.
+MIN_DOCS_HEALTHY = 300
+MAX_HOST_FAILURE_RATIO = 0.4
+
+
+def assess_coverage(fetched: list, http: "_Http") -> str | None:
+    """Return a human-readable reason the chatter sample is incomplete, or None if it is healthy."""
+    attempted = len(http.attempted) or 1
+    failed = sorted(http.failures)
+    ratio = len(failed) / attempted
+    gov_hosts = {h for h in http.attempted if h.endswith(".gov.in")}
+    gov_down = gov_hosts and gov_hosts <= http.failures
+    reasons = []
+    if len(fetched) < MIN_DOCS_HEALTHY:
+        reasons.append(f"only {len(fetched)} documents (healthy ≥ {MIN_DOCS_HEALTHY})")
+    if ratio > MAX_HOST_FAILURE_RATIO:
+        reasons.append(f"{len(failed)}/{attempted} hosts unreachable")
+    if gov_down:
+        reasons.append("all government feeds unreachable")
+    if http.n >= MAX_REQUESTS:
+        reasons.append(f"request budget of {MAX_REQUESTS} exhausted")
+    if not reasons:
+        return None
+    return (f"Partial chatter sample: {'; '.join(reasons)}; {http.n} requests; {http.cached} cached responses; "
+            f"unavailable hosts: {', '.join(failed) or 'none'}")
 
 
 # ---------------------------------------------------------------------------
