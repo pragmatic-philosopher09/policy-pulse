@@ -1,6 +1,6 @@
 {
  "window_days": 30,
- "generated": "2026-10-09",
+ "generated": "2026-10-10",
  "measure": "newly_observed_deduplicated_posts",
  "policies": [
   {
@@ -10,17 +10,6 @@
    "total": 0,
    "themes": [],
    "days": [
-    {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
     {
      "day": "2026-09-11",
      "reddit": {
@@ -331,6 +320,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -355,17 +355,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -675,6 +664,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -699,17 +699,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -1019,6 +1008,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -1043,17 +1043,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -1363,6 +1352,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -1387,17 +1387,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -1707,6 +1696,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -1731,17 +1731,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -2051,6 +2040,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -2075,17 +2075,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -2395,6 +2384,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -2419,17 +2419,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -2739,6 +2728,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -2763,17 +2763,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -3083,6 +3072,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -3107,17 +3107,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -3427,6 +3416,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -3451,17 +3451,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -3771,6 +3760,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -3795,17 +3795,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -4115,6 +4104,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -4139,17 +4139,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -4459,6 +4448,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -4483,17 +4483,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -4803,6 +4792,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -4827,17 +4827,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -5147,6 +5136,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -5171,17 +5171,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -5491,6 +5480,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -5515,17 +5515,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -5835,6 +5824,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -5859,17 +5859,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -6179,6 +6168,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -6203,17 +6203,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -6523,6 +6512,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -6547,17 +6547,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -6867,6 +6856,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -6891,17 +6891,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -7211,6 +7200,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -7235,17 +7235,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -7555,6 +7544,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -7579,17 +7579,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -7899,6 +7888,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -7923,17 +7923,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -8243,6 +8232,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -8267,17 +8267,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -8587,6 +8576,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -8611,17 +8611,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -8931,6 +8920,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -8955,17 +8955,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -9275,6 +9264,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -9299,17 +9299,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -9619,6 +9608,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -9643,17 +9643,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -9963,6 +9952,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -9987,17 +9987,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -10307,6 +10296,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -10331,17 +10331,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -10651,6 +10640,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -10675,17 +10675,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -10995,6 +10984,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -11019,17 +11019,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -11339,6 +11328,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -11363,17 +11363,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -11683,6 +11672,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -11707,17 +11707,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -12027,6 +12016,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -12051,17 +12051,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -12371,6 +12360,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -12395,17 +12395,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -12715,6 +12704,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -12739,17 +12739,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -13059,6 +13048,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -13083,17 +13083,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -13403,6 +13392,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -13427,17 +13427,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -13747,6 +13736,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -13771,17 +13771,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -14091,6 +14080,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -14115,17 +14115,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -14435,6 +14424,17 @@
     },
     {
      "day": "2026-10-09",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
+    },
+    {
+     "day": "2026-10-10",
      "reddit": {
       "status": "not_configured",
       "count": null
@@ -14459,17 +14459,6 @@
    "themes": [],
    "days": [
     {
-     "day": "2026-09-10",
-     "reddit": {
-      "status": "not_collected",
-      "count": null
-     },
-     "x": {
-      "status": "not_collected",
-      "count": null
-     }
-    },
-    {
      "day": "2026-09-11",
      "reddit": {
       "status": "not_collected",
@@ -14787,6 +14776,17 @@
       "status": "not_configured",
       "count": null
      }
+    },
+    {
+     "day": "2026-10-10",
+     "reddit": {
+      "status": "not_configured",
+      "count": null
+     },
+     "x": {
+      "status": "not_configured",
+      "count": null
+     }
     }
    ],
    "peak": 1,
@@ -14803,22 +14803,22 @@
    "name_hi": "डिजिटल और AI",
    "sources": {
     "reddit": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "reddit",
      "domain": "digital-and-ai",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.815909+00:00"
+     "checked_at": "2026-10-10T10:29:08.133775+00:00"
     },
     "x": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "x",
      "domain": "digital-and-ai",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.822415+00:00"
+     "checked_at": "2026-10-10T10:29:08.140750+00:00"
     }
    }
   },
@@ -14828,22 +14828,22 @@
    "name_hi": "काम, मज़दूरी और कौशल",
    "sources": {
     "reddit": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "reddit",
      "domain": "work",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.816731+00:00"
+     "checked_at": "2026-10-10T10:29:08.134626+00:00"
     },
     "x": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "x",
      "domain": "work",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.823303+00:00"
+     "checked_at": "2026-10-10T10:29:08.141591+00:00"
     }
    }
   },
@@ -14853,22 +14853,22 @@
    "name_hi": "पैसा, बाज़ार और टैक्स",
    "sources": {
     "reddit": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "reddit",
      "domain": "money",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.817504+00:00"
+     "checked_at": "2026-10-10T10:29:08.135483+00:00"
     },
     "x": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "x",
      "domain": "money",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.824181+00:00"
+     "checked_at": "2026-10-10T10:29:08.142405+00:00"
     }
    }
   },
@@ -14878,22 +14878,22 @@
    "name_hi": "शिक्षा और परीक्षाएँ",
    "sources": {
     "reddit": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "reddit",
      "domain": "education",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.818331+00:00"
+     "checked_at": "2026-10-10T10:29:08.136489+00:00"
     },
     "x": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "x",
      "domain": "education",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.825074+00:00"
+     "checked_at": "2026-10-10T10:29:08.143341+00:00"
     }
    }
   },
@@ -14903,22 +14903,22 @@
    "name_hi": "क़ानून, अदालत और पुलिस",
    "sources": {
     "reddit": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "reddit",
      "domain": "justice",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.819255+00:00"
+     "checked_at": "2026-10-10T10:29:08.137346+00:00"
     },
     "x": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "x",
      "domain": "justice",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.825997+00:00"
+     "checked_at": "2026-10-10T10:29:08.144149+00:00"
     }
    }
   },
@@ -14928,22 +14928,22 @@
    "name_hi": "स्वास्थ्य और चिकित्सा",
    "sources": {
     "reddit": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "reddit",
      "domain": "health",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.820090+00:00"
+     "checked_at": "2026-10-10T10:29:08.138159+00:00"
     },
     "x": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "x",
      "domain": "health",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.826775+00:00"
+     "checked_at": "2026-10-10T10:29:08.144984+00:00"
     }
    }
   },
@@ -14953,22 +14953,22 @@
    "name_hi": "व्यवसाय और स्टार्टअप",
    "sources": {
     "reddit": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "reddit",
      "domain": "business",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.820899+00:00"
+     "checked_at": "2026-10-10T10:29:08.139031+00:00"
     },
     "x": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "x",
      "domain": "business",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.827537+00:00"
+     "checked_at": "2026-10-10T10:29:08.145811+00:00"
     }
    }
   },
@@ -14978,22 +14978,22 @@
    "name_hi": "ऊर्जा और पर्यावरण",
    "sources": {
     "reddit": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "reddit",
      "domain": "energy-environment",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.821633+00:00"
+     "checked_at": "2026-10-10T10:29:08.139929+00:00"
     },
     "x": {
-     "day": "2026-10-09",
+     "day": "2026-10-10",
      "platform": "x",
      "domain": "energy-environment",
      "status": "not_configured",
      "fetched": 0,
      "accepted": 0,
-     "checked_at": "2026-10-09T11:11:51.828344+00:00"
+     "checked_at": "2026-10-10T10:29:08.149000+00:00"
     }
    }
   }
