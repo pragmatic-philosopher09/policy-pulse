@@ -4201,12 +4201,12 @@
    },
    "work": {
     "counts": {
-     "confirmed": 9,
+     "confirmed": 10,
      "reported": 5,
      "community": 0
     },
-    "running_ahead_of_prs": 12,
-    "hidden": 78,
+    "running_ahead_of_prs": 13,
+    "hidden": 77,
     "conversations": [
      {
       "label": "Ministry of Labour & Employment expands “Shram Samvad” outreach across industrial clusters",
@@ -4222,6 +4222,22 @@
       ],
       "first_seen": "2026-09-28",
       "last_seen": "2026-10-06",
+      "prs_item": null
+     },
+     {
+      "label": "District Awareness Programme on Labour Codes Held at Regional Labour Institute, Faridabad as part of Shram Samvad Initiative",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYWtDZGdEcWNmMEM0ZnN2R0FLMlROUWJmekloVndBWXNZX3hMOVNDaXI1UnJocUg3bzFMYjdralZ2M3dRWW1XRFBsMDEzRVVNLTNtdFY5VTRVT25KbXA3cnFYaHdhU2VTU0RaWFM3Y1M2TjdoalNpdzBhUUd0WDJKS2pR?oc=5",
+      "credibility": "confirmed",
+      "posts": 4,
+      "outlets": [
+       "DD News",
+       "PIB"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-09-28",
+      "last_seen": "2026-09-29",
       "prs_item": null
      },
      {
@@ -4242,22 +4258,6 @@
       "prs_item": null
      },
      {
-      "label": "District Awareness Programme on Labour Codes Held at Regional Labour Institute, Faridabad as part of Shram Samvad Initiative",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYWtDZGdEcWNmMEM0ZnN2R0FLMlROUWJmekloVndBWXNZX3hMOVNDaXI1UnJocUg3bzFMYjdralZ2M3dRWW1XRFBsMDEzRVVNLTNtdFY5VTRVT25KbXA3cnFYaHdhU2VTU0RaWFM3Y1M2TjdoalNpdzBhUUd0WDJKS2pR?oc=5",
-      "credibility": "confirmed",
-      "posts": 3,
-      "outlets": [
-       "DD News",
-       "PIB"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-28",
-      "last_seen": "2026-09-29",
-      "prs_item": null
-     },
-     {
       "label": "Labour ministry to launch Labour Codes awareness campaign: Mansukh Mandaviya",
       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObFBZQXBVdlFlQ3FEWF9RaGhwM3NTdkRFU1J0ZXEycWNvSWhqZTQxMHZMWnJ1TkhQcWlwekFORXZiQWFRUnF2MVpQSzJEWDBXaERmNGhHMHNlQndRelZSSnMtX09TaFUyUzlKTGhodEtmS2FGRXp5N196T1NpODRZeTF4eUNRSXlEVkdHRHE1d2NkczFFQU9YVkpRcmI0UlRFdERfQVBFbVh4c3RZTjNmRWRXTVpzYlN3Y29EUVNsTW9jQXNtS0hNQ1A5MUY4cmFuWWtvOGNmMWY2bFdrV3oyRWs0b9IB6AFBVV95cUxPaE01cEZ4VUJEQ084ekJwR2RxaldkY2gzc0g1aGt4dVhaX0JoWWZfMm9yRlFHdFZpNmtJeUV0SEtuekdEdUlTanY1LWhsTFhkNFpKb29SSkM4QkVMeGhVeGNuYWxhNElDT3VMUXl3RW8tSVg5YXl5RExLTm5zSmhVc2thTldvcmNYQ3Axa1F4SHJ1QXMyN1UzMWxDbmlLaF90TjdJODRWTkx6SmtabDJuZkpoaXNsQzJaZEhuYjBLVVN3UmthMVdoTzAyYWFyTXREVkRxaDk3T1RhQ1lZZHByeE1wMjNVa3c4?oc=5",
       "credibility": "confirmed",
@@ -4271,6 +4271,22 @@
       ],
       "first_seen": "2026-09-28",
       "last_seen": "2026-09-29",
+      "prs_item": null
+     },
+     {
+      "label": "Govt: Green hydrogen investment can create 12,000 jobs in Bihar",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZV8xYmRGZDNZbHRfaGxCcmdDc2s5Qkp3RHFCWlo1UHZDcGxqTXJLb2FTeEM4Vm5LRldZYXUwSElYYXQwQ2Joclk1djNCeXBQQ1NMRHBjeG1aQTJZd09YblZsVTZZX3dYY0xKWHVaVTlBN1JNNWJfdEZGamh6bVVTWHlQdlgyeHl5RVZUeEQyMXRhUXV5S1VLLXVCUXFBVXJjUGxjWFNyNlVvY1VDdVktcGxSQmxrLTNXZkNHanlVVVNhZVhBdUJJZndodENjalHSAdQBQVVfeXFMUFdRNHZsRFM5NVpKNVFXMWVfUUdJX0QweFY5eURKckZneFJiZ2FyZlRVZnY4TDBlbWhlbklsZUZidFkwdkliOFhLOU5lT2FIN0ZVSkp5QXJkWDNOQ3o5S2J6SDRCT1NWSlQ0S3lDOU9VWl8wOVlnZ2pMd082YV9oeTh3YUZWTmgzVmxoelNMaVRpdjllLWh0b05uVXF0Z3p6S1RfWDNTVHVpTUN1UEtZc3c5ODNNSDA5SFhiamNrY0s3Rko5UlhJSmk5Q0VOX09rbWd3N1o?oc=5",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Moneycontrol",
+       "Times of India"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-09-21",
+      "last_seen": "2026-10-12",
       "prs_item": null
      },
      {
@@ -4320,22 +4336,6 @@
       "first_seen": "2026-09-22",
       "last_seen": "2026-09-24",
       "prs_item": null
-     },
-     {
-      "label": "Expects states, UTs to notify labour Code rules by October 31: Centre",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOR1A5RW9fRUlDSkkyaDNMTUhqdEgxVFRhM0dCV2d1NlFJaVd6aTZXWGVQVzJVNnBrcnBobUdPaXEyQnlpOU5rLWdOcnVrOEJpRTc4b2JzRnNHdzA1eVg3NUhSZzRrT1lDcVN3N255N18yMlhVRUZ5RjIybmFfOWVVVGxwS2xQMFcyTjRnZmN0OHM3SGNvYXR4VmNfNWNIWG92WHNuNnI5a1RKMXhob2toSHpLZ0czbTFZZDRPTEhCY2JSWWt2NldCbzdBNE5KS19y0gHWAUFVX3lxTE1IVmxaR1NSX193b2ZpLXgwdmNXNjI5c1MySkRLZkp6WUVqQ09ZZnpadFpleWdLZG1sbUNhZnUwZlBQdjRBOFNQSEplMzhuWVpuSU9UVXNSM1hDRTFreXJXNWVQaXBVSWpjMmpBRWs0TWF3RmhpZnpJTjZ0bURGcVdMVGs4QURvTXI2V3pwZ0VpdGN5cDBuZ3loaGl1dWtNZDV1X3RPdzhlZTlNbUJuT3dWaVlpYkRxVGpoQXdidGVXSUV2MUFnVXpuZVpNVUpVRi13MTg2R3c?oc=5",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Business Standard",
-       "Financial Express"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-24",
-      "last_seen": "2026-09-24",
-      "prs_item": null
      }
     ]
    },
@@ -4346,7 +4346,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 72,
-    "hidden": 266,
+    "hidden": 268,
     "conversations": [
      {
       "label": "GST Council to focus only on process reforms in Oct: Sitharaman",
@@ -4845,7 +4845,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 7,
-    "hidden": 82,
+    "hidden": 83,
     "conversations": [
      {
       "label": "NEET PG Counselling 2026: NMC issues seat matrix for postgraduate courses, over 50,000 seats listed",
@@ -5152,6 +5152,23 @@
       "prs_item": "2026-09:7"
      },
      {
+      "label": "Govt: Green hydrogen investment can create 12,000 jobs in Bihar",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZV8xYmRGZDNZbHRfaGxCcmdDc2s5Qkp3RHFCWlo1UHZDcGxqTXJLb2FTeEM4Vm5LRldZYXUwSElYYXQwQ2Joclk1djNCeXBQQ1NMRHBjeG1aQTJZd09YblZsVTZZX3dYY0xKWHVaVTlBN1JNNWJfdEZGamh6bVVTWHlQdlgyeHl5RVZUeEQyMXRhUXV5S1VLLXVCUXFBVXJjUGxjWFNyNlVvY1VDdVktcGxSQmxrLTNXZkNHanlVVVNhZVhBdUJJZndodENjalHSAdQBQVVfeXFMUFdRNHZsRFM5NVpKNVFXMWVfUUdJX0QweFY5eURKckZneFJiZ2FyZlRVZnY4TDBlbWhlbklsZUZidFkwdkliOFhLOU5lT2FIN0ZVSkp5QXJkWDNOQ3o5S2J6SDRCT1NWSlQ0S3lDOU9VWl8wOVlnZ2pMd082YV9oeTh3YUZWTmgzVmxoelNMaVRpdjllLWh0b05uVXF0Z3p6S1RfWDNTVHVpTUN1UEtZc3c5ODNNSDA5SFhiamNrY0s3Rko5UlhJSmk5Q0VOX09rbWd3N1o?oc=5",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "Moneycontrol",
+       "ThePrint",
+       "Times of India"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-09-21",
+      "last_seen": "2026-10-12",
+      "prs_item": null
+     },
+     {
       "label": "India’s coal stocks at power plants slide 24% amid unusual demand surge",
       "url": "https://indianexpress.com/article/business/companies/indias-coal-stocks-at-power-plants-slide-24-amid-unusual-demand-surge-10899500",
       "credibility": "confirmed",
@@ -5229,22 +5246,6 @@
       ],
       "first_seen": "2026-09-27",
       "last_seen": "2026-09-27",
-      "prs_item": null
-     },
-     {
-      "label": "Govt: Green hydrogen investment can create 12,000 jobs in Bihar",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZV8xYmRGZDNZbHRfaGxCcmdDc2s5Qkp3RHFCWlo1UHZDcGxqTXJLb2FTeEM4Vm5LRldZYXUwSElYYXQwQ2Joclk1djNCeXBQQ1NMRHBjeG1aQTJZd09YblZsVTZZX3dYY0xKWHVaVTlBN1JNNWJfdEZGamh6bVVTWHlQdlgyeHl5RVZUeEQyMXRhUXV5S1VLLXVCUXFBVXJjUGxjWFNyNlVvY1VDdVktcGxSQmxrLTNXZkNHanlVVVNhZVhBdUJJZndodENjalHSAdQBQVVfeXFMUFdRNHZsRFM5NVpKNVFXMWVfUUdJX0QweFY5eURKckZneFJiZ2FyZlRVZnY4TDBlbWhlbklsZUZidFkwdkliOFhLOU5lT2FIN0ZVSkp5QXJkWDNOQ3o5S2J6SDRCT1NWSlQ0S3lDOU9VWl8wOVlnZ2pMd082YV9oeTh3YUZWTmgzVmxoelNMaVRpdjllLWh0b05uVXF0Z3p6S1RfWDNTVHVpTUN1UEtZc3c5ODNNSDA5SFhiamNrY0s3Rko5UlhJSmk5Q0VOX09rbWd3N1o?oc=5",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "ThePrint",
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-21",
-      "last_seen": "2026-09-24",
       "prs_item": null
      }
     ]

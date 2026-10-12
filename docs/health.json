@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-12T11:21:22.419845+00:00",
+ "generated_at": "2026-10-12T11:44:27.615792+00:00",
  "sources": [
   {
    "source": "prs",
@@ -31,8 +31,8 @@
   {
    "source": "announcements",
    "status": "ok",
-   "checked_at": "2026-10-12T11:12:11.982379+00:00",
-   "successful_at": "2026-10-12T11:12:11.982379+00:00",
+   "checked_at": "2026-10-12T11:41:38.605882+00:00",
+   "successful_at": "2026-10-12T11:41:38.605882+00:00",
    "detail": "Collection finished; see source coverage for sample limits",
    "stale": false,
    "stale_after_days": 2
@@ -40,16 +40,16 @@
   {
    "source": "chatter",
    "status": "ok",
-   "checked_at": "2026-10-12T11:21:21.363063+00:00",
-   "successful_at": "2026-10-12T11:21:21.363063+00:00",
-   "detail": "1998 documents from 14/23 hosts; 216 conversations shown; government feeds direct: 0/2 (PIB also arrives via crosscheck); skipped this run: api.gdeltproject.org, indianexpress.com, pib.gov.in, scroll.in, theprint.in, thewire.in, www.business-standard.com, www.medianama.com, www.newsonair.gov.in",
+   "checked_at": "2026-10-12T11:44:26.482011+00:00",
+   "successful_at": "2026-10-12T11:44:26.482011+00:00",
+   "detail": "2006 documents from 14/23 hosts; 217 conversations shown; government feeds direct: 0/2 (PIB also arrives via crosscheck); skipped this run: api.gdeltproject.org, indianexpress.com, pib.gov.in, scroll.in, theprint.in, thewire.in, www.business-standard.com, www.medianama.com, www.newsonair.gov.in",
    "stale": false,
    "stale_after_days": 2
   },
   {
    "source": "citizens",
    "status": "not_configured",
-   "checked_at": "2026-10-12T11:21:21.598130+00:00",
+   "checked_at": "2026-10-12T11:44:26.500482+00:00",
    "successful_at": null,
    "detail": "X/Reddit not configured; no requests made",
    "stale": true,
