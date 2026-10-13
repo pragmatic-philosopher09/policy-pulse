@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12",
+ "generated": "2026-10-13",
  "topics": [
   {
    "slug": "business",
@@ -733,7 +733,7 @@
    "sector": "Energy",
    "deadline": "2026-10-30",
    "status": "open",
-   "days_left": 18,
+   "days_left": 17,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Petroleum and Natural Gas"
@@ -743,7 +743,7 @@
    "sector": "Environment",
    "deadline": "2026-11-07",
    "status": "open",
-   "days_left": 26,
+   "days_left": 25,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Environment"
@@ -753,7 +753,7 @@
    "sector": "Parliament",
    "deadline": "2026-10-05",
    "status": "closed",
-   "days_left": -7,
+   "days_left": -8,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-10-05/FCRA Press Release.pdf",
@@ -766,7 +766,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-28",
    "status": "closed",
-   "days_left": -14,
+   "days_left": -15,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-28/Press release for ISI Bill, 2026.pdf",
@@ -779,7 +779,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-25",
    "status": "closed",
-   "days_left": -17,
+   "days_left": -18,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-25/FCRA_press release.pdf",
@@ -792,7 +792,7 @@
    "sector": "Energy",
    "deadline": "2026-09-04",
    "status": "closed",
-   "days_left": -38,
+   "days_left": -39,
    "source": "https://prsindia.org/policy/monthly-policy-review/august-2026",
    "links": [
     "https://dae.gov.in/public-consultation-on-draft-shanti-rules-and-draft-shanti-regulations/",
@@ -805,7 +805,7 @@
    "sector": "Law and Justice",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -73,
+   "days_left": -74,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_Advocate_(A)_Bill_2026.pdf",
@@ -818,7 +818,7 @@
    "sector": "Health and Family Welfare",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -73,
+   "days_left": -74,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_National_Pharmacy_Commission_(NPC)_Bill_2026.pdf",
@@ -831,7 +831,7 @@
    "sector": "Parliament",
    "deadline": "2026-07-13",
    "status": "closed",
-   "days_left": -91,
+   "days_left": -92,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-13/National_Food_Security_(Amendment)_Bill_2026.pdf",
@@ -4061,12 +4061,12 @@
   "topics": {
    "digital-and-ai": {
     "counts": {
-     "confirmed": 11,
-     "reported": 6,
+     "confirmed": 13,
+     "reported": 7,
      "community": 0
     },
-    "running_ahead_of_prs": 17,
-    "hidden": 212,
+    "running_ahead_of_prs": 20,
+    "hidden": 221,
     "conversations": [
      {
       "label": "Govt To Release Consultation Paper On AI Regulation: Vaishnaw",
@@ -4119,6 +4119,22 @@
       "prs_item": null
      },
      {
+      "label": "Emerald Heights International School moves Supreme Court seeking curbs on children's social media use",
+      "url": "https://barandbench.com/news/litigation/emerald-heights-international-school-moves-supreme-court-seeking-curbs-on-childrens-social-media-use",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Bar & Bench",
+       "Hindustan Times"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "prs_item": null
+     },
+     {
       "label": "India AI Impact Summit 2026 showcases youth-led AI innovation for public good",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUmcwR2dtRS1hRUVLUEE3aGdjVG9hN1pjSENWRkNoY2FuRHFwdzBrR1daMjM3MG91c2ZncXVBOWdyWGNZR2JzZmc3ei1NalphNF9td3IxaE00NmN6NlV6ZndSTG5MdVl1Z2hwbTJNX0tqRG92dU02WFhJY1VSbVQzWU5uNFZIRlRIM3JuZGZFN05MdmJCVXFrWjMzYlozZC1pUWhNaVpR?oc=5",
       "credibility": "confirmed",
@@ -4130,6 +4146,23 @@
        "gnews"
       ],
       "first_seen": "2026-09-29",
+      "last_seen": "2026-10-12",
+      "prs_item": null
+     },
+     {
+      "label": "5 strategic signals from Meta Connect 2026 about its AI agent Muse",
+      "url": "https://medianama.com/2026/09/223-signals-meta-connect-muse",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Economic Times",
+       "Medianama"
+      ],
+      "platforms": [
+       "gnews",
+       "rss"
+      ],
+      "first_seen": "2026-09-24",
       "last_seen": "2026-10-12",
       "prs_item": null
      },
@@ -4164,49 +4197,17 @@
       "first_seen": "2026-10-07",
       "last_seen": "2026-10-08",
       "prs_item": null
-     },
-     {
-      "label": "Meta acted on 5.3 mn pieces of child abuse content in H1'26; rolls out new AI tools to check ads",
-      "url": "https://hindustantimes.com/india-news/meta-acted-on-5-3-mn-pieces-of-child-abuse-content-in-h126-rolls-out-new-ai-tools-to-check-ads-101791385867905.html",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Hindustan Times",
-       "The Hindu"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-10-08",
-      "last_seen": "2026-10-08",
-      "prs_item": null
-     },
-     {
-      "label": "MeitY IndiaAI Centre of Excellence in Artificial Intelligence to be launched on Wednesday",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQSHdYbHRYRHlxc3pSTkEwN3hHSGZ5MEc1YkxVQkg2VlE1NW9QaExHOXpna2l3eTFXQ044M05KbWg3NjNRenNOS1VHbldFQjNibFlQekpKT1R5UTVzQkdONnFwa3puUjliNnNuWGFBWEJwcFZIc1BManRleGhnTXBJZ0xjakJKWFRKcFZwalhTay1lYi1JR0lIX1JIQ3VFelJRTU9zb045LXVlN19kcjBqSU5ZMEdSQmZmSWFpNjdlWmhpU1dJak9RMlVyWURUc09zdlE2UG4ybDBZOUR6cXFYUnBmdkdiNng3WTRV0gHyAUFVX3lxTE5pbElmT1d2ZXhYQVl1MHBHaVhKZkJmM2FhUlY3b0JBOVE0bTRFTEdYeUlyYlJwNnBKaDZqU1ZuMEdhQWV2Y3Mzbl9CU044QUNtQUlJWnBaZWRLMkdtYURpdlJvR0JLeFVLTzY5cUF4LUtEYy1RemVsM0pUR1BwRmJ0cHVuM2V5RzlhT2h5OGJXQk5JRGNHU1VxN29HSHpPYjlrVE5fdEUxWFdtNU1kM2tHNklyVnExTVdJQVRLaWR1dGNnSXladFlkemJwdkI2M2FaMnhDekg3b2tteG9VMERUcTdvY3czQTNOS0hZdG9WMkhn?oc=5",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "The Hindu",
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "prs_item": null
      }
     ]
    },
    "work": {
     "counts": {
      "confirmed": 10,
-     "reported": 5,
+     "reported": 6,
      "community": 0
     },
-    "running_ahead_of_prs": 13,
-    "hidden": 77,
+    "running_ahead_of_prs": 14,
+    "hidden": 79,
     "conversations": [
      {
       "label": "Ministry of Labour & Employment expands “Shram Samvad” outreach across industrial clusters",
@@ -4345,20 +4346,21 @@
      "reported": 20,
      "community": 0
     },
-    "running_ahead_of_prs": 72,
-    "hidden": 268,
+    "running_ahead_of_prs": 70,
+    "hidden": 285,
     "conversations": [
      {
       "label": "GST Council to focus only on process reforms in Oct: Sitharaman",
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPd3JuTUZaMDBHNk1qR1F5WXZMd1pQODQybTZSYWZSZGJQR2NfbDFJcUpoZVhiVmhYTUxRNEl6S0gzbVFYbG94ekFZZmtwalJiYWpIa1B0Z1NNeERleDZuTVVJNlBVUEdXZi1CcnJlb0xVeEVYRnNNRERLdW0xbGlzY0hBc0xiaExvUmdpM1JSa191ejJqV3RidDYxM3FzUTkxcGd3OHhVQVhMMVZQdU5CQ3E0ZXJHYmtWV1ZZRXROdEZ6cVB3eHpsTllsYkU4U1lEU2NVcnVXSjdyT1FKV1NMcjNB0gHnAUFVX3lxTE1OQ1A1QS01TmlIRE9UaW5vZjkwczJpaHZVNEhRNGh4WkNmMzZSME9mNTR2XzBDLWFGRGdiU2ktMXdJcV81M3FIYXFNaU9PS3lTaUJGYnNDNHFCanhkRWlMRG1QdHVmdTgtX29ka1U2TENJbmlmNGQwRVRWSWRJOWtOWnphbGFZb0F6eWhRVlNWQ1VKNGh6NkFCUktsQ19Bcnd5dzJtR1NoR25kZGItQjN2RXEyMDlUWWtvLVVYejBwQkFBblp0V09OWHFOSnZYbm5yRVVuOHEtQmp6MkVEbUdrOUx5OVduNA?oc=5",
       "credibility": "confirmed",
-      "posts": 22,
+      "posts": 23,
       "outlets": [
        "ANI",
        "Business Today",
        "BusinessLine",
        "CNBC-TV18",
        "Deccan Herald",
+       "Economic Times",
        "Moneycontrol",
        "NDTV",
        "New Indian Express",
@@ -4406,7 +4408,7 @@
       "label": "GST Council removes arrest powers of tax officers, eases compliance rules for businesses",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQmpWeFJzWUNfS1Ryb1J3TE1CaEYzQkNVc1B3TXZvTXhQTXBOT1FFd3hGMHYtbFdQWTFqRFlrUnM4SzIwYms4TUFHOFZ3YTZNeWg3STFUU09rSllDeThXS2FuMXNrUkJJaUFMTm5CS251dkVXNmNFQ0R0SHlqcC1VQVZ1X3dJdmhjbS14U2RoR25VSEJ5Y3pKQkNubFh4U0h2eVNITGJsNjk0OEl6YlhLaDU3TQ?oc=5",
       "credibility": "confirmed",
-      "posts": 18,
+      "posts": 19,
       "outlets": [
        "Business Standard",
        "BusinessLine",
@@ -4425,7 +4427,7 @@
        "rss"
       ],
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-08",
+      "last_seen": "2026-10-13",
       "prs_item": null
      },
      {
@@ -4479,12 +4481,13 @@
       "label": "GST on MDR may reach GST Council",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNzJCWUM3MmIxczRMZFVick5UN2s1bmZWNjZCX0lZNENCc2w3bDM1QlJsdDBiYXI1S3hpeVhUX2FwSGU0QlFDTU1CRzNwTGMxMXFsbDNKVXJENUlzSWpsUS1KbkJWR3VSb3ppLS15d1hjT0c3bEtIT3NtcWV5Zk9nOTJacnJ4QkVWVm1MQ2FRVWtVQkc1eVFUMTNNRDJ3QdIBpAFBVV95cUxNRzE0clU5VHBEUmVtVlRTbzltMVBfVUZkcGtKdFNtaTFIeUJhUS1iTnY1MG81dWRIZHVnbXZOdjJHMGRmNE5XZnJfczE5WTZWZ25jWEc1VjVjUG9lVGdycFJsY3NDZjZ6N0J3dHRFbFVYRXh2amVjQ1gwR2ZDd1ltRjNlbzRLRFZLcU1fLXVTM2J4alcwV1BxNVZ1cEVYN0tXSk8wbg?oc=5",
       "credibility": "confirmed",
-      "posts": 11,
+      "posts": 12,
       "outlets": [
        "Business Today",
        "BusinessLine",
        "Firstpost",
        "Moneycontrol",
+       "The Quint",
        "ThePrint",
        "Times of India"
       ],
@@ -4493,7 +4496,7 @@
        "gnews"
       ],
       "first_seen": "2026-09-17",
-      "last_seen": "2026-10-08",
+      "last_seen": "2026-10-09",
       "prs_item": null
      },
      {
@@ -4539,11 +4542,11 @@
    "education": {
     "counts": {
      "confirmed": 15,
-     "reported": 4,
+     "reported": 5,
      "community": 0
     },
-    "running_ahead_of_prs": 19,
-    "hidden": 192,
+    "running_ahead_of_prs": 20,
+    "hidden": 213,
     "conversations": [
      {
       "label": "NEET PG counselling 2026 date: Check step-by-step process, documents required for registration and other",
@@ -4586,6 +4589,23 @@
       "prs_item": null
      },
      {
+      "label": "NEET PG counselling: MCC to begin Round 1 registration today, check direct link here",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNWkcwU3BYX0lPLThCWUc3RXoxSzl5aTRzTXRyMXhQOFVkX205c05INWNFeUEwTElpbjVHT0RVZ1R4aWlGZ3FUUFZ1LTBMbTJRa0tVQU5OcUlyblYyWmJKRVgxZzNoVmcyalRnQXJ3MFpMaVpHMUJrWi1mRWNQLTVZQU1WRlM4US0zTnRfYnE0VEFDTXRyOHYzOU9FSjd2cE5CbUFSYVdIN1dsUjhTTllGYkN1dF9rUnkyOHFLSGszSGFjN3dqNkN2ZmE4RmFVcjFkSFFWMjdzOG85Z1Fqbll4cTh1NHhOWXVIQUFEV2tyYVpWWmVVcHM4Qm1nbXZ6Z2ZQbzdF?oc=5",
+      "credibility": "confirmed",
+      "posts": 5,
+      "outlets": [
+       "India Today",
+       "Indian Express",
+       "The Telegraph"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-13",
+      "prs_item": null
+     },
+     {
       "label": "Students protest RSS leader’s presence at Vande Mataram event in Central University of Kerala",
       "url": "https://hindustantimes.com/india-news/students-protest-rss-leader-s-presence-at-vande-mataram-event-in-central-university-of-kerala-101791265878866.html",
       "credibility": "confirmed",
@@ -4599,22 +4619,6 @@
       ],
       "first_seen": "2026-10-06",
       "last_seen": "2026-10-09",
-      "prs_item": null
-     },
-     {
-      "label": "NEET PG counselling: MCC to begin Round 1 registration today, check direct link here",
-      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOcWV1WFdwSWlJY1ZFR2YyOXVzLUFPU0NsbFNPTjZWbW9YeFprVERhTmJVU1Z5RV9Ha0tYcE1vLVRTZWJNM25BMVVqbU9BWUVLc2ZSVmlLUnZNMGwyMUIzYl9QemozemJfaVhSc3Y2YmIyWnczbE5kbVd5dzlGX1k5TUdoUUw5ZnhFVGoyU0RSS1A3dENIRXpyZnMwVE1IUnRHaFVsOW5Fd0RQbkdlT19TbFB1cHM2UEZFb3A3bjNXTlpSQkFkMnNhOHVuejd3NXByRmV6eFI0WHhrYjFVYUpib3Y3MkNYYW1qV05kYnA0bmpLRTUtUGRURFV4eGxkeEtZVnVIV3FhSVo?oc=5",
-      "credibility": "confirmed",
-      "posts": 3,
-      "outlets": [
-       "India Today",
-       "Indian Express"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
       "prs_item": null
      },
      {
@@ -4632,6 +4636,22 @@
       ],
       "first_seen": "2026-09-30",
       "last_seen": "2026-09-30",
+      "prs_item": null
+     },
+     {
+      "label": "Emerald Heights International School moves Supreme Court seeking curbs on children's social media use",
+      "url": "https://barandbench.com/news/litigation/emerald-heights-international-school-moves-supreme-court-seeking-curbs-on-childrens-social-media-use",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Bar & Bench",
+       "Hindustan Times"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
       "prs_item": null
      },
      {
@@ -4665,33 +4685,17 @@
       "first_seen": "2026-10-06",
       "last_seen": "2026-10-09",
       "prs_item": null
-     },
-     {
-      "label": "Kerala High Court comes to aid of principal denied entry to school for wearing churidar",
-      "url": "https://barandbench.com/news/kerala-high-court-comes-to-aid-of-principal-denied-entry-to-school-for-wearing-churidar",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Bar & Bench",
-       "The Hindu"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-10-07",
-      "last_seen": "2026-10-08",
-      "prs_item": null
      }
     ]
    },
    "justice": {
     "counts": {
-     "confirmed": 40,
-     "reported": 8,
+     "confirmed": 42,
+     "reported": 9,
      "community": 1
     },
-    "running_ahead_of_prs": 39,
-    "hidden": 246,
+    "running_ahead_of_prs": 42,
+    "hidden": 261,
     "conversations": [
      {
       "label": "Justice within 3 years: Amit Shah on new criminal laws, FIR to Supreme Court",
@@ -4840,12 +4844,12 @@
    },
    "health": {
     "counts": {
-     "confirmed": 4,
+     "confirmed": 6,
      "reported": 3,
      "community": 0
     },
-    "running_ahead_of_prs": 7,
-    "hidden": 83,
+    "running_ahead_of_prs": 9,
+    "hidden": 88,
     "conversations": [
      {
       "label": "NEET PG Counselling 2026: NMC issues seat matrix for postgraduate courses, over 50,000 seats listed",
@@ -4861,6 +4865,38 @@
       ],
       "first_seen": "2026-09-30",
       "last_seen": "2026-09-30",
+      "prs_item": null
+     },
+     {
+      "label": "No medicine shortage in govt hospitals, says Keralam Health minister",
+      "url": "https://hindustantimes.com/india-news/no-medicine-shortage-in-govt-hospitals-says-keralam-health-minister-101791009373310.html",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Hindustan Times",
+       "The Hindu"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-13",
+      "prs_item": null
+     },
+     {
+      "label": "‘Open fire at us’: Video captures Punjab anti-drug activist Parvinder Jhota’s final moments before being shot dead",
+      "url": "https://hindustantimes.com/india-news/video-captures-punjab-anti-drug-activist-parvinder-jhota-s-final-moments-before-being-shot-dead-101791884700522.html",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Hindustan Times",
+       "NDTV"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
       "prs_item": null
      },
      {
@@ -4940,21 +4976,6 @@
       "first_seen": "2026-09-27",
       "last_seen": "2026-10-03",
       "prs_item": null
-     },
-     {
-      "label": "Hosp manager performs surgery in doctor’s absence, arrested after patient dies",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQQXpBdlRLZDd6N3cxQ3NKblQtMlRnaFJTa2hRaGxOb3JzRTNQWXNLcG1oMi1iblFXX0h4dERRcWEwNnNyNDhaOHlVVUZGZGhhelFROG5JTmREY05aY0xsZk93MGRGRzFVQTlMTjZKVFVRRDhUcVdKbGJGeHlGR2R0YVdWc3RQWjhsQ2QxeVNNd05ITjVlUHA0eU53aGNtWGhjVXMzY0t2NHdEQ1kwTzBVNzhmSGpacG00VnZrLVBRXzRjSGIxSW9OTllJZlg3ajdMSmNqQTktU0tnY1EzOWpocmZyYW1tSWfSAewBQVVfeXFMT0FBMTFxSDR5bkJZV2xmTUdQR2JPR1FGb0ZfYTRHWmRlRkxRR0JITHF5dVJLX1pOZWMwc1NkMUNTUXVoQ1hHeldpRHhjZFN3bDBJZ0RLX1o5d205blFUb0Q0S1YyeHYzM0ZUX3k2OFBCVUZZYzB0ZW5QOWVmVUVGTC10bFZQRTV2S085Mm9JWTlvX0NLeUNLQkR4UU5KaEhVRi1CdzdWUUxoVlpVdWw0UGIwWHJNMGxicVVrUHZOTlNtNWc1SVlrYVpHYzVra25VQnFUS3ZoZU9KMHdGdmh1ZWdCRUJoZlNfUGhOVXM?oc=5",
-      "credibility": "reported",
-      "posts": 2,
-      "outlets": [
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-03",
-      "last_seen": "2026-10-03",
-      "prs_item": null
      }
     ]
    },
@@ -4965,7 +4986,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 10,
-    "hidden": 112,
+    "hidden": 115,
     "conversations": [
      {
       "label": "GST Council may clear sweeping compliance reforms; e-commerce sellers, genuine biz to get relief",
@@ -5108,12 +5129,32 @@
    "energy-environment": {
     "counts": {
      "confirmed": 8,
-     "reported": 8,
+     "reported": 9,
      "community": 0
     },
-    "running_ahead_of_prs": 15,
-    "hidden": 153,
+    "running_ahead_of_prs": 16,
+    "hidden": 166,
     "conversations": [
+     {
+      "label": "Maruti Suzuki commissions first green hydrogen plant at Haryana facility",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNR09RYnY4dDBiRm9Rckh5cnBoOW9lOFpRSjRqVk5UREtCMnJ6bm5ab3FxOUtINERicWl3azY3Sm10Zjg4Y3dSdGpiQ1JEZVk2amRKbDVPT0xGdm8yX05PME9Cd0x1ZVpzTTBrYllBV1B6YVk4R19kZUFFMm9yMjNFX3ljMGpkb29XME1QZWtqdXAzN0h1TmRnck5ZREJreHhJNnpXVU1zVDl4cFJWTWhLR2R2dHc2RGF2cklUdi0tU2pxeGFMMzhoZ3RueFVzdmt5YWE1dTB30gHbAUFVX3lxTFBlNWtkSk5MZ1c5c2otcm9CNlBnN044aHJwdEZZNE1rd0FGWVlORWUtalpKbV8zMG9EUjJSYnlqS2VKNGlTeWZTWU5KNG80X01NZndXOGNXUUY4WTJ4V3liVm9xNF9VNUZOdEVCcjVPdTdlLXNsTHJueV90bVBiOTM2MXFKOVpGZFk5aV9YS3FtLWNLS3Q5dG5uX0I3dVJZQnpzMU5fVmp6SWV0SjcxeHFTcWJrNFVxSkVmc2t5Yzg2eThfbE15VWtpRzhsUC1uaGxYamtpb3RWNXJfRQ?oc=5",
+      "credibility": "confirmed",
+      "posts": 6,
+      "outlets": [
+       "CNBC-TV18",
+       "Economic Times",
+       "Financial Express",
+       "Free Press Journal",
+       "Moneycontrol",
+       "Times of India"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-09-24",
+      "last_seen": "2026-09-25",
+      "prs_item": "2026-09:7"
+     },
      {
       "label": "GST Council clears major reforms: Arrest power to go, faster refunds, prosecution threshold raised to Rs 5...",
       "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOU1JRV001WEt3Qk9wZW9aSWRkQ3JSaHhNU0JXOHRUeWlKS013OXp2N3FvV1d1N3R6OUoxYy1QX2V4c3BzQjZDejAtZm5CSzBiMkFLTml2U0dlUE9wMkR5djB5b0l0dnZxUTBMN1d6TS1aOTBTUmU1M2VRQWROMFpYdHY1czNPWUxqdUtndlZzV1lWdDJ3SS1oYlZ3WTNuV3M1QzZRVkRjQmp3ZUdBZXNaVUROaExXYURZN2ExalBhNHV0U09FMjNReFVxWkNncjhOUGloZjIxUFEzd2hkVUVMNFpiLVpzZ1ZfVHU4alZCS2ZnRDA5LTBrVnB30gH_AUFVX3lxTFBXMG1qNHM4dEZGUHR2X3h0LTR1U19ZZC1ORjVFYnhYUWdtMVZvbEtvNWZZYmNEOS1VeE50dUpTQVRyWkVhT0ZWaE5FQ051YXUtcEFKWHdEX3NYdDU5TUNxOFV4LWlndlNPUWNmQm1jdjB4RkhUYTAyZzI4aXM4azBPN3ozNUgzWXJjMlQtb0FHaTVGQjlpLWZQeVJ6d0ptdmVaS0Y1a21GcGhPX1NhZnk1UjZmc0V6Sm9PS28yb1NXT1B6LVNMN3dYckhoR0NQYTczNHZoY0N6T0NHUGFEOUtQLTlTVEt3aU5jMjllY2thVXVPdHNlVUpTWEl6Zm05NA?oc=5",
@@ -5131,25 +5172,6 @@
       "first_seen": "2026-10-08",
       "last_seen": "2026-10-09",
       "prs_item": null
-     },
-     {
-      "label": "Maruti Suzuki commissions first green hydrogen plant at Haryana facility",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNR09RYnY4dDBiRm9Rckh5cnBoOW9lOFpRSjRqVk5UREtCMnJ6bm5ab3FxOUtINERicWl3azY3Sm10Zjg4Y3dSdGpiQ1JEZVk2amRKbDVPT0xGdm8yX05PME9Cd0x1ZVpzTTBrYllBV1B6YVk4R19kZUFFMm9yMjNFX3ljMGpkb29XME1QZWtqdXAzN0h1TmRnck5ZREJreHhJNnpXVU1zVDl4cFJWTWhLR2R2dHc2RGF2cklUdi0tU2pxeGFMMzhoZ3RueFVzdmt5YWE1dTB30gHbAUFVX3lxTFBlNWtkSk5MZ1c5c2otcm9CNlBnN044aHJwdEZZNE1rd0FGWVlORWUtalpKbV8zMG9EUjJSYnlqS2VKNGlTeWZTWU5KNG80X01NZndXOGNXUUY4WTJ4V3liVm9xNF9VNUZOdEVCcjVPdTdlLXNsTHJueV90bVBiOTM2MXFKOVpGZFk5aV9YS3FtLWNLS3Q5dG5uX0I3dVJZQnpzMU5fVmp6SWV0SjcxeHFTcWJrNFVxSkVmc2t5Yzg2eThfbE15VWtpRzhsUC1uaGxYamtpb3RWNXJfRQ?oc=5",
-      "credibility": "confirmed",
-      "posts": 5,
-      "outlets": [
-       "CNBC-TV18",
-       "Financial Express",
-       "Free Press Journal",
-       "Moneycontrol",
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-24",
-      "last_seen": "2026-09-25",
-      "prs_item": "2026-09:7"
      },
      {
       "label": "Govt: Green hydrogen investment can create 12,000 jobs in Bihar",
