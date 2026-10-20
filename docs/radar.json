@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19",
+ "generated": "2026-10-20",
  "topics": [
   {
    "slug": "business",
@@ -732,7 +732,7 @@
    "sector": "Energy",
    "deadline": "2026-10-30",
    "status": "open",
-   "days_left": 11,
+   "days_left": 10,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Petroleum and Natural Gas"
@@ -742,7 +742,7 @@
    "sector": "Environment",
    "deadline": "2026-11-07",
    "status": "open",
-   "days_left": 19,
+   "days_left": 18,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Environment"
@@ -752,7 +752,7 @@
    "sector": "Parliament",
    "deadline": "2026-10-05",
    "status": "closed",
-   "days_left": -14,
+   "days_left": -15,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-10-05/FCRA Press Release.pdf",
@@ -765,7 +765,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-28",
    "status": "closed",
-   "days_left": -21,
+   "days_left": -22,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-28/Press release for ISI Bill, 2026.pdf",
@@ -778,7 +778,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-25",
    "status": "closed",
-   "days_left": -24,
+   "days_left": -25,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-25/FCRA_press release.pdf",
@@ -791,7 +791,7 @@
    "sector": "Energy",
    "deadline": "2026-09-04",
    "status": "closed",
-   "days_left": -45,
+   "days_left": -46,
    "source": "https://prsindia.org/policy/monthly-policy-review/august-2026",
    "links": [
     "https://dae.gov.in/public-consultation-on-draft-shanti-rules-and-draft-shanti-regulations/",
@@ -804,7 +804,7 @@
    "sector": "Law and Justice",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -80,
+   "days_left": -81,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_Advocate_(A)_Bill_2026.pdf",
@@ -817,7 +817,7 @@
    "sector": "Health and Family Welfare",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -80,
+   "days_left": -81,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_National_Pharmacy_Commission_(NPC)_Bill_2026.pdf",
@@ -830,7 +830,7 @@
    "sector": "Parliament",
    "deadline": "2026-07-13",
    "status": "closed",
-   "days_left": -98,
+   "days_left": -99,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-13/National_Food_Security_(Amendment)_Bill_2026.pdf",
@@ -4061,11 +4061,11 @@
    "digital-and-ai": {
     "counts": {
      "confirmed": 14,
-     "reported": 13,
+     "reported": 14,
      "community": 0
     },
-    "running_ahead_of_prs": 27,
-    "hidden": 280,
+    "running_ahead_of_prs": 28,
+    "hidden": 290,
     "conversations": [
      {
       "label": "Emerald Heights International School moves Supreme Court seeking curbs on children's social media use",
@@ -4205,7 +4205,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 16,
-    "hidden": 90,
+    "hidden": 91,
     "conversations": [
      {
       "label": "Ministry of Labour & Employment expands “Shram Samvad” outreach across industrial clusters",
@@ -4340,12 +4340,12 @@
    },
    "money": {
     "counts": {
-     "confirmed": 59,
+     "confirmed": 60,
      "reported": 23,
      "community": 0
     },
-    "running_ahead_of_prs": 74,
-    "hidden": 335,
+    "running_ahead_of_prs": 75,
+    "hidden": 344,
     "conversations": [
      {
       "label": "Next-Gen GST Process Reforms",
@@ -4476,12 +4476,11 @@
       "label": "GST Council may clear sweeping compliance reforms; e-commerce sellers, genuine biz to get relief",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPYklkaUNzN2tfS2pfazVzcHBrbmlPa3JiWHFhS1B3RlF3MFdXeEJjNkRCUGI4bHZhYVJlVldHdG9UbzVaS2pCWGdRYzl3aHFuU3FQdWtXaVpNekJQdkhjS1lobmhVci1WcUlUeldkRUx2Ujg3Mmg1b3dzQmM3ZUFWeGVXNFNzQXM0b0NwbnFab3FqeE4tdWlQN0NEcHNUV2hqQ1EzWXVYSGhXLS1qUlNGb040UVlDbG5lVk1GUDdkYUFqUERFb3RsdWlkYkEzVmty0gHQAUFVX3lxTE9iSWRpQ3M3a19Lal9rNXNwcGtuaU9rcmJYcWFLUHdGUXcwV1d4QmM2REJQYjhsdmFhUmVWV0d0b1RvNVpLakJYZ1FjOXdocW5TcVB1a1dpWk16QlB2SGNLWWhuaFVyLVZxSVR6V2RFTHZSODcyaDVvd3NCYzdlQVZ4ZVc0U3NBczRvQ3BucVpvcWp4Ti11aVA3Q0Rwc1RXaGpDUTNZdVhIaFctLWpSU0ZvTjRRWUNsbmVWTUZQN2RhQWpQREVvdGx1aWRiQTNWa3I?oc=5",
       "credibility": "confirmed",
-      "posts": 11,
+      "posts": 10,
       "outlets": [
        "Economic Times",
        "Hindustan Times",
        "Moneycontrol",
-       "The Hindu",
        "The Telegraph",
        "ThePrint"
       ],
@@ -4490,7 +4489,7 @@
        "gnews"
       ],
       "first_seen": "2026-10-04",
-      "last_seen": "2026-10-09",
+      "last_seen": "2026-10-08",
       "prs_item": null
      },
      {
@@ -4543,13 +4542,13 @@
      "community": 0
     },
     "running_ahead_of_prs": 28,
-    "hidden": 270,
+    "hidden": 278,
     "conversations": [
      {
       "label": "NEET PG Result 2026 Released; MCC to Conduct Counselling for 50% AIQ Seats; Check Schedule",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUjRMbzd3NGxhNjlmeWVQUUFBVEtuNlpTUUZmUTRmcUZCUHBOaHNUa01OcGdUcWxWQWotRUl2T2d1TVN3WkZHUkNNVmwxanVRNVNTclluNGVjZG9WUEdtc05RZTl5dUQ4S2V2ckU2Z3FFV3BNRXVoQUh5dVJ2UEV0N25TWHRjcm9FTU5ILUlHNGxvNHdza2U1cWFCc3VqR0tzWnNlMjlrbzNORkJqLXZYYkNJU3hWclFBeWlQYWlqYzNNSkV3Z25ETzZZWWFnNmxHS2RrcG1GMnVkaTFY0gHiAUFVX3lxTE85Wnh5WDA2aUVfR01MYUJwVkpxTm1zRWJZS3NKN2xROEZBMHFLcjFWZmJtS3VmNGxYaDBRbHpSTGVDYWZlR3ZORTdrNE02LWg3QllUQ3Z5ajBuaklaVmszWXVadFhiX0NHSlp3MTFYR0t4TGIzdGNkS0cwRk1UU1QtYmI1TUZ4ZEZYZ2pSaW9Uc21vZmtQbjNidmZmZ3Ixc0thMmJkZmtsRnNwRHk0TUVSb3F2MnAyQWJBbW1YblIwX1E2V0U0OEpXNVdGX2xPNFdmbVVNa0hZYVVVY3ZkS2NMTWc?oc=5",
       "credibility": "confirmed",
-      "posts": 13,
+      "posts": 14,
       "outlets": [
        "Business Standard",
        "India Today",
@@ -4693,12 +4692,12 @@
    },
    "justice": {
     "counts": {
-     "confirmed": 52,
-     "reported": 14,
+     "confirmed": 56,
+     "reported": 13,
      "community": 1
     },
-    "running_ahead_of_prs": 51,
-    "hidden": 381,
+    "running_ahead_of_prs": 54,
+    "hidden": 396,
     "conversations": [
      {
       "label": "Delhi riots UAPA case: High court to hear Umar Khalid, Sharjeel Imam bail pleas on September 30",
@@ -4829,20 +4828,20 @@
       "prs_item": null
      },
      {
-      "label": "In ‘dry’ Nagaland, 19 die of hooch poisoning; police probe underway",
-      "url": "https://indianexpress.com/article/india/nagaland-hooch-tragedy-several-dead-in-mokokchung-tuensang-police-probe-underway-10894790",
+      "label": "Transgender woman can't invoke Section 69 BNS in false promise of marriage case: Allahabad High Court",
+      "url": "https://barandbench.com/news/transgender-woman-cant-invoke-section-69-bns-in-false-promise-of-marriage-case-allahabad-high-court",
       "credibility": "confirmed",
       "posts": 4,
       "outlets": [
-       "Hindustan Times",
-       "Indian Express",
-       "The Quint"
+       "Bar & Bench",
+       "Law Beat"
       ],
       "platforms": [
+       "gnews",
        "rss"
       ],
-      "first_seen": "2026-09-26",
-      "last_seen": "2026-10-17",
+      "first_seen": "2026-10-17",
+      "last_seen": "2026-10-19",
       "prs_item": null
      }
     ]
@@ -4854,7 +4853,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 13,
-    "hidden": 136,
+    "hidden": 143,
     "conversations": [
      {
       "label": "Veteran BJP leader LK Advani admitted to Delhi's Apollo hospital with chest infection, condition stable",
@@ -4871,6 +4870,22 @@
       ],
       "first_seen": "2026-10-17",
       "last_seen": "2026-10-19",
+      "prs_item": null
+     },
+     {
+      "label": "No medicine shortage in govt hospitals, says Keralam Health minister",
+      "url": "https://hindustantimes.com/india-news/no-medicine-shortage-in-govt-hospitals-says-keralam-health-minister-101791009373310.html",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "Hindustan Times",
+       "The Hindu"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-20",
       "prs_item": null
      },
      {
@@ -4903,22 +4918,6 @@
       ],
       "first_seen": "2026-10-18",
       "last_seen": "2026-10-18",
-      "prs_item": null
-     },
-     {
-      "label": "No medicine shortage in govt hospitals, says Keralam Health minister",
-      "url": "https://hindustantimes.com/india-news/no-medicine-shortage-in-govt-hospitals-says-keralam-health-minister-101791009373310.html",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Hindustan Times",
-       "The Hindu"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-10-03",
-      "last_seen": "2026-10-13",
       "prs_item": null
      },
      {
@@ -4994,7 +4993,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 13,
-    "hidden": 160,
+    "hidden": 166,
     "conversations": [
      {
       "label": "GST Council may clear sweeping compliance reforms; e-commerce sellers, genuine biz to get relief",
@@ -5141,7 +5140,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 18,
-    "hidden": 206,
+    "hidden": 214,
     "conversations": [
      {
       "label": "Maruti Suzuki commissions first green hydrogen plant at Haryana facility",
