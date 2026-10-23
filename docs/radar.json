@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20",
+ "generated": "2026-10-23",
  "topics": [
   {
    "slug": "business",
@@ -732,7 +732,7 @@
    "sector": "Energy",
    "deadline": "2026-10-30",
    "status": "open",
-   "days_left": 10,
+   "days_left": 7,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Petroleum and Natural Gas"
@@ -742,7 +742,7 @@
    "sector": "Environment",
    "deadline": "2026-11-07",
    "status": "open",
-   "days_left": 18,
+   "days_left": 15,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Environment"
@@ -752,7 +752,7 @@
    "sector": "Parliament",
    "deadline": "2026-10-05",
    "status": "closed",
-   "days_left": -15,
+   "days_left": -18,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-10-05/FCRA Press Release.pdf",
@@ -765,7 +765,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-28",
    "status": "closed",
-   "days_left": -22,
+   "days_left": -25,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-28/Press release for ISI Bill, 2026.pdf",
@@ -778,7 +778,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-25",
    "status": "closed",
-   "days_left": -25,
+   "days_left": -28,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-25/FCRA_press release.pdf",
@@ -791,7 +791,7 @@
    "sector": "Energy",
    "deadline": "2026-09-04",
    "status": "closed",
-   "days_left": -46,
+   "days_left": -49,
    "source": "https://prsindia.org/policy/monthly-policy-review/august-2026",
    "links": [
     "https://dae.gov.in/public-consultation-on-draft-shanti-rules-and-draft-shanti-regulations/",
@@ -804,7 +804,7 @@
    "sector": "Law and Justice",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -81,
+   "days_left": -84,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_Advocate_(A)_Bill_2026.pdf",
@@ -817,7 +817,7 @@
    "sector": "Health and Family Welfare",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -81,
+   "days_left": -84,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_National_Pharmacy_Commission_(NPC)_Bill_2026.pdf",
@@ -830,7 +830,7 @@
    "sector": "Parliament",
    "deadline": "2026-07-13",
    "status": "closed",
-   "days_left": -99,
+   "days_left": -102,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-13/National_Food_Security_(Amendment)_Bill_2026.pdf",
@@ -4065,7 +4065,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 28,
-    "hidden": 290,
+    "hidden": 287,
     "conversations": [
      {
       "label": "Emerald Heights International School moves Supreme Court seeking curbs on children's social media use",
@@ -4205,7 +4205,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 16,
-    "hidden": 91,
+    "hidden": 86,
     "conversations": [
      {
       "label": "Ministry of Labour & Employment expands “Shram Samvad” outreach across industrial clusters",
@@ -4341,11 +4341,11 @@
    "money": {
     "counts": {
      "confirmed": 60,
-     "reported": 23,
+     "reported": 22,
      "community": 0
     },
-    "running_ahead_of_prs": 75,
-    "hidden": 344,
+    "running_ahead_of_prs": 74,
+    "hidden": 338,
     "conversations": [
      {
       "label": "Next-Gen GST Process Reforms",
@@ -4542,7 +4542,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 28,
-    "hidden": 278,
+    "hidden": 271,
     "conversations": [
      {
       "label": "NEET PG Result 2026 Released; MCC to Conduct Counselling for 50% AIQ Seats; Check Schedule",
@@ -4697,7 +4697,7 @@
      "community": 1
     },
     "running_ahead_of_prs": 54,
-    "hidden": 396,
+    "hidden": 388,
     "conversations": [
      {
       "label": "Delhi riots UAPA case: High court to hear Umar Khalid, Sharjeel Imam bail pleas on September 30",
@@ -4853,7 +4853,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 13,
-    "hidden": 143,
+    "hidden": 141,
     "conversations": [
      {
       "label": "Veteran BJP leader LK Advani admitted to Delhi's Apollo hospital with chest infection, condition stable",
@@ -4993,7 +4993,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 13,
-    "hidden": 166,
+    "hidden": 161,
     "conversations": [
      {
       "label": "GST Council may clear sweeping compliance reforms; e-commerce sellers, genuine biz to get relief",
@@ -5136,11 +5136,11 @@
    "energy-environment": {
     "counts": {
      "confirmed": 9,
-     "reported": 10,
+     "reported": 9,
      "community": 0
     },
-    "running_ahead_of_prs": 18,
-    "hidden": 214,
+    "running_ahead_of_prs": 17,
+    "hidden": 211,
     "conversations": [
      {
       "label": "Maruti Suzuki commissions first green hydrogen plant at Haryana facility",
