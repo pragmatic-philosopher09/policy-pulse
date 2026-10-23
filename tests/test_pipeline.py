@@ -253,10 +253,14 @@ def test_chatter_refresh_offline_and_by_topic(tmp_path):
     ]
     shown = ch.refresh(conn, today=date(2026, 9, 27), docs=docs)
     assert shown == 1
-    bt = ch.by_topic(conn)
+    bt = ch.by_topic(conn, today=date(2026, 9, 27))
     work = bt["work"]
     assert work["total"] == 1 and work["counts"]["confirmed"] == 1 and work["hidden"] == 1
     c = work["clusters"][0]
     assert c["n_docs"] == 2 and c["item_uid"] == "i1" and c["item"]["title"].startswith("Cabinet approves")
     assert work["ahead"] == 0
     assert ch.last_run(conn)["n_fetched"] == 4
+    # The 30-day window includes its boundary, but excludes expired and future records.
+    assert ch.by_topic(conn, today=date(2026, 10, 20))["work"]["total"] == 1
+    assert ch.by_topic(conn, today=date(2026, 10, 21))["work"]["total"] == 0
+    assert ch.by_topic(conn, today=date(2026, 9, 19))["work"]["total"] == 0

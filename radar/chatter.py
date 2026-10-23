@@ -900,8 +900,9 @@ def assess_coverage(fetched: list, http: "_Http") -> str | None:
 # ---------------------------------------------------------------------------
 # Read side (build_site / notify)
 
-def by_topic(conn: sqlite3.Connection, limit: int = 8) -> dict[str, dict]:
+def by_topic(conn: sqlite3.Connection, limit: int = 8, *, today: date | None = None) -> dict[str, dict]:
     """Per topic: shown conversations (most credible first), counts by credibility, and how many run ahead of PRS."""
+    today = today or date.today()
     conn.executescript(SCHEMA)
     out: dict[str, dict] = {t.slug: dict(clusters=[], counts={"confirmed": 0, "reported": 0, "community": 0}, ahead=0, hidden=0,
                                           platforms=set(), n_posts=0) for t in TOPICS}
@@ -910,7 +911,7 @@ def by_topic(conn: sqlite3.Connection, limit: int = 8) -> dict[str, dict]:
         """SELECT * FROM chatter_clusters WHERE last_seen BETWEEN ? AND ? ORDER BY topic,
            CASE credibility WHEN 'confirmed' THEN 0 WHEN 'reported' THEN 1 WHEN 'community' THEN 2 ELSE 3 END,
            n_docs DESC, engagement DESC, last_seen DESC""",
-        ((date.today() - timedelta(days=WINDOW_DAYS)).isoformat(), date.today().isoformat())).fetchall()
+        ((today - timedelta(days=WINDOW_DAYS)).isoformat(), today.isoformat())).fetchall()
     for r in rows:
         d = out.get(r["topic"])
         if d is None:
