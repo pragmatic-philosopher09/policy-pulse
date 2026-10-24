@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23",
+ "generated": "2026-10-24",
  "topics": [
   {
    "slug": "business",
@@ -732,7 +732,7 @@
    "sector": "Energy",
    "deadline": "2026-10-30",
    "status": "open",
-   "days_left": 7,
+   "days_left": 6,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Petroleum and Natural Gas"
@@ -742,7 +742,7 @@
    "sector": "Environment",
    "deadline": "2026-11-07",
    "status": "open",
-   "days_left": 15,
+   "days_left": 14,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Environment"
@@ -752,7 +752,7 @@
    "sector": "Parliament",
    "deadline": "2026-10-05",
    "status": "closed",
-   "days_left": -18,
+   "days_left": -19,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-10-05/FCRA Press Release.pdf",
@@ -765,7 +765,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-28",
    "status": "closed",
-   "days_left": -25,
+   "days_left": -26,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-28/Press release for ISI Bill, 2026.pdf",
@@ -778,7 +778,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-25",
    "status": "closed",
-   "days_left": -28,
+   "days_left": -29,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-25/FCRA_press release.pdf",
@@ -791,7 +791,7 @@
    "sector": "Energy",
    "deadline": "2026-09-04",
    "status": "closed",
-   "days_left": -49,
+   "days_left": -50,
    "source": "https://prsindia.org/policy/monthly-policy-review/august-2026",
    "links": [
     "https://dae.gov.in/public-consultation-on-draft-shanti-rules-and-draft-shanti-regulations/",
@@ -804,7 +804,7 @@
    "sector": "Law and Justice",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -84,
+   "days_left": -85,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_Advocate_(A)_Bill_2026.pdf",
@@ -817,7 +817,7 @@
    "sector": "Health and Family Welfare",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -84,
+   "days_left": -85,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_National_Pharmacy_Commission_(NPC)_Bill_2026.pdf",
@@ -830,7 +830,7 @@
    "sector": "Parliament",
    "deadline": "2026-07-13",
    "status": "closed",
-   "days_left": -102,
+   "days_left": -103,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-13/National_Food_Security_(Amendment)_Bill_2026.pdf",
@@ -4061,11 +4061,11 @@
    "digital-and-ai": {
     "counts": {
      "confirmed": 14,
-     "reported": 14,
+     "reported": 15,
      "community": 0
     },
-    "running_ahead_of_prs": 28,
-    "hidden": 287,
+    "running_ahead_of_prs": 29,
+    "hidden": 305,
     "conversations": [
      {
       "label": "Emerald Heights International School moves Supreme Court seeking curbs on children's social media use",
@@ -4099,21 +4099,6 @@
       ],
       "first_seen": "2026-10-08",
       "last_seen": "2026-10-10",
-      "prs_item": null
-     },
-     {
-      "label": "Semiconductor and AI Revolution",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBPaEZHbFFnSDB4bW41TDdPQTc4XzV0MHVDWGtUc005cVlkVFVjOWNYQVpMcEFCOW9kOVVCV0VSYi1PU3BrLVl5aWFRYjJOeVd3VUg2VjJpZEd2QWFnQk5KLTM3Qjc0cmMyNzNUT1Nfd0UtVnBYMkE?oc=5",
-      "credibility": "confirmed",
-      "posts": 3,
-      "outlets": [
-       "PIB"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-23",
-      "last_seen": "2026-10-16",
       "prs_item": null
      },
      {
@@ -4166,6 +4151,21 @@
       "prs_item": null
      },
      {
+      "label": "Semiconductor and AI Revolution",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE93VGZ4MFFBQmRwRmVuYlN5WVpNLWU1emd5ZEhwcGpRZVl0M0p3SmVyNzU0OEV2Tkd4V016dDJOUG43M1BYaEhrOFNMdjZsdHkxNnhSQkRpWU9oS29zd0p2UmZyZGVNZUEtdFNGbF9sOXVER28yQXU4?oc=5",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "PIB"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-04",
+      "last_seen": "2026-10-16",
+      "prs_item": null
+     },
+     {
       "label": "India AI Impact Summit 2026 showcases youth-led AI innovation for public good",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUmcwR2dtRS1hRUVLUEE3aGdjVG9hN1pjSENWRkNoY2FuRHFwdzBrR1daMjM3MG91c2ZncXVBOWdyWGNZR2JzZmc3ei1NalphNF9td3IxaE00NmN6NlV6ZndSTG5MdVl1Z2hwbTJNX0tqRG92dU02WFhJY1VSbVQzWU5uNFZIRlRIM3JuZGZFN05MdmJCVXFrWjMzYlozZC1pUWhNaVpR?oc=5",
       "credibility": "confirmed",
@@ -4200,12 +4200,12 @@
    },
    "work": {
     "counts": {
-     "confirmed": 11,
+     "confirmed": 10,
      "reported": 5,
      "community": 0
     },
-    "running_ahead_of_prs": 16,
-    "hidden": 86,
+    "running_ahead_of_prs": 15,
+    "hidden": 102,
     "conversations": [
      {
       "label": "Ministry of Labour & Employment expands “Shram Samvad” outreach across industrial clusters",
@@ -4224,6 +4224,42 @@
       "prs_item": null
      },
      {
+      "label": "New Labour Codes To Simplify Compliance, Expand Social Security For Workers",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNUoxenpMRzgtTE5iRWxVcnNIS2E5cWJldXBfTXVFNWFhZXVsYWVpYkVUQ1R0VGNwZFlZQ2lOTDlVREVDZENmcDhoZzJjYnhYZmxLN01sVE0zVkV2WV9WclpuMVNyWVRSeXNNTjdINTExbXJvSFFmZmdOaE1VczBETHhuU1VicjlSOW9tMl9WZnpfVWROSmd6aXhzdWlSWkJXSm8wSmhRUEc3bklkbU92MHB0V2FpQdIBuwFBVV95cUxPSXNZMFlSMHJ6aTNSdHc2R0s3ZV83WW1xMnlmLWhvYjYwbGM3VmRHSVFac041SG4wNzZiRzkyb1IxdXpmcWlSWlFnZjNHajFYdzNBQ3ZtakxJRGlQMmxJNFhTa193ekc5M2s4cTRoM20tcDBuT2ZnZmd5dzNoV2V2b0VjVjlHM2JseTJlWkhEeVhjTC1nbXd5czVjc2hhOG9ReGNqLUpxZ09EVlpyS3FMbUp4cDNZZzhaeUh3?oc=5",
+      "credibility": "confirmed",
+      "posts": 5,
+      "outlets": [
+       "Free Press Journal",
+       "The Tribune"
+      ],
+      "platforms": [
+       "bluesky",
+       "gnews"
+      ],
+      "first_seen": "2026-09-24",
+      "last_seen": "2026-10-23",
+      "prs_item": null
+     },
+     {
+      "label": "Keralam govt to form special committee to examine labour code implementation",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQRGptdWxfVWdUbENmX1k3UmtvektIbFZtNG5HNXYwTXFsajJiMVIycVNxaTRBS3l6dU5rNFh1VTFxdDVNSGxudzg0Y2RZUmdiVDF3bmZoUmZmNjN2UTdlWFNBMEVSWlRZeUhWWVpsbVg4MWs1MGM1V05xZ1ZWd1ZVVWJEU3dOMVVCNnlRQnFWeTZ6UDJWbmM4LTM0QmU0RlRfYlVwSFpVWS1vLXBYTTdPRVNyY0VLRmJROXp0NVJycG1sd3BBeFZtX3RENTVTN01xUFl5b3hieUtQQ0JBYk80Z2lFNndfRHVla0tuaGxHVlRaSUhD0gH6AUFVX3lxTFA0aXI1YU5LeTZjbS1xZmRzMnl0TnptbERyZmljbGUyU3h2cGJNYnZJcXZic3VLZmFpVGlNa09rUzhLSVNZN21ZUDdETHM4ZENtM3N3ZjdlQXFiMXFKWXVORFJlaTZ0Wk4zaUxIS3BnMHlUVFVXV2NtWmhkcU54Y2lFaXV0aG5Eei1oYTdLUzBvaGY4ekJ4aWVzd0ZxSFdnM01weld6dzZVU2x0aHFXNmNWbXkxUDdERmVGaGxENlNtZFdKRlZrX2MyZXgtdHVrTG5kN2R5cWhTMXRuNE5EU0UwVmwzdFlGUGFsejRyZ001Y29kam4xTzJDaWc?oc=5",
+      "credibility": "confirmed",
+      "posts": 5,
+      "outlets": [
+       "ANI",
+       "Economic Times",
+       "The Hindu",
+       "ThePrint",
+       "Times of India"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-10-22",
+      "prs_item": null
+     },
+     {
       "label": "District Awareness Programme on Labour Codes Held at Regional Labour Institute, Faridabad as part of Shram Samvad Initiative",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYWtDZGdEcWNmMEM0ZnN2R0FLMlROUWJmekloVndBWXNZX3hMOVNDaXI1UnJocUg3bzFMYjdralZ2M3dRWW1XRFBsMDEzRVVNLTNtdFY5VTRVT25KbXA3cnFYaHdhU2VTU0RaWFM3Y1M2TjdoalNpdzBhUUd0WDJKS2pR?oc=5",
       "credibility": "confirmed",
@@ -4236,24 +4272,6 @@
        "gnews"
       ],
       "first_seen": "2026-09-28",
-      "last_seen": "2026-10-16",
-      "prs_item": null
-     },
-     {
-      "label": "Govt to implement labour codes, protect workers’ rights: CM",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTGRIcE5CcThvZ2tBN09PUVI0M2drb0NfVzVxSUdpS25sLXlKY2hYQmcyY1hrUDZlamVaVUYxd0tLb1JqV2w4Yy1YbHlCcDFZQ29lS2pjSnVjS1JncTJ6cVJuUG1xNFp6by1KYkxpX2E3ZzJoOG5EdXFMMndtYm9UbzNVZVNJT1VabTNueU5FRTdaQWwyU0VnRVlFYmlYTjhOM190RUhrMTNITGJqVnNGb2VnRERtZU9VTVoteFBaaFRXUmRYVkx2am1WSFQ4WkRqNzA0WkREU01LUdIB3wFBVV95cUxOUzhtUW04bU4tUGEyamQwSmtqTHg0djlXdElVeGMxeHlqcS1BZnh4bWlFM1d4TnpQQnVDYzl0SEQyRzl6SDluNUZqUC0xWERNZWpDUElPbGRBVlFjWE1BdnZsdk1zdl80MFVRdHJzaF8yOWYzak5mMlNvbTA3R284NGVtMVlfLXJOMU5OelJJcy1LdmNWUURyRFhpU0xfZ0FMVG5mbUVEcU5aQzRxNEVSWWtNTkw1YXVPS2RHN2k4NVR0RldxTEk2NFE1cFFoS0I1akdjXzROb0NxUF9OZ3dV?oc=5",
-      "credibility": "confirmed",
-      "posts": 5,
-      "outlets": [
-       "New Indian Express",
-       "PTI",
-       "The Tribune",
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-21",
       "last_seen": "2026-10-16",
       "prs_item": null
      },
@@ -4274,22 +4292,6 @@
       "prs_item": null
      },
      {
-      "label": "Chief minister showing undue haste in implementing controversial labour codes: Pinarayi",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNQ3lSdGltRXlSZzREVjc5WGRUcXJ5dVpDTy1vTlh6VlBIUWNNZGpmQVI5bXBtOExfV0s3TUNqR2dIVDNDM0FKWDlrN3BNQ1hrUGExQm13ZFhkZGVkVi0wRmJXR1ZuMU10MlhNSjZhNG9VUDIzSmViREFuUmdJOVNuUDduT191dk9YSnRIaHl0YkxZU2FacGd4SEhzWnRZcEpCZnA3Z0FVN2VsY0dhWXByeXY5LVlGeVhKMGFZTUJWd0xFbWs0anltc3ZJX0lXT3QwTDdaQXFUYjY0Z1l6V1c0WlQ5bVpEQW1QR3Nma0lNU2ZQTGpBb3JmYnpCWUlRWldvU1E?oc=5",
-      "credibility": "confirmed",
-      "posts": 3,
-      "outlets": [
-       "The Tribune",
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-22",
-      "last_seen": "2026-09-24",
-      "prs_item": null
-     },
-     {
       "label": "New EPFO rules! You can now withdraw EPF money up to 10 times, but not for every need",
       "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQUUhhRGxUQmNBbkk1dmFkc0g4YUFiWUVNOF9CaGNvNGpHR2xKekQtNHFJMm41Z1RidnR6S01Fc2FCdWJDVDB1M2Z6ZC1UUWtzLWdIX0JfaTFGalVLZFU3RW9ieGpOekZoOF9GTlo1V0pDTVMxQ1dxbnNxa2Z5aUJfVFhqUTlDSjF4WHc3S0U0eUlhVVJBeDFUQmZTMDM1RW1PbXYxMHZJMjNiT1MzOTlhc0ZIdHZ1WHJLTDlQY25DdUF4OVNFMHJva3llelJTMXY5TWNmUUs4TXQzQW54RWRsZVZfLWF6czlHbjNrN0ZkQdIB9AFBVV95cUxNbHhGbmZCNWc2REM1NEtoNHR3RlRRektsektrcWxoZDdzS3poVmw2Z2k1WmZyN19CR1U3QV9fdUpna3U2NVVzWWdnWkphSEpuVm1ZUnNrQXdGZnZ4UjdCYy1KUmdJd09ObEFpdThNb09mNzEtNXVfcTd2aEJzLTBBMkdodDZETndtYUZsYTZQREstUGwyWVo0MW13cTllak0zTWQ2dll5WnB4R1Y3SWVuc2dibjRwcUx5b0VfQ252SHA2TkNyUG5QREppNEN0TzU0T3JWdUlmZDJON250cU82bHpla21OVjJnU2xQd3JTdGhQN2RL?oc=5",
       "credibility": "confirmed",
@@ -4306,22 +4308,6 @@
       "prs_item": null
      },
      {
-      "label": "Govt: Green hydrogen investment can create 12,000 jobs in Bihar",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZV8xYmRGZDNZbHRfaGxCcmdDc2s5Qkp3RHFCWlo1UHZDcGxqTXJLb2FTeEM4Vm5LRldZYXUwSElYYXQwQ2Joclk1djNCeXBQQ1NMRHBjeG1aQTJZd09YblZsVTZZX3dYY0xKWHVaVTlBN1JNNWJfdEZGamh6bVVTWHlQdlgyeHl5RVZUeEQyMXRhUXV5S1VLLXVCUXFBVXJjUGxjWFNyNlVvY1VDdVktcGxSQmxrLTNXZkNHanlVVVNhZVhBdUJJZndodENjalHSAdQBQVVfeXFMUFdRNHZsRFM5NVpKNVFXMWVfUUdJX0QweFY5eURKckZneFJiZ2FyZlRVZnY4TDBlbWhlbklsZUZidFkwdkliOFhLOU5lT2FIN0ZVSkp5QXJkWDNOQ3o5S2J6SDRCT1NWSlQ0S3lDOU9VWl8wOVlnZ2pMd082YV9oeTh3YUZWTmgzVmxoelNMaVRpdjllLWh0b05uVXF0Z3p6S1RfWDNTVHVpTUN1UEtZc3c5ODNNSDA5SFhiamNrY0s3Rko5UlhJSmk5Q0VOX09rbWd3N1o?oc=5",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Moneycontrol",
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-21",
-      "last_seen": "2026-10-12",
-      "prs_item": null
-     },
-     {
       "label": "Dr. Mansukh Mandaviya Addresses National Conference on Industrial Relations and Labour & Awards 2026",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxQlNhbHdvbklkNUxDZmg5RG00SHAxSVJnQWcwYnd0WnJvTExlWVVWRFpHNTd0b0p2bTZRcDZQbGVvdldkR0g4U25WMmFpOHI5N29tMjZpbDh2dXd4SHZJNG9iZVl3aGhf?oc=5",
       "credibility": "confirmed",
@@ -4335,17 +4321,33 @@
       "first_seen": "2026-09-28",
       "last_seen": "2026-09-28",
       "prs_item": null
+     },
+     {
+      "label": "Labour Codes Will Play An Important Role In Promoting Ease Of Doing Business: UP Minister Anil Rajbhar",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWmNic0QxZUU3blJrR3BLOHE5ekpKbmo3VWEteFhMQnhIbE9qNmRWdHRpekw0SlpJTWtlLWxkLXNid0pTOUlWU1RmZ2piV1dISGpIaGpKMENMWkZtUkpoOGU5dXhHWkVGQWlrVGdTYno2S0xXdHFfdkdyVi02bzczQl9mUGNIbFlnUkVHTS1Md0dJaFktaGZYVlpMaDNudHdtSVBZaGIwek53ZlBINlJaNTM1U2pzVHpNRWctd09PV2UtMGlEbjhIeTRMeldfclVwZmZ3Mm5xV0VGNC1BdV9fd9IB5gFBVV95cUxNSDRxWkNRazV5X2szbjl6T1Y3LWJ0WktKaWt3LS1ueFcyY3RCYmYwdE5uZGIzQVp2TVl3NHAyZk5qNUNvSV8ycC1MVHcxaFc0SE9uYXU1cjhvWml3X0dCMGt1eFJ0SmFqX1ZXTHNlNUNVOFFjeDkzMGRKdnZpZW5yNUJ4NVZGYWJkV1FoNldnV0hsR2xlbmRhT2pPYVVFUDU2aEVuY0RVa0xJOUlJclRPb3Y5OUxkV05DdmluS0Y5eWRuYTFnV0cwQnNjeEZSOFROQmVmYlR0dC04SS1tQTNfT3o0bEdrQQ?oc=5",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Free Press Journal",
+       "Times of India"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-09-28",
+      "last_seen": "2026-09-28",
+      "prs_item": null
      }
     ]
    },
    "money": {
     "counts": {
-     "confirmed": 60,
-     "reported": 22,
+     "confirmed": 62,
+     "reported": 23,
      "community": 0
     },
-    "running_ahead_of_prs": 74,
-    "hidden": 338,
+    "running_ahead_of_prs": 75,
+    "hidden": 370,
     "conversations": [
      {
       "label": "Next-Gen GST Process Reforms",
@@ -4370,15 +4372,15 @@
        "gnews",
        "rss"
       ],
-      "first_seen": "2026-09-22",
-      "last_seen": "2026-10-14",
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-10-15",
       "prs_item": null
      },
      {
       "label": "GST Council meeting on October 7: What to expect on refunds, GCC exports, registration",
       "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOSEYxNk8tQW52RlVRWjJJQkVEN1dKazRPeHBrdGw0NERPdDlSMWw1MllCMktoT1d3UDUwX1VuN2FQaVNjNm1tYVhESEc4bTA2U1BXQnl2cDdNYU5YM0NCUF9nTmFzVDA0amY3blMtZC1PMWsxWlU3dGJQdU1QU0JkWkd3aHp0UnNNa0o2ZVFReTVLMXJ3dWNoZWdXNC1qbFFycmdDTlJLdk1maXk1eXVwcW1OOC1uOFBUdkxlelF6bGlqUy1STDRJTS1aaDFPY1o5aEl5LTdvbVptdmVRYnljQnRqQUlobE1VT0FwNVh5T2xDejlOLURV0gH8AUFVX3lxTE9HcERtOVhMaWJsX3dSVWFXTC1PUi1qdF9zaHBFX0w3RVh5RDBqV2pYVV92U054SXpBZWxIcmlFSndhSktFWlZoa2xsNnpXOUtRNldkcHREejNIR1NiVDZySEJGV3dPSzBlZ3EzZUpiamZfMnVLYnFEcF9RbkFTX0RmU1JCb2JtWU8tZjFhNExWLWlRWFlLb0RZcE5FTFFycGRvbGdIdTllNVhpOUlFaFE2N3BlUmZXNHlHQnR1Ull1QjlPVHZYcjN3dVVDVloyVklTTGV1NERfU1ZDSFFaNTNtX213ZkZHVzVkYXRtbklXVGtpcTEwODJNLThrQQ?oc=5",
       "credibility": "confirmed",
-      "posts": 20,
+      "posts": 22,
       "outlets": [
        "Business Today",
        "BusinessLine",
@@ -4386,6 +4388,7 @@
        "Economic Times",
        "India Today",
        "Indian Express",
+       "Mid-day",
        "Moneycontrol",
        "Taxscan",
        "The Hindu",
@@ -4493,62 +4496,56 @@
       "prs_item": null
      },
      {
-      "label": "UPI MDR: No extension of October 15 implementation date; GST Council may review 18% GST",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZ1BZZVo5dm5xNl9udU12WWZjRENTSHlPd2xNVDRGWmFQRFBVOFh5WGdXUXhreVQ4Rk1IWHVWbUM5OFlCNFNSb1BCT2R2ZThNb2NIeGg5QkhTUXcxRFVndEZJZXhLRVI3ZS1VQTktZ3hpNlI4MVBncXdvZm45UE4zb2Q1blh5QVhKdjB1eUJMckNEZ2tkN1ptdFhRZ2t3cnVaYmZrZk05Y0FKUkV5R29JVFkzSzNIM0t2UFRsYnZYcXZId2xCNzkzajZoX2pyanlFbzIxQnU1Z0TSAd4BQVVfeXFMTUFzNDFJVXAyenZGZ0xoZDI0VlBabi1nNGp2QnFwSmY1WVR3TG11MjJ3YWZ5eThkYU5mZWNDTDFYNG5nZE5SUjRnZTVLYVFwWU5RX1pVUl9DVGJrZ2lENk1nZTR6V3VQRlNfSmpITDdLUVl1NnlOUV9XZFQySXJzUGRBeVF2Uld3aGdMYjVfWDFvTElscjZmLWhfUGdrajZQdHhCSXZpY202b3Z6VnM4VlJGYmFIN0Y0TF95U0Jub0xPQ19LU0xwdko3ZXF6Z1VsVFgtSVctSmt2bHM2MjVR?oc=5",
+      "label": "GST Council may allow export tag for overseas contract manufacturing",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOd081SHpGMGV5RktYRXdUX2t4eU1jT0tjZTRKZjBfdVdkUy1MOXlyMTh5c2g4SzVjTGs0dmdLQWx2WWRtM2JURlZjUHRVVHZJQWlkdll2OE5VSlJUbXpLZHNRQWFROEFYUUowMkhzaFVQNGtoM2hjMzFaZVFxZDFtYklEV2VFUEs0Y1pXNXhJMDhXc3U2V0xQbXRoUHpmcEgtaS1JT0dJeWVIdXdOd3BETzRHNm9zc2FXM0I2VnVGX3d1U2FpT21iQTZCX29UNUVZ0gHWAUFVX3lxTE9fdUlLakszcnJGbFk4UHoxdW04MHpqTldBM2U2X2ROcDl3andscTc4UzQyaGE2NDZJcUMtaWw4d2JlMmJ1Y2F2WW1PNUpyOWhiMWdlX3J2N2kxWjdQMEpiSkhqcmZIUDdsSGw4YldwdHViTkVROFlDWTMtRGx4WVg0ODJqYm5wcU5BS1pQMngwQW0yQVNRZ01nMVBlZzRkZWdraHlrQXVfQXZvSnNKd0twcVI5V0RGNmxSclNOZ3hUVy1yaDRtaEZUTmhyLTRBNm5oZmw1ZVE?oc=5",
       "credibility": "confirmed",
       "posts": 7,
       "outlets": [
-       "Business Today",
+       "Business Standard",
+       "Economic Times",
+       "Moneycontrol"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-05",
+      "last_seen": "2026-10-06",
+      "prs_item": null
+     },
+     {
+      "label": "Mint Explainer | GST Council meeting: what could change for refunds, enforcement and rate changes",
+      "url": "https://livemint.com/news/india/gst-council-meeting-proposals-refunds-itc-enforcement-11791358522734.html",
+      "credibility": "confirmed",
+      "posts": 6,
+      "outlets": [
+       "CNBC-TV18",
        "Mint",
-       "Moneycontrol",
-       "ThePrint",
        "Times of India"
       ],
       "platforms": [
        "gnews",
        "rss"
       ],
-      "first_seen": "2026-09-24",
-      "last_seen": "2026-10-13",
+      "first_seen": "2026-10-07",
+      "last_seen": "2026-10-15",
       "prs_item": null
-     },
-     {
-      "label": "GST Council may consider tax relief on UPI fees for small businesses",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNT1RPTXNlYzRYdFlIeWpWOW9lbVhxb3NTZTVqS0g4T1hXWFpIN3U1V0w2TmtQaVpFNmhCMTBGQ0VIV294bkQxMjRtTVk1djZjaWNHVW5FbEFJQVh4WXFyanczRXozd3ZmOEhieVhKWHdqWWlhcENmblA5M0tKSWRvallCSERaaGJaSjhoZzU3WHF5MzdzYm93bl85OXN4VFRCQlZlUkhoeC1HVjVYS0IxLVk1OHU3dHY1TG5rVmtNNXZYbm_SAcgBQVVfeXFMUHROM3E5OC1xeEZTbFFvZjdvUUNJQ192OE5fNXQxelBwVWdLWmc4dVNTOEw5RnkwQWhxdzgtNGJweUh6aUp4cFJ4TGNkdVBORU9DUTF5eFpZZHQyWmN6OHR4S1NMdDlzeG1JRTFyR0VsYmdldFUxcGJOQWlBU09jelNKS1BRWUpLcXhSRUdFS005NUpQdFE3TTFEdDNybk5FWTJBS2VobXFUUS1TeHVFTXVNaTBkTVpxWUJlQVJibTJ0dE1kM2xoY1Y?oc=5",
-      "credibility": "confirmed",
-      "posts": 7,
-      "outlets": [
-       "BusinessLine",
-       "Economic Times",
-       "Mint",
-       "Moneycontrol",
-       "Reuters",
-       "Taxscan"
-      ],
-      "platforms": [
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-09-21",
-      "last_seen": "2026-10-09",
-      "prs_item": "2026-09:1"
      }
     ]
    },
    "education": {
     "counts": {
      "confirmed": 19,
-     "reported": 9,
+     "reported": 10,
      "community": 0
     },
-    "running_ahead_of_prs": 28,
-    "hidden": 271,
+    "running_ahead_of_prs": 29,
+    "hidden": 290,
     "conversations": [
      {
       "label": "NEET PG Result 2026 Released; MCC to Conduct Counselling for 50% AIQ Seats; Check Schedule",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUjRMbzd3NGxhNjlmeWVQUUFBVEtuNlpTUUZmUTRmcUZCUHBOaHNUa01OcGdUcWxWQWotRUl2T2d1TVN3WkZHUkNNVmwxanVRNVNTclluNGVjZG9WUEdtc05RZTl5dUQ4S2V2ckU2Z3FFV3BNRXVoQUh5dVJ2UEV0N25TWHRjcm9FTU5ILUlHNGxvNHdza2U1cWFCc3VqR0tzWnNlMjlrbzNORkJqLXZYYkNJU3hWclFBeWlQYWlqYzNNSkV3Z25ETzZZWWFnNmxHS2RrcG1GMnVkaTFY0gHiAUFVX3lxTE85Wnh5WDA2aUVfR01MYUJwVkpxTm1zRWJZS3NKN2xROEZBMHFLcjFWZmJtS3VmNGxYaDBRbHpSTGVDYWZlR3ZORTdrNE02LWg3QllUQ3Z5ajBuaklaVmszWXVadFhiX0NHSlp3MTFYR0t4TGIzdGNkS0cwRk1UU1QtYmI1TUZ4ZEZYZ2pSaW9Uc21vZmtQbjNidmZmZ3Ixc0thMmJkZmtsRnNwRHk0TUVSb3F2MnAyQWJBbW1YblIwX1E2V0U0OEpXNVdGX2xPNFdmbVVNa0hZYVVVY3ZkS2NMTWc?oc=5",
       "credibility": "confirmed",
-      "posts": 14,
+      "posts": 16,
       "outlets": [
        "Business Standard",
        "India Today",
@@ -4562,14 +4559,14 @@
        "gnews"
       ],
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-24",
       "prs_item": null
      },
      {
       "label": "NEET PG counselling 2026 date: Check step-by-step process, documents required for registration and other",
       "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQdFVJNjBEXzJDbk50RkFGSkV2MVNRaVNlUl80dUExM3JJZ0EyU1Vsc0diNGNXT2Rta1h1dkM1b0NtTzFQWjFFUkdKRTRUUHViOWo1NFRyaTVzT183WlJzQmQ0cVBTRjN4cnVKaGZyTVJROFRsRXgySVpfakdmbER1NEljNlZ4OHZaNmJ6dk5qalE1cXJESk1LQmxjVFAyXzRSemlQQ0I0dmEyOTZqaFgxc2FTMW8xaDgzOWs2b2JxLWxvbTNacTZ5NjR3clFHZlYxeWxHSGhtdVd6ZmhkZWtHU3A0Q0V4RVdHOWYtY1NwbG00TnR3dUNlYVMzN09CbEN0V0JsRmlES2EzaHhodXQxMVlBZVUyd9IBmwJBVV95cUxQREI2Njh4Q0hCV2RYaHQ1UW0wUUdxQUJicnI1QjNMaFJ6V0hZRFpza0trVTBnQ2NmVUs3YlF4Ukk1RTNnVjBnZ1dzZ1djcFBPUnF6TjFSNW9BVzJDVGVHa0YyQWt5RzlIdEVkc0pLNW9XeXl0bHJ6OWJ1cHlwRHpkUnNqVGNnSzdybTNycV81WkE1NVlYS25MaEpKTjEyaWtwd29jcnctYWVrNGxVMVpyc0w1ZERtNkVKSUlwNERKa0hZNHJ0TEo3cEdCMmtqOS1BblpXZ3FoX3dSYWdvRWxCdHZPZHpJb2huRG9WU3dWSVFldzEycWVpY29DdXV3Tnk1amtVWlJxM1I2a0l3N2pWbEg5QjlyTHRwdEtZ?oc=5",
       "credibility": "confirmed",
-      "posts": 12,
+      "posts": 13,
       "outlets": [
        "Business Standard",
        "India Today",
@@ -4582,14 +4579,14 @@
        "gnews"
       ],
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-15",
+      "last_seen": "2026-10-21",
       "prs_item": null
      },
      {
       "label": "NEET PG counselling: MCC to begin Round 1 registration today, check direct link here",
       "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNWkcwU3BYX0lPLThCWUc3RXoxSzl5aTRzTXRyMXhQOFVkX205c05INWNFeUEwTElpbjVHT0RVZ1R4aWlGZ3FUUFZ1LTBMbTJRa0tVQU5OcUlyblYyWmJKRVgxZzNoVmcyalRnQXJ3MFpMaVpHMUJrWi1mRWNQLTVZQU1WRlM4US0zTnRfYnE0VEFDTXRyOHYzOU9FSjd2cE5CbUFSYVdIN1dsUjhTTllGYkN1dF9rUnkyOHFLSGszSGFjN3dqNkN2ZmE4RmFVcjFkSFFWMjdzOG85Z1Fqbll4cTh1NHhOWXVIQUFEV2tyYVpWWmVVcHM4Qm1nbXZ6Z2ZQbzdF?oc=5",
       "credibility": "confirmed",
-      "posts": 10,
+      "posts": 11,
       "outlets": [
        "India Today",
        "Indian Express",
@@ -4600,7 +4597,27 @@
        "gnews"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-15",
+      "last_seen": "2026-10-24",
+      "prs_item": null
+     },
+     {
+      "label": "MP NEET UG 2026 Mop-Up Round: Revised Merit List Released, Check Choice Filling Dates",
+      "url": "https://ndtv.com/education/mp-neet-ug-2026-mop-up-round-revised-merit-list-released-check-choice-filling-dates-12133843",
+      "credibility": "confirmed",
+      "posts": 9,
+      "outlets": [
+       "Economic Times",
+       "Indian Express",
+       "NDTV",
+       "The Telegraph",
+       "Times of India"
+      ],
+      "platforms": [
+       "gnews",
+       "rss"
+      ],
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-24",
       "prs_item": null
      },
      {
@@ -4638,6 +4655,23 @@
       "prs_item": null
      },
      {
+      "label": "Protest against CEC Gyanesh Kumar: Delhi court grants bail to 17 students, journalists",
+      "url": "https://barandbench.com/news/protest-against-cec-gyanesh-kumar-delhi-court-grants-bail-to-17-students-journalists",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "Bar & Bench",
+       "Mint",
+       "The Hindu"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-24",
+      "prs_item": null
+     },
+     {
       "label": "Paper leak: NTA debars Latur coaching centre owner's son from NEET-UG exam for two years",
       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZ2VPN2F6RVdQN3pzSFY2enphWEJNUldLS04xYUFITlNScU9YX0J6RFp6T0M4cUMtN1dvckxRLXJkLVV4QUo5RHR2NHJ1bnJPTkpjVm1BeWxxdklVYTJEaVRjZ29pZ1JaaHQxMFc1QldfLUQ5eWhzMFg5b0VSUG54Sl9FZ2kyU2JYQlZQcHhkaUViczh5OVI2Q2VRU1o2VnhkYWhwX3BZaEZuSGFkYzdEaFVLZDUtUlByRmtxZW1XWTJaalNWeGVGTy1BSWpEUlZUdTFlc095d1M?oc=5",
       "credibility": "confirmed",
@@ -4654,73 +4688,18 @@
       "first_seen": "2026-09-24",
       "last_seen": "2026-10-15",
       "prs_item": null
-     },
-     {
-      "label": "Gauhati University student found dead at homestay in Assam; male friend arrested",
-      "url": "https://hindustantimes.com/india-news/gauhati-university-student-found-dead-at-homestay-in-assam-male-friend-arrested-101790430130139.html",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Hindustan Times",
-       "The Hindu"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-09-27",
-      "last_seen": "2026-10-18",
-      "prs_item": null
-     },
-     {
-      "label": "NEET Admit Card 2026 OUT Today? Check Expected Release Date By NTA; Step-by-Step Guide To Download",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQnR5dU9aZjhhSHRyR3prYjFaakMwcU1USW9YeFNmMUx6aEZDU0hkaDBnc05DWWh2RnZ6NVZnanNlTjB4UDBZeVJpaFQxTWVYMENuZElXcVZ0UXdNdjBKczlxNDh5UDNXWVhnLVBHeUx4c01iT2VjdWZuazRoLW01LUI4VWJwT2tXZ2NhaFBabHBvR0RnSXZOenB6UTdXR3dRNkJXZVpMUGl3NEdoc29jam9mMmVtUGFRa3YzX0FMUlhjVl9vajgtckk0UlRHb0ZhcURFOU5QMUZrdFk?oc=5",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Goodreturns",
-       "NDTV"
-      ],
-      "platforms": [
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-10-08",
-      "last_seen": "2026-10-18",
-      "prs_item": null
      }
     ]
    },
    "justice": {
     "counts": {
-     "confirmed": 56,
-     "reported": 13,
+     "confirmed": 58,
+     "reported": 15,
      "community": 1
     },
-    "running_ahead_of_prs": 54,
-    "hidden": 388,
+    "running_ahead_of_prs": 58,
+    "hidden": 410,
     "conversations": [
-     {
-      "label": "Delhi riots UAPA case: High court to hear Umar Khalid, Sharjeel Imam bail pleas on September 30",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQMEktcHFjd0F2QkdIUWVBWVNBT19aMU1QZWk1eEw5S1IzQlFJTXRoeUJrMzktX1ZTbktLMWFmQkpmbk5YLUhLWEdnVU8xUGpSdmdHRjIyZnZ4WFBELVJINEtiWG1ZOEJWT2dHU00tSERkZlhvWHhheFVoTDNiM3NOUjJlUGp0emwwYUZsVGE1RGxkTkp4STd1MnpUUEcza1ZvQjQ0alVDaFJnRHhBeW5kSndWcmU4ejVaMUxqQkV2VERvWHVlWTRtWkVfX3p2QkUzTWRlWEkxMjFLbnE3dmtqZ19XZmpnOGZtTk1FRk5MdkR3V2xjMDB5ZDFR0gH_AUFVX3lxTFBSZktGRVk0YWFON3oyQVVFNUVDd3hBbUlINFJCVEVSMDJGNkZkQ1RfUVRRZzB5ajI3djlpT05USHRUQUNVbUdqa1hEbDk1akRtYkdZQk1JcUNLamNyX1BhRURlZm00d2h5UW9JbWxEYTdablVpcTZnUzlsYlBiRnVHSWxBR3B2WU5ROExTenpERkhXWlhIMzRLU1RIc2Zsd3lLN0dBZDdPcHlzeVBIdE9oaG5qenNiM3BtVGttVTJhQ2lNUTZLT2tTUEYyQWxYWk1tZ0VpQy1WT0FZTFEtNmxkcWxXUHFjdHI3LXhHREU1SzlKX0lSeHhiQWM0ekxtQQ?oc=5",
-      "credibility": "confirmed",
-      "posts": 9,
-      "outlets": [
-       "Bar & Bench",
-       "Hindustan Times",
-       "Indian Express",
-       "LiveLaw",
-       "Republic",
-       "ThePrint",
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-09-21",
-      "last_seen": "2026-10-18",
-      "prs_item": null
-     },
      {
       "label": "Lawyers detained by police near Supreme Court amid CJP protests",
       "url": "https://barandbench.com/news/lawyers-detained-by-police-near-supreme-court-amid-cjp-protests",
@@ -4843,17 +4822,34 @@
       "first_seen": "2026-10-17",
       "last_seen": "2026-10-19",
       "prs_item": null
+     },
+     {
+      "label": "In ‘dry’ Nagaland, 19 die of hooch poisoning; police probe underway",
+      "url": "https://indianexpress.com/article/india/nagaland-hooch-tragedy-several-dead-in-mokokchung-tuensang-police-probe-underway-10894790",
+      "credibility": "confirmed",
+      "posts": 4,
+      "outlets": [
+       "Hindustan Times",
+       "Indian Express",
+       "The Quint"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-10-17",
+      "prs_item": null
      }
     ]
    },
    "health": {
     "counts": {
-     "confirmed": 9,
+     "confirmed": 10,
      "reported": 4,
      "community": 0
     },
     "running_ahead_of_prs": 13,
-    "hidden": 141,
+    "hidden": 147,
     "conversations": [
      {
       "label": "Veteran BJP leader LK Advani admitted to Delhi's Apollo hospital with chest infection, condition stable",
@@ -4903,6 +4899,22 @@
       "first_seen": "2026-09-30",
       "last_seen": "2026-09-30",
       "prs_item": null
+     },
+     {
+      "label": "NMC de-notifies 2023 medical education standards framework: What changes?",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZG9Tc0hyNE11ZUtpWGh3TXNKVU5LcHJzZlVnWUx1RHhIRS1Yb3VSLUJKOGhlVHpnUlpBZGVRdlBSblBSNDFWYTZEcmtXSWhwamNXb1VRdDdTckZRV0hsRThUblI5YlN1RUMtZUMzaWRBTGU0WjVxWWVqYzdwb0J4N3JxWl9KN184NVJfYm5PeDd1eFlSa3R0MHJ6RHZBd29lYVdwd1RZVW12bEdQVENzeGhQODQtZVloUm9JM2NkeEY3UGtVWU9aaENFQUo4eXRkb3IwVnEzY9IB1wFBVV95cUxNZG9Tc0hyNE11ZUtpWGh3TXNKVU5LcHJzZlVnWUx1RHhIRS1Yb3VSLUJKOGhlVHpnUlpBZGVRdlBSblBSNDFWYTZEcmtXSWhwamNXb1VRdDdTckZRV0hsRThUblI5YlN1RUMtZUMzaWRBTGU0WjVxWWVqYzdwb0J4N3JxWl9KN184NVJfYm5PeDd1eFlSa3R0MHJ6RHZBd29lYVdwd1RZVW12bEdQVENzeGhQODQtZVloUm9JM2NkeEY3UGtVWU9aaENFQUo4eXRkb3IwVnEzYw?oc=5",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Business Standard",
+       "Deccan Herald"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "prs_item": "2026-07:31"
      },
      {
       "label": "Kolkata stampede LIVE updates: Amit Shah meets injured victims at hospital; TMC blames ‘maladministration’",
@@ -4967,33 +4979,17 @@
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-12",
       "prs_item": null
-     },
-     {
-      "label": "Ensure prominent display of healthcare service rates at clinical establishments: Centre to states",
-      "url": "https://hindustantimes.com/india-news/ensure-prominent-display-of-healthcare-service-rates-at-clinical-establishments-centre-to-states-101791797216244.html",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Hindustan Times",
-       "The Hindu"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "prs_item": null
      }
     ]
    },
    "business": {
     "counts": {
-     "confirmed": 12,
-     "reported": 4,
+     "confirmed": 13,
+     "reported": 5,
      "community": 0
     },
-    "running_ahead_of_prs": 13,
-    "hidden": 161,
+    "running_ahead_of_prs": 15,
+    "hidden": 172,
     "conversations": [
      {
       "label": "GST Council may clear sweeping compliance reforms; e-commerce sellers, genuine biz to get relief",
@@ -5048,6 +5044,23 @@
       ],
       "first_seen": "2026-10-05",
       "last_seen": "2026-10-08",
+      "prs_item": null
+     },
+     {
+      "label": "Keralam to form special committee with trade union representatives on labour codes; report due in 10 days",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNU3g0UUc1NEdtNzJFakl0MlZtcWxncXRNS1dISnJHY0pkN1ZfZDFxTmxwWDZPX3lmTWZoN0RubHRiZ1JJU3FNX3FZTW9remoyX3c1bEYyX2pleVhCc1JrUjMtRmd0MXJWbnBYVl9YYmxJRmxTZkZMRmwtTFhsNDdkTDF3VnU5UmZtMjBkR0FIbzBhZWhrY0JKQUV5U1ktanpDN3N3MGFBcW03SkdGczd4elF3RHk4Um8yZXlISGxRd3dYNFlZaXozdndZNmQxbTJWUVU5MVFkV3U0cnBkS2I4dWp6aFppeUJDZUlHSGtXak1tU3pjaVBXQW1XZjk?oc=5",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "ANI",
+       "Economic Times",
+       "ThePrint"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-10-22",
       "prs_item": null
      },
      {
@@ -5114,33 +5127,17 @@
       "first_seen": "2026-10-09",
       "last_seen": "2026-10-12",
       "prs_item": null
-     },
-     {
-      "label": "GST Council meeting on October 7: What to expect on refunds, GCC exports, registration",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOSEYxNk8tQW52RlVRWjJJQkVEN1dKazRPeHBrdGw0NERPdDlSMWw1MllCMktoT1d3UDUwX1VuN2FQaVNjNm1tYVhESEc4bTA2U1BXQnl2cDdNYU5YM0NCUF9nTmFzVDA0amY3blMtZC1PMWsxWlU3dGJQdU1QU0JkWkd3aHp0UnNNa0o2ZVFReTVLMXJ3dWNoZWdXNC1qbFFycmdDTlJLdk1maXk1eXVwcW1OOC1uOFBUdkxlelF6bGlqUy1STDRJTS1aaDFPY1o5aEl5LTdvbVptdmVRYnljQnRqQUlobE1VT0FwNVh5T2xDejlOLURV0gH8AUFVX3lxTE9HcERtOVhMaWJsX3dSVWFXTC1PUi1qdF9zaHBFX0w3RVh5RDBqV2pYVV92U054SXpBZWxIcmlFSndhSktFWlZoa2xsNnpXOUtRNldkcHREejNIR1NiVDZySEJGV3dPSzBlZ3EzZUpiamZfMnVLYnFEcF9RbkFTX0RmU1JCb2JtWU8tZjFhNExWLWlRWFlLb0RZcE5FTFFycGRvbGdIdTllNVhpOUlFaFE2N3BlUmZXNHlHQnR1Ull1QjlPVHZYcjN3dVVDVloyVklTTGV1NERfU1ZDSFFaNTNtX213ZkZHVzVkYXRtbklXVGtpcTEwODJNLThrQQ?oc=5",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Indian Express",
-       "Moneycontrol"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-09-30",
-      "last_seen": "2026-10-08",
-      "prs_item": null
      }
     ]
    },
    "energy-environment": {
     "counts": {
-     "confirmed": 9,
-     "reported": 9,
+     "confirmed": 11,
+     "reported": 10,
      "community": 0
     },
-    "running_ahead_of_prs": 17,
-    "hidden": 211,
+    "running_ahead_of_prs": 20,
+    "hidden": 220,
     "conversations": [
      {
       "label": "Maruti Suzuki commissions first green hydrogen plant at Haryana facility",
@@ -5198,21 +5195,21 @@
       "prs_item": null
      },
      {
-      "label": "Govt: Green hydrogen investment can create 12,000 jobs in Bihar",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZV8xYmRGZDNZbHRfaGxCcmdDc2s5Qkp3RHFCWlo1UHZDcGxqTXJLb2FTeEM4Vm5LRldZYXUwSElYYXQwQ2Joclk1djNCeXBQQ1NMRHBjeG1aQTJZd09YblZsVTZZX3dYY0xKWHVaVTlBN1JNNWJfdEZGamh6bVVTWHlQdlgyeHl5RVZUeEQyMXRhUXV5S1VLLXVCUXFBVXJjUGxjWFNyNlVvY1VDdVktcGxSQmxrLTNXZkNHanlVVVNhZVhBdUJJZndodENjalHSAdQBQVVfeXFMUFdRNHZsRFM5NVpKNVFXMWVfUUdJX0QweFY5eURKckZneFJiZ2FyZlRVZnY4TDBlbWhlbklsZUZidFkwdkliOFhLOU5lT2FIN0ZVSkp5QXJkWDNOQ3o5S2J6SDRCT1NWSlQ0S3lDOU9VWl8wOVlnZ2pMd082YV9oeTh3YUZWTmgzVmxoelNMaVRpdjllLWh0b05uVXF0Z3p6S1RfWDNTVHVpTUN1UEtZc3c5ODNNSDA5SFhiamNrY0s3Rko5UlhJSmk5Q0VOX09rbWd3N1o?oc=5",
+      "label": "No power, no water: 40,000 Haryana power employees go on strike over private licence",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOU0dwQXY0aFpIdC1RUUFSMDNqNERzc2VYMXR0UFZqaXNBNXZLbUIzVkZsNllEX0hnWWRKYmZJYkt3NzlQLWxUTnoxSDhYYjBpWm9BTUFGLUtsRGw3Z1BnMmJoNjRBemNWc094YUplSTlIQTFYa1lJd2JoWW1scmF4OGtyVHJNODZLR3VQTWRIVzFiVVpvZHRRemlKREhfRFBlc1RzSjNrYjRnMzlJUGhCMGd6NFd6VmttQTJxcFQtcE5YU3BST0HSAcYBQVVfeXFMTlNHcEF2NGhaSHQtUVFBUjAzajREc3NlWDF0dFBWamlzQTV2S21CM1ZGbDZZRF9IZ1lkSmJmSWJLdzc5UC1sVE56MUg4WGIwaVpvQU1BRi1LbERsN2dQZzJiaDY0QXpjVnNPeGFKZUk5SEExWGtZSXdiaFltbHJheDhrclRyTTg2S0d1UE1kSFcxYlVab2R0UXppSkRIX0RQZXNUc0oza2I0ZzM5SVBoQjBnejRXelZrbUEycXBULXBOWFNwUk9B?oc=5",
       "credibility": "confirmed",
-      "posts": 4,
+      "posts": 3,
       "outlets": [
-       "Moneycontrol",
-       "The Hindu",
-       "ThePrint",
-       "Times of India"
+       "Hindustan Times",
+       "Mint",
+       "The Tribune"
       ],
       "platforms": [
-       "gnews"
+       "gnews",
+       "rss"
       ],
-      "first_seen": "2026-09-21",
-      "last_seen": "2026-10-12",
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-10-24",
       "prs_item": null
      },
      {
@@ -5249,35 +5246,36 @@
       "prs_item": null
      },
      {
-      "label": "Terra Invest: Green Hydrogen Could Let India Export Sunshine, Says Founding Partner Krishan Rattan",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMnhUX0ZoRGJSNXNDQWtKSEREcE94LWdFMzZGaXhwSlhITW9TY0xHN1BLU09udnVhYlVkTE9CUzlfNmphc1N0Sk1CcUVNT3dISWVTVVlqSlVmd0NCNHdPakU5WWJtSHJES1luTFh0ZFRmSTBlVC1KcUMtQ3JKOWZza2c3aUJSVnNKVHBTNG9FWkNmaHRUZEExc2VRWEJiWDhWbjZiOXdhUURPWU1QMzBSc3N2WFEyNzAtLU1xYl9XQzJFTGZBdHo0dUJnSE1aQk1QeTdGS2RmejFUbW_SAdsBQVVfeXFMUDJ4VF9GaERiUjVzQ0FrSkhERHBPeC1nRTM2Rml4cEpYSE1vU2NMRzdQS1NPbnZ1YWJVZExPQlM5XzZqYXNTdEpNQnFFTU93SEllU1VZakpVZndDQjR3T2pFOVlibUhyREtZbkxYdGRUZkkwZVQtSnFDLUNySjlmc2tnN2lCUlZzSlRwUzRvRVpDZmh0VGRBMXNlUVhCYlg4Vm42Yjl3YVFET1lNUDMwUnNzdlhRMjcwLS1NcWJfV0MyRUxmQXR6NHVCZ0hNWkJNUHk3RktkZnoxVG1v?oc=5",
+      "label": "Modi government should play by the rules, not misuse power against citizens | The Hindu editorial",
+      "url": "https://thehindu.com/videos/modi-government-should-play-by-the-rules-not-misuse-power-against-citizens-the-hindu-editorial/article71574424.ece",
       "credibility": "confirmed",
       "posts": 2,
       "outlets": [
-       "Mid-day",
-       "Times Now"
+       "SCC Online",
+       "The Hindu"
+      ],
+      "platforms": [
+       "gnews",
+       "rss"
+      ],
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-22",
+      "prs_item": null
+     },
+     {
+      "label": "Government unveils roadmap for green urea production, pushes 7.24 lakh MT green ammonia procurement under National Green Hydrogen Mission | DD News",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPdlhsZ2c3QWxqNHRTU1ZiVm15YUdiVnE0bTFoMTBTQmFvSVpKT04tNjVVUTVkS0dmX1ZFd1lLbHdrOVotNXpPYzI5d3NoUXV3ZjYwcC1ETUFRaHVfVlllYjFBd3BrdVk0YjQ5akVSMGNNY3ZLUml4eDNUQ0ZFZi1ma2ZsbDRQajNKQzZWdUwxSklUR1VQUU1pc21jclpfME5RWlk2UWRmcXpSR0gtX0JyN3F1RlFFeVFyajJDOWdpby1VbGRJanNnY0I4SzRwM0Q2ZGhwLV9nMG9KMnA3a0NmSHRPR0dNeFdGN05PMkxDdjNDWDlk?oc=5",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Business Today",
+       "DD News"
       ],
       "platforms": [
        "gnews"
       ],
-      "first_seen": "2026-09-26",
-      "last_seen": "2026-10-17",
-      "prs_item": null
-     },
-     {
-      "label": "Power demand overshoots government’s projection by 3.3% in April-August",
-      "url": "https://indianexpress.com/article/business/power-demand-exceeds-government-projection-april-august-10903812",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Indian Express",
-       "NDTV"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-10-02",
-      "last_seen": "2026-10-03",
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-10-21",
       "prs_item": null
      }
     ]
