@@ -4065,8 +4065,26 @@
      "community": 0
     },
     "running_ahead_of_prs": 30,
-    "hidden": 318,
+    "hidden": 319,
     "conversations": [
+     {
+      "label": "Govt To Release Consultation Paper On AI Regulation: Vaishnaw",
+      "url": "https://inc42.com/buzz/govt-to-release-consultation-paper-on-ai-regulation-vaishnaw",
+      "credibility": "confirmed",
+      "posts": 5,
+      "outlets": [
+       "Economic Times",
+       "Inc42",
+       "Medianama"
+      ],
+      "platforms": [
+       "gnews",
+       "rss"
+      ],
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-26",
+      "prs_item": null
+     },
      {
       "label": "Emerald Heights International School moves Supreme Court seeking curbs on children's social media use",
       "url": "https://barandbench.com/news/litigation/emerald-heights-international-school-moves-supreme-court-seeking-curbs-on-childrens-social-media-use",
@@ -4081,24 +4099,6 @@
       ],
       "first_seen": "2026-10-13",
       "last_seen": "2026-10-17",
-      "prs_item": null
-     },
-     {
-      "label": "Govt To Release Consultation Paper On AI Regulation: Vaishnaw",
-      "url": "https://inc42.com/buzz/govt-to-release-consultation-paper-on-ai-regulation-vaishnaw",
-      "credibility": "confirmed",
-      "posts": 4,
-      "outlets": [
-       "Economic Times",
-       "Inc42",
-       "Medianama"
-      ],
-      "platforms": [
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-10-08",
-      "last_seen": "2026-10-10",
       "prs_item": null
      },
      {
@@ -4344,10 +4344,10 @@
    "money": {
     "counts": {
      "confirmed": 52,
-     "reported": 25,
+     "reported": 26,
      "community": 0
     },
-    "running_ahead_of_prs": 69,
+    "running_ahead_of_prs": 70,
     "hidden": 377,
     "conversations": [
      {
@@ -4546,8 +4546,8 @@
    },
    "education": {
     "counts": {
-     "confirmed": 21,
-     "reported": 14,
+     "confirmed": 22,
+     "reported": 13,
      "community": 0
     },
     "running_ahead_of_prs": 35,
@@ -4577,7 +4577,7 @@
       "label": "MP NEET UG 2026 Mop-Up Round: Revised Merit List Released, Check Choice Filling Dates",
       "url": "https://ndtv.com/education/mp-neet-ug-2026-mop-up-round-revised-merit-list-released-check-choice-filling-dates-12133843",
       "credibility": "confirmed",
-      "posts": 11,
+      "posts": 12,
       "outlets": [
        "Business Standard",
        "Economic Times",
@@ -4666,6 +4666,23 @@
       "prs_item": null
      },
      {
+      "label": "WB NEET PG 2026 Counselling Schedule Out: Check Round 1 Dates for State Quota Medical Admissions",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTGxFejdYTks1czNoOElIREs1bEZBUXdZNXR2NU5fcl9RTnVEQXQ3ajlvNW1HQnBJa0ZabXJiOGNLNG84Y2RvY3lYVXUtYzllanhrblNxeDIwR2pCZjZYRXNaUzBVNXI2ZjlZaW5JeFhEZE9uM3V4Qmh6VVgyWlQyanFJdEdtZG1zeUdPVFlHQ0RHWXROWUJ5cW5OS1RGcmZJYVYwdmdpbDdkUDhfRi1VQUk0WF9tcE5DNWY3RHR4S09haDhYaGdtWdIBzgFBVV95cUxOWGJqN2ZVT2k5OFBPcEN1OEh4Z1VuSlUxQjNLTjlKa0taSFpfVWtyaVZuRTJjZE1oMmpENXl4Nk1wTDhkUnZLT1NFZlBzaFVaalNmTm9xektqN2RaNXI1Mm5LVlRRYV9ySHN6cDVKekFVd2JxekZTbDZuM2s1TUJQQTVvQ19ucEM1SGRoX1pDVHNaZGIxRVBmQ041aHBYU0swYlNrSnNfdU1mRFYtX1BVY0llSklzTTlWV2swQWtORWNWeE9EZHdJaXRoV1o0dw?oc=5",
+      "credibility": "confirmed",
+      "posts": 4,
+      "outlets": [
+       "Business Standard",
+       "NDTV",
+       "The Telegraph"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-10-23",
+      "prs_item": null
+     },
+     {
       "label": "Protest against CEC Gyanesh Kumar: Delhi court grants bail to 17 students, journalists",
       "url": "https://barandbench.com/news/protest-against-cec-gyanesh-kumar-delhi-court-grants-bail-to-17-students-journalists",
       "credibility": "confirmed",
@@ -4681,22 +4698,6 @@
       "first_seen": "2026-10-06",
       "last_seen": "2026-10-24",
       "prs_item": null
-     },
-     {
-      "label": "MeitY: IndiaAI offers fellowship with financial support up to Rs 1 lakh for UG students, Rs 2 lakh for PG students",
-      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNRnZmdmFoV3hSQVJXS1N5dUx1NjhTY08zYkdNZi15X19mOHNQazdzeGNydHJ2NU5PcmVQcVIyNjkxY3NERVdFTTh6akMzSG9hb1RzR25Rc1psQWFORnF3QUVPeDV2R0IzcVlHaGJkOENDN091bUZTVmhhbUhJV19DbHZpUXhmaEdGclNBc0Z4UzJqeFNjbzBXTzk0RXZnWXZoQ19wM013cl9ldEFwMUZFY1RzZWFVNTc5a1BLZ25IZ0dXajFoR3Yxa0ZwSExWTk1Yenp3RzlQQTltb01Ka0FLV1E5ZC1SWUZfRmZkU1VtWi1VVDVmaVNOdE1SMnB4ODUtY2VaT2RpRdIBhwJBVV95cUxNRnZmdmFoV3hSQVJXS1N5dUx1NjhTY08zYkdNZi15X19mOHNQazdzeGNydHJ2NU5PcmVQcVIyNjkxY3NERVdFTTh6akMzSG9hb1RzR25Rc1psQWFORnF3QUVPeDV2R0IzcVlHaGJkOENDN091bUZTVmhhbUhJV19DbHZpUXhmaEdGclNBc0Z4UzJqeFNjbzBXTzk0RXZnWXZoQ19wM013cl9ldEFwMUZFY1RzZWFVNTc5a1BLZ25IZ0dXajFoR3Yxa0ZwSExWTk1Yenp3RzlQQTltb01Ka0FLV1E5ZC1SWUZfRmZkU1VtWi1VVDVmaVNOdE1SMnB4ODUtY2VaT2RpRQ?oc=5",
-      "credibility": "confirmed",
-      "posts": 3,
-      "outlets": [
-       "India Today",
-       "Indian Express"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-23",
-      "prs_item": null
      }
     ]
    },
@@ -4707,7 +4708,7 @@
      "community": 1
     },
     "running_ahead_of_prs": 59,
-    "hidden": 435,
+    "hidden": 438,
     "conversations": [
      {
       "label": "Lawyers detained by police near Supreme Court amid CJP protests",
