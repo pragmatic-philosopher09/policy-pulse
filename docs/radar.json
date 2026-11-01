@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31",
+ "generated": "2026-11-01",
  "topics": [
   {
    "slug": "business",
@@ -732,7 +732,7 @@
    "sector": "Environment",
    "deadline": "2026-11-07",
    "status": "open",
-   "days_left": 7,
+   "days_left": 6,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Environment"
@@ -742,7 +742,7 @@
    "sector": "Energy",
    "deadline": "2026-10-30",
    "status": "closed",
-   "days_left": -1,
+   "days_left": -2,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Petroleum and Natural Gas"
@@ -752,7 +752,7 @@
    "sector": "Parliament",
    "deadline": "2026-10-05",
    "status": "closed",
-   "days_left": -26,
+   "days_left": -27,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-10-05/FCRA Press Release.pdf",
@@ -765,7 +765,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-28",
    "status": "closed",
-   "days_left": -33,
+   "days_left": -34,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-28/Press release for ISI Bill, 2026.pdf",
@@ -778,7 +778,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-25",
    "status": "closed",
-   "days_left": -36,
+   "days_left": -37,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-25/FCRA_press release.pdf",
@@ -791,7 +791,7 @@
    "sector": "Energy",
    "deadline": "2026-09-04",
    "status": "closed",
-   "days_left": -57,
+   "days_left": -58,
    "source": "https://prsindia.org/policy/monthly-policy-review/august-2026",
    "links": [
     "https://dae.gov.in/public-consultation-on-draft-shanti-rules-and-draft-shanti-regulations/",
@@ -804,7 +804,7 @@
    "sector": "Law and Justice",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -92,
+   "days_left": -93,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_Advocate_(A)_Bill_2026.pdf",
@@ -817,7 +817,7 @@
    "sector": "Health and Family Welfare",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -92,
+   "days_left": -93,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_National_Pharmacy_Commission_(NPC)_Bill_2026.pdf",
@@ -830,7 +830,7 @@
    "sector": "Parliament",
    "deadline": "2026-07-13",
    "status": "closed",
-   "days_left": -110,
+   "days_left": -111,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-13/National_Food_Security_(Amendment)_Bill_2026.pdf",
@@ -4060,11 +4060,11 @@
   "topics": {
    "digital-and-ai": {
     "counts": {
-     "confirmed": 14,
+     "confirmed": 15,
      "reported": 17,
      "community": 0
     },
-    "running_ahead_of_prs": 31,
+    "running_ahead_of_prs": 32,
     "hidden": 359,
     "conversations": [
      {
@@ -4186,19 +4186,20 @@
       "prs_item": null
      },
      {
-      "label": "PIL in Madras HC for probe into Saurav Das' identity, block of his social media accounts over comments on judiciary",
-      "url": "https://barandbench.com/news/litigation/pil-in-madras-hc-for-probe-into-saurav-das-identity-block-of-his-social-media-accounts-over-comments-on-judiciary",
+      "label": "Vaishnaw seeks open discussions with editors on DPDP concerns",
+      "url": "https://hindustantimes.com/india-news/vaishnaw-seeks-open-discussions-with-editors-on-dpdp-concerns-101793215164526.html",
       "credibility": "confirmed",
       "posts": 2,
       "outlets": [
-       "Bar & Bench",
-       "Hindustan Times"
+       "Hindustan Times",
+       "New Indian Express"
       ],
       "platforms": [
+       "gnews",
        "rss"
       ],
-      "first_seen": "2026-10-30",
-      "last_seen": "2026-10-30",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-11-01",
       "prs_item": null
      }
     ]
@@ -4210,21 +4211,26 @@
      "community": 0
     },
     "running_ahead_of_prs": 17,
-    "hidden": 114,
+    "hidden": 117,
     "conversations": [
      {
-      "label": "Ministry of Labour & Employment expands “Shram Samvad” outreach across industrial clusters",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTlRTaHdjQ1RnclVILWFDUUZNWTNDSEZMTTVRdFk0dGNZajdTRjlncmFDYmw5NzZjbmlBbUN1eXc2UXBTTDFLS3ZrZHBTSWQ5ZXFTUE9kUFl2anZ0WWVJTEhWX1R5RGRMV1FCRTE0dVVVcTRXQno3Tk1VX2xuZ0pxOTAwTEtJWmRoel9laWdrd0ZfZHdXelVXVHE5Yw?oc=5",
+      "label": "Labour Ministry Notifies National Social Security Board For Gig, Platform Workers",
+      "url": "https://inc42.com/buzz/labour-ministry-notifies-national-social-security-board-for-gig-platform-workers",
       "credibility": "confirmed",
-      "posts": 6,
+      "posts": 5,
       "outlets": [
-       "PIB"
+       "ANI",
+       "Business Standard",
+       "Inc42",
+       "The Tribune"
       ],
       "platforms": [
-       "gnews"
+       "bluesky",
+       "gnews",
+       "rss"
       ],
-      "first_seen": "2026-10-01",
-      "last_seen": "2026-10-06",
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-11-01",
       "prs_item": null
      },
      {
@@ -4265,21 +4271,18 @@
       "prs_item": null
      },
      {
-      "label": "Labour Ministry Notifies National Social Security Board For Gig, Platform Workers",
-      "url": "https://inc42.com/buzz/labour-ministry-notifies-national-social-security-board-for-gig-platform-workers",
+      "label": "Ministry of Labour & Employment takes “Shram Samvad” outreach to industrial clusters in Delhi, Haryana and Uttarakhand",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5CNVhBeVRYdjc3a05jazFfMnlWQlZmc2d3ZUtZRnJIVkF3NXZJUWtkN0FFaElOTFR6SENBd3N4bWJjSUhFdWZfSUFLWDE3aER6ZThJOWhXSHVDSGtvNV9RREYtQ0tZV09J?oc=5",
       "credibility": "confirmed",
-      "posts": 3,
+      "posts": 5,
       "outlets": [
-       "ANI",
-       "Business Standard",
-       "Inc42"
+       "PIB"
       ],
       "platforms": [
-       "gnews",
-       "rss"
+       "gnews"
       ],
-      "first_seen": "2026-10-30",
-      "last_seen": "2026-10-30",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-06",
       "prs_item": null
      },
      {
@@ -4332,9 +4335,9 @@
      },
      {
       "label": "Only 4% of Indian jobs at risk from AI disruption, far below developed markets: World Bank Group ED",
-      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPRWRYdnVoT1RNREhrVEx1Y2JNcWlKZTFyM2ZjY25KR1NRaDdYQ0psZjZKZWJnUUp4NXBfY2swbVprai12YW13dmFRaHdWQXdnQ3pkcUwwOFpjaTVoY1ZaUnhDclB4Z3paUTdkek1NeDlfZW1RRUV1Q29aREpzT1Z5TWxkTTAxT0kxYkY5TExXU1lTMVV5OFpkOUl6MWYyWlZqZkJNQzFQdHRiUjBCLU0xTlhybVUzcVBwZFlDT1ZaZnFROXR2NkljV0kwVGpxazhaVHRwNUVWWkRvdUxoYVhVa1U0VmJwXzEzeVRjZ0JsT0N4QXByRW1XZ3h2VDZOLWl2M3puQzhnNjRWcjlZR0FMT9IBkAJBVV95cUxPRWRYdnVoT1RNREhrVEx1Y2JNcWlKZTFyM2ZjY25KR1NRaDdYQ0psZjZKZWJnUUp4NXBfY2swbVprai12YW13dmFRaHdWQXdnQ3pkcUwwOFpjaTVoY1ZaUnhDclB4Z3paUTdkek1NeDlfZW1RRUV1Q29aREpzT1Z5TWxkTTAxT0kxYkY5TExXU1lTMVV5OFpkOUl6MWYyWlZqZkJNQzFQdHRiUjBCLU0xTlhybVUzcVBwZFlDT1ZaZnFROXR2NkljV0kwVGpxazhaVHRwNUVWWkRvdUxoYVhVa1U0VmJwXzEzeVRjZ0JsT0N4QXByRW1XZ3h2VDZOLWl2M3puQzhnNjRWcjlZR0FMTw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPMEdCeHNKOGR5SEcxUDhUTDREMXNtQVBCOVdwOGZhSklYRmF3Q1g5OHVUb25pbnZpekhYc0NnUGF2dzJjVWxjYS1xYksyOTdLV1lHNVB2a1NKdFRCNDlGQ2pRM3JEdTFmUzd3VHZKekx2YTJ1ZHVobEpXMzJSZi1jZ09lWGpsZ3l3UC1lZm94ZXc4RFdIaV94WTMzWm9rZi00WmtRdFdlTWNUc3hCVVN5UmoyNzZzM3VscEtOdzlPV3k1QWZJYWhCTUhjdTBuUXl3Zkdralg0RzUwOWFWcDA5STUtV254MmJuXzVCaHNWTy1oWXdXTVhORUd0NVRKdkRmUFlnRW1LOTFiNG_SAZACQVVfeXFMT0VkWHZ1aE9UTURIa1RMdWNiTXFpSmUxcjNmY2NuSkdTUWg3WENKbGY2SmViZ1FKeDVwX2NrMG1aa2otdmFtd3ZhUWh3VkF3Z0N6ZHFMMDhaY2k1aGNWWlJ4Q3JQeGd6WlE3ZHpNTXg5X2VtUUVFdUNvWkRKc09WeU1sZE0wMU9JMWJGOUxMV1NZUzFVeThaZDlJejFmMlpWamZCTUMxUHR0YlIwQi1NMU5Ycm1VM3FQcGRZQ09WWmZxUTl0djZJY1dJMFRqcWs4WlR0cDVFVlpEb3VMaGFYVWtVNFZicF8xM3lUY2dCbE9DeEFwckVtV2d4dlQ2Ti1pdjN6bkM4ZzY0VnI5WUdBTE8?oc=5",
       "credibility": "reported",
-      "posts": 3,
+      "posts": 4,
       "outlets": [
        "Economic Times"
       ],
@@ -4349,56 +4352,27 @@
    },
    "money": {
     "counts": {
-     "confirmed": 67,
-     "reported": 35,
+     "confirmed": 69,
+     "reported": 40,
      "community": 0
     },
-    "running_ahead_of_prs": 94,
-    "hidden": 443,
+    "running_ahead_of_prs": 98,
+    "hidden": 435,
     "conversations": [
      {
-      "label": "GST Council meeting on October 7 may consider ITC relief proposals",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUFFQMURLYXo3cmczbkMxNGh2aXB5TVUtMnFqMHBTWjlDLWE3NUZCOTNBdmpPMmtzTVdtaTVkWm53SGF0UFpaTnpQaHFhWHpYeXZ6Vl94b0c1YU5icHBzVkJlRUpzUWlVYkVRczFzTEU3S2RMbzNmMG8wRlhFNHhOakY5dWlQRVRCQ0RveENpMzRqR1YtQTFLa2tvaC1wcjhnalYwdTFzTUJFUDkteG0zQ1l3SXhVeDlieHNraUpFeVFrMlVWUUYyY2g3Y9IB0gFBVV95cUxPaTdSVGtPaTFUSzVxbWlzV3RvZGxEc01yTUxTT2c2V09kNXNxTmhwVTdkYy1XSElodldydnpmdEpZbkcxYWw5YkNRdUJvSjRFNG53MXpoY21MR1MzbFdiVjRnZXVab2U4SDYwSmNoVUlHSjl3WDJsX1ZCX3g0aWlaU2pLUzc2aDQtMnZwR1g1cl9hcy1EMmlWUHczMTk5RDJOYzNTS1RRQTFQNXllRHg4VURrNXU1ZnZxRWRKeFRTX3F5SF8zbG1HVGpRUlFQYUhqNHc?oc=5",
+      "label": "57th GST Council meeting rescheduled for October 8 from October 7; to be held at Bharat Mandapam in New De",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNdnJQTE5PYU40a2xrTzJnb1dQTlZTLVp5ZmJvYnE4Rm8zSzc0Rm9vcEgtYXYwaGs2ZTlSeXNSSjZnV0ExRUdpcTVVMW9mNklENTJkbjFMNll6T3J1QTdOWGlwaGp6bGhLMjJHbmNGMlRTMENvTU8tVDNCZkdRSFVQMjNVN0w1Vm1MQ0tieWViYVYtLVdjc1FYeER3Z3h4VHh0eGU2NVBlRUxaYXQ3OVZPVEVDd2h6Yy13Z3V4RWRDcTZ1MGY1c0FGOE9kTmpnSEtlZ0pfaG53cVBrcEJrek5POHQzdHQyLXZ2TXFRdGswbEVYeGxxWS05SE1qcGRmQjUycW51ckJtakt4MnFPLTRIYUhrQ2x1Z9IBmwJBVV95cUxQZjcxeEJHdkhsS1g3eklqbGN3SzBjWkc1LWFUYzZWWG5waWUxaENrMTd3ZnRxQmtLYU5xVEw0Slo3UXVRTkdNSHJDMXk3aXE3ODkxZ1VrMU1KckNfMGROa0tMVUJfRWpaR0JXbkRxNnZEZ1BZN1UtZWxUQ2tMUXNUVEotR2N1dHJaTm12dTFrZDFvQzBxQUI5LWs4WmI3TUNkSFVodW1RbmlOVjRCd2NhbHFqb3VYTW9IYlM5akdZclRvcW5GY2VQTXA3ZkZySkMxdE5Uejc5amFjRm82cF9mSlVsdnhoV3N1SHEycUlNMUpFTnotd05mLTFORGE2QXpUSUF0QTBLS0c4Q0t0ZFF3X3BxNlVkeHlOVksw?oc=5",
       "credibility": "confirmed",
-      "posts": 34,
+      "posts": 20,
       "outlets": [
-       "Business Standard",
        "Business Today",
-       "BusinessLine",
        "CNBC-TV18",
        "Economic Times",
-       "Hindustan Times",
        "India Today",
-       "Moneycontrol",
-       "News18",
-       "Taxscan",
-       "The Hindu",
-       "ThePrint",
-       "Times of India"
-      ],
-      "platforms": [
-       "bluesky",
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-10-01",
-      "last_seen": "2026-10-28",
-      "prs_item": null
-     },
-     {
-      "label": "FM Nirmala Sitharaman chairs 57th GST Council meeting in New Delhi",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQczlsM21IWDZJZkhLMmNFRlNpSk5zcXQyRHk2MkZyMlRLWXVYWjVtdU9ENDVxWGhva1lVS1VrRFlRTWJjNmhpUE1xejVKSENjTVpWRFlKSzBLQThDYWg2bWtWZFhRd29qWnU5cHhTVXV6NlNfa00yN25sOFZKT2FaVGlVdnpEaXM?oc=5",
-      "credibility": "confirmed",
-      "posts": 22,
-      "outlets": [
-       "Business Standard",
-       "CNBC-TV18",
-       "Economic Times",
-       "Indian Express",
-       "LiveLaw",
-       "Moneycontrol",
+       "Mid-day",
+       "Mint",
        "NDTV",
-       "News On AIR",
+       "News18",
        "Taxscan",
        "The Hindu"
       ],
@@ -4406,6 +4380,30 @@
        "bluesky",
        "gnews",
        "rss"
+      ],
+      "first_seen": "2026-10-05",
+      "last_seen": "2026-10-22",
+      "prs_item": null
+     },
+     {
+      "label": "FM Nirmala Sitharaman chairs 57th GST Council meeting in New Delhi",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQczlsM21IWDZJZkhLMmNFRlNpSk5zcXQyRHk2MkZyMlRLWXVYWjVtdU9ENDVxWGhva1lVS1VrRFlRTWJjNmhpUE1xejVKSENjTVpWRFlKSzBLQThDYWg2bWtWZFhRd29qWnU5cHhTVXV6NlNfa00yN25sOFZKT2FaVGlVdnpEaXM?oc=5",
+      "credibility": "confirmed",
+      "posts": 20,
+      "outlets": [
+       "Business Standard",
+       "CNBC-TV18",
+       "Economic Times",
+       "Indian Express",
+       "LiveLaw",
+       "Moneycontrol",
+       "News On AIR",
+       "The Hindu",
+       "Times of India"
+      ],
+      "platforms": [
+       "bluesky",
+       "gnews"
       ],
       "first_seen": "2026-10-03",
       "last_seen": "2026-10-30",
@@ -4465,7 +4463,7 @@
       "label": "GST Council meeting: Arresting powers of tax officers scrapped, prosecution threshold raised to Rs 5 crore",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSlcyaVVtZGdjLWplNnpBQVotZ1ZPN2VSWkk5LWV4a2Y1a0RpSXdoaExDS3VvcGlaM2xYekRYc1FRTDVlUS1HMTRWUnR2eUVzUmM4azhmQXRDY3NaV0ZTSHJLb3ljXzVvOUVFMTRpX25mMjJ2U002allkeHpPR2VCX0RTN0NWNlJtTkJIYjN1N3FVdzRydmtINDVQbmg5em1lY01xR2NHNF9DSnBRZ2xKS2ZldmZYOFRsTWl1NTlFWmpDc0dDWDhEYW1n?oc=5",
       "credibility": "confirmed",
-      "posts": 12,
+      "posts": 14,
       "outlets": [
        "Deccan Herald",
        "Economic Times",
@@ -4488,8 +4486,9 @@
       "label": "GST Council may clear sweeping compliance reforms; e-commerce sellers, genuine biz to get relief",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPYklkaUNzN2tfS2pfazVzcHBrbmlPa3JiWHFhS1B3RlF3MFdXeEJjNkRCUGI4bHZhYVJlVldHdG9UbzVaS2pCWGdRYzl3aHFuU3FQdWtXaVpNekJQdkhjS1lobmhVci1WcUlUeldkRUx2Ujg3Mmg1b3dzQmM3ZUFWeGVXNFNzQXM0b0NwbnFab3FqeE4tdWlQN0NEcHNUV2hqQ1EzWXVYSGhXLS1qUlNGb040UVlDbG5lVk1GUDdkYUFqUERFb3RsdWlkYkEzVmty0gHQAUFVX3lxTE9iSWRpQ3M3a19Lal9rNXNwcGtuaU9rcmJYcWFLUHdGUXcwV1d4QmM2REJQYjhsdmFhUmVWV0d0b1RvNVpLakJYZ1FjOXdocW5TcVB1a1dpWk16QlB2SGNLWWhuaFVyLVZxSVR6V2RFTHZSODcyaDVvd3NCYzdlQVZ4ZVc0U3NBczRvQ3BucVpvcWp4Ti11aVA3Q0Rwc1RXaGpDUTNZdVhIaFctLWpSU0ZvTjRRWUNsbmVWTUZQN2RhQWpQREVvdGx1aWRiQTNWa3I?oc=5",
       "credibility": "confirmed",
-      "posts": 11,
+      "posts": 12,
       "outlets": [
+       "Business Standard",
        "Economic Times",
        "Hindustan Times",
        "Mint",
@@ -4510,7 +4509,7 @@
       "label": "Mint Explainer | GST Council meeting: what could change for refunds, enforcement and rate changes",
       "url": "https://livemint.com/news/india/gst-council-meeting-proposals-refunds-itc-enforcement-11791358522734.html",
       "credibility": "confirmed",
-      "posts": 7,
+      "posts": 8,
       "outlets": [
        "BusinessLine",
        "CNBC-TV18",
@@ -4526,24 +4525,23 @@
       "prs_item": null
      },
      {
-      "label": "GST Council clears major reforms: Arrest power to go, faster refunds, prosecution threshold raised to Rs 5...",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOU1JRV001WEt3Qk9wZW9aSWRkQ3JSaHhNU0JXOHRUeWlKS013OXp2N3FvV1d1N3R6OUoxYy1QX2V4c3BzQjZDejAtZm5CSzBiMkFLTml2U0dlUE9wMkR5djB5b0l0dnZxUTBMN1d6TS1aOTBTUmU1M2VRQWROMFpYdHY1czNPWUxqdUtndlZzV1lWdDJ3SS1oYlZ3WTNuV3M1QzZRVkRjQmp3ZUdBZXNaVUROaExXYURZN2ExalBhNHV0U09FMjNReFVxWkNncjhOUGloZjIxUFEzd2hkVUVMNFpiLVpzZ1ZfVHU4alZCS2ZnRDA5LTBrVnB30gH_AUFVX3lxTFBXMG1qNHM4dEZGUHR2X3h0LTR1U19ZZC1ORjVFYnhYUWdtMVZvbEtvNWZZYmNEOS1VeE50dUpTQVRyWkVhT0ZWaE5FQ051YXUtcEFKWHdEX3NYdDU5TUNxOFV4LWlndlNPUWNmQm1jdjB4RkhUYTAyZzI4aXM4azBPN3ozNUgzWXJjMlQtb0FHaTVGQjlpLWZQeVJ6d0ptdmVaS0Y1a21GcGhPX1NhZnk1UjZmc0V6Sm9PS28yb1NXT1B6LVNMN3dYckhoR0NQYTczNHZoY0N6T0NHUGFEOUtQLTlTVEt3aU5jMjllY2thVXVPdHNlVUpTWEl6Zm05NA?oc=5",
+      "label": "PM welcomes GST Council’s recommendations for simpler, trust based tax administration",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVVBUaklpR1FzeXdfTGlPS2M4eGJIeXQ1WVQ4TWlwMXJVNlZhZHFBUUpWaC1EeDB2WmtNN0VHUUdZNndnQTBKTXcyV0dMRXdxbzJVaVZnb3RFaklBZGxjNHdSTWZpWV9aYVdPRi1xMFV6dV94S1Q5dlE4UE1oaENHWnNEd0NEZDRCdHI2OVpVcmozX0owU2dENHhkQUtwdnBjZk1haVF2MnFaNGd0RHhjU3djNFBIcERHM3JWeFBxQlJETUtobl9DR1pYSTZ5LTJsNktEZmZXeWxrLVk?oc=5",
       "credibility": "confirmed",
       "posts": 7,
       "outlets": [
-       "Business Standard",
-       "Firstpost",
        "Moneycontrol",
+       "News On AIR",
+       "PIB",
        "Taxscan",
-       "ThePrint"
+       "pmindia.gov.in"
       ],
       "platforms": [
-       "bluesky",
        "gnews",
        "rss"
       ],
       "first_seen": "2026-10-08",
-      "last_seen": "2026-10-09",
+      "last_seen": "2026-10-30",
       "prs_item": null
      }
     ]
@@ -4551,11 +4549,11 @@
    "education": {
     "counts": {
      "confirmed": 25,
-     "reported": 15,
+     "reported": 14,
      "community": 0
     },
-    "running_ahead_of_prs": 40,
-    "hidden": 349,
+    "running_ahead_of_prs": 39,
+    "hidden": 360,
     "conversations": [
      {
       "label": "Karnataka NEET PG Counselling 2026 Registration Begins; Apply by October 15",
@@ -4714,7 +4712,7 @@
      "community": 1
     },
     "running_ahead_of_prs": 69,
-    "hidden": 504,
+    "hidden": 520,
     "conversations": [
      {
       "label": "Karnataka High Court grants bail to man accused of tampering with forensic lab report",
@@ -4866,7 +4864,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 12,
-    "hidden": 187,
+    "hidden": 191,
     "conversations": [
      {
       "label": "No medicine shortage in govt hospitals, says Keralam Health minister",
@@ -5001,12 +4999,12 @@
    },
    "business": {
     "counts": {
-     "confirmed": 13,
-     "reported": 11,
+     "confirmed": 14,
+     "reported": 12,
      "community": 0
     },
-    "running_ahead_of_prs": 22,
-    "hidden": 196,
+    "running_ahead_of_prs": 24,
+    "hidden": 200,
     "conversations": [
      {
       "label": "GST Council may clear sweeping compliance reforms; e-commerce sellers, genuine biz to get relief",
@@ -5135,19 +5133,19 @@
       "prs_item": null
      },
      {
-      "label": "India, US ironing out differences on trade deal; nearing 'landing point': Jaishankar",
-      "url": "https://hindustantimes.com/india-news/india-us-ironing-out-differences-on-trade-deal-nearing-landing-point-jaishankar-101791961263845.html",
+      "label": "Centre cuts windfall tax on diesel exports, raises levy on petrol",
+      "url": "https://livemint.com/news/windfall-tax-diesel-exports-petrol-exports-atf-west-asia-war-crude-oil-prices-oil-marketing-companies-11792117561587.html",
       "credibility": "confirmed",
       "posts": 2,
       "outlets": [
-       "Hindustan Times",
+       "Mint",
        "The Hindu"
       ],
       "platforms": [
        "rss"
       ],
-      "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14",
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-11-01",
       "prs_item": null
      }
     ]
@@ -5159,17 +5157,18 @@
      "community": 0
     },
     "running_ahead_of_prs": 19,
-    "hidden": 267,
+    "hidden": 268,
     "conversations": [
      {
       "label": "India secures over 5.5 lakh MTPA green hydrogen offtake commitments",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWDlvZEpLWnNfZ3drZ0tjZUhCZHp5dUw2SUpWM01pcWtUYjRnNFdMaGdrcGpQNTNpVmFuc3hkVURlNjlRWXdZaDBlbDZfc044dllhY0J2NVR0ekt2d2RXdWVaQ2FTeDZMU1hKODF4aXVwMjB4bE5YaUtyalBMVktqTnA2SklrV0ZOaDI5elo1ekJva1A4TThzMw?oc=5",
       "credibility": "confirmed",
-      "posts": 6,
+      "posts": 7,
       "outlets": [
        "ANI",
        "Business Standard",
        "DD News",
+       "Economic Times",
        "Free Press Journal",
        "Moneycontrol",
        "The Tribune"
