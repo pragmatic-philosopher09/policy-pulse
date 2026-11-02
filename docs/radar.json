@@ -4227,8 +4227,8 @@
    },
    "work": {
     "counts": {
-     "confirmed": 7,
-     "reported": 10,
+     "confirmed": 8,
+     "reported": 9,
      "community": 0
     },
     "running_ahead_of_prs": 17,
@@ -4289,6 +4289,23 @@
       ],
       "first_seen": "2026-10-22",
       "last_seen": "2026-10-22",
+      "prs_item": null
+     },
+     {
+      "label": "Do new labour codes really protect workers interests",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOd3BVY3ZwVElDd0RpN0lpZXpMdVNqcm0tTzNZZFFlRHZSeU9pdkM2eHlUT1lkQ3hTU2NXYW01YW1xeEZITGtTU01BejFwVDAzTzlnRTlVU1czOHl0dnMwcllmai1BNllxT29qTGdzbEg5eEdySW9CdkRhT3pSWlprcWpxbnpkdTVEdWJiS0lZMFBvVzZ0SGt2Z2tBVdIBnwFBVV95cUxONmFsVXdUQjFNTFJERndmUnZlN25GM0dFREhiNXhyQ1pUc0dfbVFMeG8yUFNfZzRFOVYwOWJlczJfUTRBT1AzdDZOd3o4MV9UcGNhVkN0R0ZONVJZc0ZXYjNMVFRNV1duSXY2TUdFLWFXelBvUUplM2owNHZZbGkwNUdnUXBzXzVpcVJZMWprcHRNQ19iZzNNd3F1eXFjU0E?oc=5",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "Newslaundry",
+       "The Tribune"
+      ],
+      "platforms": [
+       "bluesky",
+       "gnews"
+      ],
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-11-02",
       "prs_item": null
      },
      {
@@ -4353,21 +4370,6 @@
       "first_seen": "2026-10-06",
       "last_seen": "2026-10-06",
       "prs_item": null
-     },
-     {
-      "label": "Only 4% of Indian jobs at risk from AI disruption, far below developed markets: World Bank Group ED",
-      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPMEdCeHNKOGR5SEcxUDhUTDREMXNtQVBCOVdwOGZhSklYRmF3Q1g5OHVUb25pbnZpekhYc0NnUGF2dzJjVWxjYS1xYksyOTdLV1lHNVB2a1NKdFRCNDlGQ2pRM3JEdTFmUzd3VHZKekx2YTJ1ZHVobEpXMzJSZi1jZ09lWGpsZ3l3UC1lZm94ZXc4RFdIaV94WTMzWm9rZi00WmtRdFdlTWNUc3hCVVN5UmoyNzZzM3VscEtOdzlPV3k1QWZJYWhCTUhjdTBuUXl3Zkdralg0RzUwOWFWcDA5STUtV254MmJuXzVCaHNWTy1oWXdXTVhORUd0NVRKdkRmUFlnRW1LOTFiNG_SAZACQVVfeXFMT0VkWHZ1aE9UTURIa1RMdWNiTXFpSmUxcjNmY2NuSkdTUWg3WENKbGY2SmViZ1FKeDVwX2NrMG1aa2otdmFtd3ZhUWh3VkF3Z0N6ZHFMMDhaY2k1aGNWWlJ4Q3JQeGd6WlE3ZHpNTXg5X2VtUUVFdUNvWkRKc09WeU1sZE0wMU9JMWJGOUxMV1NZUzFVeThaZDlJejFmMlpWamZCTUMxUHR0YlIwQi1NMU5Ycm1VM3FQcGRZQ09WWmZxUTl0djZJY1dJMFRqcWs4WlR0cDVFVlpEb3VMaGFYVWtVNFZicF8xM3lUY2dCbE9DeEFwckVtV2d4dlQ2Ti1pdjN6bkM4ZzY0VnI5WUdBTE8?oc=5",
-      "credibility": "reported",
-      "posts": 4,
-      "outlets": [
-       "Economic Times"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-08",
-      "last_seen": "2026-10-09",
-      "prs_item": null
      }
     ]
    },
@@ -4378,7 +4380,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 101,
-    "hidden": 442,
+    "hidden": 443,
     "conversations": [
      {
       "label": "57th GST Council meeting rescheduled for October 8 from October 7; to be held at Bharat Mandapam in New De",
@@ -4550,34 +4552,35 @@
       "prs_item": null
      },
      {
-      "label": "Mint Explainer | GST Council meeting: what could change for refunds, enforcement and rate changes",
-      "url": "https://livemint.com/news/india/gst-council-meeting-proposals-refunds-itc-enforcement-11791358522734.html",
+      "label": "PM welcomes GST Council’s recommendations for simpler, trust based tax administration",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVVBUaklpR1FzeXdfTGlPS2M4eGJIeXQ1WVQ4TWlwMXJVNlZhZHFBUUpWaC1EeDB2WmtNN0VHUUdZNndnQTBKTXcyV0dMRXdxbzJVaVZnb3RFaklBZGxjNHdSTWZpWV9aYVdPRi1xMFV6dV94S1Q5dlE4UE1oaENHWnNEd0NEZDRCdHI2OVpVcmozX0owU2dENHhkQUtwdnBjZk1haVF2MnFaNGd0RHhjU3djNFBIcERHM3JWeFBxQlJETUtobl9DR1pYSTZ5LTJsNktEZmZXeWxrLVk?oc=5",
       "credibility": "confirmed",
       "posts": 8,
       "outlets": [
-       "BusinessLine",
-       "CNBC-TV18",
-       "Mint",
-       "Times of India"
+       "Moneycontrol",
+       "News On AIR",
+       "PIB",
+       "Taxscan",
+       "pmindia.gov.in"
       ],
       "platforms": [
        "gnews",
        "rss"
       ],
-      "first_seen": "2026-10-07",
-      "last_seen": "2026-10-15",
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-30",
       "prs_item": null
      }
     ]
    },
    "education": {
     "counts": {
-     "confirmed": 28,
-     "reported": 15,
+     "confirmed": 29,
+     "reported": 14,
      "community": 0
     },
     "running_ahead_of_prs": 43,
-    "hidden": 373,
+    "hidden": 374,
     "conversations": [
      {
       "label": "Karnataka NEET PG Counselling 2026 Registration Begins; Apply by October 15",
@@ -4678,6 +4681,23 @@
       "prs_item": null
      },
      {
+      "label": "NEET PG Counselling: MCC round-1 provisional allotment list out, final result today",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPU1dHNG42QjgxTGxzVC1GZnFLNWtMVS1sV0ZuRDVnMjNIaXdGU01BQmVycC10clN4djVpMlNYdHdvaWN5QmUycTZJNm00ckRfSjZQclZncGVFMzAzZnFDUzA1RnJDZ3NNRzI0RGtTaHpWWWxtblJHSnotSzN4MmRySU1NOS1MbTlPdm9tQkFHUWpkMGtGQ3FvV1owTkVJSkdsejR2UzlNc1NwSUNlRkJkS2tMU19uSXhqUW54eV9WTVNiSkVHSWtYZ19GX3JfZHVnbzl4WS1sRk90TVlqeU9Ub2xiNVUxVlZ6M2xXd2k0X0JnUDdWeldmaGRKZkFnUdIBgwJBVV95cUxNbU9DRzdHemVmSjB4bTMtcFZVcGUwNXhidm9pUjhsRXVKc2VncWViU1h1YlZ0MWg4M1MxX0otNDdDTl95RUZDM19ua3Z3ekZKRUlqYmhLRWJXaWNOVVQyczBvU3pWV1Iza0wwNzQteU9WRTBhdEh3Zm91bWJxNEtEWm95X2xYM2J4eVU1MjVZV0JTYTBFYzVsU3Ztbk0xVDVpNW9xMGZ5RURWeHNBRmttS1hyNk1wR1ZYMGtsWmtnNmVWUDczRnJwaTJGNW8wQVV2Q0NrN0NNcUhGWmhvLS1PVGVRSDZ3TDZrX3pQTXpDZlRhNUVlX2g0VDViZXpLdFJZczE4?oc=5",
+      "credibility": "confirmed",
+      "posts": 5,
+      "outlets": [
+       "India Today",
+       "Times of India"
+      ],
+      "platforms": [
+       "bluesky",
+       "gnews"
+      ],
+      "first_seen": "2026-10-14",
+      "last_seen": "2026-11-02",
+      "prs_item": null
+     },
+     {
       "label": "CBSE is organising the 4th National Summit on ‘Facilitating School-to-Work Transition’ in New Delhi",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9FdW03WUdWV2xad3YzOXFIelk2WkxDdDR5Z200TThWV2pkTWhWSWNqNG5BLU94ZHY2dnl3MlF5SW5iNXo1OXJ0UTMteTNyajZLSWJUb3RUanVWdWxyYVQ4YndIM055ckgt?oc=5",
       "credibility": "confirmed",
@@ -4710,23 +4730,6 @@
       "first_seen": "2026-10-06",
       "last_seen": "2026-10-09",
       "prs_item": null
-     },
-     {
-      "label": "NEET PG counselling: MCC to begin Round 1 registration today, check direct link here",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNWkcwU3BYX0lPLThCWUc3RXoxSzl5aTRzTXRyMXhQOFVkX205c05INWNFeUEwTElpbjVHT0RVZ1R4aWlGZ3FUUFZ1LTBMbTJRa0tVQU5OcUlyblYyWmJKRVgxZzNoVmcyalRnQXJ3MFpMaVpHMUJrWi1mRWNQLTVZQU1WRlM4US0zTnRfYnE0VEFDTXRyOHYzOU9FSjd2cE5CbUFSYVdIN1dsUjhTTllGYkN1dF9rUnkyOHFLSGszSGFjN3dqNkN2ZmE4RmFVcjFkSFFWMjdzOG85Z1Fqbll4cTh1NHhOWXVIQUFEV2tyYVpWWmVVcHM4Qm1nbXZ6Z2ZQbzdF?oc=5",
-      "credibility": "confirmed",
-      "posts": 4,
-      "outlets": [
-       "India Today",
-       "Indian Express",
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-24",
-      "prs_item": null
      }
     ]
    },
@@ -4737,7 +4740,7 @@
      "community": 1
     },
     "running_ahead_of_prs": 69,
-    "hidden": 538,
+    "hidden": 539,
     "conversations": [
      {
       "label": "Karnataka High Court grants bail to man accused of tampering with forensic lab report",
@@ -5030,7 +5033,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 24,
-    "hidden": 204,
+    "hidden": 205,
     "conversations": [
      {
       "label": "GST Council may clear sweeping compliance reforms; e-commerce sellers, genuine biz to get relief",
@@ -5094,11 +5097,12 @@
       "label": "GST decriminalisation decisions mark shift to trust-based governance: CII",
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZnhEdTBxWWx0S1Z5ZXJRNHRSTFFtRmYteE1rNXZ4dTZWdktHTWRQQ3FWbjY0NWlUMnRhaHg2UXh6aERVZ3k1RkEzOGNqLW1ZVW5iWlhRbV9uWktDVUkxQW9xbWttMXNWdnFuUEp1ZjROeUhxTWxmanZPTGdWYmRxdEtBejFzQThubnFWb0dVai1meE4zMldoV3dYSk16OU1RSnZvS3JkTk05RWY4bkNHdmN3UlFSeWcxOHlzWjdJTWdtckRFRExqai02MW14Xy1TaG42Z2Q1MNIB3AFBVV95cUxPRlkwRlNtSWNJWHY1RTRubFBiOVp6Y0xPbjZBWmxSd2VkWFNNVlJFRkJBUGV2NXhNaWJydlZVTnl1NHgyeEdoUG5XcXdvUFlMbEJ2WDczVTQwWkEteDRhRjNIOHJ1aHdta3lmaENLVS1BVWowaUl1cl91ZmRxV3FNOFFYV0RBdG15cTdSZWxRdUVrV3dxY0FObWFwRGFyMkp2WlQydzRkVTRvQU13eUo2SEl3UjRYNldWM0tnMGxXNFVyTXg1dkl4UjVDME0wT3ZLckc4OGR6Wk90MkE3?oc=5",
       "credibility": "confirmed",
-      "posts": 5,
+      "posts": 6,
       "outlets": [
        "Business Standard",
        "Business Today",
        "BusinessLine",
+       "Economic Times",
        "Moneycontrol",
        "The Tribune"
       ],
@@ -5188,7 +5192,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 19,
-    "hidden": 281,
+    "hidden": 282,
     "conversations": [
      {
       "label": "India secures over 5.5 lakh MTPA green hydrogen offtake commitments",
