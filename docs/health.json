@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-08T11:07:24.443720+00:00",
+ "generated_at": "2026-11-09T12:05:05.283861+00:00",
  "sources": [
   {
    "source": "prs",
-   "status": "ok",
-   "checked_at": "2026-11-02T11:32:36.224978+00:00",
+   "status": "partial",
+   "checked_at": "2026-11-09T11:56:52.985265+00:00",
    "successful_at": "2026-11-02T11:32:36.224978+00:00",
-   "detail": "Collection finished; see source coverage for sample limits",
+   "detail": "1 PRS review pages parsed to zero items; stored reviews retained",
    "stale": false,
    "stale_after_days": 8
   },
   {
    "source": "states",
    "status": "ok",
-   "checked_at": "2026-11-02T11:38:18.458692+00:00",
-   "successful_at": "2026-11-02T11:38:18.458692+00:00",
+   "checked_at": "2026-11-09T12:02:32.986807+00:00",
+   "successful_at": "2026-11-09T12:02:32.986807+00:00",
    "detail": "Collection finished; see source coverage for sample limits",
    "stale": false,
    "stale_after_days": 8
@@ -22,8 +22,8 @@
   {
    "source": "crosscheck",
    "status": "ok",
-   "checked_at": "2026-11-02T11:48:43.819673+00:00",
-   "successful_at": "2026-11-02T11:48:43.819673+00:00",
+   "checked_at": "2026-11-09T12:02:32.989322+00:00",
+   "successful_at": "2026-11-09T12:02:32.989322+00:00",
    "detail": "Collection finished; see source coverage for sample limits",
    "stale": false,
    "stale_after_days": 8
@@ -31,8 +31,8 @@
   {
    "source": "announcements",
    "status": "ok",
-   "checked_at": "2026-11-08T11:04:22.911630+00:00",
-   "successful_at": "2026-11-08T11:04:22.911630+00:00",
+   "checked_at": "2026-11-09T11:56:29.276914+00:00",
+   "successful_at": "2026-11-09T11:56:29.276914+00:00",
    "detail": "Collection finished; see source coverage for sample limits",
    "stale": false,
    "stale_after_days": 2
@@ -40,16 +40,16 @@
   {
    "source": "chatter",
    "status": "ok",
-   "checked_at": "2026-11-08T11:07:23.491540+00:00",
-   "successful_at": "2026-11-08T11:07:23.491540+00:00",
-   "detail": "1833 documents from 15/23 hosts; 312 conversations shown; government feeds direct: 0/2 (PIB also arrives via crosscheck); skipped this run: api.gdeltproject.org, indianexpress.com, pib.gov.in, scroll.in, theprint.in, thewire.in, www.business-standard.com, www.newsonair.gov.in",
+   "checked_at": "2026-11-09T12:05:04.385174+00:00",
+   "successful_at": "2026-11-09T12:05:04.385174+00:00",
+   "detail": "1843 documents from 15/23 hosts; 294 conversations shown; government feeds direct: 0/2 (PIB also arrives via crosscheck); skipped this run: api.gdeltproject.org, indianexpress.com, pib.gov.in, scroll.in, theprint.in, thewire.in, www.business-standard.com, www.newsonair.gov.in",
    "stale": false,
    "stale_after_days": 2
   },
   {
    "source": "citizens",
    "status": "not_configured",
-   "checked_at": "2026-11-08T11:07:23.511125+00:00",
+   "checked_at": "2026-11-09T12:05:04.404635+00:00",
    "successful_at": null,
    "detail": "X/Reddit not configured; no requests made",
    "stale": true,
