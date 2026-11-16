@@ -1,341 +1,45 @@
 {
- "generated": "2026-11-15",
+ "generated": "2026-11-16",
  "topics": [
-  {
-   "slug": "business",
-   "name": "Business & startups",
-   "name_hi": "व्यवसाय और स्टार्टअप",
-   "status": "heating",
-   "confidence": "high",
-   "change_pct": 52,
-   "recent_avg": 6.3,
-   "baseline_avg": 4.1,
-   "total_actions": 45,
-   "recent_actions": 11,
-   "breadth": 5,
-   "recent_corroborated": 9,
-   "recent_outlets": [
-    "News On AIR",
-    "Medianama",
-    "The Hindu",
-    "NDTV",
-    "Firstpost",
-    "ANI",
-    "Hindustan Times",
-    "LiveLaw",
-    "Moneycontrol",
-    "ThePrint",
-    "Newslaundry",
-    "Economic Times",
-    "DD News",
-    "Indian Express",
-    "Reuters",
-    "Inc42",
-    "PIB",
-    "Business Standard",
-    "New Indian Express",
-    "BusinessLine",
-    "Times of India",
-    "CNBC-TV18",
-    "Business Today",
-    "Taxscan",
-    "SCC Online"
-   ],
-   "impacts": {
-    "business": 11,
-    "jobs": 6,
-    "safety": 3,
-    "money": 2,
-    "education": 2,
-    "digital": 1
-   },
-   "sort_score": 67,
-   "months": [
-    "2025-04",
-    "2025-05",
-    "2025-06",
-    "2025-07",
-    "2025-08",
-    "2025-09",
-    "2025-10",
-    "2025-11",
-    "2025-12",
-    "2026-01",
-    "2026-02",
-    "2026-03",
-    "2026-04",
-    "2026-05",
-    "2026-06",
-    "2026-07",
-    "2026-08",
-    "2026-09"
-   ],
-   "activity": [
-    0.0,
-    5.2,
-    0.0,
-    2.2,
-    9.6,
-    0.0,
-    0.0,
-    3.8,
-    1.0,
-    2.5,
-    6.8,
-    8.5,
-    2.2,
-    4.8,
-    0.0,
-    7.0,
-    9.8,
-    2.0
-   ],
-   "counts": [
-    0,
-    4,
-    0,
-    2,
-    6,
-    0,
-    0,
-    3,
-    1,
-    2,
-    5,
-    6,
-    2,
-    3,
-    0,
-    4,
-    6,
-    1
-   ]
-  },
-  {
-   "slug": "money",
-   "name": "Money, markets & tax",
-   "name_hi": "पैसा, बाज़ार और टैक्स",
-   "status": "heating",
-   "confidence": "high",
-   "change_pct": 66,
-   "recent_avg": 5.1,
-   "baseline_avg": 3.1,
-   "total_actions": 50,
-   "recent_actions": 10,
-   "breadth": 3,
-   "recent_corroborated": 8,
-   "recent_outlets": [
-    "News On AIR",
-    "India Today",
-    "Business Standard",
-    "SCC Online",
-    "DD News",
-    "NDTV",
-    "Times of India",
-    "Moneycontrol",
-    "BusinessLine",
-    "CNBC-TV18",
-    "Economic Times",
-    "The Hindu",
-    "Reuters",
-    "Mint",
-    "Indian Express",
-    "ANI"
-   ],
-   "impacts": {
-    "money": 10,
-    "business": 7,
-    "safety": 2,
-    "jobs": 2,
-    "education": 1
-   },
-   "sort_score": 61,
-   "months": [
-    "2025-04",
-    "2025-05",
-    "2025-06",
-    "2025-07",
-    "2025-08",
-    "2025-09",
-    "2025-10",
-    "2025-11",
-    "2025-12",
-    "2026-01",
-    "2026-02",
-    "2026-03",
-    "2026-04",
-    "2026-05",
-    "2026-06",
-    "2026-07",
-    "2026-08",
-    "2026-09"
-   ],
-   "activity": [
-    1.0,
-    5.8,
-    2.0,
-    7.0,
-    11.3,
-    1.2,
-    6.5,
-    0.0,
-    7.2,
-    1.8,
-    3.8,
-    3.0,
-    2.5,
-    2.5,
-    5.0,
-    7.2,
-    4.0,
-    4.2
-   ],
-   "counts": [
-    1,
-    3,
-    2,
-    5,
-    6,
-    1,
-    4,
-    0,
-    4,
-    1,
-    3,
-    2,
-    2,
-    2,
-    4,
-    4,
-    2,
-    4
-   ]
-  },
-  {
-   "slug": "justice",
-   "name": "Law, courts & policing",
-   "name_hi": "क़ानून, अदालत और पुलिस",
-   "status": "heating",
-   "confidence": "high",
-   "change_pct": 300,
-   "recent_avg": 3.2,
-   "baseline_avg": 0.6,
-   "total_actions": 8,
-   "recent_actions": 4,
-   "breadth": 2,
-   "recent_corroborated": 3,
-   "recent_outlets": [
-    "The Hindu",
-    "LiveLaw",
-    "SCC Online",
-    "ANI",
-    "Law Beat",
-    "PIB",
-    "News On AIR",
-    "DD News"
-   ],
-   "impacts": {
-    "education": 4,
-    "safety": 4,
-    "business": 2
-   },
-   "sort_score": 60,
-   "months": [
-    "2025-04",
-    "2025-05",
-    "2025-06",
-    "2025-07",
-    "2025-08",
-    "2025-09",
-    "2025-10",
-    "2025-11",
-    "2025-12",
-    "2026-01",
-    "2026-02",
-    "2026-03",
-    "2026-04",
-    "2026-05",
-    "2026-06",
-    "2026-07",
-    "2026-08",
-    "2026-09"
-   ],
-   "activity": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    3.0,
-    0.0,
-    0.0,
-    1.5,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    0.0,
-    1.5,
-    0.0,
-    6.5,
-    3.0,
-    0.0
-   ],
-   "counts": [
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    1,
-    0,
-    1,
-    0,
-    3,
-    1,
-    0
-   ]
-  },
   {
    "slug": "energy-environment",
    "name": "Energy & environment",
    "name_hi": "ऊर्जा और पर्यावरण",
-   "status": "steady",
+   "status": "heating",
    "confidence": "high",
-   "change_pct": -7,
-   "recent_avg": 6.2,
-   "baseline_avg": 6.6,
-   "total_actions": 78,
-   "recent_actions": 12,
-   "breadth": 5,
-   "recent_corroborated": 7,
+   "change_pct": 54,
+   "recent_avg": 8.0,
+   "baseline_avg": 5.2,
+   "total_actions": 84,
+   "recent_actions": 15,
+   "breadth": 7,
+   "recent_corroborated": 8,
    "recent_outlets": [
-    "News On AIR",
+    "Business Today",
+    "The Hindu",
+    "New Indian Express",
+    "Firstpost",
+    "Business Standard",
+    "Times of India",
     "BusinessLine",
+    "SCC Online",
+    "Economic Times",
+    "News On AIR",
     "NDTV",
     "Indian Express",
     "The Wire",
     "ThePrint",
-    "Times of India",
     "DD News",
-    "Economic Times",
-    "Reuters",
-    "Business Standard",
-    "The Hindu",
-    "New Indian Express",
-    "pmindia.gov.in"
+    "Reuters"
    ],
    "impacts": {
-    "business": 9,
-    "education": 6,
-    "safety": 3
+    "business": 7,
+    "education": 4,
+    "money": 2,
+    "safety": 2,
+    "digital": 1
    },
-   "sort_score": 57,
+   "sort_score": 73,
    "months": [
     "2025-04",
     "2025-05",
@@ -354,7 +58,8 @@
     "2026-06",
     "2026-07",
     "2026-08",
-    "2026-09"
+    "2026-09",
+    "2026-10"
    ],
    "activity": [
     3.5,
@@ -374,7 +79,8 @@
     5.3,
     4.5,
     9.299999999999999,
-    4.8
+    4.8,
+    10.0
    ],
    "counts": [
     2,
@@ -394,40 +100,51 @@
     3,
     3,
     6,
-    3
+    3,
+    6
    ]
   },
   {
-   "slug": "health",
-   "name": "Health & medicine",
-   "name_hi": "स्वास्थ्य और चिकित्सा",
-   "status": "heating",
-   "confidence": "medium",
-   "change_pct": 67,
-   "recent_avg": 3.5,
-   "baseline_avg": 2.1,
-   "total_actions": 18,
-   "recent_actions": 7,
-   "breadth": 1,
-   "recent_corroborated": 4,
+   "slug": "money",
+   "name": "Money, markets & tax",
+   "name_hi": "पैसा, बाज़ार और टैक्स",
+   "status": "steady",
+   "confidence": "high",
+   "change_pct": 39,
+   "recent_avg": 5.6,
+   "baseline_avg": 4.0,
+   "total_actions": 57,
+   "recent_actions": 13,
+   "breadth": 3,
+   "recent_corroborated": 13,
    "recent_outlets": [
+    "Economic Times",
+    "Firstpost",
+    "India Today",
+    "NDTV",
+    "Deccan Herald",
+    "Moneycontrol",
+    "Business Standard",
+    "SCC Online",
     "DD News",
     "News On AIR",
     "The Hindu",
-    "CNBC-TV18",
-    "ThePrint",
-    "Express Pharma",
-    "New Indian Express",
-    "Mint"
+    "Bloomberg",
+    "Reuters",
+    "Mint",
+    "BusinessLine",
+    "PIB",
+    "Times of India",
+    "CNBC-TV18"
    ],
    "impacts": {
-    "health": 7,
-    "business": 5,
-    "education": 4,
-    "jobs": 1,
-    "money": 1
+    "money": 13,
+    "business": 4,
+    "safety": 2,
+    "education": 1,
+    "jobs": 1
    },
-   "sort_score": 49,
+   "sort_score": 59,
    "months": [
     "2025-04",
     "2025-05",
@@ -446,7 +163,297 @@
     "2026-06",
     "2026-07",
     "2026-08",
-    "2026-09"
+    "2026-09",
+    "2026-10"
+   ],
+   "activity": [
+    1.0,
+    5.8,
+    2.0,
+    7.0,
+    11.3,
+    1.2,
+    6.5,
+    0.0,
+    7.2,
+    1.8,
+    3.8,
+    3.0,
+    2.5,
+    2.5,
+    5.0,
+    7.2,
+    4.0,
+    4.2,
+    8.5
+   ],
+   "counts": [
+    1,
+    3,
+    2,
+    5,
+    6,
+    1,
+    4,
+    0,
+    4,
+    1,
+    3,
+    2,
+    2,
+    2,
+    4,
+    4,
+    2,
+    4,
+    7
+   ]
+  },
+  {
+   "slug": "digital-and-ai",
+   "name": "Digital & AI",
+   "name_hi": "डिजिटल और AI",
+   "status": "heating",
+   "confidence": "medium",
+   "change_pct": 146,
+   "recent_avg": 2.8,
+   "baseline_avg": 1.2,
+   "total_actions": 24,
+   "recent_actions": 5,
+   "breadth": 2,
+   "recent_corroborated": 2,
+   "recent_outlets": [
+    "News On AIR",
+    "Business Standard",
+    "Economic Times"
+   ],
+   "impacts": {
+    "digital": 5,
+    "business": 1,
+    "jobs": 1,
+    "education": 1
+   },
+   "sort_score": 56,
+   "months": [
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10"
+   ],
+   "activity": [
+    0.0,
+    0.0,
+    1.5,
+    5.0,
+    5.2,
+    3.5,
+    3.5,
+    2.0,
+    2.7,
+    0.0,
+    1.0,
+    3.9,
+    2.0,
+    0.0,
+    0.0,
+    0.0,
+    2.0,
+    4.0,
+    2.5
+   ],
+   "counts": [
+    0,
+    0,
+    1,
+    3,
+    3,
+    2,
+    2,
+    1,
+    2,
+    0,
+    1,
+    3,
+    1,
+    0,
+    0,
+    0,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "slug": "business",
+   "name": "Business & startups",
+   "name_hi": "व्यवसाय और स्टार्टअप",
+   "status": "steady",
+   "confidence": "high",
+   "change_pct": -9,
+   "recent_avg": 4.4,
+   "baseline_avg": 4.9,
+   "total_actions": 46,
+   "recent_actions": 8,
+   "breadth": 3,
+   "recent_corroborated": 8,
+   "recent_outlets": [
+    "Business Standard",
+    "Economic Times",
+    "News On AIR",
+    "Medianama",
+    "The Hindu",
+    "NDTV",
+    "Firstpost",
+    "ANI",
+    "Hindustan Times",
+    "LiveLaw",
+    "Moneycontrol",
+    "ThePrint",
+    "Newslaundry",
+    "DD News",
+    "Indian Express",
+    "Reuters",
+    "Inc42",
+    "PIB",
+    "New Indian Express",
+    "BusinessLine"
+   ],
+   "impacts": {
+    "business": 8,
+    "jobs": 3,
+    "money": 2,
+    "safety": 2,
+    "digital": 1,
+    "education": 1
+   },
+   "sort_score": 46,
+   "months": [
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10"
+   ],
+   "activity": [
+    0.0,
+    5.2,
+    0.0,
+    2.2,
+    9.6,
+    0.0,
+    0.0,
+    3.8,
+    1.0,
+    2.5,
+    6.8,
+    8.5,
+    2.2,
+    4.8,
+    0.0,
+    7.0,
+    9.8,
+    2.0,
+    1.5
+   ],
+   "counts": [
+    0,
+    4,
+    0,
+    2,
+    6,
+    0,
+    0,
+    3,
+    1,
+    2,
+    5,
+    6,
+    2,
+    3,
+    0,
+    4,
+    6,
+    1,
+    1
+   ]
+  },
+  {
+   "slug": "health",
+   "name": "Health & medicine",
+   "name_hi": "स्वास्थ्य और चिकित्सा",
+   "status": "steady",
+   "confidence": "medium",
+   "change_pct": -18,
+   "recent_avg": 1.9,
+   "baseline_avg": 2.3,
+   "total_actions": 18,
+   "recent_actions": 4,
+   "breadth": 1,
+   "recent_corroborated": 2,
+   "recent_outlets": [
+    "DD News",
+    "News On AIR",
+    "The Hindu",
+    "CNBC-TV18",
+    "ThePrint"
+   ],
+   "impacts": {
+    "health": 4,
+    "education": 2,
+    "business": 2,
+    "jobs": 1,
+    "money": 1
+   },
+   "sort_score": 28,
+   "months": [
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10"
    ],
    "activity": [
     0.0,
@@ -466,6 +473,7 @@
     3.0,
     5.0,
     5.6000000000000005,
+    0.0,
     0.0
    ],
    "counts": [
@@ -486,118 +494,32 @@
     2,
     3,
     4,
+    0,
     0
-   ]
-  },
-  {
-   "slug": "digital-and-ai",
-   "name": "Digital & AI",
-   "name_hi": "डिजिटल और AI",
-   "status": "heating",
-   "confidence": "medium",
-   "change_pct": 74,
-   "recent_avg": 2.0,
-   "baseline_avg": 1.2,
-   "total_actions": 22,
-   "recent_actions": 3,
-   "breadth": 1,
-   "recent_corroborated": 1,
-   "recent_outlets": [
-    "News On AIR",
-    "Business Standard",
-    "Economic Times"
-   ],
-   "impacts": {
-    "digital": 3,
-    "jobs": 1,
-    "education": 1
-   },
-   "sort_score": 44,
-   "months": [
-    "2025-04",
-    "2025-05",
-    "2025-06",
-    "2025-07",
-    "2025-08",
-    "2025-09",
-    "2025-10",
-    "2025-11",
-    "2025-12",
-    "2026-01",
-    "2026-02",
-    "2026-03",
-    "2026-04",
-    "2026-05",
-    "2026-06",
-    "2026-07",
-    "2026-08",
-    "2026-09"
-   ],
-   "activity": [
-    0.0,
-    0.0,
-    1.5,
-    5.0,
-    5.2,
-    3.5,
-    3.5,
-    2.0,
-    2.7,
-    0.0,
-    1.0,
-    3.9,
-    2.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    4.0
-   ],
-   "counts": [
-    0,
-    0,
-    1,
-    3,
-    3,
-    2,
-    2,
-    1,
-    2,
-    0,
-    1,
-    3,
-    1,
-    0,
-    0,
-    0,
-    1,
-    2
    ]
   },
   {
    "slug": "education",
    "name": "Education & exams",
    "name_hi": "शिक्षा और परीक्षाएँ",
-   "status": "heating",
+   "status": "quiet",
    "confidence": "low",
-   "change_pct": 71,
-   "recent_avg": 1.0,
-   "baseline_avg": 0.6,
-   "total_actions": 11,
+   "change_pct": -20,
+   "recent_avg": 0.4,
+   "baseline_avg": 0.5,
+   "total_actions": 12,
    "recent_actions": 1,
    "breadth": 1,
    "recent_corroborated": 1,
    "recent_outlets": [
-    "PIB",
-    "SCC Online",
-    "The Hindu"
+    "Times of India",
+    "India Today",
+    "New Indian Express"
    ],
    "impacts": {
-    "education": 1,
-    "safety": 1,
-    "business": 1
+    "education": 1
    },
-   "sort_score": 41,
+   "sort_score": 23,
    "months": [
     "2025-04",
     "2025-05",
@@ -616,7 +538,8 @@
     "2026-06",
     "2026-07",
     "2026-08",
-    "2026-09"
+    "2026-09",
+    "2026-10"
    ],
    "activity": [
     5.0,
@@ -636,7 +559,8 @@
     0.0,
     3.0,
     0.0,
-    0.0
+    0.0,
+    1.2
    ],
    "counts": [
     2,
@@ -656,22 +580,23 @@
     0,
     1,
     0,
-    0
+    0,
+    1
    ]
   },
   {
    "slug": "work",
    "name": "Work, wages & skills",
    "name_hi": "काम, मज़दूरी और कौशल",
-   "status": "steady",
+   "status": "quiet",
    "confidence": "medium",
-   "change_pct": 29,
-   "recent_avg": 1.4,
-   "baseline_avg": 1.1,
+   "change_pct": -48,
+   "recent_avg": 0.7,
+   "baseline_avg": 1.4,
    "total_actions": 17,
-   "recent_actions": 3,
+   "recent_actions": 2,
    "breadth": 2,
-   "recent_corroborated": 2,
+   "recent_corroborated": 1,
    "recent_outlets": [
     "News On AIR",
     "PIB",
@@ -679,12 +604,11 @@
     "SCC Online"
    ],
    "impacts": {
-    "jobs": 3,
-    "education": 2,
-    "business": 1,
-    "money": 1
+    "jobs": 2,
+    "education": 1,
+    "business": 1
    },
-   "sort_score": 40,
+   "sort_score": 20,
    "months": [
     "2025-04",
     "2025-05",
@@ -703,7 +627,8 @@
     "2026-06",
     "2026-07",
     "2026-08",
-    "2026-09"
+    "2026-09",
+    "2026-10"
    ],
    "activity": [
     0.0,
@@ -723,7 +648,8 @@
     0.0,
     2.0,
     1.2,
-    1.0
+    1.0,
+    0.0
    ],
    "counts": [
     0,
@@ -743,17 +669,158 @@
     0,
     1,
     1,
-    1
+    1,
+    0
+   ]
+  },
+  {
+   "slug": "justice",
+   "name": "Law, courts & policing",
+   "name_hi": "क़ानून, अदालत और पुलिस",
+   "status": "cooling",
+   "confidence": "low",
+   "change_pct": -40,
+   "recent_avg": 1.0,
+   "baseline_avg": 1.7,
+   "total_actions": 8,
+   "recent_actions": 1,
+   "breadth": 1,
+   "recent_corroborated": 1,
+   "recent_outlets": [
+    "The Hindu",
+    "LiveLaw",
+    "SCC Online",
+    "ANI",
+    "Law Beat"
+   ],
+   "impacts": {
+    "education": 1,
+    "safety": 1,
+    "business": 1
+   },
+   "sort_score": 19,
+   "months": [
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10"
+   ],
+   "activity": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    3.0,
+    0.0,
+    0.0,
+    1.5,
+    0.0,
+    0.0,
+    0.0,
+    2.0,
+    0.0,
+    1.5,
+    0.0,
+    6.5,
+    3.0,
+    0.0,
+    0.0
+   ],
+   "counts": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    3,
+    1,
+    0,
+    0
    ]
   }
  ],
  "consultations": [
   {
+   "title": "TRAI releases draft guidelines on responsible use of AI in telecom",
+   "sector": "Communications",
+   "deadline": "2026-11-27",
+   "status": "open",
+   "days_left": 11,
+   "source": "https://prsindia.org/policy/monthly-policy-review/october-2026",
+   "links": [],
+   "respond_via": "TRAI"
+  },
+  {
+   "title": "Draft Rules for control and supervision of animal experiments released for feedback",
+   "sector": "Agriculture",
+   "deadline": null,
+   "status": "unknown",
+   "days_left": null,
+   "source": "https://prsindia.org/policy/monthly-policy-review/october-2026",
+   "links": [],
+   "respond_via": "Ministry of Fisheries"
+  },
+  {
+   "title": "Draft National Steel Policy 2047 released for public consultation",
+   "sector": "Steel",
+   "deadline": null,
+   "status": "unknown",
+   "days_left": null,
+   "source": "https://prsindia.org/policy/monthly-policy-review/october-2026",
+   "links": [],
+   "respond_via": "Ministry of Steel"
+  },
+  {
+   "title": "Draft guidelines for hydrogen blending in domestic piped natural gas released",
+   "sector": "Energy",
+   "deadline": "2026-11-12",
+   "status": "closed",
+   "days_left": -4,
+   "source": "https://prsindia.org/policy/monthly-policy-review/october-2026",
+   "links": [],
+   "respond_via": null
+  },
+  {
+   "title": "Comments invited on draft Bharat Stage VII vehicle emission standards",
+   "sector": "Transport",
+   "deadline": "2026-11-11",
+   "status": "closed",
+   "days_left": -5,
+   "source": "https://prsindia.org/policy/monthly-policy-review/october-2026",
+   "links": [],
+   "respond_via": "Ministry of Road Transport and Highways"
+  },
+  {
    "title": "Draft Rules on levying environmental compensation for stubble burning released for public feedback",
    "sector": "Environment",
    "deadline": "2026-11-07",
    "status": "closed",
-   "days_left": -8,
+   "days_left": -9,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Environment"
@@ -763,7 +830,7 @@
    "sector": "Energy",
    "deadline": "2026-10-30",
    "status": "closed",
-   "days_left": -16,
+   "days_left": -17,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Petroleum and Natural Gas"
@@ -773,7 +840,7 @@
    "sector": "Parliament",
    "deadline": "2026-10-05",
    "status": "closed",
-   "days_left": -41,
+   "days_left": -42,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-10-05/FCRA Press Release.pdf",
@@ -786,7 +853,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-28",
    "status": "closed",
-   "days_left": -48,
+   "days_left": -49,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-28/Press release for ISI Bill, 2026.pdf",
@@ -799,7 +866,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-25",
    "status": "closed",
-   "days_left": -51,
+   "days_left": -52,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-25/FCRA_press release.pdf",
@@ -812,7 +879,7 @@
    "sector": "Energy",
    "deadline": "2026-09-04",
    "status": "closed",
-   "days_left": -72,
+   "days_left": -73,
    "source": "https://prsindia.org/policy/monthly-policy-review/august-2026",
    "links": [
     "https://dae.gov.in/public-consultation-on-draft-shanti-rules-and-draft-shanti-regulations/",
@@ -825,7 +892,7 @@
    "sector": "Law and Justice",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -107,
+   "days_left": -108,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_Advocate_(A)_Bill_2026.pdf",
@@ -838,7 +905,7 @@
    "sector": "Health and Family Welfare",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -107,
+   "days_left": -108,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_National_Pharmacy_Commission_(NPC)_Bill_2026.pdf",
@@ -867,7 +934,7 @@
   },
   "work": {
    "by_year": {
-    "2026": 13,
+    "2026": 14,
     "2025": 20
    },
    "states": {
@@ -875,18 +942,25 @@
     "Karnataka": 5,
     "Mizoram": 4,
     "Bihar": 4,
+    "Odisha": 2,
     "Gujarat": 2,
     "Manipur": 2,
     "Telangana": 2,
     "Goa": 2,
     "Madhya Pradesh": 1,
-    "Odisha": 1,
     "Chhattisgarh": 1,
     "Jharkhand": 1,
     "Punjab": 1,
     "Uttarakhand": 1
    },
    "bills": [
+    {
+     "title": "The Odisha State Tax on Professions, Trades, Callings and Employments (Repeal) Bill, 2026",
+     "state": "Odisha",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/odisha/2026/OD_Tax_on_Professions_Repeal_Bill_2026.pdf",
+     "brief": null
+    },
     {
      "title": "The Mizoram Shops and Establishments (Regulation of Employment and Conditions of Service)(Amendment) Ordinance, 2026",
      "state": "Mizoram",
@@ -1122,7 +1196,7 @@
   },
   "money": {
    "by_year": {
-    "2026": 40,
+    "2026": 47,
     "2025": 60
    },
    "states": {
@@ -1130,6 +1204,9 @@
     "Chhattisgarh": 6,
     "Himachal Pradesh": 6,
     "Uttar Pradesh": 5,
+    "Kerala": 4,
+    "Meghalaya": 4,
+    "Tamil Nadu": 4,
     "Gujarat": 4,
     "Andhra Pradesh": 4,
     "Assam": 4,
@@ -1137,6 +1214,7 @@
     "Puducherry": 4,
     "Telangana": 4,
     "West Bengal": 4,
+    "Odisha": 3,
     "Uttarakhand": 3,
     "Arunachal Pradesh": 3,
     "Bihar": 3,
@@ -1149,16 +1227,61 @@
     "Tripura": 3,
     "Jammu and Kashmir": 2,
     "Jharkhand": 2,
-    "Kerala": 2,
     "Punjab": 2,
-    "Meghalaya": 2,
-    "Odisha": 2,
     "Sikkim": 2,
-    "Tamil Nadu": 2,
     "Manipur": 1,
     "Delhi": 1
    },
    "bills": [
+    {
+     "title": "The Kerala Payment of Pension to Members of Legislature (Amendment) Bill, 2026",
+     "state": "Kerala",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/kerala/2026/Bill30-2026KL.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Kerala Motor Vehicles Taxation (Amendment) Act, 2026",
+     "state": "Kerala",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/kerala/2026/Bill17-2026KL.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Meghalaya Money Lenders and Accredited Loan Providers' Bill, 2026",
+     "state": "Meghalaya",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/meghalaya/2026/LB95-2026MG.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Meghalaya Goods and Services Tax (Amendment) Bill, 2026",
+     "state": "Meghalaya",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/meghalaya/2026/LB105-2026MG.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Odisha Goods and Services Tax (Amendment) Bill, 2026",
+     "state": "Odisha",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/odisha/2026/OD_GST_Bill_2026.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Tamil Nadu Goods and Services Tax (Amendment) Bill, 2026",
+     "state": "Tamil Nadu",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/tamil-nadu/2026/Bill24of2026TN.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Tamil Nadu Goods and Services Tax (Second Amendment) Bill, 2026",
+     "state": "Tamil Nadu",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/tamil-nadu/2026/Bill25of2026TN.pdf",
+     "brief": null
+    },
     {
      "title": "The Jammu and Kashmir State Legislature Members' Pension (Amendment) Bill, 2026",
      "state": "Jammu and Kashmir",
@@ -1863,20 +1986,20 @@
   },
   "education": {
    "by_year": {
-    "2026": 84,
+    "2026": 95,
     "2025": 109
    },
    "states": {
     "Uttar Pradesh": 27,
     "Assam": 23,
     "Maharashtra": 20,
+    "Andhra Pradesh": 15,
+    "Meghalaya": 13,
     "Sikkim": 13,
     "Tripura": 10,
-    "Andhra Pradesh": 10,
     "Kerala": 9,
     "Bihar": 7,
     "Chhattisgarh": 7,
-    "Meghalaya": 7,
     "Rajasthan": 7,
     "Tamil Nadu": 7,
     "Goa": 6,
@@ -1897,6 +2020,83 @@
     "Puducherry": 1
    },
    "bills": [
+    {
+     "title": "The Andhra Pradesh Private Universities (Establishment and Regulation) (Fourth Amendment) Ordinance, 2026",
+     "state": "Andhra Pradesh",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/andhra-pradesh/2026/Ord8of2026AP.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Andhra Pradesh Private Universities (Establishment and Regulation) (Third Amendment) Ordinance, 2026",
+     "state": "Andhra Pradesh",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/andhra-pradesh/2026/Ord7of2026AP.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Andhra Pradesh Private Universities (Establishment and Regulation) (Second Amendment) Ordinance, 2026",
+     "state": "Andhra Pradesh",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/andhra-pradesh/2026/Ord5of2026AP.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Andhra Pradesh Higher Education Regulatory and Monitoring Commission (Amendment) Ordinance, 2026",
+     "state": "Andhra Pradesh",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/andhra-pradesh/2026/Ord4of2026AP.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Andhra Pradesh Private Universities (Establishment and Regulation) (Amendment) Ordinance, 2026",
+     "state": "Andhra Pradesh",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/andhra-pradesh/2026/Ord3of2026AP.pdf",
+     "brief": null
+    },
+    {
+     "title": "The International Open University (Repealing) Bill, 2026",
+     "state": "Meghalaya",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/meghalaya/2026/LB99-2026MG.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Maharashtra Institute of Technology University of Meghalaya (Amendment) Bill, 2026",
+     "state": "Meghalaya",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/meghalaya/2026/LB104-2026MG.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Martin Luther Christian University (Amendment) Bill, 2026",
+     "state": "Meghalaya",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/meghalaya/2026/LB103-2026MG.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Mahatma Gandhi University (Amendment) Bill, 2026",
+     "state": "Meghalaya",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/meghalaya/2026/LB102-2026MG.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Sister Nivedita University Meghalaya Bill, 2026",
+     "state": "Meghalaya",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/meghalaya/2026/LB101-2026MG.pdf",
+     "brief": null
+    },
+    {
+     "title": "The Khasi Jaintia Presbyterian University Meghalaya Bill, 2026",
+     "state": "Meghalaya",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/meghalaya/2026/LB100-2026MG.pdf",
+     "brief": null
+    },
     {
      "title": "Sri Sri University, Tripura Bill, 2026",
      "state": "Tripura",
@@ -3609,13 +3809,14 @@
   },
   "business": {
    "by_year": {
-    "2026": 27,
+    "2026": 28,
     "2025": 22
    },
    "states": {
     "Jammu and Kashmir": 5,
     "Goa": 4,
     "Tripura": 4,
+    "Odisha": 3,
     "Assam": 3,
     "Chhattisgarh": 3,
     "Maharashtra": 3,
@@ -3626,7 +3827,6 @@
     "Rajasthan": 2,
     "Haryana": 2,
     "Karnataka": 2,
-    "Odisha": 2,
     "Uttar Pradesh": 2,
     "Andhra Pradesh": 1,
     "Arunachal Pradesh": 1,
@@ -3638,6 +3838,13 @@
     "Uttarakhand": 1
    },
    "bills": [
+    {
+     "title": "The Odisha Jan Vishwas Bill, 2026",
+     "state": "Odisha",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/odisha/2026/OD_Jan_Vishwas_Bill_2026.pdf",
+     "brief": null
+    },
     {
      "title": "The Jammu and Kashmir Jan Vishwas Third (Amendment of Provisions) Bill, 2026",
      "state": "Jammu and Kashmir",
@@ -3985,18 +4192,26 @@
   },
   "energy-environment": {
    "by_year": {
-    "2026": 2,
+    "2026": 3,
     "2025": 7
    },
    "states": {
     "Andhra Pradesh": 2,
     "Maharashtra": 2,
     "Tamil Nadu": 2,
+    "Meghalaya": 1,
     "Gujarat": 1,
     "Karnataka": 1,
     "Kerala": 1
    },
    "bills": [
+    {
+     "title": "The Meghalaya Forest Authority (Amendment) Bill, 2026",
+     "state": "Meghalaya",
+     "year": 2026,
+     "pdf": "https://prsindia.org/files/bills_acts/bills_states/meghalaya/2026/LB76-2026MG.pdf",
+     "brief": null
+    },
     {
      "title": "The Gujarat Live-Stock Feed, Poultry Feed and Mineral Mixture (Regulation of Production, Storage, Distribution, Sale and Quality Control) Bill, 2026",
      "state": "Gujarat",
@@ -4068,12 +4283,12 @@
   "topics": {
    "digital-and-ai": {
     "counts": {
-     "confirmed": 17,
-     "reported": 14,
+     "confirmed": 15,
+     "reported": 15,
      "community": 0
     },
-    "running_ahead_of_prs": 31,
-    "hidden": 374,
+    "running_ahead_of_prs": 27,
+    "hidden": 378,
     "conversations": [
      {
       "label": "IndiaAI Mission Shortlists 12 Teams for Indigenous AI Models: Minister Updates Rajya Sabha",
@@ -4136,24 +4351,6 @@
       ],
       "first_seen": "2026-10-26",
       "last_seen": "2026-10-28",
-      "prs_item": null
-     },
-     {
-      "label": "Supreme Court seeks Centre's response to plea seeking ban on social media for children",
-      "url": "https://barandbench.com/news/litigation/supreme-court-seeks-centres-response-to-plea-seeking-ban-on-social-media-for-children",
-      "credibility": "confirmed",
-      "posts": 4,
-      "outlets": [
-       "Bar & Bench",
-       "Hindustan Times",
-       "Medianama",
-       "The Hindu"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-10-16",
-      "last_seen": "2026-11-06",
       "prs_item": null
      },
      {
@@ -4222,25 +4419,59 @@
       "first_seen": "2026-10-21",
       "last_seen": "2026-10-23",
       "prs_item": null
+     },
+     {
+      "label": "Jensen Huang’s Exit: How Deep Does NVIDIA’s AI Ecosystem Run In India?",
+      "url": "https://inc42.com/features/jensen-huangs-exit-how-deep-does-nvidias-ai-ecosystem-run-in-india",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Inc42",
+       "The Hindu"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-15",
+      "prs_item": null
      }
     ]
    },
    "work": {
     "counts": {
-     "confirmed": 17,
-     "reported": 7,
+     "confirmed": 15,
+     "reported": 8,
      "community": 0
     },
-    "running_ahead_of_prs": 24,
-    "hidden": 115,
+    "running_ahead_of_prs": 23,
+    "hidden": 117,
     "conversations": [
+     {
+      "label": "UP Govt to hold 2-day programme on labour codes in Lucknow",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZlU3OUxuZGZydFZ4SmFQc2VoeEVaNE1GQzNLMmFPc2hxOFNyZ3FWazVWZWRIdVFOZVU3TjVjN2Rwak53LTlCOERoN1VOZXlkcF81aFVPbFNlZ21lY2xMZW5iRVZQc1VuamExd3M1X0xCRkh2VFdNa1hER3NSaXJ6dTBtSE1tY242NnkyWg?oc=5",
+      "credibility": "confirmed",
+      "posts": 11,
+      "outlets": [
+       "Economic Times",
+       "News On AIR",
+       "PIB"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-24",
+      "last_seen": "2026-11-09",
+      "prs_item": null
+     },
      {
       "label": "Rahul Gandhi joins gig workers' bike rally in Hyderabad, launches welfare scheme",
       "url": "https://hindustantimes.com/india-news/rahul-gandhi-revnath-reddy-joins-gig-workers-bike-rally-in-hyderabad-launches-telangana-gig-workers-social-security-and-welfare-scheme-101794643662646.html",
       "credibility": "confirmed",
-      "posts": 7,
+      "posts": 8,
       "outlets": [
        "ABP",
+       "BusinessLine",
        "Hindustan Times",
        "Mid-day",
        "Moneycontrol",
@@ -4256,30 +4487,13 @@
       "prs_item": null
      },
      {
-      "label": "Do new labour codes really protect workers interests",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOd3BVY3ZwVElDd0RpN0lpZXpMdVNqcm0tTzNZZFFlRHZSeU9pdkM2eHlUT1lkQ3hTU2NXYW01YW1xeEZITGtTU01BejFwVDAzTzlnRTlVU1czOHl0dnMwcllmai1BNllxT29qTGdzbEg5eEdySW9CdkRhT3pSWlprcWpxbnpkdTVEdWJiS0lZMFBvVzZ0SGt2Z2tBVdIBnwFBVV95cUxONmFsVXdUQjFNTFJERndmUnZlN25GM0dFREhiNXhyQ1pUc0dfbVFMeG8yUFNfZzRFOVYwOWJlczJfUTRBT1AzdDZOd3o4MV9UcGNhVkN0R0ZONVJZc0ZXYjNMVFRNV1duSXY2TUdFLWFXelBvUUplM2owNHZZbGkwNUdnUXBzXzVpcVJZMWprcHRNQ19iZzNNd3F1eXFjU0E?oc=5",
-      "credibility": "confirmed",
-      "posts": 6,
-      "outlets": [
-       "Newslaundry",
-       "The Hindu",
-       "The Tribune"
-      ],
-      "platforms": [
-       "bluesky",
-       "gnews"
-      ],
-      "first_seen": "2026-10-16",
-      "last_seen": "2026-11-13",
-      "prs_item": null
-     },
-     {
       "label": "'Gig workers are partners in progress': Rahul Gandhi announces welfare benefits under Telangana law",
       "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQZ0lCWG55U2poeHpWc29xYjJkVnhkS1ZSa0pOVDhTb0IzZ25VVVQtNnloQUU5LUhjTDQ5SGdSdFN4ZWFEU3hFQXZoencxWEIwMUtPUTdNbzdvbldxRWlBWGRNS0JRMm5rY0JfcW1KdzVJbV9TdlFZTE51MTlRMjFRbWVtaXpyN1N3blBOeVJYU19LNGFfNFhOYlJQQlA5dXkzMk1TQTJkSUtqYy1aYktGbENNWHVpbWxXTXVSSzRNOFd3RVp4VE1FWE8zeUtpLUtZc2hNTlR2THdDTFp2WGpua3VIc2HSAeoBQVVfeXFMTUZ6OENwTG1JWGpIVWRwT2x2cTY0VnZ5RElWNXlOc0djOHNMSVJtTFZ4V29hYkd6UmhuVndMVkhoRVFFVGlzdlJvRUUtT1pXcWZiTDV6NUJPT2dvUDh3WnlteUkxc1ZCRXNua3dFcDRYTXZ4dW5jQ1V6akp5eHRZR1l4emo1TGVob0t6Ql9lVXJiaDVnTGdGaGtSMnY4VHBRQjY3NmY5eGdkdDhMUVBjdjBFVGNyWXdGWGN2WDJfS29CZWFid1dXeGpKQVc5UlBjNDJ3MHp1d3ZRVlRrTHhRQXYzdU1iRU56LVZn?oc=5",
       "credibility": "confirmed",
-      "posts": 6,
+      "posts": 8,
       "outlets": [
        "ANI",
+       "Economic Times",
        "India TV",
        "New Indian Express",
        "The Telegraph"
@@ -4290,38 +4504,6 @@
       ],
       "first_seen": "2026-11-14",
       "last_seen": "2026-11-14",
-      "prs_item": null
-     },
-     {
-      "label": "District Capacity Building and Awareness Programme on Labour Codes Held at Okhla Industrial Estate, New Delhi as part of Shram Samvad Initiative",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBnUHdwOU00SnJwNUpaS3RaX0I3blRSNTZPYTYySDZUamtBQk1sRWhmWV9RM014bTc1Uk0tZEU2bFZnT0NTcmxVX3dFWnpOZzhuNDlQYk5qQU4wbVVkb2llbjQ4bWVfV0xPVnpsVXdfYjRXdFF3QTFHcnFvdHc?oc=5",
-      "credibility": "confirmed",
-      "posts": 6,
-      "outlets": [
-       "Economic Times",
-       "News On AIR",
-       "PIB"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-16",
-      "last_seen": "2026-11-09",
-      "prs_item": null
-     },
-     {
-      "label": "Shram Samvad - Two-Day State-Level Capacity-Building and Awareness Programme on Labour Codes, Labour Welfare and Social Protection Concludes in Lucknow",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA3bTRMdFBYdjcwODllVldiQ3NyT3hyX3g2OXVubU84RVA4bElJS3ZvdEpLWmF5ZnEtTGJSMHhWNE9peUhqM1E5ckJ6T1N1djVGM1FRZlViMnhhQ2hEcXR4ei1FN0IwdEpLeVVSWExwNUFGRWdUdldqMl9nN3I?oc=5",
-      "credibility": "confirmed",
-      "posts": 6,
-      "outlets": [
-       "PIB"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-11-06",
       "prs_item": null
      },
      {
@@ -4380,18 +4562,75 @@
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
       "prs_item": null
+     },
+     {
+      "label": "Keralam govt to form special committee to examine labour code implementation",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQRGptdWxfVWdUbENmX1k3UmtvektIbFZtNG5HNXYwTXFsajJiMVIycVNxaTRBS3l6dU5rNFh1VTFxdDVNSGxudzg0Y2RZUmdiVDF3bmZoUmZmNjN2UTdlWFNBMEVSWlRZeUhWWVpsbVg4MWs1MGM1V05xZ1ZWd1ZVVWJEU3dOMVVCNnlRQnFWeTZ6UDJWbmM4LTM0QmU0RlRfYlVwSFpVWS1vLXBYTTdPRVNyY0VLRmJROXp0NVJycG1sd3BBeFZtX3RENTVTN01xUFl5b3hieUtQQ0JBYk80Z2lFNndfRHVla0tuaGxHVlRaSUhD0gH6AUFVX3lxTFA0aXI1YU5LeTZjbS1xZmRzMnl0TnptbERyZmljbGUyU3h2cGJNYnZJcXZic3VLZmFpVGlNa09rUzhLSVNZN21ZUDdETHM4ZENtM3N3ZjdlQXFiMXFKWXVORFJlaTZ0Wk4zaUxIS3BnMHlUVFVXV2NtWmhkcU54Y2lFaXV0aG5Eei1oYTdLUzBvaGY4ekJ4aWVzd0ZxSFdnM01weld6dzZVU2x0aHFXNmNWbXkxUDdERmVGaGxENlNtZFdKRlZrX2MyZXgtdHVrTG5kN2R5cWhTMXRuNE5EU0UwVmwzdFlGUGFsejRyZ001Y29kam4xTzJDaWc?oc=5",
+      "credibility": "confirmed",
+      "posts": 5,
+      "outlets": [
+       "ANI",
+       "Economic Times",
+       "The Hindu",
+       "ThePrint",
+       "Times of India"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-10-22",
+      "prs_item": null
+     },
+     {
+      "label": "Kerala plans higher minimum wages, wider bonus cover under Labour Codes",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcW5rVDJ5aUFsLU9UbERESU14elQwVjJUdXJsQmhSQjdDdE9Hd2NQZXU3V0NpSXZlZ0w2QVp3bVhVbmhGaS02XzBIQ1czT3h0Y1JUQzJqd2Q3ZzRwbml0QnVJbGhnS254T2l0YTBsMWJidHkybXlwWDhoRFVhbVQ5VWg5Q0Q3dFZYRWJnOUdmQkk3bXN3Wld5OTQxRmd6a0t6VEFvTWM3OW1NZlg2UHlzM2xQWnhVMFFpUXRiNURTakh6NE1zeWtpTWh1b0JQRlpHOXc2StIB1AFBVV95cUxPcW5rVDJ5aUFsLU9UbERESU14elQwVjJUdXJsQmhSQjdDdE9Hd2NQZXU3V0NpSXZlZ0w2QVp3bVhVbmhGaS02XzBIQ1czT3h0Y1JUQzJqd2Q3ZzRwbml0QnVJbGhnS254T2l0YTBsMWJidHkybXlwWDhoRFVhbVQ5VWg5Q0Q3dFZYRWJnOUdmQkk3bXN3Wld5OTQxRmd6a0t6VEFvTWM3OW1NZlg2UHlzM2xQWnhVMFFpUXRiNURTakh6NE1zeWtpTWh1b0JQRlpHOXc2Sg?oc=5",
+      "credibility": "confirmed",
+      "posts": 4,
+      "outlets": [
+       "Economic Times",
+       "New Indian Express",
+       "The Hindu"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-11-04",
+      "last_seen": "2026-11-04",
+      "prs_item": null
      }
     ]
    },
    "money": {
     "counts": {
-     "confirmed": 30,
+     "confirmed": 31,
      "reported": 25,
      "community": 0
     },
-    "running_ahead_of_prs": 52,
-    "hidden": 409,
+    "running_ahead_of_prs": 46,
+    "hidden": 404,
     "conversations": [
+     {
+      "label": "Outreach Programme on Recommendations of the 57th GST Council Meeting",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zLWhUTXpfQ3F4bFRZSi14dlBSMTJlUTUwb0d1YklyTFA4YVFWN2UxbGhUWVEybXNBNWN6SF9sOEdmWGtQeFVMQWxNZjViU3dsa0JEUEpPRWNRRHdtTjhRRnBUVTVveHdB?oc=5",
+      "credibility": "confirmed",
+      "posts": 12,
+      "outlets": [
+       "Economic Times",
+       "LiveLaw",
+       "PIB",
+       "Taxscan",
+       "ThePrint"
+      ],
+      "platforms": [
+       "bluesky",
+       "gnews",
+       "rss"
+      ],
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-11-14",
+      "prs_item": "2026-10:3"
+     },
      {
       "label": "Rahul Gandhi's Big Announcement For Telangana Gig Workers: 1% Of Each Transaction Value, Rs 15 Lakh Insurance",
       "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOWGZ6VGVIQmVEWWI0WmUzNGQ0VlA3WnU3VGd4NUhOZ0h6QTVIZ1BNb2s5OUcyY29tX1pBLVZ5V3V0ekx4dTVFa2JTUjRuelNnX0t2aW5NWTRON2dUUGw5MEk5UFpRa1cybDY3eXhTTzJ6TVRhdDA1NUFuOFQ2ZHktZFppM1l2UFk0M3J4eVpGRHhtZDdEOE1QRWhPTDFlaWlvd09Yb0hzV1VtZDZ6d0l0YW9aVEZTRDBzamxiNVdUXzN2dkRJWXI0eUJSem44TDNPRjRRTG0tWkk1WUdEdTlwVzlOSWlNNFZ3RktDYWJ5ZFkyRUg1dE1ySDZMZ9IBgAJBVV95cUxPakJqbEJEQmN1RGJnQ0hxeTFPUGYtSktOWW9leEh2TmFLVmVGYnVGd0NQcm8zNnZFd0oyQkZMWVowWUlQOW1JYTVwajNlV0hlWU1OWHA2THhYOTZHU2I1STVFUUY1LU5HMFRsWGZ6MkF2SGU3V0FuYXlnd1NwUS1CN0VmS0Z3TXZvUGZNTnNsdlhwdDJza3lQTjBMUWd2Y2VOVVFVN2pxOFFZREhzZmtLcXlWNDJBZ0pHVy1xNUIzTkk1T2xkUm5ZM1paOWZpNm9tNlBHTjZTVEdvREo4ak1HU1dweDNpR18ybUxCLW4tNWxNN0c1aEVJV3FvcDJ3WV9w?oc=5",
@@ -4414,27 +4653,6 @@
       "prs_item": null
      },
      {
-      "label": "GST registration for small e-commerce sellers to begin from November 1",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNlkwWS1Tbmdkd3l5RnBVNmFHYzFaRzVHM0JEOWRGaktkYVR3NE0ycEJ3aXdNWHVvNUNPSzlCV1A5Qjg4RTdmTHF3bGZlYmNsemk3WXVPVkdZLWlHbk03VjUyalBfZ3VBNkhTQWZJbVNwYkl5amdOcGxyQ1BndlJWTEpxS3dNZnlBSi0tYndvYUxmOTlkYmRJY3JGQTVBMVZoTUhRRWo4TGRXT0JFdkhhSmNDOXlHa29Hd1lxWEJQQlBELVhieFBDTkVsOGZQSzV1Vk5n0gHYAUFVX3lxTFBSVlNrbXJNNUl5ZmwwYnN4dmNmdEQxNHJjLVhNcVRPd21Nc2gxdXZFaEdqNm5iTUNzRnhrNjMwU2VyOFZtbDdBT3QydmtnZ2hTdW9UdmtYdjdWeHhzdGxzUi11U1I3RWJWbmhxZTNYRVNQSmRBMmU5UlY4Q2xHWEs2dEJGLUdodTViS1VtUHNXZkxuU1FHeEpRSzRDSlZPVjVyYVB5RGoydTFULWpPdmxReDcxLTBDVmQ5X3hIbWRtUTRzMzBoZlZSV3d3ZFZYYXBiYXEyWEU2VA?oc=5",
-      "credibility": "confirmed",
-      "posts": 7,
-      "outlets": [
-       "Business Standard",
-       "Economic Times",
-       "Financial Express",
-       "Hindustan Times",
-       "Mint",
-       "The Tribune"
-      ],
-      "platforms": [
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-11-02",
-      "prs_item": null
-     },
-     {
       "label": "GST decriminalisation decisions mark shift to trust-based governance: CII",
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZnhEdTBxWWx0S1Z5ZXJRNHRSTFFtRmYteE1rNXZ4dTZWdktHTWRQQ3FWbjY0NWlUMnRhaHg2UXh6aERVZ3k1RkEzOGNqLW1ZVW5iWlhRbV9uWktDVUkxQW9xbWttMXNWdnFuUEp1ZjROeUhxTWxmanZPTGdWYmRxdEtBejFzQThubnFWb0dVai1meE4zMldoV3dYSk16OU1RSnZvS3JkTk05RWY4bkNHdmN3UlFSeWcxOHlzWjdJTWdtckRFRExqai02MW14Xy1TaG42Z2Q1MNIB3AFBVV95cUxPRlkwRlNtSWNJWHY1RTRubFBiOVp6Y0xPbjZBWmxSd2VkWFNNVlJFRkJBUGV2NXhNaWJydlZVTnl1NHgyeEdoUG5XcXdvUFlMbEJ2WDczVTQwWkEteDRhRjNIOHJ1aHdta3lmaENLVS1BVWowaUl1cl91ZmRxV3FNOFFYV0RBdG15cTdSZWxRdUVrV3dxY0FObWFwRGFyMkp2WlQydzRkVTRvQU13eUo2SEl3UjRYNldWM0tnMGxXNFVyTXg1dkl4UjVDME0wT3ZLckc4OGR6Wk90MkE3?oc=5",
       "credibility": "confirmed",
@@ -4452,19 +4670,18 @@
       ],
       "first_seen": "2026-11-01",
       "last_seen": "2026-11-02",
-      "prs_item": null
+      "prs_item": "2026-10:3"
      },
      {
       "label": "GST changes from November 1: What businesses can expect",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSGF4dHk2eFcwRHhUMWpZM3ZmS2pyejhmd1h2djI5YkEtcmdwdkM4ZV9jczFQSTJRZEY2LU8tdmY4bDUwQnY2MTdYRzUzOF9ueS1xNFlNanptajJLaVRRb0RtTHh2c2pqeklaZFc5QzR0X1lNN2FKUld6dFJVWW5Fa2pfV3Q4R2dqWEZoUTJXektsSGZ6Y3J0bzNPbzFOS1dRQl9yZzZ3a0lqYXNlNGo40gG0AUFVX3lxTE1KZDR1Yk53QzdNRGxxUmlNOGZycG5zQ05BUFVrajBCazhYV0ptYm4xVmdlc0JlOUdhTXRqZVNuR1o2LUp2SE5KS3pxTW94YTVPWWZ5LXZpLU92TjZIbFZhOUtfaE5XeTl4TWtoNFA2MU1rU204dHFqV3Izb3c5TXVBNUt0STZsUktJbEU0UlhTWHN4T2EtQVRPcDJnOEhaMEFkdWpXZXg4VHF2RTdlaUExMU81Wg?oc=5",
       "credibility": "confirmed",
-      "posts": 7,
+      "posts": 6,
       "outlets": [
        "Business Today",
        "CNBC-TV18",
        "Mint",
-       "Taxscan",
-       "Times of India"
+       "Taxscan"
       ],
       "platforms": [
        "gnews",
@@ -4472,7 +4689,7 @@
       ],
       "first_seen": "2026-10-26",
       "last_seen": "2026-11-01",
-      "prs_item": null
+      "prs_item": "2026-10:3"
      },
      {
       "label": "UPS rules clarified: What happens to pension contributions during employee’s probation, suspension and abs",
@@ -4493,23 +4710,23 @@
       "prs_item": null
      },
      {
-      "label": "CBIC Holds Stakeholder Outreach Programme in Nagpur on Recent GST Policy Reforms",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBiOWdJanJGdEdLQnA3MW9iOG9YWmp5bGZ3ZTFiRmRMUXlxNVJzcFFlcFVzVnNWMlRWOUp4ZjRwb0lwNGV6Z0VhZWRnaERrelpKTHBsUGZLNlJzX04tTEFKMC03aS1jazd3?oc=5",
+      "label": "GST process reforms to be implemented in phases; draft returns to be out in public from November 1",
+      "url": "https://indianexpress.com/article/business/economy/gst-process-reforms-draft-returns-november-1-10932684",
       "credibility": "confirmed",
       "posts": 6,
       "outlets": [
        "Economic Times",
-       "PIB",
-       "Taxscan",
-       "ThePrint"
+       "Indian Express",
+       "Mint",
+       "Taxscan"
       ],
       "platforms": [
        "gnews",
        "rss"
       ],
-      "first_seen": "2026-10-16",
-      "last_seen": "2026-10-30",
-      "prs_item": null
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-10-24",
+      "prs_item": "2026-10:3"
      },
      {
       "label": "Finance Ministry to invite comments on amended GST return forms from Nov 1",
@@ -4530,46 +4747,14 @@
       "prs_item": null
      },
      {
-      "label": "GST process reforms to be implemented in phases; draft returns to be out in public from November 1",
-      "url": "https://indianexpress.com/article/business/economy/gst-process-reforms-draft-returns-november-1-10932684",
+      "label": "GST reforms from Nov 1: Faster refunds, easier registration for sellers",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORUU1WGl3bWRQTDdyMlRnME1pM3J2a0FTV21yVl85WnlKS1RsQ0QyenRKME9TVHVQSldNTktlenRGV00tSlhidldQRTFCQzh1SHY4XzBFYVFYczRoSFlubFFFaDNHOWd5U2FFYmlMMFl0bHZNSkt5c0hxUGtvRDJHdjFtcXlkcDljbURZU0lSS3lvbDBORTM2NjR5ckwxOVJvVC1ZOUY5ZjlzSVFjRzFEdUFmVmF0djZRSVN4ZEFOMDlqOFlzT29pVjRpUTNGZW83cFHSAdcBQVVfeXFMTS11QWhOeVlqa29VRHZOczRJUnZYbFJDd1BqZ3dmZ1Eyb0VCNy0tWDRfQlhLNzVaT1k0VU5oN0ZramhEeTdRcEZGY1l1M3Q1V05SU0JDaEVETkhneWV0V0xNVW5tUjN1SzBGd1pCbmFXSVNXNXBwZ2haYnl2bVVuUWhzTEFCeUJ1R0U1RWFzRGt6NUNoNWtNMWxNUW9pWjYtMnN0Y1hvUGFEa1pndXQ0dEtXMFA2bjFoTDI0VWsyWjFiX2lmZ3BOQkgwd3k5YWxkVWJCYXhjb28?oc=5",
       "credibility": "confirmed",
       "posts": 5,
       "outlets": [
-       "Economic Times",
-       "Indian Express",
-       "Mint",
-       "Taxscan"
-      ],
-      "platforms": [
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-24",
-      "prs_item": null
-     }
-    ]
-   },
-   "education": {
-    "counts": {
-     "confirmed": 29,
-     "reported": 17,
-     "community": 0
-    },
-    "running_ahead_of_prs": 46,
-    "hidden": 345,
-    "conversations": [
-     {
-      "label": "NEET PG Counselling 2026: Round 1 choice locking closes today, round 1 provisional seat allotment result",
-      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQbDVNNWxWYmhOZ3hjU2hXcGdLcXRLWkZOeG9PcU9oRjhQZXltZGJFOU1KdVJPSGJjbVFQdHBYYS04elhXSHZ5U0RPWmJ0TElsbnMxTXp5andfUExteFVtbHpEZ1VIZGlqUDk1Y0JWVm94eU1jeVFPS2FEVEg4TkI5WHRFbVJrQXFGalNLdC1HWHZuRjl1Nk82SGlCTGJzVk5FUmJoaFB6YzBLcHlueUMtWDZINXVzWlRwa1RYVHU1TU54Rm1YcnIyTzRrQ2JOY0NwdnpjdzRBTzRkZkFYZHRZTTdPRXR5aW1OZzlaeUVQWFpxVGxXZG1KclNDa25DNXBiQ2E3aTV6RGRRT3ktZUhNOURKc2NKeThtV0dwdDV30gGjAkFVX3lxTE9zaTBTem8yMF9wX1VGTDFWcV8zeTcxbkQwZ1hhMi1LOXdYVGZieVF1SHlmeU9PbHVUWHlMTkc2VXh0THpfUENQQm1aRllFNDdTYzl3Ujg5b2VyYlgwT25KeFFFRVRWWVpNUFMyUVNGWDd5V21PLXlmWk85S0lKcm5rZEdTbXpJRlQ0Rjc5OU5qUFhzRjM5Vm9TcHpoWHVoUFZnckdULWJZLU9NMUtNeHI3MGdPdTFzV1VyQndFSTZFbXBrOEhzY1VVc2VEYXVaTmFfUDZtRlVEOE5FZTdlWlVkYl9rR3ZNVENHdEVVYjVmYUV2MDU0dnJOY1FxN0k0NTF3T2tFRjRrMk1mUjhoQnFEMF96Q0RzNW04ZS1BY1lfaDBBRQ?oc=5",
-      "credibility": "confirmed",
-      "posts": 19,
-      "outlets": [
        "Business Standard",
        "Economic Times",
-       "India Today",
-       "NDTV",
-       "The Telegraph",
+       "Hindustan Times",
        "Times of India"
       ],
       "platforms": [
@@ -4577,18 +4762,33 @@
        "gnews",
        "rss"
       ],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-11-14",
-      "prs_item": null
-     },
+      "first_seen": "2026-10-31",
+      "last_seen": "2026-11-04",
+      "prs_item": "2026-10:3"
+     }
+    ]
+   },
+   "education": {
+    "counts": {
+     "confirmed": 24,
+     "reported": 16,
+     "community": 0
+    },
+    "running_ahead_of_prs": 40,
+    "hidden": 335,
+    "conversations": [
      {
-      "label": "WB NEET PG 2026 Counselling Schedule Out: Check Round 1 Dates for State Quota Medical Admissions",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTGxFejdYTks1czNoOElIREs1bEZBUXdZNXR2NU5fcl9RTnVEQXQ3ajlvNW1HQnBJa0ZabXJiOGNLNG84Y2RvY3lYVXUtYzllanhrblNxeDIwR2pCZjZYRXNaUzBVNXI2ZjlZaW5JeFhEZE9uM3V4Qmh6VVgyWlQyanFJdEdtZG1zeUdPVFlHQ0RHWXROWUJ5cW5OS1RGcmZJYVYwdmdpbDdkUDhfRi1VQUk0WF9tcE5DNWY3RHR4S09haDhYaGdtWdIBzgFBVV95cUxOWGJqN2ZVT2k5OFBPcEN1OEh4Z1VuSlUxQjNLTjlKa0taSFpfVWtyaVZuRTJjZE1oMmpENXl4Nk1wTDhkUnZLT1NFZlBzaFVaalNmTm9xektqN2RaNXI1Mm5LVlRRYV9ySHN6cDVKekFVd2JxekZTbDZuM2s1TUJQQTVvQ19ucEM1SGRoX1pDVHNaZGIxRVBmQ041aHBYU0swYlNrSnNfdU1mRFYtX1BVY0llSklzTTlWV2swQWtORWNWeE9EZHdJaXRoV1o0dw?oc=5",
+      "label": "NEET PG 2026: Medical Counselling Committee Releases Final Seat Matrix",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSkRuNmdYM1Q4THJvZzZzVDZEdW1HeFBLYWt1ZW1oNERkNy1GZWNVTF9oN0d0TUlDandRUjRHNU0wR0ZCNnlBNG5oUkhvWUFkMUhoNV9FVGhSX0lrTWxWT0wtenZwWWRwNEZwQVZPMHlWdGZHc0NaakhraEd1SS11VU1jcGh3bU04Z0lnQzZoTVZjTVhRRXhjelZHN3FmSGJYQkVoejV5d0pHQ1dJSVHSAbYBQVVfeXFMT2g5WkFUQm9HMDE4VXVLQUt6T3JRdjRLQXVLR0JRbFRUc2d0QVJZZzVZZWVFSUFjMUFzYV9laGlzN1lWVkpFcWpnRjlCTlVFaXZ6UnpTX3NJSFlicC1EU2FCWGJ1OE5zb0NzZWlhQ1p1MnZiZ0hHQWpnSUR6c1VBVnlkMWtMcVNUTDBzLWF0NWx6b0QyZnhpcHBwLVVVbmNVZkl3RUxDTnBORDE3ajhvekhxRENkZ0E?oc=5",
       "credibility": "confirmed",
-      "posts": 18,
+      "posts": 66,
       "outlets": [
        "Business Standard",
+       "Economic Times",
+       "Hindustan Times",
        "India Today",
+       "LiveLaw",
+       "Moneycontrol",
        "NDTV",
        "News18",
        "The Telegraph",
@@ -4596,46 +4796,47 @@
       ],
       "platforms": [
        "bluesky",
-       "gnews"
+       "gnews",
+       "rss"
       ],
-      "first_seen": "2026-10-16",
-      "last_seen": "2026-11-14",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "prs_item": null
      },
      {
-      "label": "NEET PG Counselling 2026 Seat Matrix Out: Check AIQ, DNB and Deemed University Seats",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPajVBQS03R0V1eWNGcEFlaVFOZTlBZDc2MG9BdmtnRjc3X21FdTFxMkp2R2JlMXlvYkVFZkhLSVUwMGtEcDczM3FZc2tGR2pBSlZ2bUF1WjUyNXNYclNTWjNKdUVOTE0wd2lvc3ZuNFhWQ2xEMm5vdF9WLVNvWVZaVHF3ZFFXRmtWdnRwREdIcVI1VExwWEpDMmNZbFg5RkYxaEJ4RmNPM3hrekpMU0Vmb1M3cC1hNi13WnZaMVlfYjBWaFVHSHl6WXRrbXhyOW5CSHZoWdIB2gFBVV95cUxQaFlSR3JGVWVOblY3Z01KRkNwTktGdmVwcjF0Ti1uLVFYUWZ4ZGxxUHNzNkFwOVN4S3JiUV8zUmVEbV9oeUhleEswRlBQdHh6cmdfbUd1ODhPT1ZlMFpSZm9aMFhhVGNock5kUjg0VUJtbEZaUHVCRm52S3FIa2JxVnpUazNCV05iVU9Rc0NCVXVBR3hfMkdkNmZlSnpxMkFDNmhGSU5jTVJwbEl4MGF0RF9qNnNsbjNRVUZGTGd4SUpiYzQ0eFJURGFIWW1BUGNiMGFXYnE2czRSUQ?oc=5",
+      "label": "CBSE is organising the 4th National Summit on ‘Facilitating School-to-Work Transition’ in New Delhi",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9FdW03WUdWV2xad3YzOXFIelk2WkxDdDR5Z200TThWV2pkTWhWSWNqNG5BLU94ZHY2dnl3MlF5SW5iNXo1OXJ0UTMteTNyajZLSWJUb3RUanVWdWxyYVQ4YndIM055ckgt?oc=5",
       "credibility": "confirmed",
-      "posts": 8,
+      "posts": 6,
       "outlets": [
-       "India Today",
-       "NDTV",
-       "The Telegraph",
+       "DD News",
+       "Free Press Journal",
+       "PIB",
        "Times of India"
       ],
       "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-16",
-      "last_seen": "2026-11-12",
-      "prs_item": null
-     },
-     {
-      "label": "MCC NEET PG Counselling 2026: Round 2 registration begins today at mcc.nic.in, check steps to apply | Hindustan Times",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNQllJNkVsam5wT0hIb3VUd3VlamNEVG44N2ZwOUhTUjFTTUd5ak5Pa2h5Ul9aRXdTQ3VJb2xsWmdqaGJISmNTYlFiZjVNOXVHVWxSaWxBLU5aVDVYREpyQ1NNYlo5cW1HckNUZUlEMFJBbEg5Q2Nzcl9BZ1FFS0R2bVhDZDhFZUMwYVhxdlVza2VZYUFqWlNRTEdDNm41dm9UVl9rWlJ0V3ZkTnRZU3JyQjBnTjIwRmR3QnNoS1o1ZUZyLU1scFU2TXUzY1hWOVlKdkVPazV3Z2FLOWhST1BoanFRMi1JeVpLbU5TU0ZXcm9DZUsxcE4tZU5EYzEzZVXSAYQCQVVfeXFMTi1WUXJVdWN5UV85RFhFeUk3ZE02TXU5TmJtWks3dWl4S3dEb09FdHdvUDdBd182TVlMQWJXcFFndFJZZHF5TFRBWWE2aWFDemRiYUN5YzlOU0NrRlZRZFhQeGlLRlo5Mk5vcXZjUHU3NU9aYlhaWTd5QXRGZkVBeVZ2QWNlVTRPVmw1X1FNaUU2QXZ2b3U3TUZfWTJwOUplZUZ3Z1ZiTURLYVZydmZ0elQ1OUV0c0NSTXI5Mk1FZGo3LXdnZ01BMnhyWDhjdHVWd1BlV0R3enhjOUdxMXdORmpOejNDM0VoNk5hLVp1MDBkQ3hpNnJaYmZCSHk5QWx0VmdGeTE?oc=5",
-      "credibility": "confirmed",
-      "posts": 5,
-      "outlets": [
-       "Hindustan Times",
-       "The Telegraph",
-       "Times of India"
-      ],
-      "platforms": [
-       "bluesky",
        "gnews"
       ],
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-09",
+      "last_seen": "2026-11-13",
+      "prs_item": null
+     },
+     {
+      "label": "NEET PG Round 1 Allotment Result Out Today: Reporting rule changes, important dates and more",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNTGNLUWlaSVNaZDczY3pLNi1iUDRSb0E3eW9ZSEY1SXhTaGlYWnduRDZHckc0Yjhrc2tZRm1pdWd6YkpUaE15REZCX3lOMENfc1NBX2NSbUktaURUVHpKRTdkeTdkU1FSVG5sdnlsVG9LOTg5Nk05OVlEVExFYUIwN1RhR29LV0IweG12UThiWm5Ya05PMnhXTnltV1ctZUVFWVJtX2UzQ1JQLU5CczdVaDBDQWJ3U2ZPVkFlNzdjWUVXd0xNcVJ5aWowclVpZ3dsd2F4M2JoOFVhcWPSAeIBQVVfeXFMTVFNblJ6Q19ZeExEVUtDS0FVYWlNTFpSX242enk2VFRDcURwNERjblpWVWVwcFdOLW5abGUtT3g1bFJBdENMdUExeldjb3ZhaFFCdVR1cWZDWS16Sy11enpjOUQzRXJsemplbjZpX1JyR1Fkc2kxRnFXdzNIQlB0VjlrejA3em1ocDFLZGExWFp1aHJnT2wwZkZiQkJwVDA3X0gzbk14MW9HQk1PU1l5Wk5XZTFTN29GdHZQb2hoRnNmczdtRkFocGNVLVhndHVVSnowbF9UT0hIRWRDRkI3OVpndw?oc=5",
+      "credibility": "confirmed",
+      "posts": 5,
+      "outlets": [
+       "India Today",
+       "Indian Express",
+       "NDTV",
+       "The Telegraph"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-24",
+      "last_seen": "2026-11-16",
       "prs_item": null
      },
      {
@@ -4655,40 +4856,6 @@
       "prs_item": null
      },
      {
-      "label": "Kerala NEET PG 2026 Merit and Category List Out, Option Entry Begins",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNOVA4enhaRXFERGRwaC1iN2VRQTNwQWUtM0loVk51by1BQlhJN1Y0WTR5STJBNWt5M29NNGhKX0lNZFZiLXJycnBSeVBvUmZsNGFKMUxwc0J3OEJmNmYyMWJzRmFsdV96c0Q5M3pGRXpDOVFNMVFsejluVEpiRGlQaGxwSmhTWUhYclprMmRUSXJYWVpXMGV1VkxkNlVOcDlyd2VCdzdMM3VSMnJtd0tsTWU5a3UtNGdrOV9vUkhWa0lJVGxuSktMTW1rak5SRVV0UHE0TXFnNTgxY0lSWU5v0gHkAUFVX3lxTE5QcVhaOWlUNHNUaU90ZU5ucm52a0hsckxZRjhBdjV6TnRaZmhKc0RraEpjNlNRYThzM29nc3pfWUJ0TkxUNWpfd2tlLV82cUZTY20wQnRibzNldU1lMGoxUGpxcWE0d0d1TUFtWkFyTWNFNmd3bEoxLV9SZC04eUtSLWF6THc5d2kxOUVYZ2hVUWp3WElSTTBrWlVhOEZkOS1BdjVHdXN0MTFrX1dmQ25jUUdCU1ZhdjRSdUZUaXpMTzNpY0dRQjY4N29WamdLNmVXdlY2UU1TaEtFMHo2RU1aa013Yg?oc=5",
-      "credibility": "confirmed",
-      "posts": 5,
-      "outlets": [
-       "The Telegraph",
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-11-03",
-      "prs_item": null
-     },
-     {
-      "label": "CBSE is organising the 4th National Summit on ‘Facilitating School-to-Work Transition’ in New Delhi",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9FdW03WUdWV2xad3YzOXFIelk2WkxDdDR5Z200TThWV2pkTWhWSWNqNG5BLU94ZHY2dnl3MlF5SW5iNXo1OXJ0UTMteTNyajZLSWJUb3RUanVWdWxyYVQ4YndIM055ckgt?oc=5",
-      "credibility": "confirmed",
-      "posts": 5,
-      "outlets": [
-       "DD News",
-       "Free Press Journal",
-       "PIB",
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-29",
-      "prs_item": null
-     },
-     {
       "label": "Bombay High Court quashes FIR against B.Tech student for Instagram repost on Operation Sindoor",
       "url": "https://barandbench.com/news/bombay-high-court-quashes-fir-against-engineering-student-for-repost-on-operation-sindoor",
       "credibility": "confirmed",
@@ -4704,17 +4871,64 @@
       "first_seen": "2026-10-27",
       "last_seen": "2026-10-29",
       "prs_item": null
+     },
+     {
+      "label": "Oxford University returns remains of 39 Naga people after more than a century",
+      "url": "https://hindustantimes.com/india-news/oxford-university-returns-remains-of-39-naga-people-after-more-than-a-century-101794301277038.html",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "Hindustan Times",
+       "The Hindu"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "prs_item": null
+     },
+     {
+      "label": "Kerala NEET PG 2026 Merit and Category List Out, Option Entry Begins",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNOVA4enhaRXFERGRwaC1iN2VRQTNwQWUtM0loVk51by1BQlhJN1Y0WTR5STJBNWt5M29NNGhKX0lNZFZiLXJycnBSeVBvUmZsNGFKMUxwc0J3OEJmNmYyMWJzRmFsdV96c0Q5M3pGRXpDOVFNMVFsejluVEpiRGlQaGxwSmhTWUhYclprMmRUSXJYWVpXMGV1VkxkNlVOcDlyd2VCdzdMM3VSMnJtd0tsTWU5a3UtNGdrOV9vUkhWa0lJVGxuSktMTW1rak5SRVV0UHE0TXFnNTgxY0lSWU5v0gHkAUFVX3lxTE5QcVhaOWlUNHNUaU90ZU5ucm52a0hsckxZRjhBdjV6TnRaZmhKc0RraEpjNlNRYThzM29nc3pfWUJ0TkxUNWpfd2tlLV82cUZTY20wQnRibzNldU1lMGoxUGpxcWE0d0d1TUFtWkFyTWNFNmd3bEoxLV9SZC04eUtSLWF6THc5d2kxOUVYZ2hVUWp3WElSTTBrWlVhOEZkOS1BdjVHdXN0MTFrX1dmQ25jUUdCU1ZhdjRSdUZUaXpMTzNpY0dRQjY4N29WamdLNmVXdlY2UU1TaEtFMHo2RU1aa013Yg?oc=5",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "The Telegraph",
+       "Times of India"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-11-03",
+      "prs_item": null
+     },
+     {
+      "label": "India's Higher Education Sector",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5RVzZCTmhLVjl3T3VDcG10Y3JreDRkWWQyMm9Ob2F0NnhoTGRUU2lSSlVlbGlSYWhkdUtDU1ZxVi1BOWg3MDFJU1M5RU9RX3l4WHNfZHNELXpiTWdxWWVJalZnRGFCYU03b05DWHJJWC1XM2s4Z0Y0?oc=5",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "PIB"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-11-02",
+      "prs_item": null
      }
     ]
    },
    "justice": {
     "counts": {
-     "confirmed": 47,
-     "reported": 25,
+     "confirmed": 50,
+     "reported": 22,
      "community": 0
     },
     "running_ahead_of_prs": 61,
-    "hidden": 514,
+    "hidden": 517,
     "conversations": [
      {
       "label": "Mini Cooper crash: Kerala sessions court denies bail to accused Suhail Sajeev, 3 others",
@@ -4821,23 +5035,6 @@
       "prs_item": null
      },
      {
-      "label": "Pinarayi Vijayan moves SC against HC order to lodge FIR in CMRL bribery case",
-      "url": "https://hindustantimes.com/india-news/pinarayi-vijayan-moves-sc-against-hc-order-to-lodge-fir-in-cmrl-bribery-case-101792130549940.html",
-      "credibility": "confirmed",
-      "posts": 4,
-      "outlets": [
-       "Hindustan Times",
-       "Taxscan",
-       "The Hindu"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-10-16",
-      "last_seen": "2026-10-27",
-      "prs_item": null
-     },
-     {
       "label": "Transgender woman can't invoke Section 69 BNS in false promise of marriage case: Allahabad High Court",
       "url": "https://barandbench.com/news/transgender-woman-cant-invoke-section-69-bns-in-false-promise-of-marriage-case-allahabad-high-court",
       "credibility": "confirmed",
@@ -4853,16 +5050,32 @@
       "first_seen": "2026-10-17",
       "last_seen": "2026-10-19",
       "prs_item": null
+     },
+     {
+      "label": "Twisha case: HC reserves order on Giribala bail plea",
+      "url": "https://hindustantimes.com/india-news/twisha-case-hc-reserves-order-on-giribala-bail-plea-101793040949633.html",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "Bar & Bench",
+       "Hindustan Times"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-11-14",
+      "prs_item": null
      }
     ]
    },
    "health": {
     "counts": {
-     "confirmed": 7,
+     "confirmed": 8,
      "reported": 5,
      "community": 0
     },
-    "running_ahead_of_prs": 11,
+    "running_ahead_of_prs": 12,
     "hidden": 203,
     "conversations": [
      {
@@ -4896,6 +5109,22 @@
       ],
       "first_seen": "2026-11-03",
       "last_seen": "2026-11-04",
+      "prs_item": null
+     },
+     {
+      "label": "Karnataka High Court asks security, police organisations to review mental health policies for armed personnel",
+      "url": "https://thehindu.com/news/national/karnataka/karnataka-high-court-asks-security-police-organisations-to-review-mental-health-policies-for-armed-personnel/article71702395.ece",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Bar & Bench",
+       "The Hindu"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "prs_item": null
      },
      {
@@ -4977,33 +5206,17 @@
       "first_seen": "2026-10-18",
       "last_seen": "2026-10-18",
       "prs_item": null
-     },
-     {
-      "label": "Rank-based admissions, lower fees for non-clinical courses: Panel proposes changes in NEET-PG | India News",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNSHBCdXNETUFyVG51TTRGaGM4N19sU0VFVkFQNnM2YjBMZngyV0VHeDJidlBuM0ZRQkI4azRLTmotQ1VJZ2lQUDJnaHVBMGN5WlZ3MWUyMlRBazhUWDNrb1h5RU0zRWtPOHo3TG5ybk9UZWxWWjVicXpTVlgzM3l0UEZodG9NQV9FbnFQeXJlQ2JweTBKR0ZpcXhzZTJBSmNsX1k0V0h0T2dqTXFIQXJaelNvV2k0X3E3RHdpSE5wcHVHTU1qQ2tzNGd5UTgxRjU4aGlnckFDRFJVbXY1aGfSAeMBQVVfeXFMUDJ1ZVY1aXMyOVNMRDRWbEFmemgwRUhVMlBWcDdjQU5TeGw1YThrMjJmQlZYV3Vnb1M3ejF2bjdUT0ZNQ2c5MTE1b0ZMT0w0UmZuUW9PTVdIV09yaWFuQjJzVVRNZF92cHk3dGxHbDFiQk5oUGVZM2VWdW9aVldlMWtRRVN2akpvRGFjTWwwVE9RY2gxekdnMTdtOXBESGhnZzItd2VFMkFYUWlpZklCLVZyazVNRU95a05vQ0padUJPSHQ4YlFSb3NqUTZGTnVmWHVJYlhJc2pKQ0xqWTk0WHJ6TlU?oc=5",
-      "credibility": "reported",
-      "posts": 3,
-      "outlets": [
-       "Hindustan Times"
-      ],
-      "platforms": [
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-11-03",
-      "last_seen": "2026-11-06",
-      "prs_item": null
      }
     ]
    },
    "business": {
     "counts": {
-     "confirmed": 17,
+     "confirmed": 16,
      "reported": 8,
      "community": 0
     },
-    "running_ahead_of_prs": 22,
-    "hidden": 168,
+    "running_ahead_of_prs": 21,
+    "hidden": 163,
     "conversations": [
      {
       "label": "GST decriminalisation decisions mark shift to trust-based governance: CII",
@@ -5151,12 +5364,12 @@
    },
    "energy-environment": {
     "counts": {
-     "confirmed": 16,
-     "reported": 17,
+     "confirmed": 18,
+     "reported": 16,
      "community": 0
     },
-    "running_ahead_of_prs": 28,
-    "hidden": 309,
+    "running_ahead_of_prs": 29,
+    "hidden": 306,
     "conversations": [
      {
       "label": "India secures over 5.5 lakh MTPA green hydrogen offtake commitments",
@@ -5180,19 +5393,19 @@
       "prs_item": null
      },
      {
-      "label": "Government unveils roadmap for green urea production, pushes 7.24 lakh MT green ammonia procurement under National Green Hydrogen Mission | DD News",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPdlhsZ2c3QWxqNHRTU1ZiVm15YUdiVnE0bTFoMTBTQmFvSVpKT04tNjVVUTVkS0dmX1ZFd1lLbHdrOVotNXpPYzI5d3NoUXV3ZjYwcC1ETUFRaHVfVlllYjFBd3BrdVk0YjQ5akVSMGNNY3ZLUml4eDNUQ0ZFZi1ma2ZsbDRQajNKQzZWdUwxSklUR1VQUU1pc21jclpfME5RWlk2UWRmcXpSR0gtX0JyN3F1RlFFeVFyajJDOWdpby1VbGRJanNnY0I4SzRwM0Q2ZGhwLV9nMG9KMnA3a0NmSHRPR0dNeFdGN05PMkxDdjNDWDlk?oc=5",
+      "label": "Indian developers secures 23 major contracts under National Green Hydrogen Mission",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYkNZT3dmUnVON0FMa21tMVRzcVA4dF9xeTFiMWZEemtRRjZobkNkTXMtbXZ0ZkV3UWRQeWdwVEtvQ0p5VW5QRE1ncXpuS0YxSnZtTmFrSkxKalJTeHhDSUx1b293WHJfaXJ2Vk9ReVpGV0xNdjFNbkFob0J0cllfd21vWVIzU21EdlJRZmNzSnNzVU1WQ2t2UUxOeUdsTWd1UWdHNnRUX2MyaVNQ?oc=5",
       "credibility": "confirmed",
       "posts": 4,
       "outlets": [
        "Business Today",
-       "DD News",
        "News On AIR"
       ],
       "platforms": [
+       "bluesky",
        "gnews"
       ],
-      "first_seen": "2026-10-16",
+      "first_seen": "2026-10-21",
       "last_seen": "2026-10-29",
       "prs_item": null
      },
@@ -5231,6 +5444,22 @@
       "prs_item": null
      },
      {
+      "label": "Green hydrogen: India’s big ambitions, costly realities",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSFJwQkxONmU1SjJqcW4wdk1NYmZtT3dPMWhIR2owSzJtYktWMEw5TlFFdzRzVWVUcHRtY1g2eUJSektKdXMySkNacHVqZ0xvazRpNFhQRTNSTHl2bU5FbDVZTkRfQlVVR21UQVZETlBDcVY2bGxNRWtTTDZ2LXI2MDFjYWdxVmh5OE9oUkFVZnI2b0pu0gGiAUFVX3lxTE9fQWhWSlU2QlVwZ1RMNklRVU12aXZWNUdCckRQa01qamlnRU9hRzZSRUxQcFg1dC1XelBReklzWktwekNxV1V0c1BiTUZKVjZSVl9BRktsUWdQbzRBWjFyNFgxVi1mSkdqRm44T2NFa3RVVnZTR0t6WTF5VDdKYTZxWG8xNWl6aUlrUGVJeGY1TlpCNW12blc3eGpxZXN1QkdPUQ?oc=5",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "Down To Earth",
+       "Newslaundry"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-16",
+      "prs_item": null
+     },
+     {
       "label": "CAG begins nationwide audit of 39 power discoms, to examine consumer satisfaction and short-term power procurement",
       "url": "https://indianexpress.com/article/business/cag-begins-nationwide-audit-of-39-power-discoms-10959589",
       "credibility": "confirmed",
@@ -5264,35 +5493,19 @@
       "prs_item": null
      },
      {
-      "label": "No differences with Keralam CM over power procurement, says Electricity Minister Sunny Joseph",
-      "url": "https://hindustantimes.com/india-news/no-differences-with-keralam-cm-over-power-procurement-says-electricity-minister-sunny-joseph-101794557657145.html",
+      "label": "Maharashtra extends 7% VAT on aviation turbine fuel till April 14",
+      "url": "https://hindustantimes.com/india-news/maharashtra-extends-7-vat-on-aviation-turbine-fuel-till-april-14-2027-101794733367891.html",
       "credibility": "confirmed",
       "posts": 2,
       "outlets": [
        "Hindustan Times",
-       "The Hindu"
+       "Mint"
       ],
       "platforms": [
        "rss"
       ],
-      "first_seen": "2026-11-13",
-      "last_seen": "2026-11-13",
-      "prs_item": null
-     },
-     {
-      "label": "Firecrackers were responsible for 71% of air pollution on Diwali night in Delhi: Study",
-      "url": "https://hindustantimes.com/india-news/firecrackers-were-responsible-for-71-of-air-pollution-on-diwali-night-in-delhi-study-101794369666825.html",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Hindustan Times",
-       "The Quint"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-11-11",
-      "last_seen": "2026-11-11",
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "prs_item": null
      }
     ]
@@ -5808,14 +6021,14 @@
  ],
  "taxonomy": {
   "domains": [
-   "business",
-   "money",
-   "justice",
    "energy-environment",
-   "health",
+   "money",
    "digital-and-ai",
+   "business",
+   "health",
    "education",
-   "work"
+   "work",
+   "justice"
   ],
   "impacts": [
    "jobs",
