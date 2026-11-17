@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16",
+ "generated": "2026-11-17",
  "topics": [
   {
    "slug": "energy-environment",
@@ -770,7 +770,7 @@
    "sector": "Communications",
    "deadline": "2026-11-27",
    "status": "open",
-   "days_left": 11,
+   "days_left": 10,
    "source": "https://prsindia.org/policy/monthly-policy-review/october-2026",
    "links": [],
    "respond_via": "TRAI"
@@ -800,7 +800,7 @@
    "sector": "Energy",
    "deadline": "2026-11-12",
    "status": "closed",
-   "days_left": -4,
+   "days_left": -5,
    "source": "https://prsindia.org/policy/monthly-policy-review/october-2026",
    "links": [],
    "respond_via": null
@@ -810,7 +810,7 @@
    "sector": "Transport",
    "deadline": "2026-11-11",
    "status": "closed",
-   "days_left": -5,
+   "days_left": -6,
    "source": "https://prsindia.org/policy/monthly-policy-review/october-2026",
    "links": [],
    "respond_via": "Ministry of Road Transport and Highways"
@@ -820,7 +820,7 @@
    "sector": "Environment",
    "deadline": "2026-11-07",
    "status": "closed",
-   "days_left": -9,
+   "days_left": -10,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Environment"
@@ -830,7 +830,7 @@
    "sector": "Energy",
    "deadline": "2026-10-30",
    "status": "closed",
-   "days_left": -17,
+   "days_left": -18,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Petroleum and Natural Gas"
@@ -840,7 +840,7 @@
    "sector": "Parliament",
    "deadline": "2026-10-05",
    "status": "closed",
-   "days_left": -42,
+   "days_left": -43,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-10-05/FCRA Press Release.pdf",
@@ -853,7 +853,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-28",
    "status": "closed",
-   "days_left": -49,
+   "days_left": -50,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-28/Press release for ISI Bill, 2026.pdf",
@@ -866,7 +866,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-25",
    "status": "closed",
-   "days_left": -52,
+   "days_left": -53,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-25/FCRA_press release.pdf",
@@ -879,7 +879,7 @@
    "sector": "Energy",
    "deadline": "2026-09-04",
    "status": "closed",
-   "days_left": -73,
+   "days_left": -74,
    "source": "https://prsindia.org/policy/monthly-policy-review/august-2026",
    "links": [
     "https://dae.gov.in/public-consultation-on-draft-shanti-rules-and-draft-shanti-regulations/",
@@ -892,7 +892,7 @@
    "sector": "Law and Justice",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -108,
+   "days_left": -109,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_Advocate_(A)_Bill_2026.pdf",
@@ -905,7 +905,7 @@
    "sector": "Health and Family Welfare",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -108,
+   "days_left": -109,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_National_Pharmacy_Commission_(NPC)_Bill_2026.pdf",
@@ -4283,12 +4283,12 @@
   "topics": {
    "digital-and-ai": {
     "counts": {
-     "confirmed": 15,
+     "confirmed": 16,
      "reported": 15,
      "community": 0
     },
-    "running_ahead_of_prs": 27,
-    "hidden": 379,
+    "running_ahead_of_prs": 28,
+    "hidden": 385,
     "conversations": [
      {
       "label": "IndiaAI Mission Shortlists 12 Teams for Indigenous AI Models: Minister Updates Rajya Sabha",
@@ -4351,6 +4351,23 @@
       ],
       "first_seen": "2026-10-26",
       "last_seen": "2026-10-28",
+      "prs_item": null
+     },
+     {
+      "label": "DPDP rules may boost demand for cybersecurity professionals and security services: Report",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPYXJHZVkzRWptemZTWlRqN1FkQVpVanRkaG5LMVRWN2FTQTVQX1NZOWNtbGNYRG5rQU8wOVBuSGZ2VUp1YnNyblJuWkJSSHFlOUFMSUpGLWVncHZGQk84N2hrNEVJN3l0NWwwZjZxdlNXbm5nLVpuR2xXLTh0ODgtY2pJV1kwT3lERVcxeUFreF9wMTdNQ0VvT0lQcWVqRXlDS2p3WUpaQmVwaFU1QjRQYTJyazFnZ3g2SlkwTTRxTWVaSE9NUmhFM3VKemktbm9FWDQ2SXln?oc=5",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "ANI",
+       "Economic Times",
+       "Mint"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-17",
       "prs_item": null
      },
      {
@@ -4419,33 +4436,17 @@
       "first_seen": "2026-10-21",
       "last_seen": "2026-10-23",
       "prs_item": null
-     },
-     {
-      "label": "Jensen Huang’s Exit: How Deep Does NVIDIA’s AI Ecosystem Run In India?",
-      "url": "https://inc42.com/features/jensen-huangs-exit-how-deep-does-nvidias-ai-ecosystem-run-in-india",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Inc42",
-       "The Hindu"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-11-14",
-      "last_seen": "2026-11-15",
-      "prs_item": null
      }
     ]
    },
    "work": {
     "counts": {
      "confirmed": 15,
-     "reported": 8,
+     "reported": 9,
      "community": 0
     },
-    "running_ahead_of_prs": 23,
-    "hidden": 117,
+    "running_ahead_of_prs": 24,
+    "hidden": 120,
     "conversations": [
      {
       "label": "UP Govt to hold 2-day programme on labour codes in Lucknow",
@@ -4510,7 +4511,7 @@
       "label": "Labour Ministry Notifies National Social Security Board For Gig, Platform Workers",
       "url": "https://inc42.com/buzz/labour-ministry-notifies-national-social-security-board-for-gig-platform-workers",
       "credibility": "confirmed",
-      "posts": 6,
+      "posts": 5,
       "outlets": [
        "ANI",
        "Business Standard",
@@ -4518,31 +4519,11 @@
        "The Tribune"
       ],
       "platforms": [
-       "bluesky",
        "gnews",
        "rss"
       ],
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-01",
-      "prs_item": null
-     },
-     {
-      "label": "Rahul Gandhi's Big Announcement For Telangana Gig Workers: 1% Of Each Transaction Value, Rs 15 Lakh Insurance",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOWGZ6VGVIQmVEWWI0WmUzNGQ0VlA3WnU3VGd4NUhOZ0h6QTVIZ1BNb2s5OUcyY29tX1pBLVZ5V3V0ekx4dTVFa2JTUjRuelNnX0t2aW5NWTRON2dUUGw5MEk5UFpRa1cybDY3eXhTTzJ6TVRhdDA1NUFuOFQ2ZHktZFppM1l2UFk0M3J4eVpGRHhtZDdEOE1QRWhPTDFlaWlvd09Yb0hzV1VtZDZ6d0l0YW9aVEZTRDBzamxiNVdUXzN2dkRJWXI0eUJSem44TDNPRjRRTG0tWkk1WUdEdTlwVzlOSWlNNFZ3RktDYWJ5ZFkyRUg1dE1ySDZMZ9IBgAJBVV95cUxPakJqbEJEQmN1RGJnQ0hxeTFPUGYtSktOWW9leEh2TmFLVmVGYnVGd0NQcm8zNnZFd0oyQkZMWVowWUlQOW1JYTVwajNlV0hlWU1OWHA2THhYOTZHU2I1STVFUUY1LU5HMFRsWGZ6MkF2SGU3V0FuYXlnd1NwUS1CN0VmS0Z3TXZvUGZNTnNsdlhwdDJza3lQTjBMUWd2Y2VOVVFVN2pxOFFZREhzZmtLcXlWNDJBZ0pHVy1xNUIzTkk1T2xkUm5ZM1paOWZpNm9tNlBHTjZTVEdvREo4ak1HU1dweDNpR18ybUxCLW4tNWxNN0c1aEVJV3FvcDJ3WV9w?oc=5",
-      "credibility": "confirmed",
-      "posts": 5,
-      "outlets": [
-       "Economic Times",
-       "The Hindu",
-       "Times Now"
-      ],
-      "platforms": [
-       "bluesky",
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14",
+      "last_seen": "2026-10-30",
       "prs_item": null
      },
      {
@@ -4583,19 +4564,38 @@
       "prs_item": null
      },
      {
-      "label": "Retirement tax rules differ for EPF, NPS and pension: Why employees need clarity",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOckZlOGxBV181SkZmY1pNZDRhQUhRNHNvZ1hTQ1RqdmFXWk1INE1hNURIY2VYT3FzTXMyTVpkYjhlRDFxM1dxZmQ1OHNwQTBraTBTUi1ZUFhrWXlzb0dCT1JEZkV3OVFFZmRqNzRybm5ybUY1VENCYzdCNFJzY0w4ZmloRXV4Rmp3QS1CV2daMlkyVE9raHBLRDY3dWtEcFRlYVphSFV5TGI4d1drYnEyV0ZfUVJUVjJTZXRCQVAycnB0WWFa0gHLAUFVX3lxTFB5WXBEU3V1WGdmb1FiZnRHMkVDU0gwdk1CTFA5QWxFMVRrdGhEOFkzM256dnlyVldBTF9VMWZxdnEtU1F3dWhmUUxGY1VyenpYeWY1SG1NWVFubFZJZ091bW5Ga3FSWUxKMVV4ZW9tMEJOOE9zSW1wdnBWaFZjNkEyeWxzQVVzUEhxQmRxcU05MEdPdnp5SGtRckNITFhlSU9GZVE5eE9yeEJsTjRMNEhGYk1JQWJwWkg2YWEwbm1Ka2tYaVI4MFE0N2I0?oc=5",
+      "label": "Rahul Gandhi likely to address gig workers at Congress' Bharat summit in Hyderabad",
+      "url": "https://hindustantimes.com/india-news/rahul-gandhi-likely-to-address-gig-workers-at-congress-bharat-summit-in-hyderabad-101794312174503.html",
       "credibility": "confirmed",
       "posts": 4,
       "outlets": [
        "Economic Times",
-       "Financial Express"
+       "Hindustan Times"
       ],
       "platforms": [
-       "gnews"
+       "gnews",
+       "rss"
       ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-11-04",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-14",
+      "prs_item": null
+     },
+     {
+      "label": "Rahul Gandhi's Big Announcement For Telangana Gig Workers: 1% Of Each Transaction Value, Rs 15 Lakh Insurance",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOWGZ6VGVIQmVEWWI0WmUzNGQ0VlA3WnU3VGd4NUhOZ0h6QTVIZ1BNb2s5OUcyY29tX1pBLVZ5V3V0ekx4dTVFa2JTUjRuelNnX0t2aW5NWTRON2dUUGw5MEk5UFpRa1cybDY3eXhTTzJ6TVRhdDA1NUFuOFQ2ZHktZFppM1l2UFk0M3J4eVpGRHhtZDdEOE1QRWhPTDFlaWlvd09Yb0hzV1VtZDZ6d0l0YW9aVEZTRDBzamxiNVdUXzN2dkRJWXI0eUJSem44TDNPRjRRTG0tWkk1WUdEdTlwVzlOSWlNNFZ3RktDYWJ5ZFkyRUg1dE1ySDZMZ9IBgAJBVV95cUxPakJqbEJEQmN1RGJnQ0hxeTFPUGYtSktOWW9leEh2TmFLVmVGYnVGd0NQcm8zNnZFd0oyQkZMWVowWUlQOW1JYTVwajNlV0hlWU1OWHA2THhYOTZHU2I1STVFUUY1LU5HMFRsWGZ6MkF2SGU3V0FuYXlnd1NwUS1CN0VmS0Z3TXZvUGZNTnNsdlhwdDJza3lQTjBMUWd2Y2VOVVFVN2pxOFFZREhzZmtLcXlWNDJBZ0pHVy1xNUIzTkk1T2xkUm5ZM1paOWZpNm9tNlBHTjZTVEdvREo4ak1HU1dweDNpR18ybUxCLW4tNWxNN0c1aEVJV3FvcDJ3WV9w?oc=5",
+      "credibility": "confirmed",
+      "posts": 4,
+      "outlets": [
+       "Economic Times",
+       "The Hindu",
+       "Times Now"
+      ],
+      "platforms": [
+       "gnews",
+       "rss"
+      ],
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-14",
       "prs_item": null
      }
     ]
@@ -4607,7 +4607,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 46,
-    "hidden": 404,
+    "hidden": 425,
     "conversations": [
      {
       "label": "Outreach Programme on Recommendations of the 57th GST Council Meeting",
@@ -4769,18 +4769,18 @@
    },
    "education": {
     "counts": {
-     "confirmed": 24,
-     "reported": 16,
+     "confirmed": 23,
+     "reported": 14,
      "community": 0
     },
-    "running_ahead_of_prs": 40,
-    "hidden": 336,
+    "running_ahead_of_prs": 37,
+    "hidden": 337,
     "conversations": [
      {
       "label": "NEET PG 2026: Medical Counselling Committee Releases Final Seat Matrix",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSkRuNmdYM1Q4THJvZzZzVDZEdW1HeFBLYWt1ZW1oNERkNy1GZWNVTF9oN0d0TUlDandRUjRHNU0wR0ZCNnlBNG5oUkhvWUFkMUhoNV9FVGhSX0lrTWxWT0wtenZwWWRwNEZwQVZPMHlWdGZHc0NaakhraEd1SS11VU1jcGh3bU04Z0lnQzZoTVZjTVhRRXhjelZHN3FmSGJYQkVoejV5d0pHQ1dJSVHSAbYBQVVfeXFMT2g5WkFUQm9HMDE4VXVLQUt6T3JRdjRLQXVLR0JRbFRUc2d0QVJZZzVZZWVFSUFjMUFzYV9laGlzN1lWVkpFcWpnRjlCTlVFaXZ6UnpTX3NJSFlicC1EU2FCWGJ1OE5zb0NzZWlhQ1p1MnZiZ0hHQWpnSUR6c1VBVnlkMWtMcVNUTDBzLWF0NWx6b0QyZnhpcHBwLVVVbmNVZkl3RUxDTnBORDE3ajhvekhxRENkZ0E?oc=5",
       "credibility": "confirmed",
-      "posts": 66,
+      "posts": 68,
       "outlets": [
        "Business Standard",
        "Economic Times",
@@ -4799,7 +4799,7 @@
        "rss"
       ],
       "first_seen": "2026-10-18",
-      "last_seen": "2026-11-16",
+      "last_seen": "2026-11-17",
       "prs_item": null
      },
      {
@@ -4855,6 +4855,21 @@
       "prs_item": null
      },
      {
+      "label": "India's Higher Education Sector",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5RVzZCTmhLVjl3T3VDcG10Y3JreDRkWWQyMm9Ob2F0NnhoTGRUU2lSSlVlbGlSYWhkdUtDU1ZxVi1BOWg3MDFJU1M5RU9RX3l4WHNfZHNELXpiTWdxWWVJalZnRGFCYU03b05DWHJJWC1XM2s4Z0Y0?oc=5",
+      "credibility": "confirmed",
+      "posts": 4,
+      "outlets": [
+       "PIB"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-11-14",
+      "prs_item": null
+     },
+     {
       "label": "Bombay High Court quashes FIR against B.Tech student for Instagram repost on Operation Sindoor",
       "url": "https://barandbench.com/news/bombay-high-court-quashes-fir-against-engineering-student-for-repost-on-operation-sindoor",
       "credibility": "confirmed",
@@ -4902,32 +4917,17 @@
       "first_seen": "2026-10-28",
       "last_seen": "2026-11-03",
       "prs_item": null
-     },
-     {
-      "label": "India's Higher Education Sector",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5RVzZCTmhLVjl3T3VDcG10Y3JreDRkWWQyMm9Ob2F0NnhoTGRUU2lSSlVlbGlSYWhkdUtDU1ZxVi1BOWg3MDFJU1M5RU9RX3l4WHNfZHNELXpiTWdxWWVJalZnRGFCYU03b05DWHJJWC1XM2s4Z0Y0?oc=5",
-      "credibility": "confirmed",
-      "posts": 3,
-      "outlets": [
-       "PIB"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-11-02",
-      "prs_item": null
      }
     ]
    },
    "justice": {
     "counts": {
-     "confirmed": 50,
+     "confirmed": 46,
      "reported": 22,
      "community": 0
     },
-    "running_ahead_of_prs": 61,
-    "hidden": 517,
+    "running_ahead_of_prs": 58,
+    "hidden": 508,
     "conversations": [
      {
       "label": "Mini Cooper crash: Kerala sessions court denies bail to accused Suhail Sajeev, 3 others",
@@ -4947,21 +4947,20 @@
       "prs_item": null
      },
      {
-      "label": "Outraging modesty provision under BNS applies to transgender women: Bombay High Court",
-      "url": "https://barandbench.com/news/outraging-modesty-provision-under-bns-applies-to-transgender-women-bombay-high-court",
+      "label": "Transgender woman not covered under BNS Section 69 definition of ‘woman’, says Allahabad high court",
+      "url": "https://hindustantimes.com/india-news/trans-woman-not-within-purview-of-sec-69-of-bns-allahabad-hc-101792262878579.html",
       "credibility": "confirmed",
       "posts": 5,
       "outlets": [
        "Bar & Bench",
-       "Free Press Journal",
-       "The Hindu"
+       "Hindustan Times"
       ],
       "platforms": [
        "gnews",
        "rss"
       ],
-      "first_seen": "2026-11-07",
-      "last_seen": "2026-11-08",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-11-07",
       "prs_item": null
      },
      {
@@ -5034,23 +5033,6 @@
       "prs_item": null
      },
      {
-      "label": "Transgender woman can't invoke Section 69 BNS in false promise of marriage case: Allahabad High Court",
-      "url": "https://barandbench.com/news/transgender-woman-cant-invoke-section-69-bns-in-false-promise-of-marriage-case-allahabad-high-court",
-      "credibility": "confirmed",
-      "posts": 4,
-      "outlets": [
-       "Bar & Bench",
-       "Law Beat"
-      ],
-      "platforms": [
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-10-17",
-      "last_seen": "2026-10-19",
-      "prs_item": null
-     },
-     {
       "label": "Twisha case: HC reserves order on Giribala bail plea",
       "url": "https://hindustantimes.com/india-news/twisha-case-hc-reserves-order-on-giribala-bail-plea-101793040949633.html",
       "credibility": "confirmed",
@@ -5065,6 +5047,24 @@
       "first_seen": "2026-10-27",
       "last_seen": "2026-11-14",
       "prs_item": null
+     },
+     {
+      "label": "Himachal Police register FIR against Kangana Ranaut over posts targeting Gandhi family",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOREJvRjFrZUVlUTBFTDMzRXRrSTlvOURVeWRHUmktalQtcE1hejE3dThHdllFc3hJZXptWGZ6SWdUelc5LWliZHdjdVNzYUJFR1F6WmEwYkdKNDV4TUtidmtubVU5a1RGWjYwRmNzU1hnRWwwNktVLU9VSnpxRjhSVDhseGpCbjlfNl9ycTd6VmhIOUdJZHc1RnprT3ZCeGdaRTlleFdTVlVDdVI0djVLSjBiRWJfMTBUcHI1RnhyeWpTRHRlNWhzcVNsX1YxekJHSmVZ0gHgAUFVX3lxTE1zdll0bFJNRlJiMGhNVlRoaE1HeHp6TGdIbkVnSF85WkgweEVIaVJjcndWYTJyS0l3WWxaTTNzbTVrXy1pZ3VNaW1kYUVMeTQ4dTh2N1ZsSUZOUDltVGJwOVpmWUktT29YbUdXUUlZdi1KbWJHTWZOSFdOQUZVb1pydDFFd0w0TWt5Si1TamNWb193UWhwNk91N2Jla0xGc0FGMnQ1WkZYdnQydmhUZERCczFfYkxJZ2gwLTcySWpTWVB3SjBhcV9MWDlWZ1JIVENBLTdHdXl3MVd3X0Y0RldT?oc=5",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "Economic Times",
+       "Hindustan Times",
+       "New Indian Express"
+      ],
+      "platforms": [
+       "gnews",
+       "rss"
+      ],
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
+      "prs_item": null
      }
     ]
    },
@@ -5075,25 +5075,8 @@
      "community": 0
     },
     "running_ahead_of_prs": 12,
-    "hidden": 203,
+    "hidden": 196,
     "conversations": [
-     {
-      "label": "Veteran BJP leader LK Advani admitted to Delhi's Apollo hospital with chest infection, condition stable",
-      "url": "https://hindustantimes.com/india-news/veteran-bjp-leader-lk-advani-admitted-to-delhis-apollo-hospital-with-chest-infection-condition-stable-101792166339323.html",
-      "credibility": "confirmed",
-      "posts": 4,
-      "outlets": [
-       "Hindustan Times",
-       "Mint",
-       "The Hindu"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-10-17",
-      "last_seen": "2026-10-19",
-      "prs_item": null
-     },
      {
       "label": "₹438 crore mephedrone seizure case: Gujarat ATS arrests international drug trafficker Salim Dola",
       "url": "https://hindustantimes.com/india-news/rs-438-crore-mephedrone-seizure-case-gujarat-ats-arrests-international-drug-trafficker-salim-dola-101793699306926.html",
@@ -5108,6 +5091,23 @@
       ],
       "first_seen": "2026-11-03",
       "last_seen": "2026-11-04",
+      "prs_item": null
+     },
+     {
+      "label": "Veteran BJP leader LK Advani, admitted to Delhi hospital over chest infection, discharged after improvement in health",
+      "url": "https://hindustantimes.com/india-news/veteran-bjp-leader-lk-advani-admitted-to-delhi-hospital-over-chest-infection-discharged-after-improvement-in-health-101792394002362.html",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "Hindustan Times",
+       "The Hindu"
+      ],
+      "platforms": [
+       "mastodon",
+       "rss"
+      ],
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
       "prs_item": null
      },
      {
@@ -5211,11 +5211,11 @@
    "business": {
     "counts": {
      "confirmed": 16,
-     "reported": 8,
+     "reported": 7,
      "community": 0
     },
-    "running_ahead_of_prs": 21,
-    "hidden": 163,
+    "running_ahead_of_prs": 20,
+    "hidden": 156,
     "conversations": [
      {
       "label": "GST decriminalisation decisions mark shift to trust-based governance: CII",
@@ -5276,6 +5276,23 @@
       "prs_item": null
      },
      {
+      "label": "India’s diesel exports at 13-month high in October amid global supply crunch",
+      "url": "https://indianexpress.com/article/business/indias-diesel-exports-hit-13-month-high-october-global-supply-crunch-10942829",
+      "credibility": "confirmed",
+      "posts": 4,
+      "outlets": [
+       "Indian Express",
+       "Mint",
+       "The Hindu"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-11-17",
+      "prs_item": null
+     },
+     {
       "label": "US goods trade deficit widens in September as AI boom drives imports to record high",
       "url": "https://livemint.com/news/us-news/us-goods-trade-deficit-widens-in-september-as-ai-boom-drives-imports-to-record-high-11793210830394.html",
       "credibility": "confirmed",
@@ -5308,22 +5325,6 @@
       "first_seen": "2026-11-14",
       "last_seen": "2026-11-14",
       "prs_item": "2026-08:10"
-     },
-     {
-      "label": "India’s diesel exports at 13-month high in October amid global supply crunch",
-      "url": "https://indianexpress.com/article/business/indias-diesel-exports-hit-13-month-high-october-global-supply-crunch-10942829",
-      "credibility": "confirmed",
-      "posts": 3,
-      "outlets": [
-       "Indian Express",
-       "Mint"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-10-30",
-      "last_seen": "2026-11-04",
-      "prs_item": null
      },
      {
       "label": "NCLT administration completely hijacked by Ministry of Corporate Affairs: Supreme Court",
@@ -5363,12 +5364,12 @@
    },
    "energy-environment": {
     "counts": {
-     "confirmed": 19,
-     "reported": 16,
+     "confirmed": 20,
+     "reported": 15,
      "community": 0
     },
     "running_ahead_of_prs": 30,
-    "hidden": 306,
+    "hidden": 316,
     "conversations": [
      {
       "label": "India secures over 5.5 lakh MTPA green hydrogen offtake commitments",
@@ -5492,19 +5493,19 @@
       "prs_item": null
      },
      {
-      "label": "Maharashtra extends 7% VAT on aviation turbine fuel till April 14",
-      "url": "https://hindustantimes.com/india-news/maharashtra-extends-7-vat-on-aviation-turbine-fuel-till-april-14-2027-101794733367891.html",
+      "label": "NPP seeks Governor's intervention on Wildlife Protection Act's applicability in Nagaland",
+      "url": "https://hindustantimes.com/india-news/npp-seeks-governor-s-intervention-on-wildlife-protection-act-s-applicability-in-nagaland-101794913181636.html",
       "credibility": "confirmed",
       "posts": 2,
       "outlets": [
        "Hindustan Times",
-       "Mint"
+       "The Hindu"
       ],
       "platforms": [
        "rss"
       ],
-      "first_seen": "2026-11-15",
-      "last_seen": "2026-11-16",
+      "first_seen": "2026-11-17",
+      "last_seen": "2026-11-17",
       "prs_item": null
      }
     ]
