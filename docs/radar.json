@@ -4315,7 +4315,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 35,
-    "hidden": 424,
+    "hidden": 425,
     "conversations": [
      {
       "label": "IndiaAI Mission Shortlists 12 Teams for Indigenous AI Models: Minister Updates Rajya Sabha",
@@ -5107,7 +5107,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 18,
-    "hidden": 225,
+    "hidden": 226,
     "conversations": [
      {
       "label": "Cervical cancer vaccine has reached 80% of India’s girls. In Mumbai, it’s 2%",
@@ -5400,7 +5400,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 34,
-    "hidden": 374,
+    "hidden": 375,
     "conversations": [
      {
       "label": "India Secures Worlds Largest Green Hydrogen Offtake Commitments Of 5.5 Lakh Tonnes Annually: Pralhad Joshi",
@@ -5451,6 +5451,22 @@
       ],
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
+      "prs_item": null
+     },
+     {
+      "label": "No differences with Keralam CM over power procurement, says Electricity Minister Sunny Joseph",
+      "url": "https://hindustantimes.com/india-news/no-differences-with-keralam-cm-over-power-procurement-says-electricity-minister-sunny-joseph-101794557657145.html",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "Hindustan Times",
+       "The Hindu"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-23",
       "prs_item": null
      },
      {
@@ -5515,22 +5531,6 @@
        "rss"
       ],
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-20",
-      "prs_item": null
-     },
-     {
-      "label": "Up a hill and into a forest: How to tranquilise a 3,000-kg elephant, the Chhattisgarh way",
-      "url": "https://indianexpress.com/article/india/chhattisgarh-elephant-kabra-kaan-tranquilised-10968903",
-      "credibility": "confirmed",
-      "posts": 2,
-      "outlets": [
-       "Indian Express",
-       "The Hindu"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-11-19",
       "last_seen": "2026-11-20",
       "prs_item": null
      }
