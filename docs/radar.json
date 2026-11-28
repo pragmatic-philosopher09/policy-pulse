@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27",
+ "generated": "2026-11-28",
  "topics": [
   {
    "slug": "energy-environment",
@@ -765,16 +765,6 @@
  ],
  "consultations": [
   {
-   "title": "TRAI releases draft guidelines on responsible use of AI in telecom",
-   "sector": "Communications",
-   "deadline": "2026-11-27",
-   "status": "open",
-   "days_left": 0,
-   "source": "https://prsindia.org/policy/monthly-policy-review/october-2026",
-   "links": [],
-   "respond_via": "TRAI"
-  },
-  {
    "title": "Draft Rules for control and supervision of animal experiments released for feedback",
    "sector": "Agriculture",
    "deadline": null,
@@ -795,11 +785,21 @@
    "respond_via": "Ministry of Steel"
   },
   {
+   "title": "TRAI releases draft guidelines on responsible use of AI in telecom",
+   "sector": "Communications",
+   "deadline": "2026-11-27",
+   "status": "closed",
+   "days_left": -1,
+   "source": "https://prsindia.org/policy/monthly-policy-review/october-2026",
+   "links": [],
+   "respond_via": "TRAI"
+  },
+  {
    "title": "Draft guidelines for hydrogen blending in domestic piped natural gas released",
    "sector": "Energy",
    "deadline": "2026-11-12",
    "status": "closed",
-   "days_left": -15,
+   "days_left": -16,
    "source": "https://prsindia.org/policy/monthly-policy-review/october-2026",
    "links": [],
    "respond_via": null
@@ -809,7 +809,7 @@
    "sector": "Transport",
    "deadline": "2026-11-11",
    "status": "closed",
-   "days_left": -16,
+   "days_left": -17,
    "source": "https://prsindia.org/policy/monthly-policy-review/october-2026",
    "links": [],
    "respond_via": "Ministry of Road Transport and Highways"
@@ -819,7 +819,7 @@
    "sector": "Environment",
    "deadline": "2026-11-07",
    "status": "closed",
-   "days_left": -20,
+   "days_left": -21,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Environment"
@@ -829,7 +829,7 @@
    "sector": "Energy",
    "deadline": "2026-10-30",
    "status": "closed",
-   "days_left": -28,
+   "days_left": -29,
    "source": "https://prsindia.org/policy/monthly-policy-review/september-2026",
    "links": [],
    "respond_via": "Ministry of Petroleum and Natural Gas"
@@ -839,7 +839,7 @@
    "sector": "Parliament",
    "deadline": "2026-10-05",
    "status": "closed",
-   "days_left": -53,
+   "days_left": -54,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-10-05/FCRA Press Release.pdf",
@@ -852,7 +852,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-28",
    "status": "closed",
-   "days_left": -60,
+   "days_left": -61,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-28/Press release for ISI Bill, 2026.pdf",
@@ -865,7 +865,7 @@
    "sector": "Parliament",
    "deadline": "2026-09-25",
    "status": "closed",
-   "days_left": -63,
+   "days_left": -64,
    "source": "https://prsindia.org/announcements",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-09-25/FCRA_press release.pdf",
@@ -878,7 +878,7 @@
    "sector": "Energy",
    "deadline": "2026-09-04",
    "status": "closed",
-   "days_left": -84,
+   "days_left": -85,
    "source": "https://prsindia.org/policy/monthly-policy-review/august-2026",
    "links": [
     "https://dae.gov.in/public-consultation-on-draft-shanti-rules-and-draft-shanti-regulations/",
@@ -891,7 +891,7 @@
    "sector": "Law and Justice",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -119,
+   "days_left": -120,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_Advocate_(A)_Bill_2026.pdf",
@@ -904,7 +904,7 @@
    "sector": "Health and Family Welfare",
    "deadline": "2026-07-31",
    "status": "closed",
-   "days_left": -119,
+   "days_left": -120,
    "source": "https://prsindia.org/policy/monthly-policy-review/july-2026",
    "links": [
     "https://prsindia.org/files/parliamentry-announcement/2026-07-31/Draft_National_Pharmacy_Commission_(NPC)_Bill_2026.pdf",
@@ -4310,20 +4310,21 @@
   "topics": {
    "digital-and-ai": {
     "counts": {
-     "confirmed": 20,
-     "reported": 19,
+     "confirmed": 19,
+     "reported": 18,
      "community": 0
     },
-    "running_ahead_of_prs": 36,
-    "hidden": 412,
+    "running_ahead_of_prs": 34,
+    "hidden": 400,
     "conversations": [
      {
       "label": "IndiaAI Mission Shortlists 12 Teams for Indigenous AI Models: Minister Updates Rajya Sabha",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcUl0UC1nUnRTXzZrUTUycUx0Tk9TVmpOOEpuWE9PMDZGakZpNTNEZU96bkpRTjA5V01KcmNfeVN5WjZXelRhVGN0bXNfSzNGSDJSUElSOWQ4blhfMlhTT0RQNFRSM0hwVTl4UjFiVThsS081cnBCNFFXNjJVVWQxUjN4ODRGOFdUVlJ3aFotVy1SWXhNdTZubk1mRVpZZURFU19sdGpscGxlYWNOMTF0S0d3cmFnUQ?oc=5",
       "credibility": "confirmed",
-      "posts": 31,
+      "posts": 32,
       "outlets": [
        "ANI",
+       "BusinessLine",
        "DD News",
        "Economic Times",
        "Goodreturns",
@@ -4348,8 +4349,9 @@
       "label": "No Misuse Of IndiaAI Support By Sarvam AI: Top Government Official",
       "url": "https://ndtv.com/india-news/no-misuse-of-indiaai-support-by-sarvam-ai-top-government-official-12376094",
       "credibility": "confirmed",
-      "posts": 8,
+      "posts": 10,
       "outlets": [
+       "BusinessLine",
        "Economic Times",
        "Indian Express",
        "NDTV",
@@ -4361,7 +4363,7 @@
        "rss"
       ],
       "first_seen": "2026-11-25",
-      "last_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
       "prs_item": null
      },
      {
@@ -4385,7 +4387,7 @@
       "label": "India AI Mission-supported Chariot-1 Foundation Models Launched, Strengthening India's Indigenous AI Capabilities",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBSNnotSC1HM0g3YUVoc0picWpXY3BNaExCcllWN1UtNlgtNzlaSmhudzR5SWZ6VlJSci1EczVRUURiTEx2TDlqcVc3Yk9kbzhWZ0ZSQk1fX09UQlpZUElscGtFZF9IUTJa?oc=5",
       "credibility": "confirmed",
-      "posts": 5,
+      "posts": 6,
       "outlets": [
        "Economic Times",
        "Inc42",
@@ -4475,12 +4477,12 @@
    },
    "work": {
     "counts": {
-     "confirmed": 21,
+     "confirmed": 22,
      "reported": 14,
      "community": 0
     },
-    "running_ahead_of_prs": 35,
-    "hidden": 161,
+    "running_ahead_of_prs": 36,
+    "hidden": 166,
     "conversations": [
      {
       "label": "District Level Capacity-Building and Awareness Programme “Shram Samvaad” on Labour Codes, Labour Welfare and Social Protection held in Bhopal, Madhya Pradesh",
@@ -4638,32 +4640,31 @@
    "money": {
     "counts": {
      "confirmed": 35,
-     "reported": 29,
+     "reported": 31,
      "community": 0
     },
-    "running_ahead_of_prs": 50,
-    "hidden": 523,
+    "running_ahead_of_prs": 51,
+    "hidden": 514,
     "conversations": [
      {
       "label": "Outreach Programme on Recommendations of the 57th GST Council Meeting",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zLWhUTXpfQ3F4bFRZSi14dlBSMTJlUTUwb0d1YklyTFA4YVFWN2UxbGhUWVEybXNBNWN6SF9sOEdmWGtQeFVMQWxNZjViU3dsa0JEUEpPRWNRRHdtTjhRRnBUVTVveHdB?oc=5",
       "credibility": "confirmed",
-      "posts": 17,
+      "posts": 15,
       "outlets": [
        "Economic Times",
        "LiveLaw",
        "PIB",
        "TaxGuru",
        "Taxscan",
-       "The Hindu",
-       "ThePrint"
+       "The Hindu"
       ],
       "platforms": [
        "bluesky",
        "gnews",
        "rss"
       ],
-      "first_seen": "2026-10-28",
+      "first_seen": "2026-10-30",
       "last_seen": "2026-11-26",
       "prs_item": "2026-10:3"
      },
@@ -4766,24 +4767,6 @@
       "prs_item": null
      },
      {
-      "label": "GST Changes from November 1: New Rates and Exemptions",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPYWItVnk1UmlPcV85M1Zaeko3ZjlTSGQ0T0lOeXhWVWE2OEJqdHFzWHBRY3NVeExueERraEdidWhzb05kOUdTTE5aTi10Qmx6MUN4WmRLUzZQRkZSc3BsT3E4TW85UDU3NWxGaUxZNC1GSEkyQ1N4MnJkZkxWM2RjOGF2b2dwSkpCM1Z6OFRuajItR1hZaThLUTVLRWN2bUZ4MUlNazJvSDZNR1locTRNMHB3dVRYdFZtM2hxRzZERlc3YUhQSFVYNnV5LWFyMWRKcVA2X09B?oc=5",
-      "credibility": "confirmed",
-      "posts": 5,
-      "outlets": [
-       "Mint",
-       "TaxGuru",
-       "Taxscan"
-      ],
-      "platforms": [
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-11-01",
-      "prs_item": "2026-10:3"
-     },
-     {
       "label": "CBIC Issues Interim Measures on GST Arrest Reforms",
       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQblZPMGxleWFxNU9lZERHRWZ1dklObXJzNmtkdlNvemR0WmJzRG5tRUFyU1pRYkctME5YbWtYYXFya0V0VDNDUjVNY3dVWmxjNEhLaE5GOUdiQ0ZCYnZGNzUxRmJoWWp3SGlSY3U2OTRPN05lU1J1TFNXYTVjcC1wU2RvcFFTaDNzWHZBRUxRZ2oyMG93eVZTbG1icHhSZlc1QTRJYVRjQnpNM24yTl9ZZ3NrVGIwS2ZXMGZ3UHNFeVVBeUhmQ1FXcGNwNXVpTHdHbXh2VkhUd2lOXzZhaTRyYVJiUQ?oc=5",
       "credibility": "confirmed",
@@ -4799,6 +4782,22 @@
       "first_seen": "2026-10-30",
       "last_seen": "2026-11-23",
       "prs_item": null
+     },
+     {
+      "label": "40% GST on low-priced beverages a concern, will push for relief: Chirag Paswan",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOYlRrNmozNDhpcHFSWDlQZHE1V1RfQ0tLUWhnc1ZhRmc4M2dyWFBnb3k0bXZ0RGppUVBMYlVNeEJXcXowSGFJS2dBTjBIYnBZYU5nTlBMck9COHAyblkxa1hqNFI3Z3JzYk0wRFhFUnpXbGY3eThoX3BOcUNEdmVTWUZrdTl3eXlrYXl2cTRwenRIcl95Q3dQSFZLbGZBTEVXWWhoYUFMN19ZNEl6VnNkSFAxV2JNeDdiVG5ia2VWaFdmSWgzQU5HOEhDVFg0ZU5UM05NYkJ6Z9IB3AFBVV95cUxNQlJaY2FVRllrcGN2UlZ4NVJ1ejlXMXFIU3hqNFp6VmNWcEk1TzFBbGFpSXhnWmRuTHdmV0xnZHBlOGh6Wlc1M2FrMHF1QXNXSDlDeE1DX3dscWFxcVZnYWxQR2ZzYmFjYkM0enhUREliZjEyVTZiZHFHaGR6c1lMcm5WX3NIUXJ0N0xham1QVXpFRExEWFR5N1IyUFJVWTBvUXpGYlFYbWtxblpUMi0zTHJDSjJjVUQ2bEpSUm9Td2dTUTY4VUFYM2hPQVhEejFpVTc0dG9iVmRFcXh2?oc=5",
+      "credibility": "confirmed",
+      "posts": 4,
+      "outlets": [
+       "Economic Times",
+       "Moneycontrol"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-11-20",
+      "last_seen": "2026-11-21",
+      "prs_item": null
      }
     ]
    },
@@ -4812,29 +4811,32 @@
     "hidden": 359,
     "conversations": [
      {
-      "label": "NEET PG Counselling 2026: Round 1 Reporting Ends on November 2; 28,723 Candidates Allotted Seats",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNSFU2QjJJSHVxRUFWR2JXcVdDa3AzUFBPU0UxeVFfT1p5c0dIaUR3Sy1sUVhzbFFfeFpBQkNsRVJYZUtyalViWnlrdzlpaVQ3b19iY2JhTE9wTHFBRnB0UVctRVRLTVpMYXhHb3FCT3ppMGJHc29UTmZqRGktWUY5a1BEaE9hWDZybEFaVnU4MWRjVDh1b3hValYzanJWTm9UdDQ0Y3BTLVhDWTFDbjNfQ2FOVjdmM0RCMHJveE1MaGdIYzhCOUx6V3d3THEzcUdVcEtpYWIzNmNDa3dkWmtFTjJMYnXSAeoBQVVfeXFMUHNNckNibXhSUnd4MzdOSVQwRVhCel9LSGlaWllOYVY4ZS1NTWh3SThyejRqVjRLQVlYR0V5NHZiV01fU0FiVlk4cTdOTjhhbUJwRE9YUVN4ZmtFaFlLdjNFNnhBb3BrWlB2XzhlcEx2eHV6SjBWN3pxUy05TmtLbTRHV3RBeU5rbk5uNGcwWGFiOVVqRHhVcHhJTFFuMDQtclo3ZzY1dXQtWkNFWUJTZ3NVUjNlSjVuU1hYT2RfVVRtREpMaUZfN0dnRThMS2xLT1kza0xuZ3pwZGVTMHZJU2d0MFFqZ191MFB3?oc=5",
+      "label": "NEET PG Counselling 2026: MCC Postpones Round 2 Registration To November 7, Check Revised Dates",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPaXJDOFJqcTdkdThhMWhFVUloZC1ROVV6WDlKOUJzY1JMYmRfZ25IUlBfSVIwT0J2Wmthekluck45X3VHSEo4UlY2RkpZR1otYWhNSlJlZlZZYUJBVjRWSlVUSUJULXBtTDcxQmNrSEY0Z2ZCcVZmbUY0SWpDUzZ1dG53TktmaTJDc1kxQ3ZxRnRCbmpYZFJQM3F6SE5HLXdwbi1sUUpGZmdSamJldWZlVXM5bEFLU2FNRWZFN2w3OEhZY0J4alBmV0l2Q0FrT3JUbmhoTmtMQnZNVEk4bEZsOdIB5gFBVV95cUxPMzRJUVQ2MnZEUmJvLTIyT0w5Unc2a3FkdzE4Ylp3ZW9nM09kbHJxbjBVNXRBZlVoNTNtQmVTYTZockNzY0VPVDhUdE5MZ0RwdTlZZGZ2S0Z5VDNjYjNGRlkzRDhzZVJzRmpubmx6QXBGd2F0S05UOG5idFpuZUV6RngwSjVaa3d0Q083Z2puZkNUWWNyN05mUnZTampCNXdZcTg3b1ZZc1lYb1FiUkRCXzhBbUU2c25yTmhvYjZfTGNPODQza2EyZnI3ZzhBeHlZbkpMZXJSUVdMMTF1MUs2ZUtubFh1Zw?oc=5",
       "credibility": "confirmed",
-      "posts": 20,
+      "posts": 24,
       "outlets": [
+       "Hindustan Times",
        "India Today",
+       "NDTV",
        "News18",
        "The Telegraph",
        "Times of India"
       ],
       "platforms": [
        "bluesky",
-       "gnews"
+       "gnews",
+       "rss"
       ],
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-11-26",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-27",
       "prs_item": null
      },
      {
-      "label": "NEET PG Round 2 counselling result 2026 NOT releasing today: Seat allotment result put on hold, MCC cites",
-      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQTzluRk1LclBGRGEzZ1hKUk1uSENhQlphbU9qTmU3d3R0OHlsX3JIVEJiVFdmanc1aVQ0OC1WYUQtejd1ZHpCWTNPYVZfWHYxR3VjYktrbnhzQ0l1a0dGQlJOLWttTy1YTlNJaDJNdXJQZmp6WWRYOWRMMDNNMnFKOTNlTVRfdTFscXZCdFlqVmRValFiTTZIQUI3U0hJMmMwUGpPZEx6czlJemdKU2RUZ0VkSXhhZTZhbm5nY2FydjlVX0ZMcEJpdG4tWDBWV1ViTVVSS2Z5dkVPdlRNTzBKNDBHOUFfcmtaYm5kWFRKOXFTYU53NnJvOXBSQURkal9DUWhfQ2VIUGtNRVFlTG9XMmQzZk9yR3lJRm5QX2RMVFR3cW9nV3ZkbkZ1YzLSAbICQVVfeXFMUFREbTlDSGltdUdhQTJWTVpzOVo4WG04V2IyNUZacEhaWHBOOFNNSEx6U1h2bWYxUVZKQnNxZVluNE5DUWxBa003cEdMQTZ5LTVvcE1PWWNKZWNSVXFOaXFlQkVhdE9YNTZ1b1IzajE5Wkw3R2cwNUtjLTh0dXNBZ3ZqVXF3WFlSRjlvR3RzT0tCWWJSYjdpUi0yZDhrLTZMN1JqM2x2emRJQ1RoQUtrejBGR3BFcWNncXJjTlpXcTBDMjgxQ1R1dXJBaGYwNm0wMDVkUUJSTWVhWElxblR2UU5HTjgzSzFDU3d2SEhLeVdQSVE3cmptZ0ZscjFFQWs2VzI0SVp4OTRBSC1YUURzUWFtME1mTF8zTVlZOWFQWWRWRDNCLW5LcE9PUk1iVUFBS2pB?oc=5",
+      "label": "WB NEET PG Counselling 2026: Round 1 Merit List and Seat Matrix Out; Choice-Filling Begins",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQTzFRWFhNcFVTNWROenhxYm1FVEE1NGJQS0F5OEw3RFZ2elFuUWRiLUJDMHdsbHN3ZmpjZlBMZ0hxR3k0Q2l5LURnajhCNHppOVpKUTNRWFJndFFrbHFwR0VRdzlHLVYxMWpiZGdBU3RLWW55Ri1WUll5RTljQXFCUHRBMTcxd0VDa1owclJPWHR2bnlXQzdXNVhzMldtVWVqWVA3Nk4yMDl5ZVQxc0NISlo1TXNOS0RDVE10VEZIUHNDeWRSRlRjb1JMYVBuS1lETzJtbzJPa1g4azdjcWZpcdIB5gFBVV95cUxNYTFIRDhnVmZLcXM0M1plS004YzFkZDlPWlg5Z3oxWEI1cnZneTZUWkVuZ3Q2OFNLMGQzX3g3NmQwcWl6WVpvQ0cxVXNYQjVPQkxhZnZDaVJQR1g4MmNJU3ZHTGhDeWVTamdUd1VJWFNvVmptZ1l1VWhWZGZkSFo0cmlvdVd5Z2IzOGNsVnFoejB3ZE5xU1B3LWhJUEliZ2gzRnRleVYzTkZ0MHBXN2ROcmxTMlZFZnhUSFZZdlh3eGFDejFNQ0tONDU3Y01oNDRDeU9UX1F6cW52andlUTdvNmE4M3ZTZw?oc=5",
       "credibility": "confirmed",
-      "posts": 16,
+      "posts": 23,
       "outlets": [
        "Business Standard",
        "India Today",
@@ -4845,30 +4847,27 @@
        "Times of India"
       ],
       "platforms": [
-       "bluesky",
        "gnews"
       ],
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-26",
+      "first_seen": "2026-10-31",
+      "last_seen": "2026-11-25",
       "prs_item": null
      },
      {
-      "label": "MCC NEET PG Counselling 2026: Round 2 registration begins today at mcc.nic.in, check steps to apply | Hindustan Times",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNQllJNkVsam5wT0hIb3VUd3VlamNEVG44N2ZwOUhTUjFTTUd5ak5Pa2h5Ul9aRXdTQ3VJb2xsWmdqaGJISmNTYlFiZjVNOXVHVWxSaWxBLU5aVDVYREpyQ1NNYlo5cW1HckNUZUlEMFJBbEg5Q2Nzcl9BZ1FFS0R2bVhDZDhFZUMwYVhxdlVza2VZYUFqWlNRTEdDNm41dm9UVl9rWlJ0V3ZkTnRZU3JyQjBnTjIwRmR3QnNoS1o1ZUZyLU1scFU2TXUzY1hWOVlKdkVPazV3Z2FLOWhST1BoanFRMi1JeVpLbU5TU0ZXcm9DZUsxcE4tZU5EYzEzZVXSAYQCQVVfeXFMTi1WUXJVdWN5UV85RFhFeUk3ZE02TXU5TmJtWks3dWl4S3dEb09FdHdvUDdBd182TVlMQWJXcFFndFJZZHF5TFRBWWE2aWFDemRiYUN5YzlOU0NrRlZRZFhQeGlLRlo5Mk5vcXZjUHU3NU9aYlhaWTd5QXRGZkVBeVZ2QWNlVTRPVmw1X1FNaUU2QXZ2b3U3TUZfWTJwOUplZUZ3Z1ZiTURLYVZydmZ0elQ1OUV0c0NSTXI5Mk1FZGo3LXdnZ01BMnhyWDhjdHVWd1BlV0R3enhjOUdxMXdORmpOejNDM0VoNk5hLVp1MDBkQ3hpNnJaYmZCSHk5QWx0VmdGeTE?oc=5",
+      "label": "NEET PG 2026 Counselling: General Medicine Tops Allotments, Radiodiagnosis Ranks Second",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVFdpZ2tpX3RVc3p6WEM1TklWanVzMUVQVkhUNFRNSGN4d3Vjc0I5N3Q2OG5oMVl1WXJ0QTA4ZFlvUFpqY0tKc3BmaC0zZzhQdU15Y2dHby10OVBqUW1vVlhORTU2aUdNTHVhUVgtX3FQclVPTE5fMkJpb3JZSVU4M1g4dkZnbEdHV2lHZWx0b3FUWm5EZEhJdFd1LXM1TUxBbzdqb1BWb3dXa2FaZzNUaU9MbWg5a3RmQXowR1lxMnNVLU9ZUUFEaXBDT2xFVmRhYlpGOUN30gHbAUFVX3lxTE5HZk9mNDI4a3BlVkVMaE1zZm1MNnlJQWlKWXl4cFRXM3pFcTQ2eGJVNkZETG1wSHlMZ055UEJkSDBnSHRBdVMwMFF3ejREbVNpYUVtMk9JZlZlaXJQLS00c2diQnBScmhxaUtoVW8yT283bTJmTThRMTdobkl2SWdqT1VqaVd5Nk9CeTJnTHljbEh5dlpkcDlzczJHQXdxT29YcnVsMmlSMjY2ZGMxNy1WUkJvQUNJU28ybmtaOWJ4dXJUVmxCVGhKZktOdHFtV3RyckpVdkRjZlJpZw?oc=5",
       "credibility": "confirmed",
-      "posts": 11,
+      "posts": 8,
       "outlets": [
-       "Hindustan Times",
-       "India Today",
-       "Moneycontrol",
-       "The Telegraph",
+       "News18",
        "Times of India"
       ],
       "platforms": [
+       "bluesky",
        "gnews"
       ],
-      "first_seen": "2026-11-06",
-      "last_seen": "2026-11-27",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-11-18",
       "prs_item": null
      },
      {
@@ -4890,39 +4889,20 @@
       "prs_item": null
      },
      {
-      "label": "Kerala NEET PG 2026 Merit and Category List Out, Option Entry Begins",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNOVA4enhaRXFERGRwaC1iN2VRQTNwQWUtM0loVk51by1BQlhJN1Y0WTR5STJBNWt5M29NNGhKX0lNZFZiLXJycnBSeVBvUmZsNGFKMUxwc0J3OEJmNmYyMWJzRmFsdV96c0Q5M3pGRXpDOVFNMVFsejluVEpiRGlQaGxwSmhTWUhYclprMmRUSXJYWVpXMGV1VkxkNlVOcDlyd2VCdzdMM3VSMnJtd0tsTWU5a3UtNGdrOV9vUkhWa0lJVGxuSktMTW1rak5SRVV0UHE0TXFnNTgxY0lSWU5v0gHkAUFVX3lxTE5QcVhaOWlUNHNUaU90ZU5ucm52a0hsckxZRjhBdjV6TnRaZmhKc0RraEpjNlNRYThzM29nc3pfWUJ0TkxUNWpfd2tlLV82cUZTY20wQnRibzNldU1lMGoxUGpxcWE0d0d1TUFtWkFyTWNFNmd3bEoxLV9SZC04eUtSLWF6THc5d2kxOUVYZ2hVUWp3WElSTTBrWlVhOEZkOS1BdjVHdXN0MTFrX1dmQ25jUUdCU1ZhdjRSdUZUaXpMTzNpY0dRQjY4N29WamdLNmVXdlY2UU1TaEtFMHo2RU1aa013Yg?oc=5",
+      "label": "MP NEET PG Counselling 2026 Round 1 Admission Halted After HC Order, Allottees Await Fresh Schedule",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQnBabE84TDVjMWk5UW9OZGF2Z3UtTUliaVBzMC1uSm0wajA1c3RQZ2NUYVhhZ1B4OGFmRFU2cm9wT3piM1V2WGZydXhkWERqQ3hkMjdlMG83WnVwT01SOU12NE1tYWJ6Y0FaQmMxbURxeHBKcWVhcVgyX3JGOVZxZkdTbWpPUHozMnhmX2hPc05FSjV3dFJlSjJrejhQQjd4Wk5ST0JSU3hDLUpUYm1seDE0TFVHTHN4SlJDS3RtQWo1ODF6ZVHSAcsBQVVfeXFMUGR5YU02SVNKanlPNzJaektORVBvc0gtczh0TWcwS2dpSFYzT1hwcWRjUmtaaXc5aGstaXhGR1J1SFI2YTI0a3BCQzJuU09WUGVIT09lN3BWeGFFSTdXQUlWcVJjQUxkS3VadWhOcE5fZTZRWEpBOThYdTNlUUZQWHB5dmhaUGRUd0Y3Z2xia25QcUJ3Q2RtcWdrcVZfdFQ0bXZIZUZfOTRqZVB2MWdZR0NmSk9sTFh5RHZTT0FrdEYxc18yUG9DbkYyU3c?oc=5",
       "credibility": "confirmed",
-      "posts": 7,
+      "posts": 4,
       "outlets": [
-       "India Today",
-       "The Telegraph",
-       "Times of India"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-11-03",
-      "prs_item": null
-     },
-     {
-      "label": "NEET PG 2026: Round 2 Seat Allotment Process Moves Ahead With Registration",
-      "url": "https://ndtv.com/education/neet-pg-2026-round-2-seat-allotment-process-moves-ahead-with-registration-12299501",
-      "credibility": "confirmed",
-      "posts": 6,
-      "outlets": [
-       "Business Standard",
        "Indian Express",
-       "NDTV",
        "The Telegraph"
       ],
       "platforms": [
-       "gnews",
-       "rss"
+       "bluesky",
+       "gnews"
       ],
-      "first_seen": "2026-11-08",
-      "last_seen": "2026-11-17",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-11-18",
       "prs_item": null
      },
      {
@@ -4958,23 +4938,39 @@
       "first_seen": "2026-11-17",
       "last_seen": "2026-11-20",
       "prs_item": null
+     },
+     {
+      "label": "Maharashtra cabinet clears university law amendments, textile policy changes",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQV1ZxM2w2V0R5c3hIdVRFZXhjTDNEYXhhR2Z1dUpEeTFzcXQ5SXI4NFliYlBnUFdZMjF0RGFaem8xd2J5N0tvTzd3Q1dMblBrUXFLS0xuZDRjdHY5N0hsMjJLVE1aeWNCbVJONEs3enRiRm0yMDdmVTM1RDlENlJWVUFqSktoUTBMOFQ0UWxHY0U1QnRCZzg2NUVDTmRUSEZfeFAtWHZvaThKaTlyaFhIekY2SnBYMEVpOC1hSU94SkI2ekY1RDd0WkJCMlNWbGxBS09iUEZDUFBNUkszaGotei1xUdIB5wFBVV95cUxNTktrZVpnU2J0U1oxUWtfeFhYM2l4LXBlcXB0U1Y3em9KOTkzTEhhWHBvVlJiLVV0eWJZUWtRNGNfRl80VHJxcmVnRDF2ZjB2NjBESHcxLUtWRFF5R1dfSkdxcGtOWVI1bndoWlEzSTVvZWNJY25YT19DVkZSUGx6Qm91Z0toUHQ4TXk4X2l2SjZwZHY5ZDVjRTRVcEExZ3VjUkNKcFlhRUxsc0tnQ3EtLXZrci1SaXV5dVc1OXhUMkR6TVB6OUx6SGpIYllxOHF0VmkwaWZwcEMwT2V5RmM1VVRweWNCNUE?oc=5",
+      "credibility": "confirmed",
+      "posts": 4,
+      "outlets": [
+       "Economic Times",
+       "The Hindu"
+      ],
+      "platforms": [
+       "gnews"
+      ],
+      "first_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
+      "prs_item": null
      }
     ]
    },
    "justice": {
     "counts": {
-     "confirmed": 63,
-     "reported": 23,
+     "confirmed": 60,
+     "reported": 22,
      "community": 0
     },
-    "running_ahead_of_prs": 67,
-    "hidden": 535,
+    "running_ahead_of_prs": 64,
+    "hidden": 536,
     "conversations": [
      {
       "label": "2020 Delhi Riots: Umar Khalid Moves Supreme Court For Bail, Says Witness Examination Can’t End Before Jan ...",
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUGR3NVJZSzMyM1liQVdUU05HRUlidUJqVkJOWHJYcXloYkxuNE5BQzBFRU1ST0VOeTNvdE1JOHRSN3ZGV294SHloa0dtVm1jUzdFSzhoVTFzb2oyVEVzbllMSGpGcUJkRGttQWZRZ1JrMk9rMWdocjRkaHhmektYUXJvYUhrUkhzQ3ZqLXJzb1BVTjg0ZWZuWkZoRng1R2VoTVJYSFNWcC12Nmdtb3VjSlZFT0FldXIzWFlMSVVNT2JCOUpzU3BYRDI0STczSjBzalB2RmdTSzRBSUtkLTFib05R0gHnAUFVX3lxTFBZVVlaZV9RWHhNRlV0NWVsNU0yQzhXMW40S0txSXlLbE9PRWpjS0FqTlFXVVJ1d3RyMWp5WTRWb2xqMXliaW15Ui1YZUxJQ2dTWXRUWWRIanZzdmwyZmxoTjNPQkczNWVoQzl0a25wRFZCZmNsUzcxSEdCMUpaeXUzM1pLT0w4TTd4QzJiemFnMWVZQkFkY21YQzUzUzFvaXZRU211MzBKTDVkMHprLVluMW1CRHlDNm1iQi04ZV9obGxtSDFWZlZ4VWtvUXl5aFFPNWVxNlFVa080UEtuSHdwdEJOdG1OWQ?oc=5",
       "credibility": "confirmed",
-      "posts": 7,
+      "posts": 8,
       "outlets": [
        "Hindustan Times",
        "Law Beat"
@@ -4985,7 +4981,7 @@
        "rss"
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-25",
+      "last_seen": "2026-11-28",
       "prs_item": "2026-07:4"
      },
      {
@@ -5047,23 +5043,6 @@
       "prs_item": "2026-07:4"
      },
      {
-      "label": "Mini Cooper crash: Kerala sessions court denies bail to accused Suhail Sajeev, 3 others",
-      "url": "https://barandbench.com/news/litigation/mini-cooper-crash-kerala-sessions-court-denies-bail-to-accused-suhail-sajeev-3-others",
-      "credibility": "confirmed",
-      "posts": 6,
-      "outlets": [
-       "Bar & Bench",
-       "Hindustan Times",
-       "The Hindu"
-      ],
-      "platforms": [
-       "rss"
-      ],
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-11-06",
-      "prs_item": null
-     },
-     {
       "label": "Outraging modesty provision under BNS applies to transgender women: Bombay High Court",
       "url": "https://barandbench.com/news/outraging-modesty-provision-under-bns-applies-to-transgender-women-bombay-high-court",
       "credibility": "confirmed",
@@ -5079,6 +5058,22 @@
       ],
       "first_seen": "2026-11-07",
       "last_seen": "2026-11-08",
+      "prs_item": null
+     },
+     {
+      "label": "CBI Arrests Income Tax Officer for Accepting Rs. 15 Lakh Bribe",
+      "url": "https://taxscan.in/income-tax/cbi-arrests-income-tax-officer-for-accepting-rs-15-lakh-bribe",
+      "credibility": "confirmed",
+      "posts": 4,
+      "outlets": [
+       "Mint",
+       "Taxscan"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-11-28",
       "prs_item": null
      },
      {
@@ -5126,7 +5121,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 19,
-    "hidden": 218,
+    "hidden": 214,
     "conversations": [
      {
       "label": "Cervical cancer vaccine has reached 80% of India’s girls. In Mumbai, it’s 2%",
@@ -5267,7 +5262,7 @@
      "community": 0
     },
     "running_ahead_of_prs": 15,
-    "hidden": 208,
+    "hidden": 204,
     "conversations": [
      {
       "label": "GST decriminalisation decisions mark shift to trust-based governance: CII",
@@ -5413,12 +5408,12 @@
    },
    "energy-environment": {
     "counts": {
-     "confirmed": 26,
-     "reported": 15,
+     "confirmed": 22,
+     "reported": 14,
      "community": 0
     },
-    "running_ahead_of_prs": 36,
-    "hidden": 368,
+    "running_ahead_of_prs": 32,
+    "hidden": 369,
     "conversations": [
      {
       "label": "India Leads Globally with Green Hydrogen Offtake Commitments Exceeding 5.5 Lakh MTPA Till October 2026",
@@ -5437,24 +5432,6 @@
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
       "prs_item": null
-     },
-     {
-      "label": "Explainer: Green Hydrogen and India’s Clean Energy Transition",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOVJUQ0JiMnZoUnkwbVhRaEhKNmZFVHNHc2Y1elVCcmZaYlBmUDROTUdvUmk5bkpoS1FuekUzQXdWR3ZFbGMyOFdjSmZKN1VmSUg3QTNWUWxNN3JlRC1vdFlHeUpHN0Z0ZjZaQnBRcDBHN0llM2o1Y2p0eERNYmhNR2U4WnpfV1dwUGlES3FR?oc=5",
-      "credibility": "confirmed",
-      "posts": 4,
-      "outlets": [
-       "DD News",
-       "Hindustan Times",
-       "The Hindu"
-      ],
-      "platforms": [
-       "gnews",
-       "rss"
-      ],
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-11-23",
-      "prs_item": "2026-09:7"
      },
      {
       "label": "Centre allows states to clear non-coal mining projects up to 500 hectares",
@@ -5488,22 +5465,6 @@
       ],
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-30",
-      "prs_item": null
-     },
-     {
-      "label": "Tata Power, CESC, Adani Energy, others may benefit from parallel power distribution licences: JM Financial",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPcmlDRkFPX2J5aGxuN1lzVGFtc2NoWnF2UWtET1JkaklmT0dpSG1Jb3FBcm1IVU82OFpaOVdFa1cyemZpOWtsTnctMmhBbkZ0N0RUZ3E0T2FfTzV4Y3BRQkFIX2I0UTFHeGZYblU3Zjd0ZUlRaTY0MUJHa2w3b285Q3hnVHpJRlNGSDUtNDhlU0FuMnROM2pTX3UyMlpLSnBkV003LVo5OHlycVBheE5sTFRvUVlGMVRtd2RqaDF1aEE4SXRHQkRITFJzZXFJUGk1eW9ySWVnVTFlZENVRDhweUpiZGhLWFVuUl9UdVBDYWxTMUZPMlBPd1FHRdIBgAJBVV95cUxNaktLTGZxc01QS096a0YyNGUybVEwMUZ5TXEwbE5odjJvallnQV9rNVRzVG5IOFVreEI0SVF3SWxmLUtjR1BfOWJNMXRzM0ZiVFduOWpqRWV4cUZ2V01oZkhKZUM0dUFYamxnWkhiRUEyOTU5bDNFRUtTNlF1ZG16QkVPbGEwSXZLQnFTTkozZV95cDBRc2NTbU5rcXRyajVMUVRzVUpVMGNVaE42cUtJay1uZEpKb3JRQmFDbTBjR1dyVWc3ZW9mc0RfQklZeFFucEpTSnJiSWlfNURsOTdhTVhZTUxtal9TN21xalp6WWZRblp1alNYV29TMF9nNVNP?oc=5",
-      "credibility": "confirmed",
-      "posts": 4,
-      "outlets": [
-       "Business Today",
-       "Economic Times"
-      ],
-      "platforms": [
-       "gnews"
-      ],
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
       "prs_item": null
      },
      {
@@ -5553,6 +5514,38 @@
       ],
       "first_seen": "2026-11-13",
       "last_seen": "2026-11-13",
+      "prs_item": null
+     },
+     {
+      "label": "Power purchase row: Keralam govt opted for GNA offer over Himachal Pradesh deal to avoid ₹2,200 crore extra liability, says CM",
+      "url": "https://thehindu.com/news/national/kerala/power-purchase-row-keralam-govt-opted-for-gna-offer-over-himachal-pradesh-deal-to-avoid-2200-crore-extra-liability-says-cm/article71664479.ece",
+      "credibility": "confirmed",
+      "posts": 3,
+      "outlets": [
+       "Hindustan Times",
+       "The Hindu"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-11-04",
+      "last_seen": "2026-11-11",
+      "prs_item": null
+     },
+     {
+      "label": "COP31 concludes without agreement as countries differ on fossil fuel phase-out",
+      "url": "https://indianexpress.com/article/india/cop31-antaralya-summit-fails-fossil-fuel-deal-10974180",
+      "credibility": "confirmed",
+      "posts": 2,
+      "outlets": [
+       "Indian Express",
+       "The Hindu"
+      ],
+      "platforms": [
+       "rss"
+      ],
+      "first_seen": "2026-11-22",
+      "last_seen": "2026-11-23",
       "prs_item": null
      }
     ]
